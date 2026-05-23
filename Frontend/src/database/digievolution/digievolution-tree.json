@@ -1,0 +1,271 @@
+{
+    "Digievolutions": [
+        {
+            "Name": "Dinohumon",
+            "Family": "Kotemon",
+            "Before": null,
+            "Next": "Kyukimon"
+        },
+        {
+            "Name": "Hookmon",
+            "Family": "Monmon",
+            "Before": null,
+            "Next": "Armormon"
+        },
+        {
+            "Name": "Grizzmon",
+            "Family": "Kumamon",
+            "Before": null,
+            "Next": "GrapLeomon"
+        },
+        {
+            "Name": "Greymon",
+            "Family": "Agumon",
+            "Before": null,
+            "Next": [
+                "MetalGreymon",
+                "SkullGreymon"
+            ]
+        },
+        {
+            "Name": "ExVeemon",
+            "Family": "Veemon",
+            "Before": null,
+            "Next": "Paildramon"
+        },
+        {
+            "Name": "Growlmon",
+            "Family": "Guilmon",
+            "Before": null,
+            "Next": "WarGrowlmon"
+        },
+        {
+            "Name": "Kyubimon",
+            "Family": "Renamon",
+            "Before": null,
+            "Next": "Taomon"
+        },
+        {
+            "Name": "Angemon",
+            "Family": "Patamon",
+            "Before": null,
+            "Next": "MagnaAngemon"
+        },
+        {
+            "Name": "Devimon",
+            "Family": "DemiDevimon",
+            "Before": null,
+            "Next": "Myotismon"
+        },
+        {
+            "Name": "Stingmon",
+            "Family": "Wormmon",
+            "Before": null,
+            "Next": "Kabuterimon"
+        },
+        {
+            "Name": "Angewomon",
+            "Family": "Gatomon",
+            "Before": null,
+            "Next": "Rosemon"
+        },
+        {
+            "Name": "Kyukimon",
+            "Family": "Kotemon",
+            "Before": "Dinohumon",
+            "Next": "Guardiangemon"
+        },
+        {
+            "Name": "Armormon",
+            "Family": "Monmon",
+            "Before": "Hookmon",
+            "Next": "Cannondramon"
+        },
+        {
+            "Name": "GrapLeomon",
+            "Family": "Kumamon",
+            "Before": "Grizzmon",
+            "Next": "Marsmon"
+        },
+        {
+            "Name": "MetalGreymon",
+            "Family": "Agumon",
+            "Before": "Greymon",
+            "Next": "WarGreymon"
+        },
+        {
+            "Name": "SkullGreymon",
+            "Family": "Agumon",
+            "Before": "Greymon",
+            "Next": "BK WarGreymon"
+        },
+        {
+            "Name": "Paildramon",
+            "Family": "Veemon",
+            "Before": "ExVeemon",
+            "Next": "Imperialdramon"
+        },
+        {
+            "Name": "WarGrowlmon",
+            "Family": "Guilmon",
+            "Before": "Growlmon",
+            "Next": "Gallantmon"
+        },
+        {
+            "Name": "Taomon",
+            "Family": "Renamon",
+            "Before": "Kyubimon",
+            "Next": "Sakuyamon"
+        },
+        {
+            "Name": "MagnaAngemon",
+            "Family": "Patamon",
+            "Before": "Angemon",
+            "Next": "Seraphimon"
+        },
+        {
+            "Name": "Myotismon",
+            "Family": "DemiDevimon",
+            "Before": "Devimon",
+            "Next": "MaloMyotismon"
+        },
+        {
+            "Name": "MetalMamemon",
+            "Family": "Gabumon",
+            "Before": null,
+            "Next": "MetalGarurumon"
+        },
+        {
+            "Name": "Kabuterimon",
+            "Family": "Wormmon",
+            "Before": "Stingmon",
+            "Next": "GranKuwagamon"
+        },
+        {
+            "Name": "Digitamamon",
+            "Family": "Digitamamon",
+            "Before": null,
+            "Next": null
+        },
+        {
+            "Name": "Guardiangemon",
+            "Family": "Kotemon",
+            "Before": "Kyukimon",
+            "Next": null
+        },
+        {
+            "Name": "Cannondramon",
+            "Family": "Monmon",
+            "Before": "Armormon",
+            "Next": null
+        },
+        {
+            "Name": "Marsmon",
+            "Family": "Kumamon",
+            "Before": "GrapLeomon",
+            "Next": null
+        },
+        {
+            "Name": "WarGreymon",
+            "Family": "Agumon",
+            "Before": "MetalGreymon",
+            "Next": "Omnimon"
+        },
+        {
+            "Name": "Imperialdramon",
+            "Family": "Veemon",
+            "Before": "Paildramon",
+            "Next": "Imperialdramon-F"
+        },
+        {
+            "Name": "Gallantmon",
+            "Family": "Guilmon",
+            "Before": "WarGrowlmon",
+            "Next": null
+        },
+        {
+            "Name": "Sakuyamon",
+            "Family": "Renamon",
+            "Before": "Taomon",
+            "Next": null
+        },
+        {
+            "Name": "Seraphimon",
+            "Family": "Patamon",
+            "Before": "MagnaAngemon",
+            "Next": null
+        },
+        {
+            "Name": "MetalGarurumon",
+            "Family": "Gabumon",
+            "Before": "MetalMamemon",
+            "Next": "MegaGargomon"
+        },
+        {
+            "Name": "Rosemon",
+            "Family": "Gatomon",
+            "Before": "Angewomon",
+            "Next": "Phoenixmon"
+        },
+        {
+            "Name": "BK WarGreymon",
+            "Family": "Agumon",
+            "Before": "SkullGreymon",
+            "Next": null
+        },
+        {
+            "Name": "Imperialdramon-F",
+            "Family": "Veemon",
+            "Before": "Imperialdramon",
+            "Next": "Imperialdramon-P"
+        },
+        {
+            "Name": "MaloMyotismon",
+            "Family": "DemiDevimon",
+            "Before": "Myotismon",
+            "Next": "Beelzemon"
+        },
+        {
+            "Name": "MegaGargomon",
+            "Family": "Gabumon",
+            "Before": "MetalGarurumon",
+            "Next": null
+        },
+        {
+            "Name": "GranKuwagamon",
+            "Family": "Wormmon",
+            "Before": "Kabuterimon",
+            "Next": "Diaboromon"
+        },
+        {
+            "Name": "Phoenixmon",
+            "Family": "Gatomon",
+            "Before": "Rosemon",
+            "Next": null
+        },
+        {
+            "Name": "Omnimon",
+            "Family": "Agumon",
+            "Before": "WarGreymon",
+            "Next": null
+        },
+        {
+            "Name": "Imperialdramon-P",
+            "Family": "Veemon",
+            "Before": "Imperialdramon-F",
+            "Next": null
+        },
+        {
+            "Name": "Beelzemon",
+            "Family": "DemiDevimon",
+            "Before": "MaloMyotismon",
+            "Next": null
+        },
+        {
+            "Name": "Diaboromon",
+            "Family": "Wormmon",
+            "Before": "GranKuwagamon",
+            "Next": null
+        }
+    ]
+}

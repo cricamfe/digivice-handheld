@@ -1,0 +1,69 @@
+{
+    "Id": "FishingPole",
+    "Requisites": [
+        {
+            "Id": "FolderBag"
+        }
+    ],
+    "Steps": {
+        "1": {
+            "Location": "021F",
+            "Coordinates": {
+                "X": 54,
+                "Y": 59
+            },
+            "ZoomedLocations": [
+                {
+                    "LocationImage": "021F",
+                    "Coordinates": {
+                        "X": 44,
+                        "Y": 86
+                    }
+                }
+            ]
+        },
+        "2": {
+            "Location": "0227",
+            "Coordinates": {
+                "X": 74.5,
+                "Y": 47
+            },
+            "ZoomedLocations": [
+                {
+                    "LocationImage": "0227",
+                    "Coordinates": {
+                        "X": 47,
+                        "Y": 47
+                    }
+                }
+            ]
+        },
+        "3": {
+            "Prerequisites": [
+                {
+                    "Id": "BambooSpear"
+                },
+                {
+                    "Id": "SpiderWeb"
+                },
+                {
+                    "Id": "BambooSpear"
+                }
+            ],
+            "Location": "021F",
+            "Coordinates": {
+                "X": 54,
+                "Y": 59
+            },
+            "ZoomedLocations": [
+                {
+                    "LocationImage": "021F",
+                    "Coordinates": {
+                        "X": 44,
+                        "Y": 86
+                    }
+                }
+            ]
+        }
+    }
+}
