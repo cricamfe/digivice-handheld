@@ -1,0 +1,131 @@
+{
+  "genji": {
+    "name": "Genji",
+    "type": "tamer",
+    "locationId": "0200",
+    "cardBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 60,
+          "max": 209
+        },
+        "deckId": "bugBugFolder",
+        "dropId": "1aBooster"
+      }
+    },
+    "digimonBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 1
+        },
+        "groupId": "genji#1",
+        "exp": 4,
+        "dvexp": 0,
+        "bit": 50
+      },
+      "second": {
+        "charismaRequired": {
+          "min": 210
+        },
+        "groupId": "genji#2",
+        "exp": 63,
+        "dvexp": 6,
+        "bit": 115
+      }
+    }
+  },
+  "natsumi": {
+    "name": "Natsumi",
+    "type": "tamer",
+    "locationId": "021D",
+    "cardBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 60,
+          "max": 209
+        },
+        "deckId": "flyingFolder1",
+        "dropId": "2aBooster"
+      },
+      "second": {
+        "charismaRequired": {
+          "min": 60
+        },
+        "trophyRequired": "asukaTrophy",
+        "deckId": "flyingFolder2",
+        "dropId": "2aBooster"
+      }
+    },
+    "digimonBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 210
+        },
+        "groupId": "natsumi",
+        "exp": 65,
+        "dvexp": 4,
+        "bit": 145
+      }
+    }
+  },
+  "nacky": {
+    "name": "Nacky",
+    "type": "tamer",
+    "locationId": "0211",
+    "cardBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 60,
+          "max": 377
+        },
+        "deckId": "coolDigimonFolder",
+        "dropId": "1aBooster"
+      }
+    }
+  },
+  "wong": {
+    "name": "Wong",
+    "type": "tamer",
+    "locationId": "0211",
+    "cardBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 60,
+          "max": 377
+        },
+        "deckId": "mindFolder",
+        "dropId": "2aBooster"
+      }
+    }
+  },
+  "steve": {
+    "name": "Steve",
+    "type": "tamer",
+    "locationId": "0211",
+    "cardBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 60,
+          "max": 377
+        },
+        "deckId": "protectorFolder",
+        "dropId": "1aBooster"
+      }
+    }
+  },
+  "gloria": {
+    "name": "Gloria",
+    "type": "tamer",
+    "locationId": "0211",
+    "cardBattles": {
+      "first": {
+        "charismaRequired": {
+          "min": 60,
+          "max": 377
+        },
+        "deckId": "amazingPatamonFolder",
+        "dropId": "2aBooster"
+      }
+    }
+  }
+}
