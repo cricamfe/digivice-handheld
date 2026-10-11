@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import type { HealthStatus, State } from "@/models";
 import type { HealthDTO } from "@/events/dto/health.dto";
 import type { StateDTO } from "@/events/dto/state.dto";
@@ -36,9 +36,6 @@ export const useGameStore = defineStore("game", () => {
   const lastHubConnectionError = ref<string | null>(null);
   const lastErrorCode = ref<string | null>(null);
   const lastErrorDetail = ref<string | null>(null);
-  const isConnected = computed(() => {
-    return isConnectedWithBackend.value && healthStatus.value === "Healthy";
-  });
   const currentState = ref<State | null>(null);
 
   function clearGameState(): void {
@@ -190,7 +187,6 @@ export const useGameStore = defineStore("game", () => {
   }
 
   return {
-    isConnected,
     isConnectedWithBackend,
     healthStatus,
     backendProcessFailed,
