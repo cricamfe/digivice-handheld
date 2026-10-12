@@ -27,13 +27,13 @@ Past that point, many features will still work, but others will be missing. I'll
 
 More Digivice is on the way. Here's a preview of what's planned next — details and timing may change as development continues.
 
-### 4.0 — The story catches up to Asuka City
+### 4.5 — Atualização da interface e do motor de leitura de memória
 
-A major step forward for anyone playing through the main quest.
+Mudanças na interface do Digivice e melhoria no motor de leitura de memória.
 
-- **Main quest through A.o.A** — journal and tracking mapped up to the A.o.A battle in Asuka City
-- **DVEXP bars that make sense** — fixed to reflect each digievolution's Tier correctly
-- **And more** — the next layer of polish once the South Sector ceiling is gone
+### 5.0 — O Digiovo do Conhecimento
+
+Atualização da missão principal até o ponto onde o jogador obtém o Digiovo do Conhecimento, no servidor de Amaterasu.
 
 ## Before you continue
 
