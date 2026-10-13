@@ -1,8 +1,4 @@
 {
-  "connection": {
-    "connected": "Connected",
-    "disconnected": "Disconnected"
-  },
   "errors": {
     "loading": {
       "title": "Loading...",

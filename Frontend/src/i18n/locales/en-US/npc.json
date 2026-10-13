@@ -3,8 +3,6 @@
     "battle": {
       "card": "Cards",
       "digimon": "Digimon",
-      "cardPlaceholder": "Card battle",
-      "digimonPlaceholder": "Digimon battle",
       "requirement": {
         "missingCharisma": "Insufficient charisma or out of range",
         "missingAsukaTrophy": "Missing Asuka Trophy",

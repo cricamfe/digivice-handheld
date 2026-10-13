@@ -1,6 +1,5 @@
 {
   "auction": {
-    "title": "Auctions",
     "cardIdleTitle": "No auction now",
     "cardIdleSubtitle": "Maybe later...",
     "cardActiveTitle": "Auction available!",
