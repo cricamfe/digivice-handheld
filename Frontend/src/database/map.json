@@ -302,6 +302,14 @@
           "y": 65
         },
         "labelPlacement": "below"
+      },
+      {
+        "id": "optionalTrooperAdminFloor1",
+        "coordinates": {
+          "x": 0,
+          "y": 0
+        },
+        "labelPlacement": "below"
       }
     ]
   },
@@ -392,6 +400,30 @@
           "y": 32
         },
         "labelPlacement": "below"
+      },
+      {
+        "id": "optionalTrooperAdminFloor2",
+        "coordinates": {
+          "x": 0,
+          "y": 0
+        },
+        "labelPlacement": "below"
+      },
+      {
+        "id": "optionalSoldier1AdminFloor2",
+        "coordinates": {
+          "x": 0,
+          "y": 0
+        },
+        "labelPlacement": "below"
+      },
+      {
+        "id": "optionalSoldier2AdminFloor2",
+        "coordinates": {
+          "x": 0,
+          "y": 0
+        },
+        "labelPlacement": "below"
       }
     ]
   },
@@ -455,6 +487,22 @@
         "coordinates": {
           "x": 72,
           "y": 25
+        },
+        "labelPlacement": "below"
+      },
+      {
+        "id": "optionalTrooper1AdminCenterB1F",
+        "coordinates": {
+          "x": 0,
+          "y": 0
+        },
+        "labelPlacement": "below"
+      },
+      {
+        "id": "optionalTrooper2AdminCenterB1F",
+        "coordinates": {
+          "x": 0,
+          "y": 0
         },
         "labelPlacement": "below"
       }

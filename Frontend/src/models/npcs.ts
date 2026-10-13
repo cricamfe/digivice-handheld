@@ -24,4 +24,10 @@ export interface Npcs {
   fakeByakkoLeader: Npc;
   byakkoLeader: Npc;
   aoaAttacker: Npc;
+  optionalTrooper1AdminCenterB1F: Npc;
+  optionalTrooper2AdminCenterB1F: Npc;
+  optionalTrooperAdminFloor1: Npc;
+  optionalTrooperAdminFloor2: Npc;
+  optionalSoldier1AdminFloor2: Npc;
+  optionalSoldier2AdminFloor2: Npc;
 }

@@ -186,5 +186,53 @@
                 "BitMask": "0x08"
             }
         }
+    },
+    "OptionalTrooper1AdminCenterB1F": {
+        "Battles": {
+            "first": {
+                "Address": "0x0004B395",
+                "BitMask": "0x01"
+            }
+        }
+    },
+    "OptionalTrooper2AdminCenterB1F": {
+        "Battles": {
+            "first": {
+                "Address": "0x0004B394",
+                "BitMask": "0x40"
+            }
+        }
+    },
+    "OptionalTrooperAdminFloor1": {
+        "Battles": {
+            "first": {
+                "Address": "0x0004B392",
+                "BitMask": "0x40"
+            }
+        }
+    },
+    "OptionalTrooperAdminFloor2": {
+        "Battles": {
+            "first": {
+                "Address": "0x0004B393",
+                "BitMask": "0x10"
+            }
+        }
+    },
+    "OptionalSoldier1AdminFloor2": {
+        "Battles": {
+            "first": {
+                "Address": "0x0004B394",
+                "BitMask": "0x01"
+            }
+        }
+    },
+    "OptionalSoldier2AdminFloor2": {
+        "Battles": {
+            "first": {
+                "Address": "0x0004B393",
+                "BitMask": "0x20"
+            }
+        }
     }
 }
