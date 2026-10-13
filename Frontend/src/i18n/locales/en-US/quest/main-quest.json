@@ -269,7 +269,7 @@
         "locationTarget": "Datamon"
       },
       "63": {
-        "description": "Return to the Secret Room and ask your friends about the Personal Pass",
+        "description": "Return to the Secret Room and ask your friends about the Staff Pass",
         "locationTarget": "Kail"
       },
       "64": {
@@ -277,60 +277,60 @@
         "locationTarget": "Keith & Nicky"
       },
       "65": {
-        "description": "With everyone's help, look for the Personal Pass inside the Secret Room",
+        "description": "With everyone's help, look for the Staff Pass inside the Secret Room",
         "locationTarget": "Lisa"
       },
       "66": {
-        "description": "Use the Personal Pass and ask Datamon to open the gate",
+        "description": "Use the Staff Pass and ask Datamon to open the gate",
         "locationTarget": "Datamon"
       },
       "67": {
-        "description": "Defeat the Patroller blocking you from entering Admin Center B1F",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper blocking you from entering Admin Center B1F",
+        "locationTarget": "Trooper"
       },
       "68": {
-        "description": "Defeat the Patroller blocking your way through Admin Center B1F",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper blocking your way through Admin Center B1F",
+        "locationTarget": "Trooper"
       },
       "69": {
-        "description": "Defeat the Patroller blocking you from leaving Admin Center B1F",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper blocking you from leaving Admin Center B1F",
+        "locationTarget": "Trooper"
       },
       "70": {
-        "description": "Defeat the Patroller at the entrance of the Basement Stairs",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper at the entrance of the Basement Stairs",
+        "locationTarget": "Trooper"
       },
       "71": {
-        "description": "Defeat the Patroller at the end of the Basement Stairs",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper at the end of the Basement Stairs",
+        "locationTarget": "Trooper"
       },
       "72": {
-        "description": "Defeat the Patroller to get out of the Basement Stairs",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper to get out of the Basement Stairs",
+        "locationTarget": "Trooper"
       },
       "73": {
-        "description": "Defeat the Patroller at the entrance of Admin Center 1F",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper at the entrance of Admin Center 1F",
+        "locationTarget": "Trooper"
       },
       "74": {
-        "description": "Defeat the Patroller before going up the stairs of Admin Center 1F",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper before going up the stairs of Admin Center 1F",
+        "locationTarget": "Trooper"
       },
       "75": {
-        "description": "Defeat the Patroller to walk through Admin Center 2F",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper to walk through Admin Center 2F",
+        "locationTarget": "Trooper"
       },
       "76": {
-        "description": "Defeat the Patroller after going up the stairs of Admin Center 2F",
-        "locationTarget": "Patroller"
+        "description": "Defeat the Trooper after going up the stairs of Admin Center 2F",
+        "locationTarget": "Trooper"
       },
       "77": {
         "description": "Defeat the Soldier in the hallway leading to the Master Room",
         "locationTarget": "Soldier"
       },
       "78": {
-        "description": "Defeat the General blocking you from entering the Master Room",
-        "locationTarget": "General"
+        "description": "Defeat the Soldier blocking you from entering the Master Room",
+        "locationTarget": "Soldier"
       },
       "79": {
         "description": "\"GUBI!?\" Defend yourself from the strange Digimon that came out of the room",
