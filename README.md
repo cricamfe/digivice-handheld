@@ -18,6 +18,8 @@ You can see more in the video below:
 
 [![Digivice 3.5.0 (Latest major release)](https://img.youtube.com/vi/hxhppn5j9Gg/hqdefault.jpg)](https://www.youtube.com/watch?v=hxhppn5j9Gg)
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R028MD8Y)
+
 ## The current state
 
 **Right now, Digivice only fully supports the game up to the West Sector of Asuka Server** (the Third part of the story). The main quest, map enemies, and related data are only complete through this sector.<br>
