@@ -27,13 +27,13 @@ Past that point, many features will still work, but others will be missing. I'll
 
 More Digivice is on the way. Here's a preview of what's planned next — details and timing may change as development continues.
 
-### 4.5 — Atualização da interface e do motor de leitura de memória
+### 4.5 — Interface and memory reading engine update
 
-Mudanças na interface do Digivice e melhoria no motor de leitura de memória.
+Changes to the Digivice interface and improvements to the memory reading engine.
 
-### 5.0 — O Digiovo do Conhecimento
+### 5.0 — The Digi-Egg of Knowledge
 
-Atualização da missão principal até o ponto onde o jogador obtém o Digiovo do Conhecimento, no servidor de Amaterasu.
+Main quest update up to the point where the player obtains the Digi-Egg of Knowledge, in Amaterasu Server.
 
 ## Before you continue
 
