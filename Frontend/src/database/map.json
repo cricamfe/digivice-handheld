@@ -402,7 +402,7 @@
         "labelPlacement": "below"
       },
       {
-        "id": "optionalTrooperAdminFloor2",
+        "id": "optionalTrooper1AdminFloor2",
         "coordinates": {
           "x": 0,
           "y": 0
@@ -418,7 +418,7 @@
         "labelPlacement": "below"
       },
       {
-        "id": "optionalSoldier2AdminFloor2",
+        "id": "optionalTrooper2AdminFloor2",
         "coordinates": {
           "x": 0,
           "y": 0
@@ -493,16 +493,16 @@
       {
         "id": "optionalTrooper1AdminCenterB1F",
         "coordinates": {
-          "x": 0,
-          "y": 0
+          "x": 59,
+          "y": 66
         },
         "labelPlacement": "below"
       },
       {
         "id": "optionalTrooper2AdminCenterB1F",
         "coordinates": {
-          "x": 0,
-          "y": 0
+          "x": 37,
+          "y": 33
         },
         "labelPlacement": "below"
       }

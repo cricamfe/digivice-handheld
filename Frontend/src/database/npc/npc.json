@@ -165,7 +165,7 @@
     "locationId": "021A",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 67,
+      "starts": 66,
       "ends": 68
     },
     "party": [
@@ -187,7 +187,7 @@
     "locationId": "021A",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 68,
+      "starts": 66,
       "ends": 69
     },
     "party": [
@@ -209,7 +209,8 @@
     "locationId": "021A",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 66
+      "starts": 66,
+      "ends": 86
     },
     "party": [
       {
@@ -230,7 +231,8 @@
     "locationId": "021A",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 66
+      "starts": 66,
+      "ends": 86
     },
     "party": [
       {
@@ -273,7 +275,7 @@
     "locationId": "0215",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 70,
+      "starts": 69,
       "ends": 71
     },
     "party": [
@@ -295,7 +297,7 @@
     "locationId": "0215",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 71,
+      "starts": 69,
       "ends": 72
     },
     "party": [
@@ -339,7 +341,7 @@
     "locationId": "0214",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 73,
+      "starts": 72,
       "ends": 74
     },
     "party": [
@@ -361,7 +363,8 @@
     "locationId": "0214",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 72
+      "starts": 72,
+      "ends": 86
     },
     "party": [
       {
@@ -404,7 +407,7 @@
     "locationId": "0217",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 75,
+      "starts": 74,
       "ends": 76
     },
     "party": [
@@ -426,7 +429,7 @@
     "locationId": "0217",
     "imageName": "Soldier",
     "mainQuestAvailabilityWindow": {
-      "starts": 76,
+      "starts": 74,
       "ends": 77
     },
     "party": [
@@ -452,7 +455,7 @@
     "locationId": "0217",
     "imageName": "Soldier",
     "mainQuestAvailabilityWindow": {
-      "starts": 77,
+      "starts": 74,
       "ends": 78
     },
     "party": [
@@ -473,12 +476,13 @@
     "dvexp": 29,
     "bit": 890
   },
-  "optionalTrooperAdminFloor2": {
+  "optionalTrooper1AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
     "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
-      "starts": 74
+      "starts": 74,
+      "ends": 86
     },
     "party": [
       {
@@ -499,7 +503,8 @@
     "locationId": "0217",
     "imageName": "Soldier",
     "mainQuestAvailabilityWindow": {
-      "starts": 74
+      "starts": 74,
+      "ends": 86
     },
     "party": [
       {
@@ -519,12 +524,13 @@
     "dvexp": 29,
     "bit": 890
   },
-  "optionalSoldier2AdminFloor2": {
+  "optionalTrooper2AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
     "imageName": "Soldier",
     "mainQuestAvailabilityWindow": {
-      "starts": 74
+      "starts": 74,
+      "ends": 86
     },
     "party": [
       {

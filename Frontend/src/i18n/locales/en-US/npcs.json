@@ -19,58 +19,58 @@
       "name": "A.o.A Attacker"
     },
     "trooper1AdminCenterB1F": {
-      "name": "Trooper"
+      "name": "1º Trooper"
     },
     "trooper2AdminCenterB1F": {
-      "name": "Trooper"
+      "name": "2º Trooper"
     },
     "trooper3AdminCenterB1F": {
-      "name": "Trooper"
+      "name": "3º Trooper"
     },
     "optionalTrooper1AdminCenterB1F": {
-      "name": "Trooper"
+      "name": "4º Trooper"
     },
     "optionalTrooper2AdminCenterB1F": {
-      "name": "Trooper"
+      "name": "5º Trooper"
     },
     "trooper1BasementStairs": {
-      "name": "Trooper"
+      "name": "6º Trooper"
     },
     "trooper2BasementStairs": {
-      "name": "Trooper"
+      "name": "7º Trooper"
     },
     "trooper3BasementStairs": {
-      "name": "Trooper"
+      "name": "8º Trooper"
     },
     "trooper1AdminFloor1": {
-      "name": "Trooper"
+      "name": "9º Trooper"
     },
     "trooper2AdminFloor1": {
-      "name": "Trooper"
+      "name": "10º Trooper"
     },
     "optionalTrooperAdminFloor1": {
-      "name": "Trooper"
+      "name": "11º Trooper"
     },
     "trooper1AdminFloor2": {
-      "name": "Trooper"
+      "name": "12º Trooper"
     },
     "trooper2AdminFloor2": {
-      "name": "Trooper"
+      "name": "13º Trooper"
     },
     "soldierAdminFloor2": {
-      "name": "Soldier"
+      "name": "1º Soldier"
     },
     "generalAdminFloor2": {
       "name": "General"
     },
-    "optionalTrooperAdminFloor2": {
-      "name": "Trooper"
+    "optionalTrooper1AdminFloor2": {
+      "name": "14º Trooper"
     },
     "optionalSoldier1AdminFloor2": {
-      "name": "Soldier"
+      "name": "2º Soldier"
     },
-    "optionalSoldier2AdminFloor2": {
-      "name": "Soldier"
+    "optionalTrooper2AdminFloor2": {
+      "name": "15º Trooper"
     },
     "guardsHeadquarters": {
       "name": "Guards"

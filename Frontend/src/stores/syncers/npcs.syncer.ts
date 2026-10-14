@@ -41,16 +41,16 @@ export class NpcsSyncer {
       newNpcsDto.optionalTrooperAdminFloor1,
     );
     this.syncNpcIfPresent(
-      previousNpcs.optionalTrooperAdminFloor2,
-      newNpcsDto.optionalTrooperAdminFloor2,
+      previousNpcs.optionalTrooper1AdminFloor2,
+      newNpcsDto.optionalTrooper1AdminFloor2,
     );
     this.syncNpcIfPresent(
       previousNpcs.optionalSoldier1AdminFloor2,
       newNpcsDto.optionalSoldier1AdminFloor2,
     );
     this.syncNpcIfPresent(
-      previousNpcs.optionalSoldier2AdminFloor2,
-      newNpcsDto.optionalSoldier2AdminFloor2,
+      previousNpcs.optionalTrooper2AdminFloor2,
+      newNpcsDto.optionalTrooper2AdminFloor2,
     );
   }
 

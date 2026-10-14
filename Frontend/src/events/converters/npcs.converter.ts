@@ -33,9 +33,9 @@ export class NpcsConverter {
       optionalTrooper1AdminCenterB1F: this.convertNpc(npcsDto.optionalTrooper1AdminCenterB1F),
       optionalTrooper2AdminCenterB1F: this.convertNpc(npcsDto.optionalTrooper2AdminCenterB1F),
       optionalTrooperAdminFloor1: this.convertNpc(npcsDto.optionalTrooperAdminFloor1),
-      optionalTrooperAdminFloor2: this.convertNpc(npcsDto.optionalTrooperAdminFloor2),
+      optionalTrooper1AdminFloor2: this.convertNpc(npcsDto.optionalTrooper1AdminFloor2),
       optionalSoldier1AdminFloor2: this.convertNpc(npcsDto.optionalSoldier1AdminFloor2),
-      optionalSoldier2AdminFloor2: this.convertNpc(npcsDto.optionalSoldier2AdminFloor2),
+      optionalTrooper2AdminFloor2: this.convertNpc(npcsDto.optionalTrooper2AdminFloor2),
     };
   }
 
