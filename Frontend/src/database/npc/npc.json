@@ -527,7 +527,7 @@
   "optionalTrooper2AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Soldier",
+    "imageName": "Trooper",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 86
