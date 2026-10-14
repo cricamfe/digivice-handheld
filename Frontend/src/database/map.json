@@ -1989,6 +1989,9 @@
       }
     ]
   },
+  "0256": {
+    "imageName": "Secret Room"
+  },
   "0257": {
     "imageName": "Noise Desert S",
     "worldLocation": {
