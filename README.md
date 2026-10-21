@@ -16,13 +16,13 @@ It's the companion you wished you had when you first walked through Asuka Server
 
 You can see more in the video below:
 
-[![Digivice 3.5.0 (Latest major release)](https://img.youtube.com/vi/hxhppn5j9Gg/hqdefault.jpg)](https://www.youtube.com/watch?v=hxhppn5j9Gg)
+[![Digivice 4.0.0 (Latest major release)](https://img.youtube.com/vi/UEHe4sAQ5pM/hqdefault.jpg)](https://www.youtube.com/watch?v=UEHe4sAQ5pM)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R028MD8Y)
 
 ## The current state
 
-**Right now, Digivice only fully supports the game up to the West Sector of Asuka Server** (the Third part of the story). The main quest, map enemies, and related data are only complete through this sector.<br>
+**Right now, Digivice only fully supports the game up to the West Sector of Asuka Server** (the Third part of the story, until you beat the Game Master). The main quest, map enemies, and related data are only complete through this sector.<br>
 Past that point, many features will still work, but others will be missing. I'll fill in the next areas in future updates.
 
 ## Roadmap
