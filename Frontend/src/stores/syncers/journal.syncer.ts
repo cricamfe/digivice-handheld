@@ -1,59 +1,30 @@
-import type { Journal } from "../../models";
-import type * as Events from "../../events/events.map";
+import type { Journal, Quest } from "@/models";
+import type { JournalDTO } from "@/events/dto/journal.dto";
+import type { QuestDTO } from "@/events/dto/journals/quest.dto";
 import { QuestSyncer } from "./journals/quest.syncer";
 
 export class JournalSyncer {
-  public static sync(previousJournal: Journal, newJournalDto: Events.JournalDTO): void {
-    if (newJournalDto.mainQuest && previousJournal.mainQuest) {
+  public static sync(previousJournal: Journal, newJournalDto: JournalDTO): void {
+    if (newJournalDto.mainQuest !== undefined) {
       QuestSyncer.sync(previousJournal.mainQuest, newJournalDto.mainQuest);
     }
 
-    if (newJournalDto.sideQuests && newJournalDto.sideQuests.length > 0) {
-      newJournalDto.sideQuests.forEach((newSideQuestDto) => {
-        const previousSideQuest = previousJournal.sideQuests.find(
-          (q) => q.id === newSideQuestDto.id,
-        );
+    this.syncQuests(previousJournal.sideQuests, newJournalDto.sideQuests);
+    this.syncQuests(previousJournal.legendaryWeapons, newJournalDto.legendaryWeapons);
+    this.syncQuests(previousJournal.driAgents, newJournalDto.driAgents);
+    this.syncQuests(previousJournal.duelIsland, newJournalDto.duelIsland);
+  }
 
-        if (previousSideQuest) {
-          QuestSyncer.sync(previousSideQuest, newSideQuestDto);
-        }
-      });
+  private static syncQuests(previousQuests: Quest[], newQuestDtos: QuestDTO[] | undefined): void {
+    if (!newQuestDtos) {
+      return;
     }
 
-    if (newJournalDto.legendaryWeapons && newJournalDto.legendaryWeapons.length > 0) {
-      newJournalDto.legendaryWeapons.forEach((newLegendaryWeaponDto) => {
-        const previousLegendaryWeapon = previousJournal.legendaryWeapons.find((quest) => {
-          return quest.id === newLegendaryWeaponDto.id;
-        });
-
-        if (previousLegendaryWeapon) {
-          QuestSyncer.sync(previousLegendaryWeapon, newLegendaryWeaponDto);
-        }
-      });
-    }
-
-    if (newJournalDto.driAgents && newJournalDto.driAgents.length > 0) {
-      newJournalDto.driAgents.forEach((newDriAgentDto) => {
-        const previousDriAgent = previousJournal.driAgents.find((quest) => {
-          return quest.id === newDriAgentDto.id;
-        });
-
-        if (previousDriAgent) {
-          QuestSyncer.sync(previousDriAgent, newDriAgentDto);
-        }
-      });
-    }
-
-    if (newJournalDto.duelIsland && newJournalDto.duelIsland.length > 0) {
-      newJournalDto.duelIsland.forEach((newDuelIslandQuestDto) => {
-        const previousDuelIslandQuest = previousJournal.duelIsland.find((quest) => {
-          return quest.id === newDuelIslandQuestDto.id;
-        });
-
-        if (previousDuelIslandQuest) {
-          QuestSyncer.sync(previousDuelIslandQuest, newDuelIslandQuestDto);
-        }
-      });
-    }
+    newQuestDtos.forEach((newQuestDto) => {
+      const previousQuest = previousQuests.find((quest) => quest.id === newQuestDto.id);
+      if (previousQuest) {
+        QuestSyncer.sync(previousQuest, newQuestDto);
+      }
+    });
   }
 }

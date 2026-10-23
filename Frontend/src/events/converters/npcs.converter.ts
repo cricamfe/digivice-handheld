@@ -1,10 +1,11 @@
+import type { DeepRequired } from "@/events/dto/deep-required";
 import type { NpcBattleDTO } from "@/events/dto/npcs/npc-battle.dto";
 import type { NpcDTO } from "@/events/dto/npcs/npc.dto";
 import type { NpcsDTO } from "@/events/dto/npcs.dto";
 import type { Npc, NpcBattle, Npcs } from "@/models";
 
 export class NpcsConverter {
-  public static convert(npcsDto: Required<NpcsDTO>): Npcs {
+  public static convert(npcsDto: DeepRequired<NpcsDTO>): Npcs {
     return {
       genji: this.convertNpc(npcsDto.genji),
       natsumi: this.convertNpc(npcsDto.natsumi),
@@ -29,21 +30,27 @@ export class NpcsConverter {
       fakeByakkoLeader: this.convertNpc(npcsDto.fakeByakkoLeader),
       byakkoLeader: this.convertNpc(npcsDto.byakkoLeader),
       aoaAttacker: this.convertNpc(npcsDto.aoaAttacker),
+      optionalTrooper1AdminCenterB1F: this.convertNpc(npcsDto.optionalTrooper1AdminCenterB1F),
+      optionalTrooper2AdminCenterB1F: this.convertNpc(npcsDto.optionalTrooper2AdminCenterB1F),
+      optionalTrooperAdminFloor1: this.convertNpc(npcsDto.optionalTrooperAdminFloor1),
+      optionalTrooper1AdminFloor2: this.convertNpc(npcsDto.optionalTrooper1AdminFloor2),
+      optionalSoldier1AdminFloor2: this.convertNpc(npcsDto.optionalSoldier1AdminFloor2),
+      optionalTrooper2AdminFloor2: this.convertNpc(npcsDto.optionalTrooper2AdminFloor2),
     };
   }
 
-  public static convertNpc(npcDto: NpcDTO | undefined): Npc {
+  public static convertNpc(npcDto: DeepRequired<NpcDTO>): Npc {
     return {
-      battles: (npcDto?.battles ?? []).map((battleDto) => {
+      battles: npcDto.battles.map((battleDto) => {
         return this.convertBattle(battleDto);
       }),
     };
   }
 
-  public static convertBattle(battleDto: NpcBattleDTO): NpcBattle {
+  public static convertBattle(battleDto: DeepRequired<NpcBattleDTO>): NpcBattle {
     return {
       id: battleDto.id,
-      completed: battleDto.value !== undefined && battleDto.value !== 0,
+      won: battleDto.won,
     };
   }
 }

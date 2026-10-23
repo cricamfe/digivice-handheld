@@ -1,19 +1,11 @@
-import { ImageCatalog } from "@/catalogs/image.catalog.ts";
-import { LocationRegionConstant } from "@/constants/location-region.constant";
-import type { LocationRaw } from "@/repositories/tables/raws/location/location.raw";
+import { ImageCatalog } from "@/catalogs/image.catalog";
+import type { MapRaw } from "@/repositories/tables/raws/map/map.raw";
 import type { MapViewModel } from "@/viewmodels/map/map.viewmodel";
 
 export class MapConverter {
-  public static convert(locationRaw: LocationRaw | null): MapViewModel {
-    if (locationRaw === null) {
-      return {
-        locationRegion: LocationRegionConstant.asukaServer,
-        locationImageUrl: null,
-      };
-    }
-
+  public static convert(locationRaw: MapRaw): MapViewModel {
     return {
-      locationRegion: locationRaw.region ?? LocationRegionConstant.asukaServer,
+      locationRegion: locationRaw.region ?? "asukaServer",
       locationImageUrl: ImageCatalog.getLocationImageUrl(locationRaw.imageName),
     };
   }

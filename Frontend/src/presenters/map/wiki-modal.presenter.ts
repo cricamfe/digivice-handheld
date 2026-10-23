@@ -3,7 +3,7 @@ import { BoosterRepository } from "@/repositories/booster.repository";
 import { ConsumableItemRepository } from "@/repositories/consumable-item.repository";
 import { EquipmentRepository } from "@/repositories/equipment.repository";
 import { EnemyRepository } from "@/repositories/enemy.repository";
-import { LocationRepository } from "@/repositories/location.repository";
+import { MapRepository } from "@/repositories/map.repository";
 import { NpcRepository } from "@/repositories/npc.repository";
 import { DuelIslandRepository } from "@/repositories/duel-island.repository";
 import { TamerRepository } from "@/repositories/tamer.repository";
@@ -40,14 +40,10 @@ export class WikiModalPresenter {
   }
 
   public static getEnemySearchItems(
-    translateTamerName: (tamerId: string) => string,
-    translateNpcName: (npcId: string) => string,
+    translateLabelKey: (labelKey: string) => string,
   ): SearchItemViewModel[] {
     return Object.entries(EnemyRepository.getEnemyTable()).map(([enemyId, enemyRaw]) => {
-      return SearchItemConverter.convertEnemy(enemyId, enemyRaw, {
-        translateTamerName,
-        translateNpcName,
-      });
+      return SearchItemConverter.convertEnemy(enemyId, enemyRaw, translateLabelKey);
     });
   }
 
@@ -87,7 +83,7 @@ export class WikiModalPresenter {
   public static getLocationSearchItems(
     translateLocationName: (locationId: string) => string,
   ): SearchItemViewModel[] {
-    return LocationRepository.getLocationIdsWithWorldLocation().map((locationId) => {
+    return MapRepository.getMapIdsWithWorldLocation().map((locationId) => {
       return SearchItemConverter.convertLocation(locationId, translateLocationName(locationId));
     });
   }
@@ -137,7 +133,7 @@ export class WikiModalPresenter {
     translateNpcName: (npcId: string) => string,
   ): SearchItemViewModel[] {
     return [
-      ...this.getEnemySearchItems(translateTamerName, translateNpcName),
+      ...this.getEnemySearchItems(translateLabelKey),
       ...this.getDropSearchItems(translateLabelKey),
       ...this.getCardSearchItems(translateCardName),
       ...this.getLocationSearchItems(translateLocationName),

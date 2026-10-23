@@ -1,23 +1,16 @@
+import type { DeepRequired } from "@/events/dto/deep-required";
 import type { EquipmentsDTO } from "@/events/dto/parties/digimons/equipments.dto";
 import type { Equipments } from "@/models";
 
 export class EquipmentsConverter {
-  public static toEquipmentId(value: number | undefined): number | null {
-    if (value === undefined || value === 0) {
-      return null;
-    }
-
-    return value;
-  }
-
-  public static convert(equipmentsDto: EquipmentsDTO | null): Equipments {
+  public static convert(equipmentsDto: DeepRequired<EquipmentsDTO>): Equipments {
     return {
-      head: EquipmentsConverter.toEquipmentId(equipmentsDto?.head),
-      body: EquipmentsConverter.toEquipmentId(equipmentsDto?.body),
-      right: EquipmentsConverter.toEquipmentId(equipmentsDto?.right),
-      left: EquipmentsConverter.toEquipmentId(equipmentsDto?.left),
-      accessory1: EquipmentsConverter.toEquipmentId(equipmentsDto?.accessory1),
-      accessory2: EquipmentsConverter.toEquipmentId(equipmentsDto?.accessory2),
+      head: equipmentsDto.head,
+      body: equipmentsDto.body,
+      right: equipmentsDto.right,
+      left: equipmentsDto.left,
+      accessory1: equipmentsDto.accessory1,
+      accessory2: equipmentsDto.accessory2,
     };
   }
 }

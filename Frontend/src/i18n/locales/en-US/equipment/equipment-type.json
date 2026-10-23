@@ -5,7 +5,6 @@
     "twoHandedWeapon": "Weapon (Two-handed)",
     "shield": "Shield",
     "headArmor": "Head Armor",
-    "accessory": "Accessory",
-    "unknown": "Unknown"
+    "accessory": "Accessory"
   }
 }

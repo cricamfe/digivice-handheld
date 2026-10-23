@@ -24,4 +24,10 @@ export interface NpcsDTO {
   fakeByakkoLeader?: NpcDTO;
   byakkoLeader?: NpcDTO;
   aoaAttacker?: NpcDTO;
+  optionalTrooper1AdminCenterB1F?: NpcDTO;
+  optionalTrooper2AdminCenterB1F?: NpcDTO;
+  optionalTrooperAdminFloor1?: NpcDTO;
+  optionalTrooper1AdminFloor2?: NpcDTO;
+  optionalSoldier1AdminFloor2?: NpcDTO;
+  optionalTrooper2AdminFloor2?: NpcDTO;
 }

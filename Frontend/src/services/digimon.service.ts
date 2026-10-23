@@ -1,20 +1,27 @@
-import { DigimonStatusConstant } from "@/constants/digimon-status.constant";
-import type { Vital } from "@/models/party/digimon/vital";
+import { DigimonDebuff } from "@/constants/digimon-debuff.constant";
+import type { Vital } from "@/models";
+import type { DigimonStatus } from "@/types/digimon-status.type";
 
 export class DigimonService {
-  public static getStatus(condition: number, hp: Vital): DigimonStatusConstant {
+  public static getStatus(condition: number, hp: Vital): DigimonStatus {
     if (hp.current === 0) {
-      return DigimonStatusConstant.knockedOut;
+      return "ko";
     }
 
     if (condition !== 0) {
-      return DigimonStatusConstant.debuffed;
+      return "debuffed";
     }
 
     if (hp.current < hp.max) {
-      return DigimonStatusConstant.injured;
+      return "injured";
     }
 
-    return DigimonStatusConstant.healthy;
+    return "healthy";
+  }
+
+  public static getActiveDebuffs(condition: number): DigimonDebuff[] {
+    return (Object.keys(DigimonDebuff) as DigimonDebuff[]).filter((debuff) => {
+      return (condition & DigimonDebuff[debuff]) !== 0;
+    });
   }
 }

@@ -1,7 +1,4 @@
-import {
-  NpcBattleKindConstant,
-  STORY_NPC_DIGIMON_BATTLE_ID,
-} from "@/constants/npc-battle-kind.constant";
+import { StoryNpcDigimonBattleId } from "@/constants/npc-battle.constant";
 import type { ImportantItems, Npc, Party } from "@/models";
 import { NpcBattleOpponentHelper } from "@/presenters/helper/npc-battle-opponent.helper";
 import type { TamerCharismaRequiredRaw } from "@/repositories/tables/raws/tamer/tamer-charisma-required.raw";
@@ -10,6 +7,7 @@ import {
   NpcService,
 } from "@/services/npc.service";
 import { PartyService } from "@/services/party.service";
+import type { NpcBattleKind } from "@/types/npc-battle-kind.type";
 import type { WikiNpcBattleOptionViewModel } from "@/viewmodels/wiki-modal/wiki-npc-battle-option.viewmodel";
 import type { WikiNpcPanelViewModel } from "@/viewmodels/wiki-modal/wiki-npc-panel.viewmodel";
 
@@ -27,13 +25,13 @@ export class WikiNpcPanelPresenter {
   }
 
   private static buildBattleOptionBase(
-    kind: NpcBattleKindConstant,
+    kind: NpcBattleKind,
     battleId: string,
     charismaRequired: TamerCharismaRequiredRaw,
     trophyRequired: TamerTrophyRequiredRaw | undefined,
-    completed: boolean,
+    won: boolean,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): WikiNpcBattleOptionViewModel {
     const requirementsMet = NpcService.areBattleRequirementsMet(
       charismaRequired,
@@ -48,8 +46,8 @@ export class WikiNpcPanelPresenter {
       battleId,
       charismaMin: charismaRequired.min,
       charismaRangeText: this.formatCharismaRange(charismaRequired),
-      completed,
-      status: NpcService.getBattleStatus(completed, false),
+      won,
+      status: NpcService.getBattleStatus(won, false),
       trophyRequired,
       requirementsMet,
       isActive: false,
@@ -77,18 +75,18 @@ export class WikiNpcPanelPresenter {
   }
 
   private static applyDigimonActivation(option: WikiNpcBattleOptionViewModel): void {
-    const isActive = option.requirementsMet && !option.completed;
+    const isActive = option.requirementsMet && !option.won;
     option.isActive = isActive;
     option.isSuperseded = false;
     option.supersededTooltipKey = null;
-    option.status = NpcService.getBattleStatus(option.completed, isActive);
+    option.status = NpcService.getBattleStatus(option.won, isActive);
     this.finalizeBattleTooltip(option);
   }
 
   private static applyCardActivation(
     option: WikiNpcBattleOptionViewModel,
     activeCardBattleIds: Set<string>,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
     activeTrophyRequired: TamerTrophyRequiredRaw | undefined,
   ): void {
     const isActive = activeCardBattleIds.has(option.battleId);
@@ -114,15 +112,15 @@ export class WikiNpcPanelPresenter {
     journalNpc: Npc | null,
     battleId: string,
   ): WikiNpcBattleOptionViewModel {
-    const completed = NpcService.isDigimonBattleCompleted(journalNpc, battleId);
+    const won = NpcService.isDigimonBattleCompleted(journalNpc, battleId);
     const option: WikiNpcBattleOptionViewModel = {
-      id: `${NpcBattleKindConstant.digimon}-${battleId}`,
-      kind: NpcBattleKindConstant.digimon,
+      id: `digimon-${battleId}`,
+      kind: "digimon",
       battleId,
       charismaMin: 0,
       charismaRangeText: "",
-      completed,
-      status: NpcService.getBattleStatus(completed, false),
+      won,
+      status: NpcService.getBattleStatus(won, false),
       requirementsMet: true,
       isActive: false,
       isSuperseded: false,
@@ -141,7 +139,7 @@ export class WikiNpcPanelPresenter {
     npcId: string,
     journalNpc: Npc | null,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): WikiNpcBattleOptionViewModel[] {
     const opponent = NpcBattleOpponentHelper.resolveById(npcId);
     if (opponent === undefined) {
@@ -149,7 +147,7 @@ export class WikiNpcPanelPresenter {
     }
 
     if (opponent.source === "npc") {
-      return [this.buildStoryNpcBattleOption(journalNpc, STORY_NPC_DIGIMON_BATTLE_ID)];
+      return [this.buildStoryNpcBattleOption(journalNpc, StoryNpcDigimonBattleId)];
     }
 
     const opponentRaw = opponent.raw;
@@ -167,7 +165,7 @@ export class WikiNpcPanelPresenter {
 
     const cardOptions = Object.entries(opponentRaw.cardBattles ?? {}).map(([battleId, cardBattle]) => {
       const option = this.buildBattleOptionBase(
-        NpcBattleKindConstant.card,
+        "card",
         battleId,
         cardBattle.charismaRequired,
         cardBattle.trophyRequired,
@@ -182,13 +180,13 @@ export class WikiNpcPanelPresenter {
 
     const digimonOptions = Object.entries(opponentRaw.digimonBattles ?? {}).map(
       ([battleId, digimonBattle]) => {
-        const completed = NpcService.isDigimonBattleCompleted(journalNpc, battleId);
+        const won = NpcService.isDigimonBattleCompleted(journalNpc, battleId);
         const option = this.buildBattleOptionBase(
-          NpcBattleKindConstant.digimon,
+          "digimon",
           battleId,
           digimonBattle.charismaRequired,
           digimonBattle.trophyRequired,
-          completed,
+          won,
           partyCharisma,
           importantItems,
         );
@@ -207,7 +205,7 @@ export class WikiNpcPanelPresenter {
         return firstOption.battleId.localeCompare(secondOption.battleId);
       }
 
-      if (firstOption.kind === NpcBattleKindConstant.card) {
+      if (firstOption.kind === "card") {
         return -1;
       }
 
@@ -222,7 +220,7 @@ export class WikiNpcPanelPresenter {
       return null;
     }
 
-    if (options.every((option) => option.completed)) {
+    if (options.every((option) => option.won)) {
       const lastOption = options[options.length - 1];
       if (lastOption === undefined) {
         return null;
@@ -233,7 +231,7 @@ export class WikiNpcPanelPresenter {
 
     const digimonOptions = options
       .filter((option) => {
-        return option.kind === NpcBattleKindConstant.digimon;
+        return option.kind === "digimon";
       })
       .sort((firstOption, secondOption) => {
         return firstOption.battleId.localeCompare(secondOption.battleId);
@@ -248,7 +246,7 @@ export class WikiNpcPanelPresenter {
 
     const cardOptions = options
       .filter((option) => {
-        return option.kind === NpcBattleKindConstant.card;
+        return option.kind === "card";
       })
       .sort((firstOption, secondOption) => {
         return firstOption.battleId.localeCompare(secondOption.battleId);
@@ -262,7 +260,7 @@ export class WikiNpcPanelPresenter {
     }
 
     const firstIncompleteOption = options.find((option) => {
-      return !option.completed;
+      return !option.won;
     });
 
     const firstOption = options[0];
@@ -273,7 +271,7 @@ export class WikiNpcPanelPresenter {
     npcId: string,
     journalNpc: Npc | null,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): WikiNpcPanelViewModel | null {
     const opponent = NpcBattleOpponentHelper.resolveById(npcId);
     const nameKey = NpcBattleOpponentHelper.getNameKey(npcId);

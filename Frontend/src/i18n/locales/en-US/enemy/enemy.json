@@ -1,11 +1,6 @@
 {
   "enemy": {
     "wiki": "Wiki",
-    "modalTitle": {
-      "profile": "Wiki - Profile",
-      "locations": "Wiki - Locations",
-      "drops": "Wiki - Drops"
-    },
     "searchPlaceholder": "Type an enemy, drop, card, location or NPC name...",
     "searchNoResults": "No results found",
     "searchKind": {
@@ -26,10 +21,8 @@
     "specie": "Specie",
     "drop": "Drop",
     "drops": "Drops",
-    "dropRate": "Drop rate",
     "locationOnly": "Only {location}",
     "tamerOnly": "{name}'s Digimon",
-    "dropDetails": "Drop details",
     "resaleValueLabel": "Resale value",
     "soldInStore": "Sold by NPC",
     "soldInStoreYes": "Yes",
@@ -38,9 +31,6 @@
     "boosterCardsLabel": "Cards that can be obtained from this booster",
     "storeCardsLabel": "Cards that can be purchased at this shop",
     "locatedIn": "Located in",
-    "locatedInNone": "No known location",
-    "priceLabel": "Price",
-    "obtainedFrom": "Obtained from",
     "obtainedFromNone": "No known boosters",
     "dropSourcesNone": "No known sources",
     "purchasableAt": "Purchasable at",
@@ -48,13 +38,11 @@
     "baseExp": "EXP",
     "baseDvexp": "DVEXP",
     "bits": "BITS",
-    "combatActions": "Actions",
     "regularAttack": "Attack",
     "technique": "Technique",
     "attributes": "Attributes",
     "elements": "Elements",
     "status": "Conditions",
-    "foundIn": "Found in",
     "whereToFind": "Where to find",
     "searchContext": {
       "wild": "(Wild Digimon Lv {level})",
@@ -63,14 +51,12 @@
       "npc": "({name}'s Digimon Lv {level})"
     },
     "unavailableAtMoment": "Unavailable or cannot be challenged at this point in the story",
-    "locations": "Locations",
     "locationSource": {
       "walking": "Walk",
       "boss": "Boss",
       "fishing": "Fishing",
       "kickingTree": "Kicking tree"
     },
-    "locationStep": "From main quest step {step}",
     "noEnemiesOnMap": "Safe zone",
     "techniques": "Techniques"
   }

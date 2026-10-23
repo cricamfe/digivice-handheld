@@ -1,9 +1,9 @@
 {
   "treeBoots": {
     "title": "The Tree Boots",
-    "description": "Obtain the Tree Boots to find Cardmons by kicking trees.",
+    "description": "Obtain the Tree Boots to challenge Cardmons and other Digimon!",
     "requisites": {
-      "FolderBag": "Own the Folder Bag"
+      "folderBag": "Own the Folder Bag"
     },
     "steps": {
       "1": {

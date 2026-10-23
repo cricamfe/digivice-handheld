@@ -28,6 +28,30 @@ export class NpcsSyncer {
     this.syncNpcIfPresent(previousNpcs.fakeByakkoLeader, newNpcsDto.fakeByakkoLeader);
     this.syncNpcIfPresent(previousNpcs.byakkoLeader, newNpcsDto.byakkoLeader);
     this.syncNpcIfPresent(previousNpcs.aoaAttacker, newNpcsDto.aoaAttacker);
+    this.syncNpcIfPresent(
+      previousNpcs.optionalTrooper1AdminCenterB1F,
+      newNpcsDto.optionalTrooper1AdminCenterB1F,
+    );
+    this.syncNpcIfPresent(
+      previousNpcs.optionalTrooper2AdminCenterB1F,
+      newNpcsDto.optionalTrooper2AdminCenterB1F,
+    );
+    this.syncNpcIfPresent(
+      previousNpcs.optionalTrooperAdminFloor1,
+      newNpcsDto.optionalTrooperAdminFloor1,
+    );
+    this.syncNpcIfPresent(
+      previousNpcs.optionalTrooper1AdminFloor2,
+      newNpcsDto.optionalTrooper1AdminFloor2,
+    );
+    this.syncNpcIfPresent(
+      previousNpcs.optionalSoldier1AdminFloor2,
+      newNpcsDto.optionalSoldier1AdminFloor2,
+    );
+    this.syncNpcIfPresent(
+      previousNpcs.optionalTrooper2AdminFloor2,
+      newNpcsDto.optionalTrooper2AdminFloor2,
+    );
   }
 
   private static syncNpcIfPresent(previousNpc: Npc, newNpcDto: NpcDTO | undefined): void {
@@ -55,8 +79,8 @@ export class NpcsSyncer {
   }
 
   private static syncBattle(previousBattle: NpcBattle, newBattleDto: NpcBattleDTO): void {
-    if (newBattleDto.value !== undefined) {
-      previousBattle.completed = newBattleDto.value !== 0;
+    if (newBattleDto.won !== undefined) {
+      previousBattle.won = newBattleDto.won;
     }
   }
 }

@@ -5,14 +5,9 @@ import type { WikiDropBoosterCardViewModel } from "@/viewmodels/wiki-modal/wiki-
 
 export class WikiDropBoosterPresenter {
   public static getViewModel(boosterId: number): WikiDropBoosterCardViewModel[] {
-    const boosterRaw = BoosterRepository.getById(boosterId);
-    if (boosterRaw === undefined) {
-      return [];
-    }
-
     const cards: WikiDropBoosterCardViewModel[] = [];
 
-    for (const cardId of boosterRaw.cards) {
+    for (const cardId of BoosterRepository.getCardIdsByBoosterId(boosterId)) {
       if (CardRepository.getCardById(String(cardId)) === undefined) {
         continue;
       }

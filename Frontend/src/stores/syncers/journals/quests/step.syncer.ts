@@ -4,14 +4,15 @@ import { RequisiteSyncer } from "./requisite.syncer";
 
 export class StepSyncer {
   public static sync(previousStep: Step, newStepDto: StepDTO): void {
-    if (newStepDto.value !== undefined) {
-      previousStep.isDone = newStepDto.value !== 0;
+    if (newStepDto.isDone !== undefined) {
+      previousStep.isDone = newStepDto.isDone;
     }
 
-    const previousRequisites = previousStep.requisites;
-    if (newStepDto.requisites && newStepDto.requisites.length > 0 && previousRequisites) {
+    if (newStepDto.requisites) {
       newStepDto.requisites.forEach((newRequisiteDto) => {
-        const previousRequisite = previousRequisites.find((r) => r.id === newRequisiteDto.id);
+        const previousRequisite = previousStep.requisites.find(
+          (requisite) => requisite.id === newRequisiteDto.id,
+        );
 
         if (previousRequisite) {
           RequisiteSyncer.sync(previousRequisite, newRequisiteDto);

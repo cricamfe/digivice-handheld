@@ -2,9 +2,9 @@ import { ImageCatalog } from "@/catalogs/image.catalog";
 import type { Journal, Party } from "@/models";
 import { QuestConverter } from "@/presenters/converter/quest.converter";
 import { MapFrameSlideConverter } from "@/presenters/converter/map-frame-slide.converter";
-import { LocationRepository } from "@/repositories/location.repository";
+import { MapRepository } from "@/repositories/map.repository";
 import { QuestRepository } from "@/repositories/quest.repository";
-import { LocationService } from "@/services/location.service";
+import { MapService } from "@/services/map.service";
 import { PartyService } from "@/services/party.service";
 import type { MapFrameSlideViewModel } from "@/viewmodels/map-frame/map-frame-slide.viewmodel";
 import type { QuestViewModel } from "@/viewmodels/quest/quest.viewmodel";
@@ -19,10 +19,6 @@ export class QuestModalPresenter {
     const partyLevel = PartyService.getLevel(party);
     const mainQuestRaw = QuestRepository.getMainQuestRaw();
     if (mainQuestRaw.id === questId) {
-      if (journal.mainQuest === null) {
-        return null;
-      }
-
       return QuestConverter.convert(mainQuestRaw, journal.mainQuest, {
         calculateNewStatus: false,
         partyLevel,
@@ -93,7 +89,7 @@ export class QuestModalPresenter {
       return [];
     }
 
-    const worldLocation = LocationService.getWorldLocation(selectedStep.location);
+    const worldLocation = MapService.getWorldLocation(selectedStep.location);
     if (worldLocation === undefined) {
       return [];
     }
@@ -107,7 +103,7 @@ export class QuestModalPresenter {
       MapFrameSlideConverter.convert(
         asukaMapUrl,
         worldLocation,
-        `location.${selectedStep.location}`,
+        `map.${selectedStep.location}`,
       ),
     ];
   }
@@ -132,7 +128,7 @@ export class QuestModalPresenter {
       const nextLocation = composedLocations[locationIndex + 1];
       let labelKey = `${questId}.steps.${selectedStep.number}.locationTarget`;
       if (nextLocation !== undefined) {
-        labelKey = `location.${nextLocation.location}`;
+        labelKey = `map.${nextLocation.location}`;
       }
 
       return MapFrameSlideConverter.convert(
@@ -148,7 +144,7 @@ export class QuestModalPresenter {
       return null;
     }
 
-    const locationRaw = LocationRepository.getLocationById(locationId);
+    const locationRaw = MapRepository.getMapById(locationId);
     return ImageCatalog.getLocationImageUrl(locationRaw.imageName);
   }
 }

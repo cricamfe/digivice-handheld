@@ -1,16 +1,25 @@
 import { defineStore } from "pinia";
-import { ref, computed } from "vue";
-import type { State } from "../models";
-import type { EmulatorConnectionStatus } from "../models/emulator-connection-status";
-import type * as Events from "../events/events.map";
-import { PlayerConverter } from "../events/converters/player.converter";
-import { ImportantItemsConverter } from "../events/converters/important-items.converter";
-import { PartyConverter } from "../events/converters/party.converter";
-import { DigimonBattleConverter } from "../events/converters/digimon-battle.converter";
-import { CardBattleConverter } from "../events/converters/card-battle.converter";
-import { AuctionsConverter } from "../events/converters/auctions.converter";
-import { NpcsConverter } from "../events/converters/npcs.converter";
-import { JournalConverter } from "../events/converters/journal.converter";
+import { ref } from "vue";
+import type { HealthStatus, State } from "@/models";
+import type { HealthDTO } from "@/events/dto/health.dto";
+import type { StateDTO } from "@/events/dto/state.dto";
+import type { PlayerDTO } from "@/events/dto/player.dto";
+import type { ImportantItemsDTO } from "@/events/dto/important-items.dto";
+import type { PartyDTO } from "@/events/dto/party.dto";
+import type { DigimonBattleDTO } from "@/events/dto/digimon-battle.dto";
+import type { CardBattleDTO } from "@/events/dto/card-battle.dto";
+import type { AuctionsDTO } from "@/events/dto/auctions.dto";
+import type { NpcsDTO } from "@/events/dto/npcs.dto";
+import type { JournalDTO } from "@/events/dto/journal.dto";
+import { storeLogger } from "@/events/logger";
+import { PlayerConverter } from "@/events/converters/player.converter";
+import { ImportantItemsConverter } from "@/events/converters/important-items.converter";
+import { PartyConverter } from "@/events/converters/party.converter";
+import { DigimonBattleConverter } from "@/events/converters/digimon-battle.converter";
+import { CardBattleConverter } from "@/events/converters/card-battle.converter";
+import { AuctionsConverter } from "@/events/converters/auctions.converter";
+import { NpcsConverter } from "@/events/converters/npcs.converter";
+import { JournalConverter } from "@/events/converters/journal.converter";
 import { PlayerSyncer } from "./syncers/player.syncer";
 import { ImportantItemsSyncer } from "./syncers/important-items.syncer";
 import { JournalSyncer } from "./syncers/journal.syncer";
@@ -22,14 +31,11 @@ import { NpcsSyncer } from "./syncers/npcs.syncer";
 
 export const useGameStore = defineStore("game", () => {
   const isConnectedWithBackend = ref(false);
-  const isConnectedWithEmulator = ref(false);
+  const healthStatus = ref<HealthStatus>("Loading");
   const backendProcessFailed = ref(false);
   const lastHubConnectionError = ref<string | null>(null);
-  const lastEmulatorConnectionErrorCode = ref<string | null>(null);
-  const lastEmulatorConnectionErrorDetail = ref<string | null>(null);
-  const isConnected = computed(() => {
-    return isConnectedWithBackend.value && isConnectedWithEmulator.value;
-  });
+  const lastErrorCode = ref<string | null>(null);
+  const lastErrorDetail = ref<string | null>(null);
   const currentState = ref<State | null>(null);
 
   function clearGameState(): void {
@@ -65,122 +71,132 @@ export const useGameStore = defineStore("game", () => {
     }
   }
 
-  function syncEmulatorConnectionStatus(event: EmulatorConnectionStatus): void {
-    isConnectedWithEmulator.value = event.isConnected;
+  function syncHealth(healthDto: HealthDTO): void {
+    healthStatus.value = healthDto.status;
 
-    if (event.isConnected) {
-      lastEmulatorConnectionErrorCode.value = null;
-      lastEmulatorConnectionErrorDetail.value = null;
+    if (healthDto.status === "Healthy") {
+      lastErrorCode.value = null;
+      lastErrorDetail.value = null;
+      return;
+    }
+
+    if (healthDto.status === "Loading") {
+      lastErrorCode.value = null;
+      lastErrorDetail.value = null;
       return;
     }
 
     clearGameState();
-    lastEmulatorConnectionErrorCode.value = event.errorCode;
-    lastEmulatorConnectionErrorDetail.value = event.errorDetail;
+    lastErrorCode.value = healthDto.errorCode;
+    lastErrorDetail.value = healthDto.errorDetail;
   }
 
-  function setInitialState(state: Events.StateDTO | null): void {
-    if (!state) {
-      clearGameState();
-      return;
-    }
-
+  function setInitialState(state: StateDTO): void {
     currentState.value = {
-      player: state.player ? PlayerConverter.convert(state.player) : null,
-      importantItems: state.importantItems ? ImportantItemsConverter.convert(state.importantItems) : null,
-      party: state.party ? PartyConverter.convert(state.party) : null,
-      digimonBattle: state.digimonBattle ? DigimonBattleConverter.convert(state.digimonBattle) : null,
-      cardBattle: state.cardBattle ? CardBattleConverter.convert(state.cardBattle) : null,
-      auctions: state.auctions ? AuctionsConverter.convert(state.auctions) : null,
-      npcs: state.npcs ? NpcsConverter.convert(state.npcs) : null,
-      journal: state.journal ? JournalConverter.convert(state.journal) : null,
+      player: PlayerConverter.convert(state.player),
+      importantItems: ImportantItemsConverter.convert(state.importantItems),
+      party: PartyConverter.convert(state.party),
+      digimonBattle: DigimonBattleConverter.convert(state.digimonBattle),
+      cardBattle: CardBattleConverter.convert(state.cardBattle),
+      auctions: AuctionsConverter.convert(state.auctions),
+      npcs: NpcsConverter.convert(state.npcs),
+      journal: JournalConverter.convert(state.journal),
     };
   }
 
-  function syncPlayer(newPlayerDto: Events.PlayerDTO | null): void {
-    const previousPlayer = currentState.value?.player;
-    if (!previousPlayer || !newPlayerDto) {
-      return;
+  function getStateOrWarn(eventName: string): State | null {
+    const state = currentState.value;
+    if (!state) {
+      storeLogger.warn(`${eventName} ignored: InitialState not received yet.`);
+      return null;
     }
 
-    PlayerSyncer.sync(previousPlayer, newPlayerDto);
+    return state;
   }
 
-  function syncImportantItems(newImportantItemsDto: Events.ImportantItemsDTO | null): void {
-    const previousImportantItems = currentState.value?.importantItems;
-    if (!previousImportantItems || !newImportantItemsDto) {
+  function syncPlayer(newPlayerDto: PlayerDTO): void {
+    const state = getStateOrWarn("PlayerChanged");
+    if (!state) {
       return;
     }
 
-    ImportantItemsSyncer.sync(previousImportantItems, newImportantItemsDto);
+    PlayerSyncer.sync(state.player, newPlayerDto);
   }
 
-  function syncJournal(newJournalDto: Events.JournalDTO | null): void {
-    const previousJournal = currentState.value?.journal;
-    if (!previousJournal || !newJournalDto) {
+  function syncImportantItems(newImportantItemsDto: ImportantItemsDTO): void {
+    const state = getStateOrWarn("ImportantItemsChanged");
+    if (!state) {
       return;
     }
 
-    JournalSyncer.sync(previousJournal, newJournalDto);
+    ImportantItemsSyncer.sync(state.importantItems, newImportantItemsDto);
   }
 
-  function syncParty(newPartyDto: Events.PartyDTO | null): void {
-    const previousParty = currentState.value?.party;
-    if (!previousParty || !newPartyDto) {
+  function syncJournal(newJournalDto: JournalDTO): void {
+    const state = getStateOrWarn("JournalChanged");
+    if (!state) {
       return;
     }
 
-    PartySyncer.sync(previousParty, newPartyDto);
+    JournalSyncer.sync(state.journal, newJournalDto);
   }
 
-  function syncDigimonBattle(newDigimonBattleDto: Events.DigimonBattleDTO | null): void {
-    const previousDigimonBattle = currentState.value?.digimonBattle;
-    if (!previousDigimonBattle || !newDigimonBattleDto) {
+  function syncParty(newPartyDto: PartyDTO): void {
+    const state = getStateOrWarn("PartyChanged");
+    if (!state) {
       return;
     }
 
-    DigimonBattleSyncer.sync(previousDigimonBattle, newDigimonBattleDto);
+    PartySyncer.sync(state.party, newPartyDto);
   }
 
-  function syncCardBattle(newCardBattleDto: Events.CardBattleDTO | null): void {
-    const previousCardBattle = currentState.value?.cardBattle;
-    if (!previousCardBattle || !newCardBattleDto) {
+  function syncDigimonBattle(newDigimonBattleDto: DigimonBattleDTO): void {
+    const state = getStateOrWarn("DigimonBattleChanged");
+    if (!state) {
       return;
     }
 
-    CardBattleSyncer.sync(previousCardBattle, newCardBattleDto);
+    DigimonBattleSyncer.sync(state.digimonBattle, newDigimonBattleDto);
   }
 
-  function syncAuctions(newAuctionsDto: Events.AuctionsDTO | null): void {
-    const previousAuctions = currentState.value?.auctions;
-    if (!previousAuctions || !newAuctionsDto) {
+  function syncCardBattle(newCardBattleDto: CardBattleDTO): void {
+    const state = getStateOrWarn("CardBattleChanged");
+    if (!state) {
       return;
     }
 
-    AuctionsSyncer.sync(previousAuctions, newAuctionsDto);
+    CardBattleSyncer.sync(state.cardBattle, newCardBattleDto);
   }
 
-  function syncNpcs(newNpcsDto: Events.NpcsDTO | null): void {
-    const previousNpcs = currentState.value?.npcs;
-    if (!previousNpcs || !newNpcsDto) {
+  function syncAuctions(newAuctionsDto: AuctionsDTO): void {
+    const state = getStateOrWarn("AuctionsChanged");
+    if (!state) {
       return;
     }
 
-    NpcsSyncer.sync(previousNpcs, newNpcsDto);
+    AuctionsSyncer.sync(state.auctions, newAuctionsDto);
+  }
+
+  function syncNpcs(newNpcsDto: NpcsDTO): void {
+    const state = getStateOrWarn("NpcsChanged");
+    if (!state) {
+      return;
+    }
+
+    NpcsSyncer.sync(state.npcs, newNpcsDto);
   }
 
   return {
-    isConnected,
     isConnectedWithBackend,
-    isConnectedWithEmulator,
+    healthStatus,
     backendProcessFailed,
     lastHubConnectionError,
-    lastEmulatorConnectionErrorCode,
-    lastEmulatorConnectionErrorDetail,
+    lastErrorCode,
+    lastErrorDetail,
     setBackendProcessFailed,
     currentState,
     syncHubConnectionStatus,
-    syncEmulatorConnectionStatus,
+    syncHealth,
     setInitialState,
     syncPlayer,
     syncImportantItems,

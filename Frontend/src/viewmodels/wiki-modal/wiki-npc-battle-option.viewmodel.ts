@@ -1,14 +1,14 @@
-import type { NpcBattleKindConstant } from "@/constants/npc-battle-kind.constant";
+import type { NpcBattleKind } from "@/types/npc-battle-kind.type";
 import type { NpcBattleStatus } from "@/services/npc.service";
 import type { TamerTrophyRequiredRaw } from "@/repositories/tables/raws/tamer/tamer-trophy-required.raw";
 
 export interface WikiNpcBattleOptionViewModel {
   id: string;
-  kind: NpcBattleKindConstant;
+  kind: NpcBattleKind;
   battleId: string;
   charismaMin: number;
   charismaRangeText: string;
-  completed: boolean;
+  won: boolean;
   status: NpcBattleStatus;
   trophyRequired?: TamerTrophyRequiredRaw;
   requirementsMet: boolean;

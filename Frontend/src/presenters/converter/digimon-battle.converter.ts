@@ -1,11 +1,15 @@
 import { ImageCatalog } from "@/catalogs/image.catalog";
-import { EnemySourceConstant } from "@/constants/enemy-source.constant";
-import { IconConstant } from "@/constants/icon.constant";
-import { toSpeciesConstant } from "@/constants/species.constant";
-import type { Vital } from "@/models/party/digimon/vital";
+import {
+  DigimonElementIcon,
+  DigimonSpeciesIcon,
+  EnemySourceIcon,
+} from "@/constants/icon.constant";
+import type { Vital } from "@/models";
 import { EnemyConditionConverter } from "@/presenters/converter/enemy-condition.converter";
 import { EnemyStatConverter } from "@/presenters/converter/enemy-stat.converter";
 import type { EnemyRaw } from "@/repositories/tables/raws/enemy/enemy.raw";
+import type { EnemyAffinities } from "@/services/enemy-affinity.service";
+import type { DigimonSpecies } from "@/types/digimon-species.type";
 import type { EnemyViewModel } from "@/viewmodels/enemy/enemy.viewmodel";
 import type { EnemyStatViewModel } from "@/viewmodels/enemy/enemy-stat.viewmodel";
 import type { DigimonBattleViewModel } from "@/viewmodels/map/digimon-battle.viewmodel";
@@ -22,6 +26,7 @@ export class DigimonBattleConverter {
     hp: Vital,
     title: string,
     enemyId: string | null,
+    affinities: EnemyAffinities,
     battleDeltas?: BattleEnemyDeltas,
   ): DigimonBattleViewModel {
     if (enemyRaw === null) {
@@ -36,6 +41,7 @@ export class DigimonBattleConverter {
         attributes: [],
         elements: [],
         conditions: [],
+        affinities: { effectiveIcons: [], notEffectiveIcons: [] },
         enemyImageUrl: null,
       };
     }
@@ -71,6 +77,10 @@ export class DigimonBattleConverter {
         dark: enemyRaw.dark,
       }),
       conditions: EnemyConditionConverter.convertConditions(conditions),
+      affinities: {
+        effectiveIcons: affinities.effective.map((element) => DigimonElementIcon[element]),
+        notEffectiveIcons: affinities.notEffective.map((element) => DigimonElementIcon[element]),
+      },
       enemyImageUrl: ImageCatalog.getEnemyImageUrl(enemyRaw.name),
     };
   }
@@ -106,17 +116,12 @@ export class DigimonBattleConverter {
     });
   }
 
-  private static toSpeciesEmoji(species: string | null, isBoss: boolean): string | null {
+  private static toSpeciesEmoji(species: DigimonSpecies, isBoss: boolean): string {
     if (isBoss) {
-      return IconConstant[EnemySourceConstant.boss];
+      return EnemySourceIcon.boss;
     }
 
-    const speciesConstant = toSpeciesConstant(species);
-    if (speciesConstant === null) {
-      return null;
-    }
-
-    return IconConstant[speciesConstant];
+    return DigimonSpeciesIcon[species];
   }
 
   private static toConditions(enemyRaw: EnemyRaw): EnemyViewModel["conditions"] {

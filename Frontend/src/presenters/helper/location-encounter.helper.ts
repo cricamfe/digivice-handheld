@@ -1,24 +1,23 @@
+import { MapId } from "@/constants/map-id.constant";
 import type { Quest } from "@/models";
 import { QuestRepository } from "@/repositories/quest.repository";
-import { LocationService } from "@/services/location.service";
+import { MapService } from "@/services/map.service";
 import { QuestService } from "@/services/quest.service";
 
 export class LocationEncounterHelper {
-  private static readonly ASUKA_SEWERS_LOCATION_ID = "021B";
-  private static readonly UNDERGROUND_PATH_LOCATION_ID = "020B";
-  private static readonly FISHING_POLE_QUEST_ID = "fishingPole";
-  private static readonly TREE_BOOTS_QUEST_ID = "treeBoots";
+  private static readonly FishingPoleQuestId = "fishingPole";
+  private static readonly TreeBootsQuestId = "treeBoots";
 
   public static isAsukaSewersSafeZone(locationId: string, previousMapId: string): boolean {
     return (
-      locationId === this.ASUKA_SEWERS_LOCATION_ID &&
-      previousMapId === this.UNDERGROUND_PATH_LOCATION_ID
+      locationId === MapId.asukaSewers &&
+      previousMapId === MapId.undergroundPath
     );
   }
 
   public static resolveWalkingIds(
     locationId: string,
-    mainQuest: Quest | null,
+    mainQuest: Quest,
     previousMapId: string,
   ): string[] {
     if (this.isAsukaSewersSafeZone(locationId, previousMapId)) {
@@ -26,15 +25,15 @@ export class LocationEncounterHelper {
     }
 
     const lastCompletedMainQuestStep = QuestService.getLastCompletedMainQuestStep(mainQuest);
-    return LocationService.getWalkingEnemies(locationId, lastCompletedMainQuestStep);
+    return MapService.getWalkingEnemies(locationId, lastCompletedMainQuestStep);
   }
 
   public static resolveFishingIds(locationId: string, sideQuests: Quest[]): string[] {
     const fishingPoleQuest = sideQuests.find((quest) => {
-      return quest.id === this.FISHING_POLE_QUEST_ID;
+      return quest.id === this.FishingPoleQuestId;
     });
     const fishingPoleRaw = QuestRepository.getSideQuestsRaw().find((questRaw) => {
-      return questRaw.id === this.FISHING_POLE_QUEST_ID;
+      return questRaw.id === this.FishingPoleQuestId;
     });
 
     if (
@@ -44,15 +43,15 @@ export class LocationEncounterHelper {
       return [];
     }
 
-    return LocationService.getFishingEnemies(locationId);
+    return MapService.getFishingEnemies(locationId);
   }
 
   public static resolveKickingTreeIds(locationId: string, sideQuests: Quest[]): string[] {
     const treeBootsQuest = sideQuests.find((quest) => {
-      return quest.id === this.TREE_BOOTS_QUEST_ID;
+      return quest.id === this.TreeBootsQuestId;
     });
     const treeBootsRaw = QuestRepository.getSideQuestsRaw().find((questRaw) => {
-      return questRaw.id === this.TREE_BOOTS_QUEST_ID;
+      return questRaw.id === this.TreeBootsQuestId;
     });
 
     if (
@@ -62,6 +61,6 @@ export class LocationEncounterHelper {
       return [];
     }
 
-    return LocationService.getKickingTreeEnemies(locationId);
+    return MapService.getKickingTreeEnemies(locationId);
   }
 }

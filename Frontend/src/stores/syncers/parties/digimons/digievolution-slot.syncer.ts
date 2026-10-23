@@ -1,7 +1,10 @@
 import type { DigievolutionSlot } from "@/models";
+import type { DeepRequired } from "@/events/dto/deep-required";
+import type { DigievolutionDTO } from "@/events/dto/parties/digimons/digievolution.dto";
 import type { DigievolutionSlotDTO } from "@/events/dto/parties/digimons/digievolution-slot.dto";
 import { DigievolutionSyncer } from "./digievolution.syncer";
 import { DigievolutionConverter } from "@/events/converters/parties/digimons/digievolution.converter";
+import { storeLogger } from "@/events/logger";
 
 export class DigievolutionSlotSyncer {
   public static sync(
@@ -11,14 +14,19 @@ export class DigievolutionSlotSyncer {
     const newId = newDigievolutionSlotDto.digievolutionId;
     const newDigievolution = newDigievolutionSlotDto.digievolution;
 
-    // Filled → empty is forbidden; null from the DTO is a no-op (do not clear the slot).
     if (newId === null || newDigievolution === null) {
+      storeLogger.warn(
+        `Digievolution slot ${newDigievolutionSlotDto.index}: filled → empty transition ignored.`,
+      );
       return;
     }
 
     if (newId !== undefined && newDigievolution !== undefined) {
       previousDigievolutionSlot.digievolutionId = newId;
-      previousDigievolutionSlot.digievolution = DigievolutionConverter.convert(newDigievolution);
+      // Backend sends the full digievolution when the slot id changes.
+      previousDigievolutionSlot.digievolution = DigievolutionConverter.convert(
+        newDigievolution as DeepRequired<DigievolutionDTO>,
+      );
       return;
     }
 

@@ -1,7 +1,7 @@
 export interface PlayerDTO {
   bits?: number;
-  location?: string; // Corresponde ao MapId no backend
+  mapId?: string;
   previousMapId?: string;
-  seabedRoute?: number;
-  mapVariant?: number;
+  seabedRoute?: number | null;
+  mapVariant?: number | null;
 }

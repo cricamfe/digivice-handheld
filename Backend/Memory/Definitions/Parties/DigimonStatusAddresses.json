@@ -10,7 +10,6 @@
         "Current": "0x24",
         "Max": "0x26"
     },
-
     "Attributes": {
         "Strength": "0x28",
         "Defense": "0x2A",
@@ -19,7 +18,7 @@
         "Speed": "0x30",
         "Charisma": "0x32"
     },
-    "Resistances": {
+    "Elements": {
         "Fire": "0x34",
         "Water": "0x36",
         "Ice": "0x38",
@@ -57,6 +56,6 @@
         "MaxUnlockedDigievolutions": "60",
         "Id": "0x00",
         "Level": "0x02",
-        "Dvxp": "0x04"
+        "Dvexp": "0x04"
     }
 }

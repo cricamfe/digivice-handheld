@@ -1,14 +1,13 @@
-import { DigimonStatusConstant } from "@/constants/digimon-status.constant";
-import type { Digimon } from "@/models/party/digimon/digimon";
-import type { InBattle } from "@/models/party/digimon/in-battle";
-import type { Vital } from "@/models/party/digimon/vital";
+import type { DigimonDebuff } from "@/constants/digimon-debuff.constant";
+import type { Digimon, InBattle, Vital } from "@/models";
 import { DigimonRepository } from "@/repositories/digimon.repository";
-import { DigimonBattleService } from "@/services/digimon-battle.service";
 import { DigimonService } from "@/services/digimon.service";
+import { DigimonBattleSelector } from "@/stores/selectors/digimon-battle.selector";
+import type { DigimonStatus } from "@/types/digimon-status.type";
 
 export class ProfilePresenter {
-  public static isInBattle(location: string | null, inBattle: InBattle): boolean {
-    return DigimonBattleService.isInBattle(location, inBattle);
+  public static isInBattle(location: string, inBattle: InBattle): boolean {
+    return DigimonBattleSelector.isInBattle(location, inBattle);
   }
 
   public static getHp(digimon: Digimon, isInBattle: boolean): Vital {
@@ -27,7 +26,11 @@ export class ProfilePresenter {
     return DigimonRepository.getNameById(id);
   }
 
-  public static getStatus(condition: number, hp: Vital): DigimonStatusConstant {
+  public static getStatus(condition: number, hp: Vital): DigimonStatus {
     return DigimonService.getStatus(condition, hp);
+  }
+
+  public static getActiveDebuffs(condition: number): DigimonDebuff[] {
+    return DigimonService.getActiveDebuffs(condition);
   }
 }

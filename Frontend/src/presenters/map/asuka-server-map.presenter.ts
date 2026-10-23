@@ -2,7 +2,7 @@ import type { DigimonSlot, ImportantItems, Npc, Npcs, Quest } from "@/models";
 import { AsukaServerMapConverter } from "@/presenters/converter/asuka-server-map.converter";
 import { LocationEncounterHelper } from "@/presenters/helper/location-encounter.helper";
 import { NpcBattleOpponentHelper } from "@/presenters/helper/npc-battle-opponent.helper";
-import { LocationService } from "@/services/location.service";
+import { MapService } from "@/services/map.service";
 import { NpcService } from "@/services/npc.service";
 import { PartyService } from "@/services/party.service";
 import { QuestService } from "@/services/quest.service";
@@ -14,10 +14,10 @@ export class AsukaServerMapPresenter {
     locationId: string,
     lastCompletedMainQuestStep: number,
     digimonSlots: DigimonSlot[],
-    npcs: Npcs | null,
-    importantItems: ImportantItems | null | undefined,
+    npcs: Npcs,
+    importantItems: ImportantItems,
   ): MapNpcViewModel[] {
-    const opponentIds = LocationService.getMapOpponentIds(
+    const opponentIds = MapService.getMapOpponentIds(
       locationId,
       lastCompletedMainQuestStep,
     );
@@ -50,26 +50,22 @@ export class AsukaServerMapPresenter {
     });
   }
 
-  private static resolveNpc(npcs: Npcs | null, npcId: string): Npc | null {
-    if (npcs === null) {
-      return null;
-    }
-
+  private static resolveNpc(npcs: Npcs, npcId: string): Npc | null {
     return npcs[npcId as keyof Npcs] ?? null;
   }
 
   public static getViewModel(
     locationId: string,
-    mainQuest: Quest | null,
+    mainQuest: Quest,
     sideQuests: Quest[],
     digimonSlots: DigimonSlot[],
-    previousMapId: string = "",
-    npcs: Npcs | null = null,
-    importantItems: ImportantItems | null | undefined = null,
+    previousMapId: string,
+    npcs: Npcs,
+    importantItems: ImportantItems,
   ): AsukaServerMapViewModel {
     const fishingIds = LocationEncounterHelper.resolveFishingIds(locationId, sideQuests);
     const kickingTreeIds = LocationEncounterHelper.resolveKickingTreeIds(locationId, sideQuests);
-    const bossIds = LocationService.getBoss(locationId);
+    const bossIds = MapService.getBoss(locationId);
     const lastCompletedMainQuestStep = QuestService.getLastCompletedMainQuestStep(mainQuest);
     const mapNpcs = this.resolveNpcs(
       locationId,

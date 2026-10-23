@@ -1,7 +1,7 @@
-import type { DigimonSlot } from "@/models/party/digimon-slot";
+import type { DigimonSlot } from "@/models";
 
 export class PartyPresenter {
-  public static getFilledSlots(slots: DigimonSlot[] | undefined | null): DigimonSlot[] {
-    return (slots ?? []).filter((slot) => slot.digimonId !== null && slot.digimon !== null);
+  public static getFilledSlots(slots: DigimonSlot[]): DigimonSlot[] {
+    return slots.filter((slot) => slot.digimonId !== null && slot.digimon !== null);
   }
 }

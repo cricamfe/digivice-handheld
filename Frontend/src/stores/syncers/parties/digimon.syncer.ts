@@ -1,10 +1,12 @@
-import type { Digimon } from "../../../models";
-import type { DigimonDTO } from "../../../events/dto/parties/digimon.dto";
+import type { Digimon } from "@/models";
+import type { DeepRequired } from "@/events/dto/deep-required";
+import type { DigimonDTO } from "@/events/dto/parties/digimon.dto";
+import type { StoredDigievolutionDTO } from "@/events/dto/parties/digimons/stored-digievolution.dto";
 import { VitalSyncer } from "./digimons/vital.syncer";
 import { InBattleSyncer } from "./digimons/in-battle.syncer";
 
 import { AttributesSyncer } from "./digimons/attributes.syncer";
-import { ResistancesSyncer } from "./digimons/resistances.syncer";
+import { ElementsSyncer } from "./digimons/elements.syncer";
 import { DigievolutionSlotSyncer } from "./digimons/digievolution-slot.syncer";
 import { StoredDigievolutionSyncer } from "./digimons/stored-digievolution.syncer";
 import { EquipmentsSyncer } from "./digimons/equipments.syncer";
@@ -42,29 +44,28 @@ export class DigimonSyncer {
     if (newDigimonDto.attributes) {
       AttributesSyncer.sync(previousDigimon.attributes, newDigimonDto.attributes);
     }
-    if (newDigimonDto.resistances) {
-      ResistancesSyncer.sync(previousDigimon.resistances, newDigimonDto.resistances);
+    if (newDigimonDto.elements) {
+      ElementsSyncer.sync(previousDigimon.elements, newDigimonDto.elements);
     }
-    if (newDigimonDto.digievolutions && newDigimonDto.digievolutions.length > 0) {
+    if (newDigimonDto.digievolutions) {
       newDigimonDto.digievolutions.forEach((newDigievolutionSlotDto) => {
-        if (newDigievolutionSlotDto) {
-          const previousDigievolutionSlot = previousDigimon.digievolutions.find(
-            (s) => s.index === newDigievolutionSlotDto.index,
-          );
-          if (previousDigievolutionSlot) {
-            DigievolutionSlotSyncer.sync(previousDigievolutionSlot, newDigievolutionSlotDto);
-          }
+        const previousDigievolutionSlot = previousDigimon.digievolutions.find(
+          (digievolutionSlot) => digievolutionSlot.index === newDigievolutionSlotDto.index,
+        );
+        if (previousDigievolutionSlot) {
+          DigievolutionSlotSyncer.sync(previousDigievolutionSlot, newDigievolutionSlotDto);
         }
       });
     }
-    if (newDigimonDto.storedDigievolutions && newDigimonDto.storedDigievolutions.length > 0) {
+    if (newDigimonDto.storedDigievolutions) {
       newDigimonDto.storedDigievolutions.forEach((newStoredDigievolutionDto) => {
-        if (!newStoredDigievolutionDto || newStoredDigievolutionDto.digievolutionId === undefined) {
+        if (newStoredDigievolutionDto.digievolutionId === undefined) {
           return;
         }
 
         const previousStoredDigievolution = previousDigimon.storedDigievolutions.find(
-          (stored) => stored.digievolutionId === newStoredDigievolutionDto.digievolutionId,
+          (storedDigievolution) =>
+            storedDigievolution.digievolutionId === newStoredDigievolutionDto.digievolutionId,
         );
 
         if (previousStoredDigievolution) {
@@ -72,11 +73,12 @@ export class DigimonSyncer {
           return;
         }
 
-        if (newStoredDigievolutionDto.level !== undefined) {
-          previousDigimon.storedDigievolutions.push(
-            StoredDigievolutionConverter.convert(newStoredDigievolutionDto),
-          );
-        }
+        // Backend sends the full entry when a digievolution is stored for the first time.
+        previousDigimon.storedDigievolutions.push(
+          StoredDigievolutionConverter.convert(
+            newStoredDigievolutionDto as DeepRequired<StoredDigievolutionDTO>,
+          ),
+        );
       });
     }
   }

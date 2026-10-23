@@ -64,8 +64,8 @@ export class EnemyConverter {
       boss: enemyRaw.boss === true,
     };
 
-    if (enemyRaw.dvxp !== undefined) {
-      enemyViewModel.dvxp = enemyRaw.dvxp;
+    if (enemyRaw.dvexp !== undefined) {
+      enemyViewModel.dvexp = enemyRaw.dvexp;
     }
     if (enemyRaw.exp !== undefined) {
       enemyViewModel.exp = enemyRaw.exp;
@@ -86,7 +86,7 @@ export class EnemyConverter {
       enemyViewModel.locations = enemyRaw.locations.map((locationRaw) => {
         return {
           id: locationRaw.id,
-          labelKey: `location.${locationRaw.id}`,
+          labelKey: `map.${locationRaw.id}`,
           sources: locationRaw.sources,
           localCoordinates:
             locationRaw.localCoordinates != null
@@ -95,21 +95,15 @@ export class EnemyConverter {
                   y: locationRaw.localCoordinates.y,
                 }
               : undefined,
-          mainQuestStepDone:
-            locationRaw.mainQuestStepDone != null
+          mainQuestAvailabilityWindow:
+            locationRaw.mainQuestAvailabilityWindow != null
               ? {
-                  min: locationRaw.mainQuestStepDone.min,
-                  max: locationRaw.mainQuestStepDone.max,
+                  starts: locationRaw.mainQuestAvailabilityWindow.starts,
+                  ends: locationRaw.mainQuestAvailabilityWindow.ends,
                 }
               : undefined,
         };
       });
-    }
-    if (enemyRaw.tamerId !== undefined) {
-      enemyViewModel.tamerId = enemyRaw.tamerId;
-    }
-    if (enemyRaw.npcId !== undefined) {
-      enemyViewModel.npcId = enemyRaw.npcId;
     }
 
     return enemyViewModel;

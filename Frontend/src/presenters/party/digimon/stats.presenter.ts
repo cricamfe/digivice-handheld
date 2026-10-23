@@ -1,15 +1,14 @@
 import type { Digimon } from "@/models";
-import { Constant } from "@/constants/constant";
 import {
   AttributesConverter,
   type AttributesEquipmentBonuses,
 } from "@/presenters/converter/attributes.converter";
 import {
-  ResistancesConverter,
-  type ResistancesEquipmentBonuses,
-} from "@/presenters/converter/resistances.converter";
-import { DigimonBattleService } from "@/services/digimon-battle.service";
+  ElementsConverter,
+  type ElementsEquipmentBonuses,
+} from "@/presenters/converter/elements.converter";
 import { EquipmentService } from "@/services/equipment.service";
+import { DigimonBattleSelector } from "@/stores/selectors/digimon-battle.selector";
 import { DigievolutionRepository } from "@/repositories/digievolution.repository";
 import { EquipmentRepository } from "@/repositories/equipment.repository";
 import type { EquipmentRaw } from "@/repositories/tables/raws/equipment/equipment.raw";
@@ -18,10 +17,10 @@ import type { DigimonStatsViewModel } from "@/viewmodels/digimon/digimon-stats.v
 import type { DigievolutionViewModel } from "@/viewmodels/digievolution/digievolution.viewmodel";
 
 export class StatsPresenter {
-  public static getStatsViewModel(digimon: Digimon, location: string | null): DigimonStatsViewModel {
-    const isInBattle = DigimonBattleService.isInBattle(location, digimon.inBattle);
+  public static getStatsViewModel(digimon: Digimon, location: string): DigimonStatsViewModel {
+    const isInBattle = DigimonBattleSelector.isInBattle(location, digimon.inBattle);
     const activeDigievolution =
-      digimon.activeDigievolutionId !== null && digimon.activeDigievolutionId !== 0
+      digimon.activeDigievolutionId !== null
         ? this.getDigievolutionById(digimon.activeDigievolutionId)
         : null;
     const equipmentIds = EquipmentService.getEquipmentIds(digimon.equipments);
@@ -34,10 +33,10 @@ export class StatsPresenter {
 
     return {
       attributes: this.applyBattleDeltas(attributes, digimon.inBattle, isInBattle),
-      resistances: ResistancesConverter.convert(
-        digimon.resistances,
-        activeDigievolution?.resistances ?? null,
-        this.getResistancesEquipmentBonuses(rawEquipments),
+      elements: ElementsConverter.convert(
+        digimon.elements,
+        activeDigievolution?.elements ?? null,
+        this.getElementsEquipmentBonuses(rawEquipments),
       ),
     };
   }
@@ -59,26 +58,26 @@ export class StatsPresenter {
     rawEquipments: EquipmentRaw[],
   ): AttributesEquipmentBonuses {
     return {
-      strength: EquipmentService.calculateBonus(Constant.strength, rawEquipments),
-      defense: EquipmentService.calculateBonus(Constant.defense, rawEquipments),
-      spirit: EquipmentService.calculateBonus(Constant.spirit, rawEquipments),
-      wisdom: EquipmentService.calculateBonus(Constant.wisdom, rawEquipments),
-      speed: EquipmentService.calculateBonus(Constant.speed, rawEquipments),
-      charisma: EquipmentService.calculateBonus(Constant.charisma, rawEquipments),
+      strength: EquipmentService.calculateBonus("strength", rawEquipments),
+      defense: EquipmentService.calculateBonus("defense", rawEquipments),
+      spirit: EquipmentService.calculateBonus("spirit", rawEquipments),
+      wisdom: EquipmentService.calculateBonus("wisdom", rawEquipments),
+      speed: EquipmentService.calculateBonus("speed", rawEquipments),
+      charisma: EquipmentService.calculateBonus("charisma", rawEquipments),
     };
   }
 
-  private static getResistancesEquipmentBonuses(
+  private static getElementsEquipmentBonuses(
     rawEquipments: EquipmentRaw[],
-  ): ResistancesEquipmentBonuses {
+  ): ElementsEquipmentBonuses {
     return {
-      fire: EquipmentService.calculateBonus(Constant.fire, rawEquipments),
-      water: EquipmentService.calculateBonus(Constant.water, rawEquipments),
-      ice: EquipmentService.calculateBonus(Constant.ice, rawEquipments),
-      wind: EquipmentService.calculateBonus(Constant.wind, rawEquipments),
-      thunder: EquipmentService.calculateBonus(Constant.thunder, rawEquipments),
-      machine: EquipmentService.calculateBonus(Constant.machine, rawEquipments),
-      dark: EquipmentService.calculateBonus(Constant.dark, rawEquipments),
+      fire: EquipmentService.calculateBonus("fire", rawEquipments),
+      water: EquipmentService.calculateBonus("water", rawEquipments),
+      ice: EquipmentService.calculateBonus("ice", rawEquipments),
+      wind: EquipmentService.calculateBonus("wind", rawEquipments),
+      thunder: EquipmentService.calculateBonus("thunder", rawEquipments),
+      machine: EquipmentService.calculateBonus("machine", rawEquipments),
+      dark: EquipmentService.calculateBonus("dark", rawEquipments),
     };
   }
 
@@ -88,6 +87,7 @@ export class StatsPresenter {
     return {
       name: digievolutionRaw.name,
       attributes: digievolutionRaw.attributes,
+      elements: digievolutionRaw.elements,
       resistances: digievolutionRaw.resistances,
     };
   }

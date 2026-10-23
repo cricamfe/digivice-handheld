@@ -1,5 +1,6 @@
 import type { ImportantItems, Npc } from "@/models";
-import { NpcBattleKindConstant, STORY_NPC_DIGIMON_BATTLE_ID } from "@/constants/npc-battle-kind.constant";
+import { StoryNpcDigimonBattleId } from "@/constants/npc-battle.constant";
+import type { NpcBattleKind } from "@/types/npc-battle-kind.type";
 import type {
   NpcBattleOpponent,
   NpcBattleOpponentRaw,
@@ -10,19 +11,19 @@ import type { TamerTrophyRequiredRaw } from "@/repositories/tables/raws/tamer/ta
 
 export type NpcBattleStatus = "completed" | "available" | "missingRequirements";
 
-export const MISSING_CHARISMA_TOOLTIP_KEY = "npc.battle.requirement.missingCharisma";
-export const MISSING_ASUKA_TROPHY_TOOLTIP_KEY = "npc.battle.requirement.missingAsukaTrophy";
-export const MISSING_SUN_TROPHY_TOOLTIP_KEY = "npc.battle.requirement.missingSunTrophy";
-export const MISSING_CHARISMA_AND_ASUKA_TROPHY_TOOLTIP_KEY =
+const MissingCharismaTooltipKey = "npc.battle.requirement.missingCharisma";
+const MissingAsukaTrophyTooltipKey = "npc.battle.requirement.missingAsukaTrophy";
+const MissingSunTrophyTooltipKey = "npc.battle.requirement.missingSunTrophy";
+const MissingCharismaAndAsukaTrophyTooltipKey =
   "npc.battle.requirement.missingCharismaAndAsukaTrophy";
-export const MISSING_CHARISMA_AND_SUN_TROPHY_TOOLTIP_KEY =
+const MissingCharismaAndSunTrophyTooltipKey =
   "npc.battle.requirement.missingCharismaAndSunTrophy";
-export const UNAVAILABLE_AFTER_ASUKA_TROPHY_TOOLTIP_KEY =
+const UnavailableAfterAsukaTrophyTooltipKey =
   "npc.battle.requirement.unavailableAfterAsukaTrophy";
-export const UNAVAILABLE_AFTER_SUN_TROPHY_TOOLTIP_KEY =
+const UnavailableAfterSunTrophyTooltipKey =
   "npc.battle.requirement.unavailableAfterSunTrophy";
-export const AVAILABLE_BATTLE_TOOLTIP_KEY = "npc.battle.requirement.available";
-export const ALREADY_WON_BATTLE_TOOLTIP_KEY = "npc.battle.requirement.alreadyWon";
+const AvailableBattleTooltipKey = "npc.battle.requirement.available";
+const AlreadyWonBattleTooltipKey = "npc.battle.requirement.alreadyWon";
 
 export class NpcService {
   public static isCharismaInRange(
@@ -42,18 +43,18 @@ export class NpcService {
 
   public static isTrophyRequirementMet(
     trophyRequired: TamerTrophyRequiredRaw | undefined,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): boolean {
     if (trophyRequired === undefined) {
       return true;
     }
 
     if (trophyRequired === "asukaTrophy") {
-      return importantItems?.asukaTrophy === true;
+      return importantItems.asukaTrophy;
     }
 
     if (trophyRequired === "sunTrophy") {
-      return importantItems?.sunTrophy === true;
+      return importantItems.sunTrophy;
     }
 
     return false;
@@ -63,11 +64,11 @@ export class NpcService {
     trophyRequired: TamerTrophyRequiredRaw | undefined,
   ): string | null {
     if (trophyRequired === "asukaTrophy") {
-      return MISSING_ASUKA_TROPHY_TOOLTIP_KEY;
+      return MissingAsukaTrophyTooltipKey;
     }
 
     if (trophyRequired === "sunTrophy") {
-      return MISSING_SUN_TROPHY_TOOLTIP_KEY;
+      return MissingSunTrophyTooltipKey;
     }
 
     return null;
@@ -77,25 +78,25 @@ export class NpcService {
     trophyRequired: TamerTrophyRequiredRaw | undefined,
   ): string {
     if (trophyRequired === "sunTrophy") {
-      return MISSING_CHARISMA_AND_SUN_TROPHY_TOOLTIP_KEY;
+      return MissingCharismaAndSunTrophyTooltipKey;
     }
 
-    return MISSING_CHARISMA_AND_ASUKA_TROPHY_TOOLTIP_KEY;
+    return MissingCharismaAndAsukaTrophyTooltipKey;
   }
 
   public static getUnavailableAfterTrophyTooltipKey(
     trophyRequired: TamerTrophyRequiredRaw | undefined,
   ): string {
     if (trophyRequired === "sunTrophy") {
-      return UNAVAILABLE_AFTER_SUN_TROPHY_TOOLTIP_KEY;
+      return UnavailableAfterSunTrophyTooltipKey;
     }
 
-    return UNAVAILABLE_AFTER_ASUKA_TROPHY_TOOLTIP_KEY;
+    return UnavailableAfterAsukaTrophyTooltipKey;
   }
 
   public static isTrophyOwned(
     trophyRequired: TamerTrophyRequiredRaw | undefined,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): boolean {
     return this.isTrophyRequirementMet(trophyRequired, importantItems);
   }
@@ -104,7 +105,7 @@ export class NpcService {
     charismaRequired: TamerCharismaRequiredRaw,
     trophyRequired: TamerTrophyRequiredRaw | undefined,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): boolean {
     if (!this.isCharismaInRange(partyCharisma, charismaRequired)) {
       return false;
@@ -117,7 +118,7 @@ export class NpcService {
     charismaRequired: TamerCharismaRequiredRaw,
     trophyRequired: TamerTrophyRequiredRaw | undefined,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): string | null {
     const charismaMet = this.isCharismaInRange(partyCharisma, charismaRequired);
     const trophyMet = this.isTrophyRequirementMet(trophyRequired, importantItems);
@@ -131,7 +132,7 @@ export class NpcService {
     }
 
     if (!charismaMet) {
-      return MISSING_CHARISMA_TOOLTIP_KEY;
+      return MissingCharismaTooltipKey;
     }
 
     return this.getMissingTrophyTooltipKey(trophyRequired);
@@ -140,7 +141,7 @@ export class NpcService {
   public static resolveActiveCardBattleIds(
     cardBattles: Record<string, TamerCardBattleRaw> | undefined,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): Set<string> {
     const sortedCardBattles = Object.entries(cardBattles ?? {}).sort(
       ([firstBattleId], [secondBattleId]) => {
@@ -182,7 +183,7 @@ export class NpcService {
       return entry.id === battleId;
     });
 
-    return battle?.completed ?? false;
+    return battle?.won ?? false;
   }
 
   public static getBattleTooltipKey(params: {
@@ -192,15 +193,15 @@ export class NpcService {
     supersededTooltipKey: string | null;
   }): string | null {
     if (params.status === "completed") {
-      return ALREADY_WON_BATTLE_TOOLTIP_KEY;
+      return AlreadyWonBattleTooltipKey;
     }
 
     if (params.status === "available") {
-      return AVAILABLE_BATTLE_TOOLTIP_KEY;
+      return AvailableBattleTooltipKey;
     }
 
     if (params.isSuperseded) {
-      return params.supersededTooltipKey ?? UNAVAILABLE_AFTER_ASUKA_TROPHY_TOOLTIP_KEY;
+      return params.supersededTooltipKey ?? UnavailableAfterAsukaTrophyTooltipKey;
     }
 
     return params.missingRequirementTooltipKey;
@@ -222,8 +223,8 @@ export class NpcService {
     opponent: NpcBattleOpponentRaw,
     journalNpc: Npc | null | undefined,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
-  ): NpcBattleKindConstant | null {
+    importantItems: ImportantItems,
+  ): NpcBattleKind | null {
     return this.getAvailableBattleKindFromTamerOrDuelIsland(
       opponent,
       journalNpc,
@@ -236,15 +237,15 @@ export class NpcService {
     opponent: NpcBattleOpponent,
     journalNpc: Npc | null | undefined,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
-  ): NpcBattleKindConstant | null {
+    importantItems: ImportantItems,
+  ): NpcBattleKind | null {
     if (opponent.source === "npc") {
-      const completed = this.isDigimonBattleCompleted(journalNpc, STORY_NPC_DIGIMON_BATTLE_ID);
+      const completed = this.isDigimonBattleCompleted(journalNpc, StoryNpcDigimonBattleId);
       if (completed) {
         return null;
       }
 
-      return NpcBattleKindConstant.digimon;
+      return "digimon";
     }
 
     return this.getAvailableBattleKindFromTamerOrDuelIsland(
@@ -259,8 +260,8 @@ export class NpcService {
     tamer: NpcBattleOpponentRaw,
     journalNpc: Npc | null | undefined,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
-  ): NpcBattleKindConstant | null {
+    importantItems: ImportantItems,
+  ): NpcBattleKind | null {
     const hasAvailableDigimonBattle = Object.entries(tamer.digimonBattles ?? {}).some(
       ([battleId, digimonBattle]) => {
         const completed = this.isDigimonBattleCompleted(journalNpc, battleId);
@@ -278,7 +279,7 @@ export class NpcService {
     );
 
     if (hasAvailableDigimonBattle) {
-      return NpcBattleKindConstant.digimon;
+      return "digimon";
     }
 
     const activeCardBattleIds = this.resolveActiveCardBattleIds(
@@ -287,7 +288,7 @@ export class NpcService {
       importantItems,
     );
     if (activeCardBattleIds.size > 0) {
-      return NpcBattleKindConstant.card;
+      return "card";
     }
 
     return null;
@@ -297,7 +298,7 @@ export class NpcService {
     opponent: NpcBattleOpponent,
     journalNpc: Npc | null | undefined,
     partyCharisma: number,
-    importantItems: ImportantItems | null | undefined,
+    importantItems: ImportantItems,
   ): boolean {
     return (
       this.getAvailableBattleKindForOpponent(

@@ -1,27 +1,27 @@
-import { AuctionStatusConstant } from "@/constants/auction-status.constant";
 import type { Auctions, Quest } from "@/models";
 import { AuctionConverter } from "@/presenters/converter/auction.converter";
 import { AuctionRepository } from "@/repositories/auction.repository";
-import type { AuctionStepsRaw } from "@/repositories/tables/raws/auction/auction-steps.raw";
+import type { MainQuestAvailabilityWindowRaw } from "@/repositories/tables/raws/quest/main-quest-availability-window.raw";
 import { QuestService } from "@/services/quest.service";
+import type { AuctionStatus } from "@/types/auction-status.type";
 import type { AuctionViewModel } from "@/viewmodels/auction/auction.viewmodel";
 
 export class AuctionService {
-  public static getAvailableAuction(auctions: Auctions | null, mainQuest: Quest | null): AuctionViewModel | null {
+  public static getAvailableAuction(auctions: Auctions, mainQuest: Quest): AuctionViewModel | null {
     return (
       this.getAuctions(auctions, mainQuest).find((auctionListItemViewModel) => {
-        return auctionListItemViewModel.status === AuctionStatusConstant.available;
+        return auctionListItemViewModel.status === "available";
       }) ?? null
     );
   }
 
-  public static getAuctions(auctions: Auctions | null, mainQuest: Quest | null): AuctionViewModel[] {
+  public static getAuctions(auctions: Auctions, mainQuest: Quest): AuctionViewModel[] {
     const lastCompletedMainQuestStep = QuestService.getLastCompletedMainQuestStep(mainQuest);
 
     return AuctionRepository.getAuctions().map((auctionRaw) => {
-      const hasParticipated = auctions?.[auctionRaw.id as keyof Auctions] ?? false;
+      const hasParticipated = auctions[auctionRaw.id as keyof Auctions] ?? false;
       const auctionStatus = this.getCalculatedAuctionStatus(
-        auctionRaw.steps,
+        auctionRaw.mainQuestAvailabilityWindow,
         lastCompletedMainQuestStep,
         hasParticipated,
       );
@@ -31,20 +31,20 @@ export class AuctionService {
   }
 
   private static getCalculatedAuctionStatus(
-    steps: AuctionStepsRaw,
+    mainQuestAvailabilityWindow: MainQuestAvailabilityWindowRaw,
     lastCompletedStep: number,
     hasParticipated: boolean,
-  ): AuctionStatusConstant {
+  ): AuctionStatus {
     if (hasParticipated) {
-      return AuctionStatusConstant.participated;
+      return "participated";
     }
-    if (lastCompletedStep < steps.startsWhenComplete) {
-      return AuctionStatusConstant.notYetOccurred;
+    if (lastCompletedStep < mainQuestAvailabilityWindow.starts) {
+      return "notYetOccurred";
     }
-    if (lastCompletedStep >= steps.startsWhenComplete && lastCompletedStep < steps.endsWhenComplete) {
-      return AuctionStatusConstant.available;
+    if (QuestService.isOnMainQuestRange(lastCompletedStep, mainQuestAvailabilityWindow)) {
+      return "available";
     }
 
-    return AuctionStatusConstant.missed;
+    return "missed";
   }
 }

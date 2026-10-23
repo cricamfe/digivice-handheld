@@ -6,15 +6,13 @@
     "digievolutionBonus": "Digievolution bonus",
     "equipableBy": "Equipable by",
     "allDigimon": "All Digimon",
-    "level": "Level",
     "lv": "Lv",
     "experience": "Experience",
     "hp": "HP",
-    "condition": "Condition",
     "status": {
       "healthy": "Healthy",
       "injured": "Injured",
-      "knockedOut": "Knocked Out",
+      "ko": "Knocked Out",
       "debuffed": "Debuffed"
     },
     "debuff": {
@@ -44,9 +42,7 @@
     },
     "states": {
       "empty": "Empty",
-      "unknown": "Unknown",
-      "none": "None",
-      "itemID": "Item ID: {id}"
+      "none": "None"
     }
   }
 }

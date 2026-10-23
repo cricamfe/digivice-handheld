@@ -1,4 +1,4 @@
-import type { DropSourceKind } from "@/viewmodels/drop/drop-source.viewmodel";
+import type { DropSourceKind } from "@/types/drop-source-kind.type";
 
 export interface WikiDroppedBySourceViewModel {
   kind: DropSourceKind;
@@ -7,5 +7,5 @@ export interface WikiDroppedBySourceViewModel {
   label?: string;
   iconUrl: string | null;
   locationId?: string;
-  tamerId?: string;
+  ownerNameKey?: string;
 }

@@ -16,24 +16,26 @@ It's the companion you wished you had when you first walked through Asuka Server
 
 You can see more in the video below:
 
-[![Digivice 3.5.0 (Latest major release)](https://img.youtube.com/vi/hxhppn5j9Gg/hqdefault.jpg)](https://www.youtube.com/watch?v=hxhppn5j9Gg)
+[![Digivice 4.0.0 (Latest major release)](https://img.youtube.com/vi/UEHe4sAQ5pM/hqdefault.jpg)](https://www.youtube.com/watch?v=UEHe4sAQ5pM)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R028MD8Y)
 
 ## The current state
 
-**Right now, Digivice only fully supports the game up to the West Sector of Asuka Server** (the Third part of the story). The main quest, map enemies, and related data are only complete through this sector.<br>
+**Right now, Digivice only fully supports the game up to the West Sector of Asuka Server** (the Third part of the story, until you beat the Game Master). The main quest, map enemies, and related data are only complete through this sector.<br>
 Past that point, many features will still work, but others will be missing. I'll fill in the next areas in future updates.
 
 ## Roadmap
 
 More Digivice is on the way. Here's a preview of what's planned next — details and timing may change as development continues.
 
-### 4.0 — The story catches up to Asuka City
+### 4.5 — Interface and memory reading engine update
 
-A major step forward for anyone playing through the main quest.
+Changes to the Digivice interface and improvements to the memory reading engine.
 
-- **Main quest through A.o.A** — journal and tracking mapped up to the A.o.A battle in Asuka City
-- **DVEXP bars that make sense** — fixed to reflect each digievolution's Tier correctly
-- **And more** — the next layer of polish once the South Sector ceiling is gone
+### 5.0 — The Digi-Egg of Knowledge
+
+Main quest update up to the point where the player obtains the Digi-Egg of Knowledge, in Amaterasu Server.
 
 ## Before you continue
 
@@ -106,6 +108,7 @@ None of this would have been possible without the people who dug up and shared t
 - **Digimon World 2003 - Code Notes** *by Hotscrock and Dreaker* [RetroAchievements](https://retroachievements.org/codenotes.php?g=11328)
 - **Digimon World 3 – Opponent's Deck List** *by SSJ2__Gohan* [GameFAQs] (https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/47836)
 - **DW2003 - Booster Packs complete** *by BSkullX* [GameFAQs] (https://gamefaqs.gamespot.com/boards/562323-digimon-world-3/76545344)
+- **DV Experience Table** *by bugz_lha* [GameFAQs] (https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/78509)
 
 ## Digimons images credits
 
@@ -179,6 +182,12 @@ Below are the links to where the Digimon images were taken from, as well as the 
 - **Nanimon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Nanimon?file=Nanimon_b.jpg)
 - **Cardmon(A)** *by Me, using the follow image as inspiration* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Cardmon_C1?file=Cardmon_C1_%28World_3%29.jpg)
 - **Cardmon(B)** *by Me, using the follow image as inspiration* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Cardmon_C2?file=Cardmon_C2_%28World_3%29.jpg)
+- **Guardromon(Blue)** *by Me, using the follow image as inspiration* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Guardromon/Galeria?file=Guardromon_b.jpg)
+- **Tankmon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Tankmon/Galeria?file=Tankmon_b.jpg)
+- **Vemmon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Bemmon/Galeria?file=Bemmon_b.jpg)
+- **Minotarumon(Blue)** *by Digital Monsters Almanac* [Digital Monsters Almanac](http://dma.wtw-x.net/dexminotaru.shtml)
+- **Gargoylemon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Gargoylemon?file=Gargoylemon_b.jpg)
+- **Persiamon** *by ERROR101USERNOTFOUND* [Digivolutions Wiki](https://static.wikia.nocookie.net/digivolutions-digimon/images/f/f1/Persiamon.jpg/revision/latest?cb=20210504011749)
 
 ### Digievolutions
 
