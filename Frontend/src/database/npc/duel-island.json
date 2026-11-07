@@ -20,7 +20,7 @@
         "boosterId": 525
       }
     },
-    "imageName": "Divermon"
+    "fieldActor": "206-0"
   },
   "divermon2": {
     "locationId": "0228",
@@ -43,7 +43,7 @@
         "boosterId": 526
       }
     },
-    "imageName": "Divermon"
+    "fieldActor": "206-0"
   },
   "divermon3": {
     "locationId": "0228",
@@ -66,7 +66,7 @@
         "boosterId": 527
       }
     },
-    "imageName": "Divermon"
+    "fieldActor": "206-0"
   },
   "divermon4": {
     "locationId": "0228",
@@ -89,7 +89,7 @@
         "boosterId": 528
       }
     },
-    "imageName": "Divermon"
+    "fieldActor": "206-0"
   },
   "divermon5": {
     "locationId": "0228",
@@ -112,7 +112,7 @@
         "boosterId": 516
       }
     },
-    "imageName": "Divermon"
+    "fieldActor": "206-0"
   },
   "kingDivermon": {
     "locationId": "0228",
@@ -135,6 +135,6 @@
         "boosterId": 517
       }
     },
-    "imageName": "KingDivermon"
+    "fieldActor": "99-0"
   }
 }

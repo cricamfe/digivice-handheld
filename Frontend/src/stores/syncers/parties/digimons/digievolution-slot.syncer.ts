@@ -23,7 +23,7 @@ export class DigievolutionSlotSyncer {
 
     if (newId !== undefined && newDigievolution !== undefined) {
       previousDigievolutionSlot.digievolutionId = newId;
-      // Backend sends the full digievolution when the slot id changes.
+      // The core sends the full digievolution when the slot id changes.
       previousDigievolutionSlot.digievolution = DigievolutionConverter.convert(
         newDigievolution as DeepRequired<DigievolutionDTO>,
       );

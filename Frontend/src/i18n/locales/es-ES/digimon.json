@@ -1,0 +1,35 @@
+{
+  "digimon": {
+    "digievolutions": "Digievoluciones",
+    "equipments": "Equipo",
+    "lv": "Nv",
+    "experience": "Experiencia",
+    "hp": "HP",
+    "status": {
+      "healthy": "Sano",
+      "injured": "Herido",
+      "ko": "KO",
+      "debuffed": "Alterado"
+    },
+    "debuff": {
+      "poison": {
+        "affected": "Envenenado"
+      },
+      "paralyze": {
+        "affected": "Paralizado"
+      },
+      "confuse": {
+        "affected": "Confuso"
+      },
+      "sleep": {
+        "affected": "Dormido"
+      }
+    },
+    "mp": "MP",
+    "blast": "Blast",
+    "tp": "Puntos de entrenamiento",
+    "states": {
+      "empty": "Vacío"
+    }
+  }
+}

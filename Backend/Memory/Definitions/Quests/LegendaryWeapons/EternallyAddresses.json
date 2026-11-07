@@ -4,7 +4,17 @@
         {
             "Number": 1,
             "Address": "0x0004B38E",
-            "BitMasks": ["0x01"]
+            "BitMasks": [
+                "0x01"
+            ],
+            "Alternatives": [
+                {
+                    "Address": "0x0004B387",
+                    "BitMasks": [
+                        "0x10"
+                    ]
+                }
+            ]
         }
     ]
 }

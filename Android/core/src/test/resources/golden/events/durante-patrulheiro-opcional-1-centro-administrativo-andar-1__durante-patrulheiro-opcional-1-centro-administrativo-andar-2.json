@@ -1,0 +1,113 @@
+[
+  {
+    "type": "PlayerChanged",
+    "payload": {
+      "bits": 52716,
+      "previousMapId": "0217"
+    }
+  },
+  {
+    "type": "PartyChanged",
+    "payload": {
+      "slots": [
+        {
+          "index": 1,
+          "digimonId": 0,
+          "digimon": {
+            "level": 27,
+            "tp": 20,
+            "blast": 798,
+            "experience": 16995,
+            "hp": {
+              "current": 895,
+              "max": 2229
+            },
+            "mp": {
+              "max": 1364
+            },
+            "inBattle": {
+              "hp": {
+                "current": 2229,
+                "max": 2229
+              },
+              "mp": {
+                "max": 1364
+              }
+            },
+            "attributes": {
+              "strength": 380,
+              "defense": 393,
+              "spirit": 210,
+              "wisdom": 263,
+              "speed": 512,
+              "charisma": 181
+            },
+            "elements": {
+              "fire": 106,
+              "water": 158,
+              "ice": 99,
+              "wind": 103,
+              "thunder": 152,
+              "machine": 133,
+              "dark": 131
+            },
+            "digievolutions": [
+              {
+                "index": 3,
+                "digievolution": {
+                  "level": 28,
+                  "dvexp": 276
+                }
+              }
+            ],
+            "storedDigievolutions": [
+              {
+                "digievolutionId": 389,
+                "level": 28
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "DigimonBattleChanged",
+    "payload": {
+      "enemy": {
+        "id": 76,
+        "hp": {
+          "current": 840,
+          "max": 840
+        }
+      }
+    }
+  },
+  {
+    "type": "NpcsChanged",
+    "payload": {
+      "optionalTrooper1AdminFloor2": {
+        "battles": [
+          {
+            "id": "first",
+            "won": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "JournalChanged",
+    "payload": {
+      "mainQuest": {
+        "id": "mainQuest",
+        "steps": [
+          {
+            "number": 75,
+            "isDone": true
+          }
+        ]
+      }
+    }
+  }
+]

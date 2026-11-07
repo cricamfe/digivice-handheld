@@ -7,7 +7,7 @@ export class PartyDvexpConverter {
     return {
       digimonId: gain.digimonId,
       digimonName,
-      imageUrl: ImageCatalog.getDigimonImageUrl(`${digimonName}-healthy`),
+      imageUrl: ImageCatalog.getDigimonImageUrl(gain.digimonId),
       dvexp: gain.dvexp,
     };
   }

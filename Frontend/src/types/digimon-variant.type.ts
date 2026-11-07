@@ -1,0 +1,21 @@
+/** The variant of an enemy the game names like another: a colour (named in the app's own words) or a letter. */
+export type DigimonVariant =
+  | "aqua"
+  | "black"
+  | "blue"
+  | "brown"
+  | "gold"
+  | "green"
+  | "pink"
+  | "purple"
+  | "red"
+  | "silver"
+  | "white"
+  | "A"
+  | "B"
+  | "C"
+  | "D"
+  | "E"
+  | "F"
+  | "G"
+  | "H";

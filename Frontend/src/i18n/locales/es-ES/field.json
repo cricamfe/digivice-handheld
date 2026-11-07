@@ -1,0 +1,7 @@
+{
+  "field": {
+    "neutral": "Campo neutro",
+    "strengthen": "{element} +50%",
+    "weaken": "{element} -25%"
+  }
+}

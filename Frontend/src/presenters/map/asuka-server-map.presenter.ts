@@ -17,10 +17,7 @@ export class AsukaServerMapPresenter {
     npcs: Npcs,
     importantItems: ImportantItems,
   ): MapNpcViewModel[] {
-    const opponentIds = MapService.getMapOpponentIds(
-      locationId,
-      lastCompletedMainQuestStep,
-    );
+    const opponentIds = MapService.getMapOpponentIds(locationId, lastCompletedMainQuestStep);
     const partyCharisma = PartyService.getCharisma({ slots: digimonSlots });
 
     return opponentIds.flatMap((opponentId) => {

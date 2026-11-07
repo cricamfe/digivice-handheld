@@ -8,7 +8,7 @@ export class WikiDropEquipmentPresenter {
     const equipmentRaw = EquipmentRepository.getEquipmentById(equipmentId);
     const equipableDigimonNames = equipmentRaw.equipableDigimon.map((digimonId) => {
       return DigimonRepository.getNameById(Number(digimonId));
-    })
+    });
     return EquipmentConverter.convert(equipmentId, equipableDigimonNames, equipmentRaw);
   }
 }

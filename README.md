@@ -1,235 +1,143 @@
-# **Digivice** - *Your Digimon World 2003 second screen*
+<div align="center">
 
-![GitHub downloads](https://img.shields.io/github/downloads/jeanheck/digivice-backend/total)
+<img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/banner.png" width="100%" alt="Digivice for AYN Thor: a dual-screen handheld with a game on the top screen and the Digivice map on the bottom screen">
 
-Digimon World 2003 hides a lot behind menus and guesswork. Digivice is a second screen for that world: while you play on Duckstation, it shows the live state of your party, the map, your digievolutions, and how far you are in the story — the way a Nintendo 3DS companion screen might have felt, if the PS1 era had one.
+# Digivice for AYN Thor
 
-- See the EXP each of your Digimons needs to reach the next level
-- Discover enemies you can meet on each map
-- Have a journal for main quests and sidequests that automatically tracks your progress as you advance
-- See digievolution trees and requirements for every Digimon in your party
-- Get warned whenever an Auction is happening
-- Have tools to help you move around in the Seabed or Mobius Desert
-- And more — the details the game makes hard to see, kept beside the game itself
+**The second screen for Digimon World 2003, on your dual-screen Android handheld.**
 
-It's the companion you wished you had when you first walked through Asuka Server.
+The game on top; your party, the map and your next objective below. Live, in pixel art, and read-only.
 
-You can see more in the video below:
+[![Android 13+](https://img.shields.io/badge/Android-13%2B-3ddc84?style=flat-square&logo=android&logoColor=white)](#requirements)
+[![RetroArch + SwanStation](https://img.shields.io/badge/RetroArch-SwanStation-1b6fe0?style=flat-square)](#requirements)
+[![SLES-03936](https://img.shields.io/badge/game-SLES--03936%20(EU)-7f32f2?style=flat-square)](#requirements)
+[![5 languages](https://img.shields.io/badge/languages-EN%20%C2%B7%20ES%20%C2%B7%20FR%20%C2%B7%20DE%20%C2%B7%20IT-d12fde?style=flat-square)](#what-you-get)
+[![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-support-ff5e5b?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/cricamfe)
 
-[![Digivice 4.0.0 (Latest major release)](https://img.youtube.com/vi/UEHe4sAQ5pM/hqdefault.jpg)](https://www.youtube.com/watch?v=UEHe4sAQ5pM)
+<img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/thor-map.webp" width="420" alt="An AYN Thor with the game on the top screen and Digivice on the bottom screen, whose live map follows the player through Asuka City">
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R028MD8Y)
+[What you get](#what-you-get) · [Requirements](#requirements) · [Install](#install) · [Build](#build) · [Credits](#credits)
 
-## The current state
+</div>
 
-**Right now, Digivice only fully supports the game up to the West Sector of Asuka Server** (the Third part of the story, until you beat the Game Master). The main quest, map enemies, and related data are only complete through this sector.<br>
-Past that point, many features will still work, but others will be missing. I'll fill in the next areas in future updates.
+> [!NOTE]
+> Tested with RetroArch nightly + SwanStation on an AYN Thor (Android 13), the only device tested so far.
 
-## Roadmap
+Based on **[Digivice by Jean Carlos Heck](https://github.com/jeanheck/digivice)**, the companion for Windows and DuckStation, rebuilt for Android with a touch interface.
 
-More Digivice is on the way. Here's a preview of what's planned next — details and timing may change as development continues.
+## What you get
 
-### 4.5 — Interface and memory reading engine update
+<table>
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/dual-journal.png" width="100%" alt="Top screen: the game in a city. Bottom screen: Digivice's journal with the chapter objective and the quests on offer"><br>
+      <b>Journal</b> · the next objective and the quests on offer, without pausing the game.
+    </td>
+    <td width="50%" valign="top" align="center">
+      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/thor-battle.webp" width="100%" alt="Top screen: a battle against Triceramon. Bottom screen: switching partners shows which attack is very effective"><br>
+      <b>Battle</b> · the enemy's weak points and how well each attack lands.
+    </td>
+  </tr>
+</table>
 
-Changes to the Digivice interface and improvements to the memory reading engine.
+<table>
+  <tr>
+    <td width="25%" valign="top" align="center">
+      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-party.png" width="100%" alt="Party screen"><br>
+      <b>Party</b><br><sub>Stats, resistances, equipment.</sub>
+    </td>
+    <td width="25%" valign="top" align="center">
+      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-map.png" width="100%" alt="Map screen"><br>
+      <b>Map</b><br><sub>You, the characters and exits.</sub>
+    </td>
+    <td width="25%" valign="top" align="center">
+      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-evol.png" width="100%" alt="Digivolution tree screen"><br>
+      <b>Digivolutions</b><br><sub>Every form and its requirements.</sub>
+    </td>
+    <td width="25%" valign="top" align="center">
+      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-wiki.png" width="100%" alt="Wiki screen"><br>
+      <b>Wiki</b><br><sub>Enemies, cards, items, places.</sub>
+    </td>
+  </tr>
+</table>
 
-### 5.0 — The Digi-Egg of Knowledge
+Also cards and auctions, the Mobius Desert and Seabed routes, in five languages with the game's own names.
 
-Main quest update up to the point where the player obtains the Digi-Egg of Knowledge, in Amaterasu Server.
-
-## Before you continue
-
-**This only supports Digimon World 2003. It will not work on Digimon World 3.**<br>
-Game data here comes from public sources on the web (see Reference Data Credits below). You're free to reuse any of it in your own projects.<br>
-I don't own any rights to the game or to Digimon. Even the name "Digivice" comes from that universe. **All copyrights belong to their respective owners.** This is a study project — learning combined with a game that marked my childhood.
+- **Read-only:** it reads the game's memory through RetroArch; it never writes to it or touches your saves.
+- **No game files included:** maps, sprites and text are generated on your console from your own copy.
 
 ## Requirements
 
-**Platform:** Windows. Digivice is an `.exe` you run on your PC.  
-**Emulator:** **Must be Duckstation.** Support for other emulators may come later.
+| | |
+| --- | --- |
+| **Console** | AYN Thor, Android 13 or later. |
+| **Game** | Digimon World 2003, European release (`SLES-03936`), your own copy as ISO, single-track BIN or CHD v5. |
+| **Emulator** | RetroArch **nightly** ARM64 from 2026-10-25 or later, with the SwanStation core. |
 
-## How to use
+> [!WARNING]
+> Stable RetroArch (1.22.2 and older) does not work, and a new nightly may break memory reads. Keep a copy of a nightly that works.
 
-1. Set up Duckstation so you can run a game.
-2. Go to **Settings → Advanced → Interface Settings** and enable **Show Debug Menu**.
-3. A **Debugging** menu will appear. Open it.
-4. Enable **Export Memory Shared**.
-5. Download the latest Digivice from the **Releases** tab and extract the ZIP into its own folder.
-6. Start Digimon World 2003 in Duckstation.
-7. Play until your Digimon party is with you on the map (on a new game, after you're sent to the Digimon Lab).
-8. With the game running, double-click `digivice.exe`.
-9. Allow Windows to run it if prompted.
-10. If everything is set up correctly, the Digivice window should open and work.
+## Install
 
-## Streaming and recording (OBS)
+1. **Enable RetroArch's network commands.** With RetroArch closed, add to `retroarch.cfg`:
+   ```ini
+   network_cmd_enable = "true"
+   network_cmd_port = "55355"
+   network_cmd_bind_address = "127.0.0.1"
+   ```
+2. **Install the APK** from the [latest release](../../releases/latest).
+3. **Open Digivice and choose your copy of the game.** It prepares its resources on the console, in about two minutes from a CHD. Grant **Display over other apps** when asked.
+4. **Play.** Start the game in RetroArch; Digivice appears on the bottom screen. Long-press it for language, hide, exit and licences.
 
-Digivice works fine as an OBS source, but a couple of Windows quirks trip most people up on their first try.
+**Known limits:** tested on the Thor only, without a full campaign yet; some journal steps are inferred; Flawe Mod 2.0 is recognised (prepare from the original disc anyway) and other mods are untested; no North American or Japanese version.
 
-1. **Open Digivice before you add the source.** OBS only lists windows that are open and *not minimized*. If Digivice is minimized when you create the **Window Capture** source, it simply won't be in the dropdown — there's no error, it's just missing. Restore the window, then reopen the dropdown.
-2. **Don't minimize it during the stream.** Windows stops drawing minimized windows, so the capture freezes on the last frame or goes black. Move Digivice to a second monitor or leave it behind another window instead.
-3. **If the capture is black, change the capture method.** In the source properties, set **Capture Method** to **Windows 10 (1903 and up)**. Digivice's interface is GPU-accelerated, and the older BitBlt method can't read it.
-4. **Set Window Match Priority** to **Match title, otherwise find window of same executable**, so the source reconnects on its own the next time you open Digivice.
+## Build
 
-**Game Capture will not work** with Digivice, since it hooks Direct3D/OpenGL directly. Use **Window Capture** or **Display Capture**.
+<details>
+<summary><b>Build, tests and signing</b></summary>
 
-## Reference data credits
+<br>
 
-This project uses public game data from sources across the web. The originals are listed below if you want to explore them.
+You need Node.js (`^20.19.0` or `>=22.12.0`), the Android SDK with platform 37, NDK 28.2.13676358, CMake 3.22.1 and a JDK (Android Studio's works).
 
-None of this would have been possible without the people who dug up and shared that information. Thank you all.
+```sh
+git submodule update --init
+(cd Frontend && npm ci && npm run test:handheld)
+cd Android && ./gradlew :core:test :extractor:test :app:assembleRelease
+```
 
-- **Experience levels** *by Mehdi*: [GameFAQs](https://gamefaqs.gamespot.com/boards/562323-digimon-world-3/64473556)
-- **Digimon World 3 – Digivolution Guide** *by icevenant*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/72629)
-- **Digimon World 3/Enemy**: [DigimonWiki](https://digimon.fandom.com/wiki/Digimon_World_3/Enemy)
-- **Digimon World 3 – Bestiary** *by TheFulgorah*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/66315)
-- **dmw3-tools** *by markisha64* [GitHub](https://github.com/markisha64/dmw3-tools)
-- **Attributes**: [StratsWiki](https://stratswiki.com/digimon-world-3/game-mechanics/attributes/)
-- **All Weapons & Shields**: [StratsWiki](https://stratswiki.com/digimon-world-3/items/weapons-shields/)
-- **Body Gear**: [StratsWiki](https://stratswiki.com/digimon-world-3/items/body-gear/)
-- **Head Gear**: [StratsWiki](https://stratswiki.com/digimon-world-3/items/head-gear/)
-- **Accessories**: [StratsWiki](https://stratswiki.com/digimon-world-3/items/accessories/)
-- **GameShark Codes for Digimon World 2003 (PAL VERSION)** *by Iamhim*: [GameFAQs](https://gamefaqs.gamespot.com/boards/562323-digimon-world-3/80568401)
-- **Digimon World 2003 PAL VERSION GAMESHARK CODES (CONVERTED)** *by splakappa*: [GameFAQs](https://gamefaqs.gamespot.com/boards/562323-digimon-world-3/62602581)
-- **ENTENDA AS FRAQUEZAS E TOLERÂNCIAS NO DIGIMON WORLD 3** *by Battle Dice*: [YouTube](https://www.youtube.com/watch?v=6UbWt7AyHMI)
-- **Digimon World 3 – Item List** *by Med_Jai*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/24593)
-- **Digimon World 3 – Patch Code Generation Guide** *by LupusArgentum*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/41102)
-- **Digimon World 3 – Card Battle FAQ** *by CatastrophieX*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/18275)
-- **Digimon World 3 – FAQ (European)** *by Mykas0*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/21889)
-- **Digimon World 3 – Guides and FAQs** *by nick1n*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/map/16028-underground-seabed-map)
-- **Digimon World 3 – Detonado Completo (Guia Passo a Passo)** *by Markus Norat*: [revolutionarena](https://revolutionarena.com/pt-br/digimon-world-3-detonado-completo-guia-passo-a-passo/)
-- **Digimon World 3 (PS1 Gameplay Português PT-BR)** *by DashGames*: [YouTube](https://www.youtube.com/watch?v=rW8wxZceOjI&list=PLZDYs951OahD_TT4QUByvOEBTRJE-amAi)
-- **DRI locations** *by rentz14*: [NeoSeeker](https://www.neoseeker.com/forums/3546/t1102277-dri-locations/)
-- **Digimon World 3 – Guides and FAQs** *by HRahman*: [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/map/565-mobius-desert-map)
-- **Digivolution Experience Points (DVEXP)** *by Rob01m*: [GameFAQs](https://gamefaqs.gamespot.com/boards/562323-digimon-world-3/47657837)
-- **Consumable Items**: [StratsWiki](https://stratswiki.com/digimon-world-3/items/consumables/)
-- **Digimon World 3 - TCG Cards Sprites** *by metaldodomon*: [The Spriters Resource](https://www.spriters-resource.com/playstation/digiworld3/)
-- **Digimon World 3 – FAQ** *by ChaosBeelzemon* [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/51616)
-- **Digimon World 3 – Guide and Walkthrough** *by mharbenedict34* [GameFAQs](https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/33794)
-- **Digimon World 2003 - Code Notes** *by Hotscrock and Dreaker* [RetroAchievements](https://retroachievements.org/codenotes.php?g=11328)
-- **Digimon World 3 – Opponent's Deck List** *by SSJ2__Gohan* [GameFAQs] (https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/47836)
-- **DW2003 - Booster Packs complete** *by BSkullX* [GameFAQs] (https://gamefaqs.gamespot.com/boards/562323-digimon-world-3/76545344)
-- **DV Experience Table** *by bugz_lha* [GameFAQs] (https://gamefaqs.gamespot.com/ps/562323-digimon-world-3/faqs/78509)
+Tests that need a disc or RAM dumps are skipped when those files are missing; they are never in the repository.
 
-## Digimons images credits
+Without configuration, `release` is signed with the debug key. To use your own, create a keystore outside the repository and point `Android/keystore.properties` (ignored by git) at it with `storeFile`, `storePassword`, `keyAlias` and `keyPassword`.
 
-Below are the links to where the Digimon images were taken from, as well as the names of the users who posted the respective images (some of them ara Bandai Official Arts).
+More details in the [Android technical guide](Android/README.md) (in Spanish).
 
-### Enemies
+</details>
 
-- **Airdramon(Gold)** *by ElissabethHaser* [Deviant Art](https://www.deviantart.com/elissabethhaser/art/Airdramon-Gold-World-3-1001557156)
-- **Airdramon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Airdramon/Galeria?file=Airdramon_b.jpg)
-- **Andromon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Andromon/Galeria?file=Andromon_b.jpg)
-- **Apemon** *by Yuetmoon* [Digimon Wiki](https://digimon.fandom.com/wiki/Apemon?file=Apemon_b.jpg)
-- **Bakemon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Bakemon/Galeria?file=Bakemon_b.jpg)
-- **Baromon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Baromon?file=Baromon_b.jpg)
-- **Betamon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Betamon/Galeria?file=Betamon_b.jpg)
-- **Bulbmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Bulbmon?file=Bulbmon_b.jpg)
-- **Clockmon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Clockmon/Galeria?file=Clockmon_b.jpg)
-- **Coelamon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Coelamon?file=Coelamon_b.jpg)
-- **Crabmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Crabmon?file=Crabmon_b.jpg)
-- **Cyclonemon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Cyclonemon?file=Cyclonemon_b.jpg)
-- **Datamon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Datamon?file=Datamon_b.jpg)
-- **DemiDevimon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/DemiDevimon?file=DemiDevimon_b.jpg)
-- **Divermon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Divermon?file=Divermon_b.jpg)
-- **Dokugumon(Brown)** *by me (using the Dokugumon image as base, only changing the colors to brown tones)*
-- **Dokugumon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Dokugumon?file=Dokugumon_b.jpg)
-- **Dolphmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Dolphmon?file=Dolphmon_b.jpg)
-- **Etemon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Etemon?file=Etemon_b.jpg)
-- **Flymon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Flymon?file=Flymon_b.jpg)
-- **Gekomon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Gekomon/Galeria?file=Gekomon_b.jpg)
-- **Gesomon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Gesomon/Galeria?file=Gesomon_b.jpg)
-- **Gizamon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Gizamon?file=Gizamon_b.jpg)
-- **Goburimon(Red)** *by DoruFlaymDraGon* [Deviant Art](https://www.deviantart.com/doruflaymdragon/art/Goburimon-Red-red-hair-913908979)
-- **Goburimon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Goburimon/Galeria?file=Goburimon_b.jpg)
-- **Hagurumon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Hagurumon?file=Hagurumon_b.jpg)
-- **HiAndromon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Hi-Andromon/Galeria?file=Hi-Andromon_b.jpg)
-- **Kiwimon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Kiwimon/Galeria?file=Kiwimon_b.jpg)
-- **Kokatorimon(Brown)** *by Digital Monsters Almanac* [Digital Monsters Almanac](http://dma.wtw-x.net/dexkokatori.shtml)
-- **Kokatorimon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Kokatorimon?file=Kokatorimon_b.jpg)
-- **Kunemon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Kunemon/Galeria?file=Kunemon_b.jpg)
-- **Kuwagamon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Kuwagamon?file=Kuwagamon_b.jpg)
-- **Maildramon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Maildramon?file=Maildramon_b.jpg)
-- **Mamemon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Mamemon/Galeria?file=Mamemon_b.jpg)
-- **Mammothmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Mammothmon?file=Mammothmon_b.jpg)
-- **MasterTyranomon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/MasterTyranomon?file=MasterTyranomon_b.jpg)
-- **Minotarumon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Lista_de_Esp%C3%A9cies?file=Minotaurmon_b.jpg)
-- **Musyamon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Musyamon/Galeria?file=Musyamon_b.jpg)
-- **Numemon(Blue)** *by Digital Monsters Almanac* [Digital Monsters Almanac](http://dma.wtw-x.net/dexnume.shtml)
-- **Numemon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Numemon?file=Numemon_b.jpg)
-- **Ogremon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Orgemon/Galeria?file=Orgemon_b.jpg)
-- **Pharaohmon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Pharaohmon/Galeria?file=Pharaohmon_b.jpg)
-- **Raremon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Raremon/Galeria?file=Raremon_b.jpg)
-- **RedVegiemon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/RedVegimon/Galeria?file=RedVegimon_b.jpg)
-- **Seadramon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Seadramon?file=Seadramon_b.jpg)
-- **Shellmon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Shellmon/Galeria?file=Shellmon_b.jpg)
-- **ShogunGekomon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/ShogunGekomon?file=ShogunGekomon_b.jpg)
-- **Sukamon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Sukamon?file=Sukamon_b.jpg)
-- **Tapirmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Tapirmon?file=Tapirmon_b.jpg)
-- **Thundermon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Thundermon?file=Thundermon_b.jpg)
-- **Triceramon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Triceramon?file=Triceramon_b.jpg)
-- **Tuskmon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Tuskmon?file=Tuskmon_b.jpg)
-- **Tyrannomon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Tyrannomon?file=Tyrannomon_b.jpg)
-- **Vademon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Vademon/Galeria?file=Vademon_b.jpg)
-- **Vegiemon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Vegimon/Galeria?file=Vegimon_b.jpg)
-- **WaruMonzaemon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/WaruMonzaemon?file=WaruMonzaemon_b.jpg)
-- **Woodmon(Green)** *by Digital Monsters Almanac* [Digital Monsters Almanac](http://dma.wtw-x.net/dexwood.shtml)
-- **Woodmon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Woodmon?file=Woodmon_b.jpg)
-- **Yanmamon(Green)** *by me (using the Yanmamon image as base, only changing the colors to green tones)*
-- **Yanmamon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Yanmamon?file=Yanmamon_b.jpg)
-- **Zanbamon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Zanbamon?file=Zanbamon_b.jpg)
-- **Flymon(Pink)** *by Digital Monsters Almanac* [Digital Monsters Almanac](http://dma.wtw-x.net/dexfly2.shtml)
-- **Monzaemon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Monzaemon?file=Monzaemon_b.jpg)
-- **Nanimon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Nanimon?file=Nanimon_b.jpg)
-- **Cardmon(A)** *by Me, using the follow image as inspiration* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Cardmon_C1?file=Cardmon_C1_%28World_3%29.jpg)
-- **Cardmon(B)** *by Me, using the follow image as inspiration* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Cardmon_C2?file=Cardmon_C2_%28World_3%29.jpg)
-- **Guardromon(Blue)** *by Me, using the follow image as inspiration* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Guardromon/Galeria?file=Guardromon_b.jpg)
-- **Tankmon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Tankmon/Galeria?file=Tankmon_b.jpg)
-- **Vemmon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Bemmon/Galeria?file=Bemmon_b.jpg)
-- **Minotarumon(Blue)** *by Digital Monsters Almanac* [Digital Monsters Almanac](http://dma.wtw-x.net/dexminotaru.shtml)
-- **Gargoylemon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Gargoylemon?file=Gargoylemon_b.jpg)
-- **Persiamon** *by ERROR101USERNOTFOUND* [Digivolutions Wiki](https://static.wikia.nocookie.net/digivolutions-digimon/images/f/f1/Persiamon.jpg/revision/latest?cb=20210504011749)
+## Credits
 
-### Digievolutions
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/cricamfe">Cristian Campos</a></b> · author of this Android version<br>
+      Android port, dual-screen interface, disc extractor and setup wizard.<br>
+      <a href="https://ko-fi.com/cricamfe">Support this version on Ko-fi</a>
+    </td>
+    <td width="50%" valign="top">
+      <b><a href="https://github.com/jeanheck/digivice">Jean Carlos Heck</a></b> · author of the original Digivice<br>
+      The domain core, many tables, presenters and reference sources come from his work, and his history is kept in this repository. He authorised this Android version.<br>
+      <a href="https://ko-fi.com/R5R028MD8Y">Support Jean on Ko-fi</a>
+    </td>
+  </tr>
+</table>
 
-- **Angemon** *by G-SANtos* [Digimon Wiki](https://digimon.fandom.com/wiki/Angemon?file=Angemon_b.jpg)
-- **Angewomon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Angewomon/Galeria?file=Angewomon_b.jpg)
-- **Armormon** *by Chimera-gui* [Digimon Wiki](https://digimon.fandom.com/wiki/Armormon?file=Armormon_b.jpg)
-- **Beelzemon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Beelzemon?file=Beelzemon+b.jpg)
-- **BK WarGreymon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/BlackWarGreymon?file=BlackWarGreymon_b.jpg)
-- **Cannondramon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Cannondramon/Galeria?file=Cannondramon_b.jpg)
-- **Devimon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Devimon?file=Devimon+b.jpg)
-- **Diaboromon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Diablomon?file=Diablomon_b.jpg)
-- **Digitamamon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Digitamamon?file=Digitamamon_b.jpg)
-- **Dinohumon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Dinohumon?file=Dinohumon_b.jpg)
-- **ExVeemon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/ExVeemon?file=ExVeemon_b.jpg)
-- **Gallantmon** *by Lanate* [Digimon Wiki](https://digimon.fandom.com/wiki/Gallantmon?file=Gallantmon+b.jpg)
-- **GranKuwagamon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/GranKuwagamon?file=GranKuwagamon_b.jpg)
-- **GrapLeomon** *by Alfius* [Digimon Wiki](https://digimon.fandom.com/wiki/GrapLeomon?file=GrapLeomon_b.jpg)
-- **Greymon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Greymon?file=Greymon_b.jpg)
-- **Grizzlymon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Grizzlymon?file=Grizzlymon_b.jpg)
-- **Growlmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Growlmon?file=Growlmon_b.jpg)
-- **Guardiangemon** *by Magnaillusion CM* [NeoSeeker](https://digimon.neoseeker.com/wiki/File:Slashangemon.jpg)
-- **Hookmon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Hookmon?file=Hookmon_b.jpg)
-- **Imperialdramon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Imperialdramon:_Dragon_Mode?file=Imperialdramon_Dragon_Mode_b.jpg)
-- **Imperialdramon-F** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Imperialdramon:_Fighter_Mode?file=Imperialdramon_Fighter_Mode_b.jpg)
-- **Imperialdramon-P** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Imperialdramon:_Paladin_Mode?file=Imperialdramon_Paladin_Mode_b.jpg)
-- **Kabuterimon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Kabuterimon?file=Kabuterimon_b.jpg)
-- **Kyubimon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Kyubimon?file=Kyubimon_b.jpg)
-- **Kyukimon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Kyukimon?file=Kyukimon_b.jpg)
-- **MaloMyotismon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/MaloMyotismon?file=MaloMyotismon_b.jpg)
-- **Marsmon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Marsmon?file=Marsmon_b.jpg)
-- **MetalGarurumon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/MetalGarurumon?file=MetalGarurumon_b.jpg)
-- **MetalGreymon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/MetalGreymon_(Vaccine)?file=MetalGreymon_%28Vaccine%29_b.jpg)
-- **MetalMamemon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/MetalMamemon?file=MetalMamemon_b.jpg)
-- **Myotismon** *by G-SANtos* [Digimon Wiki](https://digimon.fandom.com/wiki/Myotismon?file=Myotismon_b.jpg)
-- **Omnimon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Omnimon?file=Omnimon_b.jpg)
-- **Paildramon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Paildramon?file=Paildramon_b.jpg)
-- **Phoenixmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Phoenixmon?file=Phoenixmon_b.jpg)
-- **Rosemon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Rosemon?file=Rosemon_b.jpg)
-- **Sakuyamon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Sakuyamon?file=Sakuyamon_b.jpg)
-- **Seraphimon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Seraphimon?file=Seraphimon_b.jpg)
-- **SkullGreymon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/SkullGreymon?file=SkullGreymon_b.jpg)
-- **Stingmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/Stingmon?file=Stingmon_b.jpg)
-- **Taomon** *by Kamirisu JxS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/Taomon?file=Taomon_b.jpg)
-- **WarGreymon** *by ShikaSS* [Digimon Wiki](https://digitalmonster.fandom.com/pt/wiki/WarGreymon?file=WarGreymon_b.jpg)
-- **WarGrowlmon** *by KrytenKoro* [Digimon Wiki](https://digimon.fandom.com/wiki/WarGrowlmon?file=WarGrowlmon_b.jpg)
+Also thanks to Digivice's data sources (listed in [`NOTICE`](NOTICE)), [dw3_decomp](https://github.com/ReGame-Labs/dw3_decomp) by ReGame Labs, [ddw3](https://github.com/markisha64/ddw3) by markisha64, [libchdr](https://github.com/rtissera/libchdr), the Press Start 2P font, and Libretro, RetroArch and SwanStation.
+
+## License
+
+[GNU GPL v3.0 or later](LICENSE). If you distribute a modified version, keep the credits in [`NOTICE`](NOTICE) and say what you changed.
+
+## Legal
+
+Unofficial fan project, not affiliated with Bandai Namco, AYN or the emulator authors. Digimon and Digimon World 2003 belong to their owners. This repository and the APK contain no game files: each user generates them on their own console from their own copy.

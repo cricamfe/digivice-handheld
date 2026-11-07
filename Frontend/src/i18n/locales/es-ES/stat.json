@@ -1,0 +1,31 @@
+{
+  "stat": {
+    "strength": "Fuerza",
+    "strength-explanation": "Aumenta el daño de los ataques y técnicas físicas.",
+    "defense": "Defensa",
+    "defense-explanation": "Reduce el daño recibido de ataques y técnicas físicas.",
+    "spirit": "Espíritu",
+    "spirit-explanation": "Aumenta el daño de las técnicas mágicas y reduce el daño recibido de ellas.",
+    "wisdom": "Sabiduría",
+    "wisdom-explanation": "Aumenta la precisión de las técnicas mágicas y la probabilidad de esquivarlas.",
+    "speed": "Velocidad",
+    "speed-explanation": "Decide el orden de los turnos en combate y aumenta la probabilidad de esquivar ataques y técnicas físicas.",
+    "charisma": "Carisma",
+    "charisma-explanation": "Decide cuándo pueden ocurrir ciertos eventos del juego, como los combates contra otros tamers.",
+    "fire": "Fuego",
+    "fire-explanation": "Aumenta la resistencia a las técnicas de Fuego y la probabilidad de crítico con técnicas de ese elemento. Entrenar la resistencia al Fuego también aumenta el MP máximo.",
+    "water": "Agua",
+    "water-explanation": "Aumenta la resistencia a las técnicas de Agua y la probabilidad de crítico con técnicas de ese elemento. Entrenar la resistencia al Agua puede reducir la Defensa.",
+    "ice": "Hielo",
+    "ice-explanation": "Aumenta la resistencia a las técnicas de Hielo y la probabilidad de crítico con técnicas de ese elemento. Entrenar la resistencia al Hielo puede reducir la Velocidad.",
+    "wind": "Viento",
+    "wind-explanation": "Aumenta la resistencia a las técnicas de Viento y la probabilidad de crítico con técnicas de ese elemento. Entrenar la resistencia al Viento puede reducir la Fuerza.",
+    "thunder": "Trueno",
+    "thunder-explanation": "Aumenta la resistencia a las técnicas de Trueno y la probabilidad de crítico con técnicas de ese elemento. Entrenar la resistencia al Trueno puede reducir la Sabiduría.",
+    "machine": "Máquina",
+    "machine-explanation": "Aumenta la resistencia a las técnicas de Máquina y la probabilidad de crítico con técnicas de ese elemento. Entrenar la resistencia a la Máquina también aumenta el HP máximo.",
+    "dark": "Oscuridad",
+    "dark-explanation": "Aumenta la resistencia a las técnicas de Oscuridad y la probabilidad de crítico con técnicas de ese elemento. Entrenar la resistencia a la Oscuridad puede reducir el Espíritu.",
+    "none": "Ninguno"
+  }
+}

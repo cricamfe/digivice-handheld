@@ -1,0 +1,907 @@
+{
+  "mainQuest": {
+    "title": "Main Quest",
+    "description": "Become the greatest tamer of the Digital World!",
+    "steps": {
+      "1": {
+        "description": "Look for the {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Talk to {person} on {place}",
+        "locationTarget": "{person}"
+      },
+      "3": {
+        "description": "Defeat {digimon} on {place}"
+      },
+      "4": {
+        "description": "Challenge the {person} on {place}",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Walk out of {place}",
+        "locationTarget": "Exit"
+      },
+      "6": {
+        "description": "Go to the {place} and take the gondola to reach the next sector",
+        "locationTarget": "Gondola"
+      },
+      "7": {
+        "description": "Defeat {person}, the Mystery Player stopping you on the {place}",
+        "locationTarget": "{person}"
+      },
+      "8": {
+        "description": "Talk with the {digimon} on {place}, on {place2}"
+      },
+      "9": {
+        "description": "Talk with the {digimon} on {place}"
+      },
+      "10": {
+        "description": "Talk with the {person} on {place}, on {place2}"
+      },
+      "11": {
+        "description": "Return to the {place} with the {item}",
+        "locationTarget": "Gondola"
+      },
+      "12": {
+        "description": "Confront the {digimon} on {place} about the fake card"
+      },
+      "13": {
+        "description": "Talk to the {person} at the {place} Basements",
+        "locationTarget": "{person}"
+      },
+      "14": {
+        "description": "Return to the {place} with the real {item}",
+        "locationTarget": "Gondola"
+      },
+      "15": {
+        "description": "Follow through {place}"
+      },
+      "16": {
+        "description": "Talk to {person} in training at the {place}",
+        "locationTarget": "{person}"
+      },
+      "17": {
+        "description": "Discover who the mysterious being is in the {place}",
+        "locationTarget": "{person}"
+      },
+      "18": {
+        "description": "Find {digimon}"
+      },
+      "19": {
+        "description": "Look for {person} near or around {place}",
+        "locationTarget": "{person}"
+      },
+      "20": {
+        "description": "Speak to {digimon} near {place}"
+      },
+      "21": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "22": {
+        "description": "Speak to {digimon} near {item} again"
+      },
+      "23": {
+        "description": "Chase {digimon} through the {place}"
+      },
+      "24": {
+        "description": "Return the mask to {person} at the {place}",
+        "locationTarget": "{person}"
+      },
+      "25": {
+        "description": "Use the {item} to lure {digimon} out of the {place}"
+      },
+      "26": {
+        "description": "Enter {place} and look for an inn to rest",
+        "locationTarget": "{person}"
+      },
+      "27": {
+        "description": "Challenge {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "28": {
+        "description": "Meet {person} in {place} and go back with him to the {place2} in {place3}",
+        "locationTarget": "{person}"
+      },
+      "29": {
+        "description": "Search for information on {place}",
+        "locationTarget": "{person}"
+      },
+      "30": {
+        "description": "Look for the tamer couple near {place}",
+        "locationTarget": "Tamer couple"
+      },
+      "31": {
+        "description": "Go to the place where you last saw {digimon}"
+      },
+      "32": {
+        "description": "Report your findings to {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "33": {
+        "description": "Confront the {person} at {place}",
+        "locationTarget": "{person}"
+      },
+      "34": {
+        "description": "Return to the {place} and find {person}",
+        "locationTarget": "{person}"
+      },
+      "35": {
+        "description": "Enter the Admin Center dressed as {digimon}",
+        "locationTarget": "{place}"
+      },
+      "36": {
+        "description": "Find {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "37": {
+        "description": "Look for clues on how to proceed in {place}",
+        "locationTarget": "{person}"
+      },
+      "38": {
+        "description": "Look for {person}'s cat in {place}",
+        "locationTarget": "Lost Cat"
+      },
+      "39": {
+        "description": "Ask {person} for help to break down the wall",
+        "locationTarget": "{person}"
+      },
+      "40": {
+        "description": "Look for {digimon} so he can help you with bombs"
+      },
+      "41": {
+        "description": "Obtain a {item} from a {digimon} and deliver it to {digimon2}"
+      },
+      "42": {
+        "description": "Use the {item} to open the wall in {place}",
+        "locationTarget": "Wall"
+      },
+      "43": {
+        "description": "Find the Digi-Egg of Sincerity",
+        "locationTarget": "{item}"
+      },
+      "44": {
+        "description": "Head towards {place}"
+      },
+      "45": {
+        "description": "Challenge {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "46": {
+        "description": "Find someone to help you get out of the {place}",
+        "locationTarget": "{person}"
+      },
+      "47": {
+        "description": "Find a way out of the {place}",
+        "locationTarget": "Exit"
+      },
+      "48": {
+        "description": "Challenge the true {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "49": {
+        "description": "Enter the {place}",
+        "locationTarget": "Enter the factory"
+      },
+      "50": {
+        "description": "Chase down {digimon}"
+      },
+      "51": {
+        "description": "Enter {place}",
+        "locationTarget": "{place}"
+      },
+      "52": {
+        "description": "Open the box on the {place}",
+        "locationTarget": "Box"
+      },
+      "53": {
+        "description": "Keep chasing {digimon}"
+      },
+      "54": {
+        "description": "Open the box on the {place}",
+        "locationTarget": "Box"
+      },
+      "55": {
+        "description": "Don't give up! Go after {digimon}!"
+      },
+      "56": {
+        "description": "Open the box on the {place}",
+        "locationTarget": "Box"
+      },
+      "57": {
+        "description": "Does he never get tired? Follow {digimon}"
+      },
+      "58": {
+        "description": "Open the box on the {place}",
+        "locationTarget": "Box"
+      },
+      "59": {
+        "description": "Go to the center of the factory to look for {digimon}"
+      },
+      "60": {
+        "description": "Ask {digimon} about {digimon2} inside the {place}"
+      },
+      "61": {
+        "description": "Head to the {place} to find {digimon}"
+      },
+      "62": {
+        "description": "Look for a way to enter {place}"
+      },
+      "63": {
+        "description": "Return to the {place} and ask your friends about the {item}",
+        "locationTarget": "{person}"
+      },
+      "64": {
+        "description": "Look for {person} and {person2} in the {place}",
+        "locationTarget": "{person} & {person2}"
+      },
+      "65": {
+        "description": "With everyone's help, look for the {item} inside the {place}",
+        "locationTarget": "{person}"
+      },
+      "66": {
+        "description": "Use the {item} and ask {digimon} to open the gate"
+      },
+      "67": {
+        "description": "Defeat the {person} blocking you from entering {place}",
+        "locationTarget": "{person}"
+      },
+      "68": {
+        "description": "Defeat the {person} blocking your way through {place}",
+        "locationTarget": "{person}"
+      },
+      "69": {
+        "description": "Defeat the {person} blocking you from leaving {place}",
+        "locationTarget": "{person}"
+      },
+      "70": {
+        "description": "Defeat the {person} at the entrance of the {place}",
+        "locationTarget": "{person}"
+      },
+      "71": {
+        "description": "Defeat the {person} at the end of the {place}",
+        "locationTarget": "{person}"
+      },
+      "72": {
+        "description": "Defeat the {person} to get out of the {place}",
+        "locationTarget": "{person}"
+      },
+      "73": {
+        "description": "Defeat the {person} at the entrance of {place}",
+        "locationTarget": "{person}"
+      },
+      "74": {
+        "description": "Defeat the {person} before going up the stairs of {place}",
+        "locationTarget": "{person}"
+      },
+      "75": {
+        "description": "Defeat the {person} to walk through {place}",
+        "locationTarget": "{person}"
+      },
+      "76": {
+        "description": "Defeat the {person} after going up the stairs of {place}",
+        "locationTarget": "{person}"
+      },
+      "77": {
+        "description": "Defeat the {person} in the hallway leading to the {place}",
+        "locationTarget": "{person}"
+      },
+      "78": {
+        "description": "Defeat the {person} blocking you from entering the {place}",
+        "locationTarget": "{person}"
+      },
+      "79": {
+        "description": "\"GUBI!?\" Defend yourself from the strange Digimon that came out of the room"
+      },
+      "80": {
+        "description": "Inside the {place}, touch the panel representing the letter \"M\"",
+        "locationTarget": "Letter \"M\""
+      },
+      "81": {
+        "description": "Inside the {place}, touch the panel representing the letter \"O\"",
+        "locationTarget": "Letter \"O\""
+      },
+      "82": {
+        "description": "Inside the {place}, touch the panel representing the letter \"N\"",
+        "locationTarget": "Letter \"N\""
+      },
+      "83": {
+        "description": "Inside the {place}, touch the panel representing the letter \"S\"",
+        "locationTarget": "Letter \"S\""
+      },
+      "84": {
+        "description": "Inside the {place}, touch the panel representing the letter \"T\"",
+        "locationTarget": "Letter \"T\""
+      },
+      "85": {
+        "description": "Inside the {place}, touch the panel representing the letter \"E\"",
+        "locationTarget": "Letter \"E\""
+      },
+      "86": {
+        "description": "Inside the {place}, touch the panel representing the letter \"R\"",
+        "locationTarget": "Letter \"R\""
+      },
+      "87": {
+        "description": "Defeat the Guards at the entrance of the {place}",
+        "locationTarget": "Guards"
+      },
+      "88": {
+        "description": "Confront the {person} inside the {place}",
+        "locationTarget": "{person}"
+      },
+      "89": {
+        "description": "Defeat the {person}'s {digimon} inside the {place}",
+        "locationTarget": "{person}"
+      },
+      "90": {
+        "description": "Ask the {person} held in the {place} of {place2} how the A.o.A reached this server",
+        "locationTarget": "{person}"
+      },
+      "91": {
+        "description": "Ask {digimon} in the {place} where {person} went"
+      },
+      "92": {
+        "description": "Find {person} at the security hole in the {place}, past the {place2}",
+        "locationTarget": "{person}"
+      },
+      "93": {
+        "description": "Go through the {place} and defeat {digimon} in the {place2}"
+      },
+      "94": {
+        "description": "Talk to {person} in the {place} after coming out on the Amaterasu Server, and get the {item}",
+        "locationTarget": "{person}"
+      },
+      "95": {
+        "description": "Defeat the {person} in {place} and take the {item}",
+        "locationTarget": "{person}"
+      },
+      "96": {
+        "description": "Defeat the {person} in the {place} and take the {item}",
+        "locationTarget": "{person}"
+      },
+      "97": {
+        "description": "Find the Digi-Egg of Knowledge in the {place}",
+        "locationTarget": "{item}"
+      },
+      "98": {
+        "description": "Defeat {person} at the {place} in the {place2} and take the {item}",
+        "locationTarget": "{person}"
+      },
+      "99": {
+        "description": "Defeat the {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "100": {
+        "description": "Defeat the {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "101": {
+        "description": "Defeat the {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "102": {
+        "description": "Ask the {person} in the {place} to send you to {place2} in the Real World",
+        "locationTarget": "{person}"
+      },
+      "103": {
+        "description": "In the Real World, press the button on the control panel of {place} before the 180 seconds run out",
+        "locationTarget": "Control panel"
+      },
+      "104": {
+        "description": "Press the second button in {place}, which opens the way to the launch site",
+        "locationTarget": "Control panel"
+      },
+      "105": {
+        "description": "Defeat the {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "106": {
+        "description": "Try to stop the launch of the Juggernaut before the time runs out",
+        "locationTarget": "{person}"
+      },
+      "107": {
+        "description": "Go to the {place} and tell {person} that the A.o.A took the Juggernaut",
+        "locationTarget": "{person}"
+      },
+      "108": {
+        "description": "Find the Resistance's hideout in the {place} on the Amaterasu Server",
+        "locationTarget": "{person}"
+      },
+      "109": {
+        "description": "Talk to {person} of the Resistance in the {place}",
+        "locationTarget": "{person}"
+      },
+      "110": {
+        "description": "Tell {person} in the {place} about the Resistance and the four Code Passes",
+        "locationTarget": "{person}"
+      },
+      "111": {
+        "description": "Defeat the {person} in the {place} and take the {item}",
+        "locationTarget": "{person}"
+      },
+      "112": {
+        "description": "Defeat the {person} at the {place} and take the {item}",
+        "locationTarget": "{person}"
+      },
+      "113": {
+        "description": "Meet {person} in {place} and cross the {place2} with the four Code Passes",
+        "locationTarget": "{person}"
+      },
+      "114": {
+        "description": "Defeat every {person} in the {place} of {place2}",
+        "locationTarget": "{person}"
+      },
+      "115": {
+        "description": "Defeat every {person} blocking {place}",
+        "locationTarget": "{person}"
+      },
+      "116": {
+        "description": "Defeat the {person} to walk through {place}",
+        "locationTarget": "{person}"
+      },
+      "117": {
+        "description": "Defeat the {person} after going up the stairs of {place}",
+        "locationTarget": "{person}"
+      },
+      "118": {
+        "description": "Defeat the {person} in the hallway leading to the {place}",
+        "locationTarget": "{person}"
+      },
+      "119": {
+        "description": "Go through the door that opens by itself in the {place} and defeat every {person} in the {place2}",
+        "locationTarget": "{person}"
+      },
+      "120": {
+        "description": "Defeat the Chief Officer, the President of MAGAMI",
+        "locationTarget": "Chief Officer"
+      },
+      "121": {
+        "description": "Go back to Asuka's {place} to look for a clue about {digimon}",
+        "locationTarget": "Oinkmon"
+      },
+      "122": {
+        "description": "Go further into the {place} of Asuka and follow {digimon}"
+      },
+      "123": {
+        "description": "Find {person} hiding in {place} on the Amaterasu Server",
+        "locationTarget": "{person}"
+      },
+      "124": {
+        "description": "Enter the {place} of Amaterasu and hear Lord Megadeath's plan in the {place2}",
+        "locationTarget": "Lord Megadeath"
+      },
+      "125": {
+        "description": "Go through the Warp Gate of the {place2} and turn on the first panel of {place}",
+        "locationTarget": "Panel"
+      },
+      "126": {
+        "description": "Turn on the second panel of {place}",
+        "locationTarget": "Panel"
+      },
+      "127": {
+        "description": "Turn on the third panel of {place}",
+        "locationTarget": "Panel"
+      },
+      "128": {
+        "description": "Defeat the {person} that sounds the alarm in {place}",
+        "locationTarget": "{person}"
+      },
+      "129": {
+        "description": "Defeat the second {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "130": {
+        "description": "Reach the end of {place} and hear Lord Megadeath's challenge",
+        "locationTarget": "Lord Megadeath"
+      },
+      "131": {
+        "description": "Keep going through {place} until the ship shakes and defeat the enemy that attacks you",
+        "locationTarget": "Enemy"
+      },
+      "132": {
+        "description": "Defeat Lord Megadeath in the {place} of the Gunslinger",
+        "locationTarget": "Lord Megadeath"
+      },
+      "133": {
+        "description": "Defeat {digimon} in the last battle"
+      }
+    }
+  },
+  "fishingPole": {
+    "title": "The {item}",
+    "description": "Obtain the {item} to challenge {digimon} and other aquatic Digimon!",
+    "steps": {
+      "1": {
+        "description": "Talk to {person} at the {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Help the {digimon} at {place}"
+      },
+      "3": {
+        "description": "Bring the items to {person} at the {place} to receive the {item}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "folderBag": {
+    "title": "The {item}",
+    "description": "Obtain the {item} to challenge other tamers in Card Battles and Digimon Battles!",
+    "steps": {
+      "1": {
+        "description": "Speak with {digimon} in the {place} located in {place2}"
+      }
+    }
+  },
+  "treeBoots": {
+    "title": "The {item}",
+    "description": "Obtain the {item} to challenge {digimon} and other Digimon!",
+    "steps": {
+      "1": {
+        "description": "Talk to the {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Find the lost {person}'s card",
+        "locationTarget": "{person} Card"
+      },
+      "3": {
+        "description": "Give the {card} card to the {person}",
+        "locationTarget": "{person}"
+      },
+      "4": {
+        "description": "Talk to {person} in {place} in {place2}",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Find {digimon} on {place}"
+      },
+      "6": {
+        "description": "Play Hide and Seek and find {digimon} on {place}"
+      },
+      "7": {
+        "description": "Receive the {item} from {digimon} after you find him"
+      }
+    }
+  },
+  "digimonOnline": {
+    "title": "Digimon Online",
+    "description": "After the last battle, take on the Leaders of the Amaterasu Server and {person} in the {place}",
+    "steps": {
+      "1": {
+        "description": "Listen to the Tour Leader in the {place} of Digimon Online",
+        "locationTarget": "Tour Leader"
+      },
+      "2": {
+        "description": "Defeat the {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "3": {
+        "description": "Defeat the {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "4": {
+        "description": "Defeat the {person} in the {place}",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Defeat the {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "6": {
+        "description": "Talk to the {person} at the {place} and defeat {person2} in the {place2}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "eternally": {
+    "title": "{item}",
+    "description": "Obtain the Legendary Weapon {item}.",
+    "steps": {
+      "1": {
+        "description": "Defeat {digimon} to receive the {item}"
+      }
+    }
+  },
+  "invincible": {
+    "title": "{item}",
+    "description": "Obtain the Legendary Weapon {item}",
+    "steps": {
+      "1": {
+        "description": "Defeat {digimon} to receive the {item}"
+      }
+    }
+  },
+  "muramasa": {
+    "title": "{item}",
+    "description": "Obtain the Legendary Weapon {item}",
+    "steps": {
+      "1": {
+        "description": "Defeat {digimon} to receive the {item}"
+      }
+    }
+  },
+  "superNova": {
+    "title": "{item}",
+    "description": "Obtain the Legendary Weapon {item}",
+    "steps": {
+      "1": {
+        "description": "Defeat {digimon} to receive the {item}"
+      }
+    }
+  },
+  "punishment": {
+    "title": "{item}",
+    "description": "Obtain the Legendary Weapon {item}",
+    "steps": {
+      "1": {
+        "description": "Defeat {digimon} to receive the {item}"
+      }
+    }
+  },
+  "driAgentGuilmon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentAgumon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentVeemon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentKumamon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentMonmon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentKotemon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentRenamon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentPatamon": {
+    "title": "{digimon} ({person})",
+    "description": "Add {digimon} to your Digimon party",
+    "steps": {
+      "1": {
+        "description": "Look for {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Defeat {digimon} in battle to receive {digimon2}'s DDNA"
+      },
+      "3": {
+        "description": "Deliver {digimon}'s DNA to {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "asukaTrophy": {
+    "title": "Asuka (Trophy)",
+    "description": "Defeat all {digimon} on {place} and win the {item}",
+    "steps": {
+      "1": {
+        "description": "Defeat the first {digimon}"
+      },
+      "2": {
+        "description": "Defeat the second {digimon}"
+      },
+      "3": {
+        "description": "Defeat the third {digimon}"
+      },
+      "4": {
+        "description": "Defeat the fourth {digimon}"
+      },
+      "5": {
+        "description": "Defeat the fifth {digimon}"
+      },
+      "6": {
+        "description": "Defeat the {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "asukaRematch": {
+    "title": "Asuka (Rematch)",
+    "description": "Defeat all {digimon} again on {place}",
+    "steps": {
+      "1": {
+        "description": "Defeat the first {digimon}"
+      },
+      "2": {
+        "description": "Defeat the second {digimon}"
+      },
+      "3": {
+        "description": "Defeat the third {digimon}"
+      },
+      "4": {
+        "description": "Defeat the fourth {digimon}"
+      },
+      "5": {
+        "description": "Defeat the fifth {digimon}"
+      },
+      "6": {
+        "description": "Defeat the {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "amaterasuTrophy": {
+    "title": "Amaterasu (Trophy)",
+    "description": "Defeat all {digimon} on {place} and win the {item}",
+    "steps": {
+      "1": {
+        "description": "Defeat the first {digimon}"
+      },
+      "2": {
+        "description": "Defeat the second {digimon}"
+      },
+      "3": {
+        "description": "Defeat the third {digimon}"
+      },
+      "4": {
+        "description": "Defeat the fourth {digimon}"
+      },
+      "5": {
+        "description": "Defeat {digimon}"
+      },
+      "6": {
+        "description": "Defeat {digimon} and win the {item}"
+      }
+    }
+  },
+  "amaterasuRematch": {
+    "title": "Amaterasu (Rematch)",
+    "description": "Defeat all {digimon} again on {place}",
+    "steps": {
+      "1": {
+        "description": "Defeat the first {digimon}"
+      },
+      "2": {
+        "description": "Defeat the second {digimon}"
+      },
+      "3": {
+        "description": "Defeat the third {digimon}"
+      },
+      "4": {
+        "description": "Defeat the fourth {digimon}"
+      },
+      "5": {
+        "description": "Defeat {digimon}"
+      },
+      "6": {
+        "description": "Defeat {digimon}"
+      }
+    }
+  },
+  "cardKing": {
+    "title": "Card King",
+    "description": "After the last battle, beat the Tamers of {place} at cards and take the {item} from {person}",
+    "steps": {
+      "1": {
+        "description": "Beat {person} at cards on {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Beat {person} at cards on {place}",
+        "locationTarget": "{person}"
+      },
+      "3": {
+        "description": "Beat {person} at cards on {place}",
+        "locationTarget": "{person}"
+      },
+      "4": {
+        "description": "Beat {person} at cards on {place}",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Beat {person} at cards on {place}",
+        "locationTarget": "{person}"
+      },
+      "6": {
+        "description": "Beat {person}, the Card King, at cards on {place} and take the {item}",
+        "locationTarget": "{person}"
+      }
+    }
+  }
+}

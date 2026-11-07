@@ -1,9 +1,15 @@
 import type { EnemyDropRaw } from "./enemy-drop.raw";
 import type { EnemyLocationRaw } from "./enemy-location.raw";
 import type { DigimonSpecies } from "@/types/digimon-species.type";
+import type { DigimonVariant } from "@/types/digimon-variant.type";
 
 export interface EnemyRaw {
-  name: string;
+  /** Line of the game's Digimon names (`dignam:212`), from the battle table of the disc. */
+  nameId: number;
+  /** What tells apart the enemies the game names alike: a colour of the app's own, or a letter. */
+  variant?: DigimonVariant;
+  /** The field character a boss stands as before its battle (`59-0`: character and direction), for its picture. */
+  fieldActor?: string;
   level: number;
   hp: number;
   species: DigimonSpecies;

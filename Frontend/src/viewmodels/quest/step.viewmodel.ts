@@ -7,6 +7,6 @@ export interface StepViewModel {
   requisites: RequisiteViewModel[];
   isDone: boolean;
   location: string;
-  coordinates: CoordinatesViewModel;
+  coordinates: CoordinatesViewModel | null;
   innerLocation: InnerLocationViewModel[];
 }

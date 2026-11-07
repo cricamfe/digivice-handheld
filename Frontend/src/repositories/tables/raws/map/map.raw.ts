@@ -22,7 +22,6 @@ export interface MapEnemiesRaw {
 }
 
 export interface MapRaw {
-  imageName: string;
   worldLocation?: CoordinatesRaw;
   innerLocation?: InnerLocationRaw[];
   enemies?: MapEnemiesRaw;

@@ -1,0 +1,54 @@
+{
+  "id": "digimonOnline",
+  "requisites": [],
+  "steps": {
+    "1": {
+      "location": "0276",
+      "requisites": [],
+      "coordinates": {
+        "x": 52.9,
+        "y": 78.3
+      }
+    },
+    "2": {
+      "location": "029C",
+      "requisites": [],
+      "coordinates": {
+        "x": 27.5,
+        "y": 30.5
+      }
+    },
+    "3": {
+      "location": "0295",
+      "requisites": [],
+      "coordinates": {
+        "x": 76.2,
+        "y": 11.3
+      }
+    },
+    "4": {
+      "location": "0295",
+      "requisites": [],
+      "coordinates": {
+        "x": 36.9,
+        "y": 17.2
+      }
+    },
+    "5": {
+      "location": "029A",
+      "requisites": [],
+      "coordinates": {
+        "x": 72.2,
+        "y": 22.9
+      }
+    },
+    "6": {
+      "location": "0277",
+      "requisites": [],
+      "coordinates": {
+        "x": 53.1,
+        "y": 67.2
+      }
+    }
+  }
+}

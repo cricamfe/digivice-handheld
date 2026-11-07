@@ -1,9 +1,17 @@
+import type { QuestOffersDTO } from "@/events/dto/quest-offers.dto";
 import { defineStore } from "pinia";
 import { ref } from "vue";
 import type { HealthStatus, State } from "@/models";
 import type { HealthDTO } from "@/events/dto/health.dto";
 import type { StateDTO } from "@/events/dto/state.dto";
 import type { PlayerDTO } from "@/events/dto/player.dto";
+import type { PlayerPositionDTO } from "@/events/dto/player-position.dto";
+import type { FieldActorDTO, FieldActorsDTO } from "@/events/dto/field-actors.dto";
+import type { FieldChangingDTO } from "@/events/dto/field-changing.dto";
+import type {
+  PartnerTechniquesDTO,
+  PartnerTechniquesPartnerDTO,
+} from "@/events/dto/partner-techniques.dto";
 import type { ImportantItemsDTO } from "@/events/dto/important-items.dto";
 import type { PartyDTO } from "@/events/dto/party.dto";
 import type { DigimonBattleDTO } from "@/events/dto/digimon-battle.dto";
@@ -30,24 +38,25 @@ import { AuctionsSyncer } from "./syncers/auctions.syncer";
 import { NpcsSyncer } from "./syncers/npcs.syncer";
 
 export const useGameStore = defineStore("game", () => {
-  const isConnectedWithBackend = ref(false);
   const healthStatus = ref<HealthStatus>("Loading");
-  const backendProcessFailed = ref(false);
-  const lastHubConnectionError = ref<string | null>(null);
   const lastErrorCode = ref<string | null>(null);
   const lastErrorDetail = ref<string | null>(null);
   const currentState = ref<State | null>(null);
+  /** The characters of the map the field draws; not part of the state, they come with their own event. */
+  const fieldActors = ref<FieldActorDTO[]>([]);
+  /** The change of field going on, or null while the field is running. */
+  const fieldChange = ref<FieldChangingDTO | null>(null);
+  /** The techniques of the party, as the RAM has them; not part of the state either. */
+  const partnerTechniques = ref<PartnerTechniquesPartnerDTO[]>([]);
+  /** The quests the game would start now; null until the core says. */
+  const questOffers = ref<string[] | null>(null);
 
   function clearGameState(): void {
     currentState.value = null;
-  }
-
-  function setBackendProcessFailed(failed: boolean): void {
-    backendProcessFailed.value = failed;
-    if (failed) {
-      isConnectedWithBackend.value = false;
-      clearGameState();
-    }
+    fieldActors.value = [];
+    fieldChange.value = null;
+    partnerTechniques.value = [];
+    questOffers.value = null;
   }
 
   function syncHubConnectionStatus(event: {
@@ -55,19 +64,8 @@ export const useGameStore = defineStore("game", () => {
     errorMessage?: string;
     preserveGameState?: boolean;
   }): void {
-    isConnectedWithBackend.value = event.isConnected;
-
-    if (event.isConnected) {
-      lastHubConnectionError.value = null;
-      return;
-    }
-
-    if (!event.preserveGameState) {
+    if (!event.isConnected && !event.preserveGameState) {
       clearGameState();
-    }
-
-    if (event.errorMessage) {
-      lastHubConnectionError.value = event.errorMessage;
     }
   }
 
@@ -121,6 +119,31 @@ export const useGameStore = defineStore("game", () => {
     }
 
     PlayerSyncer.sync(state.player, newPlayerDto);
+  }
+
+  function syncPlayerPosition(position: PlayerPositionDTO): void {
+    const state = getStateOrWarn("PlayerPositionChanged");
+    if (!state) {
+      return;
+    }
+
+    PlayerSyncer.syncPosition(state.player, position);
+  }
+
+  function syncQuestOffers(dto: QuestOffersDTO): void {
+    questOffers.value = dto.quests;
+  }
+
+  function syncPartnerTechniques(dto: PartnerTechniquesDTO): void {
+    partnerTechniques.value = dto.partners;
+  }
+
+  function syncFieldChange(dto: FieldChangingDTO): void {
+    fieldChange.value = dto.changing ? dto : null;
+  }
+
+  function syncFieldActors(dto: FieldActorsDTO): void {
+    fieldActors.value = dto.actors;
   }
 
   function syncImportantItems(newImportantItemsDto: ImportantItemsDTO): void {
@@ -187,18 +210,23 @@ export const useGameStore = defineStore("game", () => {
   }
 
   return {
-    isConnectedWithBackend,
     healthStatus,
-    backendProcessFailed,
-    lastHubConnectionError,
     lastErrorCode,
     lastErrorDetail,
-    setBackendProcessFailed,
     currentState,
+    fieldActors,
+    fieldChange,
+    partnerTechniques,
+    questOffers,
     syncHubConnectionStatus,
     syncHealth,
     setInitialState,
     syncPlayer,
+    syncPlayerPosition,
+    syncFieldActors,
+    syncFieldChange,
+    syncPartnerTechniques,
+    syncQuestOffers,
     syncImportantItems,
     syncParty,
     syncDigimonBattle,

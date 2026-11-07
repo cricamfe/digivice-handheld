@@ -1,5 +1,6 @@
 import type { EnemyRaw } from "@/repositories/tables/raws/enemy/enemy.raw";
 import type { EnemyResumedViewModel } from "@/viewmodels/enemy/enemy-resumed.viewmodel";
+import { EnemyRepository } from "@/repositories/enemy.repository";
 
 export class EnemyResumedConverter {
   public static convert(
@@ -9,7 +10,7 @@ export class EnemyResumedConverter {
   ): EnemyResumedViewModel {
     return {
       id: enemyId,
-      name: enemyRaw.name,
+      name: EnemyRepository.getName(enemyRaw),
       boss: enemyRaw.boss === true,
       walking: origins.walking,
       fishing: origins.fishing,

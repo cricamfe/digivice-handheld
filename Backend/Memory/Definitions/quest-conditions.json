@@ -1,0 +1,111 @@
+{
+  "folderBag": { "ways": [
+    {"map": "0211", "character": 206, "conditions": [[33170, 0], [28681, 1], [28698, 0]], "intro": []},
+    {"map": "027F", "character": 103, "conditions": [[24621, 1], [33170, 0]], "intro": [[0, 1]]}
+  ] },
+  "fishingPole": { "ways": [
+    {"map": "021F", "character": 282, "conditions": [[28706, 1], [32773, 0], [28730, 0], [33170, 1]], "intro": [[6710, 1]]},
+    {"map": "021F", "character": 282, "conditions": [[24619, 1], [32773, 0], [33170, 1], [28730, 0]], "intro": [[6710, 1]]}
+  ] },
+  "treeBoots": { "ways": [
+    {"map": "0220", "character": null, "conditions": [[6690, 0], [33170, 1]], "intro": []}
+  ] },
+  "digimonOnline": { "ways": [
+    {"map": "0276", "character": null, "conditions": [[24621, 1], [16589, 0]], "intro": []}
+  ] },
+  "eternally": { "ways": [
+    {"map": "0226", "character": 59, "conditions": [[24619, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[24588, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[24590, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[28694, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[28695, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[28696, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[28697, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[24614, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[28698, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[28693, 1], [2560, 0]], "intro": []},
+    {"map": "0226", "character": 59, "conditions": [[24580, 1], [2560, 0]], "intro": []},
+    {"map": "02EC", "character": 78, "conditions": [[24621, 1], [636, 0], [34445, 0], [34446, 0], [34447, 0], [34448, 0]], "intro": [], "place": [[32256, 1], [32293, 1]]}
+  ] },
+  "invincible": { "ways": [
+    {"map": "022B", "character": 90, "conditions": [[24580, 1], [7184, 1], [7185, 0]], "intro": []}
+  ] },
+  "muramasa": { "ways": [
+    {"map": "0243", "character": 133, "conditions": [[24584, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[24585, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[24586, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[24583, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[24601, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[24600, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[28695, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[28694, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[24590, 1], [2562, 0]], "intro": []},
+    {"map": "0243", "character": 133, "conditions": [[24588, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24610, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24609, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24619, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24603, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24614, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[28698, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24602, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24613, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24604, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24605, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24606, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24607, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24612, 1], [2562, 0]], "intro": []},
+    {"map": "0244", "character": 133, "conditions": [[24611, 1], [2562, 0]], "intro": []},
+    {"map": "02EC", "character": 77, "conditions": [[24621, 1], [635, 0], [34406, 0], [34407, 0], [34408, 0], [34409, 0]], "intro": [], "place": [[32256, 1], [32293, 1]]}
+  ] },
+  "punishment": { "ways": [
+    {"map": "0252", "character": 150, "conditions": [[24593, 1], [7205, 1], [2564, 0]], "intro": []}
+  ] },
+  "superNova": { "ways": [
+    {"map": "021C", "character": 165, "conditions": [[2563, 0]], "intro": []}
+  ] },
+  "driAgentAgumon": { "ways": [
+    {"map": "022B", "character": 43, "conditions": [[24580, 0], [32774, 0], [28706, 1], [28709, 1], [28711, 0], [28714, 1]], "intro": [[6701, 1]]},
+    {"map": "022B", "character": 43, "conditions": [[24619, 1], [32774, 0], [28714, 1], [28709, 1], [28711, 0]], "intro": [[6701, 1]]}
+  ] },
+  "driAgentGuilmon": { "ways": [
+    {"map": "022E", "character": 43, "conditions": [[28706, 1], [24580, 0], [32802, 0], [28716, 1], [28709, 1], [28711, 0]], "intro": [[6702, 1]]},
+    {"map": "022E", "character": 43, "conditions": [[24619, 1], [32802, 0], [28716, 1], [28709, 1], [28711, 0]], "intro": [[6702, 1]]}
+  ] },
+  "driAgentPatamon": { "ways": [
+    {"map": "021D", "character": 43, "conditions": [[32807, 0], [28708, 1], [28710, 1], [28717, 1], [28712, 0]], "intro": [[6687, 1]]},
+    {"map": "021D", "character": 43, "conditions": [[24619, 1], [32807, 0], [28717, 1], [28710, 1], [28712, 0]], "intro": [[6687, 1]]}
+  ] },
+  "driAgentRenamon": { "ways": [
+    {"map": "021D", "character": 44, "conditions": [[28708, 1], [32806, 0], [28726, 1], [28710, 1], [28712, 0]], "intro": [[6688, 1]]},
+    {"map": "021D", "character": 44, "conditions": [[32806, 0], [24619, 1], [28726, 1], [28710, 1], [28712, 0]], "intro": [[6688, 1]]}
+  ] },
+  "driAgentKotemon": { "ways": [
+    {"map": "0258", "character": 43, "conditions": [[28819, 1], [28698, 0], [32787, 0], [28718, 1], [28711, 1], [28713, 0]], "intro": [[6703, 1]], "place": [[32256, 1], [32286, 1]]}
+  ] },
+  "driAgentKumamon": { "ways": [
+    {"map": "0258", "character": 44, "conditions": [[28819, 1], [28698, 0], [33163, 0], [28720, 1], [28711, 1], [28713, 0]], "intro": [[6704, 1]], "place": [[32289, 1], [32256, 1]]}
+  ] },
+  "driAgentMonmon": { "ways": [
+    {"map": "0258", "character": 163, "conditions": [[28819, 1], [28698, 0], [33128, 0], [28719, 1], [28711, 1], [28713, 0]], "intro": [[6705, 1]], "place": [[32292, 1], [32256, 1]]}
+  ] },
+  "driAgentVeemon": { "ways": [
+    {"map": "0226", "character": 43, "conditions": [[24619, 1], [32803, 0], [6697, 0]], "intro": []},
+    {"map": "0226", "character": 43, "conditions": [[32803, 0], [28731, 1], [6697, 0]], "intro": []},
+    {"map": "02EA", "character": 127, "conditions": [[24621, 1], [28821, 1], [28685, 0], [32803, 0], [2582, 0]], "intro": [[0, 1]], "place": [[32260, 1], [32286, 1]]}
+  ] },
+  "asukaTrophy": { "ways": [
+    {"map": "0228", "character": 322, "conditions": [[6711, 0], [32786, 0]], "intro": [[17, 1], [16, 1]]}
+  ] },
+  "asukaRematch": { "ways": [
+    {"map": "0228", "character": 322, "conditions": [[6711, 0], [32786, 1]], "intro": [[17, 1], [16, 1]]}
+  ] },
+  "amaterasuTrophy": { "ways": [
+    {"map": "0297", "character": 325, "conditions": [[24621, 0], [6716, 0], [32788, 0]], "intro": [[17, 1], [16, 1]]}
+  ] },
+  "amaterasuRematch": { "ways": [
+    {"map": "0297", "character": 325, "conditions": [[24621, 0], [6716, 0], [32788, 1]], "intro": [[17, 1], [16, 1]]}
+  ] },
+  "cardKing": { "ways": [
+    {"map": "0297", "character": 403, "conditions": [[24621, 1], [4118, 0]], "intro": [[17, 1], [5, 1], [16, 1]]}
+  ] }
+}

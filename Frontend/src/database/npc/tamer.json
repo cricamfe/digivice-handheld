@@ -55,7 +55,7 @@
         "bit": 115
       }
     },
-    "imageName": "Genji"
+    "fieldActor": "57-1"
   },
   "natsumi": {
     "locationId": "021D",
@@ -103,7 +103,7 @@
         "bit": 145
       }
     },
-    "imageName": "Natsumi"
+    "fieldActor": "48-1"
   },
   "nacky": {
     "locationId": "0211",
@@ -126,7 +126,7 @@
         "boosterId": 521
       }
     },
-    "imageName": "Nacky"
+    "fieldActor": "52-1"
   },
   "wong": {
     "locationId": "0211",
@@ -149,7 +149,7 @@
         "boosterId": 522
       }
     },
-    "imageName": "Wong"
+    "fieldActor": "55-1"
   },
   "steve": {
     "locationId": "0211",
@@ -172,7 +172,7 @@
         "boosterId": 521
       }
     },
-    "imageName": "Steve"
+    "fieldActor": "47-1"
   },
   "gloria": {
     "locationId": "0211",
@@ -195,7 +195,7 @@
         "boosterId": 522
       }
     },
-    "imageName": "Gloria"
+    "fieldActor": "50-1"
   },
   "mitch": {
     "locationId": "021E",
@@ -243,7 +243,7 @@
         "bit": 1250
       }
     },
-    "imageName": "Mitch"
+    "fieldActor": "47-1"
   },
   "catherine": {
     "locationId": "0221",
@@ -291,7 +291,7 @@
         "bit": 145
       }
     },
-    "imageName": "Catherine"
+    "fieldActor": "46-1"
   },
   "lucia": {
     "locationId": "0222",
@@ -335,7 +335,7 @@
         "bit": 155
       }
     },
-    "imageName": "Lucia"
+    "fieldActor": "56-1"
   },
   "robert": {
     "locationId": "0222",
@@ -383,7 +383,7 @@
         "bit": 200
       }
     },
-    "imageName": "Robert"
+    "fieldActor": "53-1"
   },
   "akiba": {
     "locationId": "0229",
@@ -423,7 +423,7 @@
         "bit": 180
       }
     },
-    "imageName": "Akiba"
+    "fieldActor": "51-1"
   },
   "chris": {
     "locationId": "022E",
@@ -471,7 +471,7 @@
         "bit": 210
       }
     },
-    "imageName": "Chris"
+    "fieldActor": "47-1"
   },
   "bob": {
     "locationId": "022A",
@@ -518,7 +518,7 @@
         "bit": 1475
       }
     },
-    "imageName": "Bob"
+    "fieldActor": "57-1"
   },
   "tomomi": {
     "locationId": "022C",
@@ -566,7 +566,7 @@
         "bit": 225
       }
     },
-    "imageName": "Tomomi"
+    "fieldActor": "48-1"
   },
   "andy": {
     "locationId": "0232",
@@ -610,7 +610,7 @@
         "bit": 190
       }
     },
-    "imageName": "Andy"
+    "fieldActor": "45-1"
   },
   "george": {
     "locationId": "0233",
@@ -654,7 +654,7 @@
         "bit": 210
       }
     },
-    "imageName": "George"
+    "fieldActor": "49-1"
   },
   "meiLin": {
     "locationId": "0234",
@@ -698,7 +698,7 @@
         "bit": 200
       }
     },
-    "imageName": "Mei Lin"
+    "fieldActor": "50-1"
   },
   "alice": {
     "locationId": "023E",
@@ -746,7 +746,7 @@
         "bit": 290
       }
     },
-    "imageName": "Alice"
+    "fieldActor": "46-1"
   },
   "gordon": {
     "locationId": "023D",
@@ -794,7 +794,7 @@
         "bit": 530
       }
     },
-    "imageName": "Gordon"
+    "fieldActor": "53-1"
   },
   "jessica": {
     "locationId": "0237",
@@ -841,7 +841,7 @@
         "bit": 1305
       }
     },
-    "imageName": "Jessica"
+    "fieldActor": "58-1"
   },
   "nakano": {
     "locationId": "025B",
@@ -880,6 +880,6 @@
         "bit": 820
       }
     },
-    "imageName": "Nakano"
+    "fieldActor": "51-1"
   }
 }

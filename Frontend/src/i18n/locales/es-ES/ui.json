@@ -1,0 +1,207 @@
+{
+  "regularAttacks": {
+    "noElement": "Física, sin elemento",
+    "machineElement": "Elemento Máquina",
+    "waterElement": "Elemento Agua",
+    "noElementChanceOfPoison": "Sin elemento (prob. de Veneno)",
+    "fireElement": "Elemento Fuego",
+    "darkElement": "Elemento Oscuridad",
+    "thunderElementChanceOfSleep": "Elemento Trueno (prob. de Sueño)",
+    "machineElementChanceOfFreeze": "Elemento Máquina (prob. de Parálisis)",
+    "thunderElement": "Elemento Trueno",
+    "thunderElementChanceOfFreeze": "Elemento Trueno (prob. de Parálisis)",
+    "waterElementHitsTwice": "Elemento Agua (golpea dos veces)",
+    "iceElement": "Elemento Hielo",
+    "machineElementCounterPhysical": "Elemento Máquina; Contraataque (Física)",
+    "thunderElementCounterPhysical": "Elemento Trueno; Contraataque (Física)",
+    "machineElementHitsTwice": "Elemento Máquina (golpea dos veces)"
+  },
+  "enemyTechniques": {
+    "necromist": "{tech} (Física, prob. de Veneno)",
+    "madPump": "{tech} (Física, Agua)",
+    "masterFire": "{tech} (Fuego)",
+    "atomicRay": "{tech} (Mágica-Máquina, prob. de KO)",
+    "energySuck": "{tech} (Mágica)",
+    "airBlast": "{tech} (Mágica, Viento)",
+    "confuseGas": "{tech} (Mágica, prob. de Confusión)",
+    "divineRain": "{tech} (Mágica, Agua)",
+    "smallHeal": "{tech} (Cura un poco de PV)",
+    "doubleGuard": "{tech} (Sube la Defensa)",
+    "thunderbolt": "{tech} (Mágica, Trueno)",
+    "thunderGemini": "{tech} (Mágica, Trueno)",
+    "speedUp": "{tech} (Sube la Velocidad)",
+    "magicMissile": "{tech} (Mágica-Máquina), {tech2} (Baja la Velocidad enemiga)",
+    "paralyzeShock": "{tech} (Mágica, prob. de Parálisis)",
+    "twinMissile": "{tech} (Mágica-Máquina)",
+    "lovelyCharm": "{tech} (Baja la Fuerza enemiga)",
+    "confuseNebula": "{tech} (prob. de Confusión)",
+    "darkMatter": "{tech} (Mágica-Oscuridad)",
+    "darkFear": "{tech} (Mágica-Oscuridad)",
+    "hardRain": "{tech} (Mágica-Agua)",
+    "flameBall": "{tech} (Mágica-Fuego)",
+    "flameLance": "{tech} (Mágica-Fuego)",
+    "iceBlow": "{tech} (Mágica-Hielo)",
+    "flameBreath": "{tech} (Mágica-Fuego)",
+    "darkElemental": "{tech} (Mágica-Oscuridad)",
+    "godBombard": "{tech} (Mágica-Máquina), {tech2} (El enemigo no puede huir)",
+    "grandWave": "{tech} (Mágica-Agua)",
+    "megaHeal": "{tech} (Cura mucho PV)",
+    "fullHeal": "{tech} (Cura todo el PV)",
+    "slyphStorm": "{tech} (Mágica-Viento)",
+    "darknessChaos": "{tech} (Mágica-Oscuridad)",
+    "flameSphere": "{tech} (Mágica-Fuego)",
+    "berserkSword": "{tech} (Física, golpea dos veces), {tech2} (Potencia el siguiente golpe)",
+    "heartBreakAttack": "{tech} (Mágica, baja la Fuerza enemiga)",
+    "autoRecover": "{tech} (Cura un poco de PV cada turno)",
+    "helterSkelter": "{tech} (Obliga al Digimon a volver a su forma base)"
+  },
+  "equipments": {
+    "292": {
+      "note": "Aumenta el poder de ataque."
+    }
+  },
+  "map": {
+    "0500": "Elige tu paquete inicial",
+    "1000": "En menú",
+    "1300": "Tienda Cartas",
+    "1400": "Recompensa",
+    "0A00": "Entrenando",
+    "0E03": "Escena",
+    "0F00": "En tienda",
+    "0600": "En batalla",
+    "0700": "En batalla de cartas"
+  },
+  "npcs": {
+    "guardsHeadquarters": {
+      "name": "Guardias"
+    }
+  },
+  "card": {
+    "1002": {
+      "note": "+10 PA y PV a todos los Digimon"
+    },
+    "1003": {
+      "note": "+30 PV a un Digimon"
+    },
+    "1004": {
+      "note": "Obtén 1 S-Energía blanca"
+    },
+    "1006": {
+      "note": "Los Digimon no azules a la papelera"
+    },
+    "1007": {
+      "note": "Controla 1 Digimon del oponente"
+    },
+    "1008": {
+      "note": "1 carta PG robada a la papelera"
+    },
+    "1010": {
+      "note": "Obtén 1 S-Energía azul"
+    },
+    "1012": {
+      "note": "+50 PA y PV a todos los verdes"
+    },
+    "1014": {
+      "note": "Obtén 2 S-Energía verdes"
+    },
+    "1015": {
+      "note": "+20 PA y PV a un Digimon"
+    },
+    "1016": {
+      "note": "Obtén 1 S-Energía verde"
+    },
+    "1020": {
+      "note": "15 de daño a todos los Digimon"
+    },
+    "1021": {
+      "note": "30 de daño a un Digimon del oponente"
+    },
+    "1022": {
+      "note": "Obtén 1 S-Energía roja"
+    },
+    "1024": {
+      "note": "Pon en la papelera cartas no negras rivales"
+    },
+    "1025": {
+      "note": "Toma 1 carta del Mazo"
+    },
+    "1026": {
+      "note": "1 carta no negra a la papelera"
+    },
+    "1027": {
+      "note": "1 carta de la Mano rival a la papelera"
+    },
+    "1028": {
+      "note": "Obtén 1 S-Energía negra"
+    },
+    "1031": {
+      "note": "Intercambia PA y PV con rival"
+    },
+    "1033": {
+      "note": "Pon tu Mano en la papelera y roba 6"
+    },
+    "1035": {
+      "note": "Devuelve la papelera al Mazo"
+    },
+    "1037": {
+      "note": "5 cartas del Mazo rival a la papelera"
+    },
+    "1039": {
+      "note": "Pon un Digimon de la Mano en el Campo"
+    },
+    "1040": {
+      "note": "+30 PA y PV a un Digimon marrón"
+    },
+    "1041": {
+      "note": "Roba 2 cartas del Mazo a la Mano"
+    },
+    "1042": {
+      "note": "Elige un DG del Mazo a la Mano"
+    },
+    "1043": {
+      "note": "Elige un PG del Mazo a la Mano"
+    },
+    "1044": {
+      "note": "Roba una carta y descarta una"
+    },
+    "1045": {
+      "note": "2 cartas del Mazo rival a la papelera"
+    },
+    "1046": {
+      "note": "30 de daño a un Digimon marrón"
+    },
+    "1047": {
+      "note": "1 PG marrón robado a la papelera"
+    },
+    "1048": {
+      "note": "1 DG marrón de la Mano rival a la papelera"
+    },
+    "1050": {
+      "note": "Resta 2 de S-Energía blanca"
+    },
+    "1051": {
+      "note": "Resta 2 de S-Energía azul"
+    },
+    "1052": {
+      "note": "Resta 2 de S-Energía verde"
+    },
+    "1053": {
+      "note": "Resta 2 de S-Energía roja"
+    },
+    "1054": {
+      "note": "Resta 2 de S-Energía negra"
+    },
+    "1056": {
+      "note": "+10 PA y -10 PV a un Digimon"
+    },
+    "1057": {
+      "note": "1 DG marrón del Campo a la papelera"
+    },
+    "1058": {
+      "note": "+10 PV a un Digimon"
+    },
+    "1059": {
+      "note": "+10 PA a un Digimon"
+    }
+  }
+}

@@ -10,6 +10,9 @@ export class PlayerConverter {
       previousMapId: playerDto.previousMapId,
       seabedRoute: playerDto.seabedRoute,
       mapVariant: playerDto.mapVariant,
+      positionX: playerDto.positionX,
+      positionY: playerDto.positionY,
+      extraChapter: playerDto.extraChapter,
     };
   }
 }

@@ -1,0 +1,235 @@
+{
+  "card": {
+    "1002": {
+      "note": "+10 AP & HP to all digimon"
+    },
+    "1003": {
+      "note": "+30 HP to one digimon"
+    },
+    "1004": {
+      "note": "get 1 white S-energy point"
+    },
+    "1006": {
+      "note": "Return all non-blue digimon to trash"
+    },
+    "1007": {
+      "note": "control 1 of your oppnt's digimon"
+    },
+    "1008": {
+      "note": "Put a drawn PG card to trash"
+    },
+    "1010": {
+      "note": "get 1 blue S-enery point"
+    },
+    "1012": {
+      "note": "+50 AP & HP to all green digimon"
+    },
+    "1014": {
+      "note": "Get 2 green S-Energy points"
+    },
+    "1015": {
+      "note": "+20 AP & HP to one digimon"
+    },
+    "1016": {
+      "note": "get 1 green S-Energy point"
+    },
+    "1020": {
+      "note": "15 damage to all digimon"
+    },
+    "1021": {
+      "note": "30 damage to an oppnt's digimon"
+    },
+    "1022": {
+      "note": "Get 1 red S-Energy point"
+    },
+    "1024": {
+      "note": "Put all oppnt non-black cards to trash"
+    },
+    "1025": {
+      "note": "pick 1 card from deck"
+    },
+    "1026": {
+      "note": "put 1 non-black card to trash"
+    },
+    "1027": {
+      "note": "pick a card from oppnt hand to trash"
+    },
+    "1028": {
+      "note": "Get 1 Black S-Energy point"
+    },
+    "1031": {
+      "note": "Exchange AP & HP from oppnt"
+    },
+    "1033": {
+      "note": "Put all hand in trash, draw 6 cards"
+    },
+    "1035": {
+      "note": "Return all trashed card to deck"
+    },
+    "1037": {
+      "note": "Put 5 card from oppnt deck to trash"
+    },
+    "1039": {
+      "note": "Bring a digimon from hand to field"
+    },
+    "1040": {
+      "note": "+30 AP & HP o a brown digimon"
+    },
+    "1041": {
+      "note": "draws 2 card from deck to hand"
+    },
+    "1042": {
+      "note": "Choose a DG from deck to hand"
+    },
+    "1043": {
+      "note": "Choose a PG from card to hand"
+    },
+    "1044": {
+      "note": "draw one card, put one to trash"
+    },
+    "1045": {
+      "note": "Put 2 cards from oppnt deck to trash"
+    },
+    "1046": {
+      "note": "30 damage to a brown digimon"
+    },
+    "1047": {
+      "note": "Put a drawn PG brown card to trash"
+    },
+    "1048": {
+      "note": "Put 1 brown DG from oppnt hand to trash"
+    },
+    "1050": {
+      "note": "Subtract 2 white S-Energy"
+    },
+    "1051": {
+      "note": "Subtract 2 blue S-Energy"
+    },
+    "1052": {
+      "note": "Subtract 2 green S-Energy"
+    },
+    "1053": {
+      "note": "Subtract 2 red S-Energy"
+    },
+    "1054": {
+      "note": "Subtract 2 black S-Energy"
+    },
+    "1056": {
+      "note": "+10 AP and -10 HP to a digimon"
+    },
+    "1057": {
+      "note": "Put a brown DG from field to trash"
+    },
+    "1058": {
+      "note": "+10 HP to a digimon"
+    },
+    "1059": {
+      "note": "+10 AP to a digimon"
+    }
+  },
+  "equipments": {
+    "292": {
+      "note": "Increse attack power."
+    }
+  },
+  "consumableItems": {
+    "400": {
+      "note": ""
+    },
+    "401": {
+      "note": ""
+    },
+    "402": {
+      "note": ""
+    },
+    "403": {
+      "note": ""
+    },
+    "404": {
+      "note": ""
+    },
+    "405": {
+      "note": ""
+    },
+    "406": {
+      "note": ""
+    },
+    "407": {
+      "note": ""
+    },
+    "408": {
+      "note": ""
+    },
+    "409": {
+      "note": ""
+    },
+    "410": {
+      "note": ""
+    },
+    "411": {
+      "note": ""
+    },
+    "412": {
+      "note": ""
+    },
+    "413": {
+      "note": ""
+    },
+    "414": {
+      "note": ""
+    },
+    "415": {
+      "note": ""
+    },
+    "416": {
+      "note": ""
+    },
+    "417": {
+      "note": ""
+    },
+    "418": {
+      "note": ""
+    },
+    "419": {
+      "note": ""
+    },
+    "420": {
+      "note": ""
+    },
+    "421": {
+      "note": ""
+    },
+    "422": {
+      "note": ""
+    },
+    "423": {
+      "note": ""
+    },
+    "424": {
+      "note": ""
+    },
+    "425": {
+      "note": ""
+    },
+    "426": {
+      "note": ""
+    },
+    "427": {
+      "note": ""
+    },
+    "428": {
+      "note": ""
+    }
+  },
+  "map": {
+    "0500": "Choose your initial pack",
+    "1000": "In Menu",
+    "1300": "Card Shop",
+    "1400": "Reward Screen",
+    "0A00": "In Training",
+    "0E03": "Cutscene",
+    "0F00": "In Store",
+    "0600": "In battle",
+    "0700": "In card battle"
+  }
+}

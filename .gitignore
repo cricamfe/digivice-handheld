@@ -1,47 +1,8 @@
-## Ignore Visual Studio temporary files, type libraries, and caches
-.vs/
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
-
-## Visual Studio 2015/2017 cache directories
-.vs/
-
-## Visual Studio Code
+## Editors
 .vscode/
-
-## JetBrains tools
 .idea/
-*.sln.iml
 
-## User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-## Build results
-[Bb]in/
-[Oo]bj/
-[Tt]est[Rr]esults/
-
-## .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-## Backup & temp files from Microsoft Office
+## Backup & temp files
 ~$*
 *~
 
@@ -50,26 +11,21 @@ artifacts/
 *.eps
 *.ps
 
-## ReSharper
-*_ReSharper*
-*.ReSharper.user
-
-## Rider
-.idea/
-*.sln.iml
-
-## NuGet
-*.nupkg
-*.snupkg
-# The packages folder can be ignored because of PackageReference usage
-**/packages/*
-!**/packages/build/
-*.nuget.props
-*.nuget.targets
-
-## Memory scanner
-tools/memoryscanner/snapshot/
+## RAM dumps of the game: each developer keeps their own, never in the repository
+Tools/MemoryScanner/Snapshots/
+Tools/RetroArchProbe/*.bin
 
 ## Others
 .DS_Store
 Thumbs.db
+
+## The EmuLnk theme tried before the Android app
+EmuLnk/
+
+# Locally extracted game resources; never include them in source control.
+Frontend/game-dev/
+
+## Python caches
+__pycache__/
+
+node_modules/

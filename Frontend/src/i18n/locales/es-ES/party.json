@@ -1,0 +1,8 @@
+{
+  "party": {
+    "groupCharisma": "Carisma del grupo",
+    "groupCharismaWarning": "Suma del Carisma de todos los Digimon del grupo. Este valor afecta a los eventos del juego, a los combates contra tamers, etc.",
+    "groupLevel": "Nivel del grupo",
+    "groupLevelExplanation": "Suma del nivel de todos los Digimon del grupo"
+  }
+}

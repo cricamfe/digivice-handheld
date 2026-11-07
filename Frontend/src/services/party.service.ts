@@ -5,9 +5,7 @@ import { StatService } from "@/services/stat.service";
 
 export class PartyService {
   public static getLevel(party: Party): number {
-    const digimons = party.slots
-      .map((slot) => slot.digimon)
-      .filter((digimon) => digimon !== null);
+    const digimons = party.slots.map((slot) => slot.digimon).filter((digimon) => digimon !== null);
 
     return Math.sum(
       digimons.map((digimon) => {
@@ -17,9 +15,7 @@ export class PartyService {
   }
 
   public static getCharisma(party: Party): number {
-    const digimons = party.slots
-      .map((slot) => slot.digimon)
-      .filter((digimon) => digimon !== null);
+    const digimons = party.slots.map((slot) => slot.digimon).filter((digimon) => digimon !== null);
 
     return Math.sum(
       digimons.map((digimon) => {

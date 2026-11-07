@@ -27,7 +27,7 @@ export class DigimonBattlePresenter {
 
     const enemyRaw = EnemyRepository.getEnemyByMemoryIdAndGroupId(enemy.id, enemy.groupId);
     const enemyId = EnemyRepository.getEnemyIdByMemoryIdAndGroupId(enemy.id, enemy.groupId);
-    const title = enemyRaw?.name ?? "";
+    const title = enemyRaw === null ? "" : EnemyRepository.getName(enemyRaw);
     const affinities = DigimonBattlePresenter.getAffinities(enemyRaw) ?? emptyAffinities;
 
     return DigimonBattleConverter.convert(enemyRaw, resolvedHp, title, enemyId, affinities, {

@@ -4,7 +4,9 @@ import type { DigievolutionSlot } from "@/models";
 import { DigievolutionConverter } from "./digievolution.converter";
 
 export class DigievolutionSlotConverter {
-  public static convert(digievolutionSlotDto: DeepRequired<DigievolutionSlotDTO>): DigievolutionSlot {
+  public static convert(
+    digievolutionSlotDto: DeepRequired<DigievolutionSlotDTO>,
+  ): DigievolutionSlot {
     return {
       index: digievolutionSlotDto.index,
       digievolutionId: digievolutionSlotDto.digievolutionId,

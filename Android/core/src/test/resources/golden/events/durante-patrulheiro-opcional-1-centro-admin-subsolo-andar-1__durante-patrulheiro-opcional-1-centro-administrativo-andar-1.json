@@ -1,0 +1,151 @@
+[
+  {
+    "type": "PlayerChanged",
+    "payload": {
+      "bits": 51536,
+      "previousMapId": "0214"
+    }
+  },
+  {
+    "type": "PartyChanged",
+    "payload": {
+      "slots": [
+        {
+          "index": 1,
+          "digimonId": 0,
+          "digimon": {
+            "level": 26,
+            "tp": 15,
+            "blast": 728,
+            "experience": 16397,
+            "hp": {
+              "current": 477,
+              "max": 2155
+            },
+            "mp": {
+              "max": 1317
+            },
+            "inBattle": {
+              "hp": {
+                "current": 477,
+                "max": 2155
+              },
+              "mp": {
+                "max": 1317
+              }
+            },
+            "attributes": {
+              "strength": 375,
+              "defense": 389,
+              "spirit": 205,
+              "wisdom": 259,
+              "speed": 508,
+              "charisma": 176
+            },
+            "elements": {
+              "fire": 105,
+              "wind": 102,
+              "thunder": 150,
+              "machine": 132,
+              "dark": 130
+            },
+            "digievolutions": [
+              {
+                "index": 3,
+                "digievolution": {
+                  "level": 26,
+                  "dvexp": 256
+                }
+              }
+            ],
+            "storedDigievolutions": [
+              {
+                "digievolutionId": 389,
+                "level": 26
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "digimonId": 7,
+          "digimon": {
+            "mp": {
+              "current": 1460
+            },
+            "inBattle": {
+              "mp": {
+                "current": 1460
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "DigimonBattleChanged",
+    "payload": {
+      "stage": 15,
+      "enemy": {
+        "id": 435,
+        "groupId": 189
+      }
+    }
+  },
+  {
+    "type": "NpcsChanged",
+    "payload": {
+      "optionalTrooper2AdminCenterB1F": {
+        "battles": [
+          {
+            "id": "first",
+            "won": true
+          }
+        ]
+      },
+      "optionalTrooperAdminFloor1": {
+        "battles": [
+          {
+            "id": "first",
+            "won": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "JournalChanged",
+    "payload": {
+      "mainQuest": {
+        "id": "mainQuest",
+        "steps": [
+          {
+            "number": 69,
+            "isDone": true
+          },
+          {
+            "number": 70,
+            "isDone": true
+          },
+          {
+            "number": 71,
+            "isDone": true
+          },
+          {
+            "number": 72,
+            "isDone": true
+          },
+          {
+            "number": 73,
+            "isDone": true
+          },
+          {
+            "number": 74,
+            "isDone": true
+          }
+        ]
+      }
+    }
+  }
+]

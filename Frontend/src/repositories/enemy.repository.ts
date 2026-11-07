@@ -3,6 +3,7 @@ import type { EnemyTable } from "@/repositories/tables/enemy/enemy.table";
 import type { DropType } from "@/repositories/tables/raws/drop/drop-type";
 import type { EnemyRaw } from "@/repositories/tables/raws/enemy/enemy.raw";
 import type { EnemyWhoDropsRaw } from "@/repositories/tables/raws/enemy/enemy-who-drops.raw";
+import { digimonName } from "@/handheld/digimon-names";
 
 export class EnemyRepository {
   private static readonly enemyTable = EnemyJson as EnemyTable;
@@ -28,6 +29,11 @@ export class EnemyRepository {
 
   public static getEnemyById(enemyId: string): EnemyRaw {
     return this.enemyTable[enemyId]!;
+  }
+
+  /** The name of an enemy, with its variant: from the game's Digimon names (see `digimonName`). */
+  public static getName(enemyRaw: EnemyRaw): string {
+    return digimonName(enemyRaw.nameId, enemyRaw.variant);
   }
 
   public static getEnemyByMemoryId(memoryId: number): EnemyRaw | null {

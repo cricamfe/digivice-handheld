@@ -1,0 +1,61 @@
+{
+  "enemy": {
+    "wiki": "Wiki",
+    "searchPlaceholder": "Escribe un enemigo, objeto, carta, lugar o NPC...",
+    "searchNoResults": "Sin resultados",
+    "searchKind": {
+      "enemy": "Digimon",
+      "equipment": "Equipo",
+      "consumableItem": "Consumible",
+      "booster": "Sobre",
+      "card": "Carta",
+      "location": "Lugar",
+      "cardShop": "Tienda",
+      "tamer": "Tamer",
+      "leader": "Líder",
+      "npc": "NPC"
+    },
+    "droppedBy": "Lo sueltan",
+    "droppedByNone": "Ningún enemigo conocido",
+    "level": "Nivel",
+    "specie": "Especie",
+    "drop": "Botín",
+    "drops": "Botín",
+    "locationOnly": "Solo en {location}",
+    "tamerOnly": "Digimon de {name}",
+    "resaleValueLabel": "Se revende por",
+    "soldInStore": "Lo vende un NPC",
+    "soldInStoreYes": "Sí",
+    "soldInStoreNo": "No",
+    "type": "Tipo",
+    "boosterCardsLabel": "Cartas que pueden salir de este sobre",
+    "storeCardsLabel": "Cartas que se pueden comprar en esta tienda",
+    "locatedIn": "Está en",
+    "obtainedFromNone": "Ningún sobre conocido",
+    "dropSourcesNone": "Ninguna fuente conocida",
+    "purchasableAt": "Se compra en",
+    "purchasableAtNone": "No se vende en ninguna tienda conocida",
+    "baseExp": "EXP",
+    "baseDvexp": "DVEXP",
+    "technique": "Técnica",
+    "attributes": "Atributos",
+    "elements": "Elementos",
+    "status": "Estados",
+    "whereToFind": "Dónde",
+    "searchContext": {
+      "wild": "(Digimon salvaje Nv {level})",
+      "boss": "(Jefe Nv {level})",
+      "tamer": "(Digimon de tamer {name} Nv {level})",
+      "npc": "(Digimon de {name} Nv {level})"
+    },
+    "unavailableAtMoment": "No disponible o imposible de retar en este punto de la historia",
+    "locationSource": {
+      "walking": "Caminando",
+      "boss": "Jefe",
+      "fishing": "Pesca",
+      "kickingTree": "Patada al árbol"
+    },
+    "noEnemiesOnMap": "Zona segura",
+    "techniques": "Técnicas"
+  }
+}

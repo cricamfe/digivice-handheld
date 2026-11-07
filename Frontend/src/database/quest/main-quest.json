@@ -21,6 +21,26 @@
       "number": 4,
       "starts": 62,
       "ends": 88
+    },
+    {
+      "number": 5,
+      "starts": 89,
+      "ends": 97
+    },
+    {
+      "number": 6,
+      "starts": 98,
+      "ends": 106
+    },
+    {
+      "number": 7,
+      "starts": 107,
+      "ends": 120
+    },
+    {
+      "number": 8,
+      "starts": 121,
+      "ends": 133
     }
   ],
   "steps": {
@@ -148,8 +168,8 @@
     "14": {
       "location": "022C",
       "coordinates": {
-        "x": 45.5,
-        "y": 62.5
+        "x": 37.5,
+        "y": 81.6
       },
       "requisites": []
     },
@@ -261,8 +281,8 @@
     "28": {
       "location": "023E",
       "coordinates": {
-        "x": 22,
-        "y": 33
+        "x": 27.2,
+        "y": 32.8
       },
       "requisites": []
     },
@@ -804,6 +824,354 @@
         "y": 36
       },
       "requisites": []
+    },
+    "89": {
+      "location": "0219",
+      "requisites": [],
+      "coordinates": {
+        "x": 74.3,
+        "y": 36.7
+      }
+    },
+    "90": {
+      "location": "0260",
+      "requisites": [],
+      "coordinates": {
+        "x": 48.6,
+        "y": 70.2
+      }
+    },
+    "91": {
+      "location": "0240",
+      "requisites": [],
+      "coordinates": {
+        "x": 41.8,
+        "y": 37.7
+      }
+    },
+    "92": {
+      "location": "0244",
+      "requisites": [],
+      "coordinates": {
+        "x": 68.1,
+        "y": 51.2
+      }
+    },
+    "93": {
+      "location": "0246",
+      "requisites": [],
+      "coordinates": {
+        "x": 44.4,
+        "y": 37.8
+      }
+    },
+    "94": {
+      "location": "0293",
+      "requisites": [],
+      "coordinates": {
+        "x": 51.1,
+        "y": 36.9
+      }
+    },
+    "95": {
+      "location": "029C",
+      "requisites": [],
+      "coordinates": {
+        "x": 34.4,
+        "y": 24.5
+      }
+    },
+    "96": {
+      "location": "02AD",
+      "requisites": [],
+      "coordinates": {
+        "x": 54.3,
+        "y": 39.3
+      }
+    },
+    "97": {
+      "location": "02AE",
+      "requisites": [],
+      "coordinates": {
+        "x": 24.5,
+        "y": 20.3
+      }
+    },
+    "98": {
+      "location": "026E",
+      "requisites": [],
+      "coordinates": {
+        "x": 81.3,
+        "y": 16.4
+      }
+    },
+    "99": {
+      "location": "026A",
+      "requisites": [],
+      "coordinates": {
+        "x": 22.7,
+        "y": 67.9
+      }
+    },
+    "100": {
+      "location": "026B",
+      "requisites": [],
+      "coordinates": {
+        "x": 47.1,
+        "y": 77.2
+      }
+    },
+    "101": {
+      "location": "026C",
+      "requisites": [],
+      "coordinates": {
+        "x": 23.2,
+        "y": 27.0
+      }
+    },
+    "102": {
+      "location": "026D",
+      "requisites": [],
+      "coordinates": {
+        "x": 20.2,
+        "y": 43.9
+      }
+    },
+    "103": {
+      "location": "02DA",
+      "requisites": [],
+      "coordinates": {
+        "x": 28.1,
+        "y": 77.6
+      }
+    },
+    "104": {
+      "location": "02DB",
+      "requisites": [],
+      "coordinates": {
+        "x": 57.5,
+        "y": 71.1
+      }
+    },
+    "105": {
+      "location": "02DB",
+      "requisites": [],
+      "coordinates": {
+        "x": 84.6,
+        "y": 38.2
+      }
+    },
+    "106": {
+      "location": "02DC",
+      "requisites": [],
+      "coordinates": {
+        "x": 46.9,
+        "y": 38.5
+      }
+    },
+    "107": {
+      "location": "0218",
+      "requisites": [],
+      "coordinates": {
+        "x": 52.3,
+        "y": 53.3
+      }
+    },
+    "108": {
+      "location": "02C3",
+      "requisites": [],
+      "coordinates": {
+        "x": 64.3,
+        "y": 41.1
+      }
+    },
+    "109": {
+      "location": "02C5",
+      "requisites": [],
+      "coordinates": {
+        "x": 65.6,
+        "y": 20.1
+      }
+    },
+    "110": {
+      "location": "0218",
+      "requisites": [],
+      "coordinates": {
+        "x": 52.3,
+        "y": 53.3
+      }
+    },
+    "111": {
+      "location": "02C7",
+      "requisites": [],
+      "coordinates": {
+        "x": 45.6,
+        "y": 30.7
+      }
+    },
+    "112": {
+      "location": "02D5",
+      "requisites": [],
+      "coordinates": {
+        "x": 81.3,
+        "y": 16.4
+      }
+    },
+    "113": {
+      "location": "028C",
+      "requisites": [],
+      "coordinates": {
+        "x": 77.0,
+        "y": 31.2
+      }
+    },
+    "114": {
+      "location": "0273",
+      "requisites": [],
+      "coordinates": {
+        "x": 32.2,
+        "y": 35.0
+      }
+    },
+    "115": {
+      "location": "0283",
+      "requisites": [],
+      "coordinates": {
+        "x": 35.2,
+        "y": 64.7
+      }
+    },
+    "116": {
+      "location": "0286",
+      "requisites": [],
+      "coordinates": {
+        "x": 66.5,
+        "y": 74.5
+      }
+    },
+    "117": {
+      "location": "0286",
+      "requisites": [],
+      "coordinates": {
+        "x": 79.5,
+        "y": 43.9
+      }
+    },
+    "118": {
+      "location": "0286",
+      "requisites": [],
+      "coordinates": {
+        "x": 70.5,
+        "y": 44.1
+      }
+    },
+    "119": {
+      "location": "0288",
+      "requisites": [],
+      "coordinates": {
+        "x": 27.1,
+        "y": 72.5
+      }
+    },
+    "120": {
+      "location": "0288",
+      "requisites": [],
+      "coordinates": {
+        "x": 60.4,
+        "y": 45.0
+      }
+    },
+    "121": {
+      "location": "0218",
+      "requisites": [],
+      "coordinates": {
+        "x": 12.3,
+        "y": 78.3
+      }
+    },
+    "122": {
+      "location": "0219",
+      "requisites": [],
+      "coordinates": {
+        "x": 11.5,
+        "y": 81.9
+      }
+    },
+    "123": {
+      "location": "028C",
+      "requisites": [],
+      "coordinates": {
+        "x": 79.8,
+        "y": 29.4
+      }
+    },
+    "124": {
+      "location": "0287",
+      "requisites": [],
+      "coordinates": {
+        "x": 12.3,
+        "y": 78.1
+      }
+    },
+    "125": {
+      "location": "02DD",
+      "requisites": [],
+      "coordinates": {
+        "x": 94.7,
+        "y": 27.5
+      }
+    },
+    "126": {
+      "location": "02DD",
+      "requisites": [],
+      "coordinates": {
+        "x": 65.1,
+        "y": 12.2
+      }
+    },
+    "127": {
+      "location": "02DD",
+      "requisites": [],
+      "coordinates": {
+        "x": 92.4,
+        "y": 12.2
+      }
+    },
+    "128": {
+      "location": "02DE",
+      "requisites": []
+    },
+    "129": {
+      "location": "02DE",
+      "requisites": []
+    },
+    "130": {
+      "location": "02DD",
+      "requisites": [],
+      "coordinates": {
+        "x": 13.1,
+        "y": 62.2
+      }
+    },
+    "131": {
+      "location": "02DE",
+      "requisites": []
+    },
+    "132": {
+      "location": "02DF",
+      "requisites": [],
+      "coordinates": {
+        "x": 64.5,
+        "y": 62.7
+      }
+    },
+    "133": {
+      "location": "02DF",
+      "requisites": [],
+      "coordinates": {
+        "x": 42.9,
+        "y": 40.1
+      }
     }
   }
 }

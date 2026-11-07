@@ -1,0 +1,75 @@
+body { margin: 0; }
+img { image-rendering: pixelated; }
+a { color: #ffffff; text-decoration: none; }
+button { font: inherit; color: inherit; padding: 0; background: transparent; cursor: pointer; }
+
+.screen {
+  width: 620px;
+  height: 540px;
+  box-sizing: border-box;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  background-color: #000030;
+  image-rendering: pixelated;
+}
+
+.win, .win-soft, .plate, .good, .bad, .lock, .btn, .btn-on, .slot, .slot-on {
+  border: 8px solid transparent;
+  box-sizing: border-box;
+  image-rendering: pixelated;
+}
+/* The frame only draws the border; the fill stays a flat colour so tiles cannot leave seams. */
+.win, .win-soft, .plate, .good, .bad, .lock, .btn, .btn-on, .slot, .slot-on,
+.thin, .thin-on, .thin-plate, .bar { background-clip: padding-box; }
+.win { border-image: url(/_blob/c442e25920a2eb44dbbf5a35cba47bdd) 4 / 8px stretch; background-color: #000a2b; }
+.win-soft { border-image: url(/_blob/0b52f34d831ecb1ba1397e6b821d599f) 4 / 8px stretch; background-color: #000e3f; }
+.plate { border-image: url(/_blob/0406f043c81ac26ce7e3b3d10853a427) 4 / 8px stretch; background-color: #1a1040; }
+.good { border-image: url(/_blob/bc4b698272f178c2cda96cd098bcf8ce) 4 / 8px stretch; background-color: #04261c; }
+.bad { border-image: url(/_blob/bb58166df237d9cc0068122e8ac5eb26) 4 / 8px stretch; background-color: #26061a; }
+.lock { border-image: url(/_blob/e67cbfdef7ab425003147b747efa691b) 4 / 8px stretch; background-color: #0c1024; }
+.btn { border-image: url(/_blob/84d99758e01ea59c715282dfb7ee06a7) 4 / 8px stretch; background-color: #0b2a78; }
+.btn-on { border-image: url(/_blob/13e508a482f06626a7f18f2e3df295fc) 4 / 8px stretch; background-color: #00a0f0; color: #000030; }
+.slot { border-image: url(/_blob/53c82492e32b0bd4b437b071916973e3) 4 / 8px stretch; background-color: #000e3f; }
+.slot-on { border-image: url(/_blob/371f4da901fe8287d327c1fea0d3624b) 4 / 8px stretch; background-color: #002a77; }
+
+/* Single-pixel versions for small rows. */
+.thin, .thin-on, .thin-plate, .bar {
+  border: 4px solid transparent;
+  box-sizing: border-box;
+  image-rendering: pixelated;
+}
+.thin { border-image: url(/_blob/0b52f34d831ecb1ba1397e6b821d599f) 4 / 4px stretch; background-color: #000e3f; }
+.thin-on { border-image: url(/_blob/371f4da901fe8287d327c1fea0d3624b) 4 / 4px stretch; background-color: #002a77; }
+.thin-plate { border-image: url(/_blob/0406f043c81ac26ce7e3b3d10853a427) 4 / 4px stretch; background-color: #1a1040; }
+.bar { border-image: url(/_blob/b85dd3ddfd221c2909957bd25a06a1f3) 4 / 4px stretch; background-color: #00103a; }
+
+/* Inner margin so text and icons never touch the frame art. */
+.win, .win-soft { padding: 6px 8px; }
+.plate, .good, .bad, .lock, .slot, .slot-on { padding: 2px 8px; }
+.thin, .thin-on, .thin-plate { padding: 2px 6px; }
+
+.outline { text-shadow: -1px -1px 0 #040716, 1px -1px 0 #040716, -1px 1px 0 #040716, 1px 1px 0 #040716; }
+.drop { text-shadow: 1px 1px 0 #040716; }
+.gold { color: #ffd52e; text-shadow: 1px 1px 0 #4f2606; }
+.ice { color: #7fe8ff; }
+.dim { color: #8fb4e8; }
+
+.hp { background: linear-gradient(to bottom, #b4f7a8 0 2px, #26c45a 2px 8px, #0f7a52 8px); }
+.mp { background: linear-gradient(to bottom, #a8dcff 0 2px, #2277ee 2px 8px, #123a9e 8px); }
+.exp { background: linear-gradient(to bottom, #ffe39a 0 2px, #f57a18 2px 8px, #bf4414 8px); }
+.blast { background: linear-gradient(to bottom, #fffbd0 0 2px, #ffd52e 2px 8px, #c98a00 8px); }
+
+.nav { height: 52px; flex-shrink: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; font-size: 12px; }
+.nav > * { display: flex; align-items: center; justify-content: center; gap: 6px; min-width: 0; line-height: 1; }
+.nav img { width: 22px; height: 22px; flex-shrink: 0; }
+
+.status { height: 26px; flex-shrink: 0; padding: 0 6px; display: flex; align-items: center; justify-content: space-between; font-size: 8px; }
+.scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll::-webkit-scrollbar-track { background: #00103a; }
+.scroll::-webkit-scrollbar-thumb { background: #2277ee; border: 2px solid #040716; }

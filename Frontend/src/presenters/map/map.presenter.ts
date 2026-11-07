@@ -5,7 +5,7 @@ import type { MapViewModel } from "@/viewmodels/map/map.viewmodel";
 
 export class MapPresenter {
   public static getByLocationId(id: string): MapViewModel {
-    return MapConverter.convert(MapRepository.getMapById(id));
+    return MapConverter.convert(id, MapRepository.getMapById(id));
   }
 
   public static isInBattle(locationId: string): boolean {

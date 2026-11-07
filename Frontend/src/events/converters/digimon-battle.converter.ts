@@ -7,6 +7,9 @@ export class DigimonBattleConverter {
   public static convert(digimonBattleDto: DeepRequired<DigimonBattleDTO>): DigimonBattle {
     return {
       field: digimonBattleDto.field,
+      fieldAmount: digimonBattleDto.fieldAmount,
+      activeFighter: digimonBattleDto.activeFighter,
+      stage: digimonBattleDto.stage,
       enemy: digimonBattleDto.enemy ? EnemyConverter.convert(digimonBattleDto.enemy) : null,
     };
   }

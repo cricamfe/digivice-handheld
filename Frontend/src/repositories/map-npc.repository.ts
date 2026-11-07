@@ -8,10 +8,7 @@ export class MapNpcRepository {
     return MapRepository.getMapById(mapId).npcs ?? [];
   }
 
-  public static getIdsByMapId(
-    mapId: string,
-    lastCompletedMainQuestStep: number,
-  ): string[] {
+  public static getIdsByMapId(mapId: string, lastCompletedMainQuestStep: number): string[] {
     return this.getByMapId(mapId).flatMap((mapNpcRaw) => {
       if (
         !QuestService.isOnMainQuestRange(

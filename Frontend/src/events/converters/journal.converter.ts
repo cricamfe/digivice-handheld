@@ -8,7 +8,9 @@ export class JournalConverter {
     return {
       mainQuest: QuestConverter.convert(journalDto.mainQuest),
       sideQuests: journalDto.sideQuests.map((questDto) => QuestConverter.convert(questDto)),
-      legendaryWeapons: journalDto.legendaryWeapons.map((questDto) => QuestConverter.convert(questDto)),
+      legendaryWeapons: journalDto.legendaryWeapons.map((questDto) =>
+        QuestConverter.convert(questDto),
+      ),
       driAgents: journalDto.driAgents.map((questDto) => QuestConverter.convert(questDto)),
       duelIsland: journalDto.duelIsland.map((questDto) => QuestConverter.convert(questDto)),
     };

@@ -4,4 +4,7 @@ export interface PlayerDTO {
   previousMapId?: string;
   seabedRoute?: number | null;
   mapVariant?: number | null;
+  positionX?: number;
+  positionY?: number;
+  extraChapter?: boolean;
 }

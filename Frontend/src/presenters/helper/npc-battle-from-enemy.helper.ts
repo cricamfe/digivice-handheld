@@ -68,8 +68,7 @@ export class NpcBattleFromEnemyHelper {
 
     return {
       npcId: opponentId,
-      battleOptionId:
-        battleId !== null ? `digimon-${battleId}` : null,
+      battleOptionId: battleId !== null ? `digimon-${battleId}` : null,
     };
   }
 }

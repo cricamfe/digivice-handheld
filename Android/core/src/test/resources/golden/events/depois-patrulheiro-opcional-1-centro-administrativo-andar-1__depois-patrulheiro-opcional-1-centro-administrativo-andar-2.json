@@ -1,0 +1,80 @@
+[
+  {
+    "type": "PlayerChanged",
+    "payload": {
+      "bits": 53306,
+      "mapId": "0217",
+      "positionX": 1206,
+      "positionY": 413
+    }
+  },
+  {
+    "type": "PartyChanged",
+    "payload": {
+      "slots": [
+        {
+          "index": 1,
+          "digimonId": 0,
+          "digimon": {
+            "blast": 834,
+            "experience": 17294,
+            "hp": {
+              "current": 1361
+            },
+            "inBattle": {
+              "hp": {
+                "current": 1361,
+                "max": 2229
+              },
+              "mp": {
+                "max": 1364
+              }
+            },
+            "digievolutions": [
+              {
+                "index": 3,
+                "digievolution": {
+                  "level": 29,
+                  "dvexp": 286
+                }
+              }
+            ],
+            "storedDigievolutions": [
+              {
+                "digievolutionId": 389,
+                "level": 29
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "NpcsChanged",
+    "payload": {
+      "optionalTrooper1AdminFloor2": {
+        "battles": [
+          {
+            "id": "first",
+            "won": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "JournalChanged",
+    "payload": {
+      "mainQuest": {
+        "id": "mainQuest",
+        "steps": [
+          {
+            "number": 75,
+            "isDone": true
+          }
+        ]
+      }
+    }
+  }
+]

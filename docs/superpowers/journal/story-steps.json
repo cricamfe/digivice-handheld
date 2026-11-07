@@ -1,0 +1,2219 @@
+{
+  "chapters": [
+    {
+      "number": 5,
+      "starts": 89,
+      "ends": 97,
+      "name": "The Amaterasu Server!"
+    },
+    {
+      "number": 6,
+      "starts": 98,
+      "ends": 106,
+      "name": "The North Sector and the Real World!"
+    },
+    {
+      "number": 7,
+      "starts": 107,
+      "ends": 120,
+      "name": "The four Code Passes!"
+    },
+    {
+      "number": 8,
+      "starts": 121,
+      "ends": 133,
+      "name": "Lord Megadeath!"
+    },
+    {
+      "number": 9,
+      "starts": 134,
+      "ends": 148,
+      "name": "Digimon Online!"
+    }
+  ],
+  "steps": [
+    {
+      "number": 89,
+      "description": "Defeat the Game Master's Persiamon inside the Headquarters",
+      "locationTarget": "Game Master",
+      "location": "0219",
+      "coordinates": {
+        "x": 74.3,
+        "y": 36.7
+      },
+      "coordinateSource": "actor/script point (571,235) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x50"
+        ],
+        "name": "FLAG(0x40,0x50)",
+        "address": "0x4B3E8",
+        "mask": "0x01"
+      },
+      "evidence": [
+        "src/field/stages/asuka_city/wstag310.c:714",
+        "src/field/stages/asuka_city/wstag310.c:436"
+      ]
+    },
+    {
+      "number": 90,
+      "description": "Ask the General held in the Underground Cave of Byakko City how the A.o.A reached this server",
+      "locationTarget": "General",
+      "location": "0260",
+      "coordinates": {
+        "x": 48.6,
+        "y": 70.2
+      },
+      "coordinateSource": "actor/script point (560,449) px",
+      "condition": {
+        "progressAtLeast": 25,
+        "name": "STORY_CODE_PASSES_NEEDED",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/byakko_city/wstag685.c:40",
+        "src/field/stages/byakko_city/wstag685.c:249"
+      ]
+    },
+    {
+      "number": 91,
+      "description": "Ask Patamon in the Suzaku Hall where Suzaku Leader went",
+      "locationTarget": "Patamon",
+      "location": "0240",
+      "coordinates": {
+        "x": 41.8,
+        "y": 37.7
+      },
+      "coordinateSource": "actor/script point (321,193) px",
+      "condition": {
+        "progressAtLeast": 26,
+        "name": "STORY_BULBMON_FOUND",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/suzaku_city/wstag520.c:48",
+        "src/field/stages/suzaku_city/wstag520.c:272"
+      ]
+    },
+    {
+      "number": 92,
+      "description": "Find Suzaku Leader at the security hole in the Catacomb, past the Jungle Shrine",
+      "locationTarget": "Suzaku Leader",
+      "location": "0244",
+      "coordinates": {
+        "x": 68.1,
+        "y": 51.2
+      },
+      "coordinateSource": "trigger layer of slot 4, box (751,311)-(817,345) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x0B"
+        ],
+        "name": "FLAG_ZHU_QUE_CHIEF_WIN_SEEN",
+        "address": "0x4B3DF",
+        "mask": "0x08"
+      },
+      "evidence": [
+        "src/field/stages/south_sector/wstag537.c:32",
+        "src/field/stages/south_sector/wstag537.c:605"
+      ]
+    },
+    {
+      "number": 93,
+      "description": "Go through the Bug Maze and defeat Bulbmon in the Bug Maze Pit",
+      "locationTarget": "Bulbmon",
+      "location": "0246",
+      "coordinates": {
+        "x": 44.4,
+        "y": 37.8
+      },
+      "coordinateSource": "trigger layer of slot 4, box (480,463)-(544,505) px",
+      "condition": {
+        "progressAtLeast": 27,
+        "name": "STORY_JUNGLE_SOUND",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/network_break/wstag545.c:322",
+        "src/field/stages/network_break/wstag545.c:596"
+      ]
+    },
+    {
+      "number": 94,
+      "description": "Talk to Kenny in the Forest Inn BF after coming out on the Amaterasu Server, and get the Crony ID",
+      "locationTarget": "Kenny",
+      "location": "0293",
+      "coordinates": {
+        "x": 51.1,
+        "y": 36.9
+      },
+      "coordinateSource": "trigger layer of slot 2, box (304,272)-(350,295) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x1D"
+        ],
+        "name": "FLAG_TEDDY_FOREST_INN_SEEN",
+        "address": "0x4B3E1",
+        "mask": "0x20"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag366.c:17",
+        "src/field/stages/east_sector/wstag366.c:189"
+      ]
+    },
+    {
+      "number": 95,
+      "description": "Defeat the Qing Long Chief in Qing Long City and take the Blue ID Pass",
+      "locationTarget": "Qing Long Chief",
+      "location": "029C",
+      "coordinates": {
+        "x": 34.4,
+        "y": 24.5
+      },
+      "coordinateSource": "trigger layer of slot 7, box (416,176)-(464,200) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0xA7"
+        ],
+        "name": "FLAG(0x40,0xA7)",
+        "address": "0x4B3F2",
+        "mask": "0x80"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag421.c:60",
+        "src/field/stages/east_sector/wstag421.c:500"
+      ]
+    },
+    {
+      "number": 96,
+      "description": "Defeat the Zhu Que Chief in the Zhu Que Hall and take the Red ID Pass",
+      "locationTarget": "Zhu Que Chief",
+      "location": "02AD",
+      "coordinates": {
+        "x": 54.3,
+        "y": 39.3
+      },
+      "coordinateSource": "actor/script point (417,201) px",
+      "condition": {
+        "progressAtLeast": 29,
+        "name": "STORY_BULBMON_BEATEN",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/zhu_que_city/wstag521.c:43",
+        "src/field/stages/zhu_que_city/wstag521.c:234"
+      ]
+    },
+    {
+      "number": 97,
+      "description": "Find the Digi-Egg of Knowledge in the Zhu Que UG Lake",
+      "locationTarget": "Digi-Egg of Knowledge",
+      "location": "02AE",
+      "coordinates": {
+        "x": 24.5,
+        "y": 20.3
+      },
+      "coordinateSource": "trigger layer of slot 7, box (160,216)-(217,251) px",
+      "condition": {
+        "progressAtLeast": 30,
+        "name": "STORY_DE_KNOWLEDGE",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/south_sector/wstag526.c:581",
+        "src/field/stages/south_sector/wstag526.c:874"
+      ]
+    },
+    {
+      "number": 98,
+      "description": "Defeat Genbu Leader at the Battle Gate in the North Sector and take the Genbu Badge",
+      "locationTarget": "Genbu Leader",
+      "location": "026E",
+      "coordinates": {
+        "x": 81.3,
+        "y": 16.4
+      },
+      "coordinateSource": "trigger layer of slot 8, box (992,144)-(1089,192) px",
+      "condition": {
+        "progressAtLeast": 31,
+        "name": "STORY_GENBU_BADGE",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/north_sector/wstag755.c:43",
+        "src/field/stages/north_sector/wstag755.c:363"
+      ],
+      "skipNote": "Free order: the dungeons and the Battle Gate only test the Digi-Egg of Knowledge or progress 0x1E, so these four can come in any order; the Chamber Officer only tests the Genbu Badge."
+    },
+    {
+      "number": 99,
+      "description": "Defeat the Ice Witch in the Ice Dungeon",
+      "locationTarget": "Ice Witch",
+      "location": "026A",
+      "coordinates": {
+        "x": 22.7,
+        "y": 67.9
+      },
+      "coordinateSource": "trigger layer of slot 10, box (288,592)-(352,624) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x19"
+        ],
+        "name": "FLAG_FIRE_KNIGHT_BATTLE_SEEN",
+        "address": "0x4B3E1",
+        "mask": "0x02"
+      },
+      "evidence": [
+        "src/field/stages/north_sector/wstag735.c:57",
+        "src/field/stages/north_sector/wstag735.c:416"
+      ],
+      "skipNote": "Free order: the dungeons and the Battle Gate only test the Digi-Egg of Knowledge or progress 0x1E, so these four can come in any order; the Chamber Officer only tests the Genbu Badge."
+    },
+    {
+      "number": 100,
+      "description": "Defeat the Fire Knight in the Fire Dungeon",
+      "locationTarget": "Fire Knight",
+      "location": "026B",
+      "coordinates": {
+        "x": 47.1,
+        "y": 77.2
+      },
+      "coordinateSource": "trigger layer of slot 18, box (512,672)-(573,712) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x40"
+        ],
+        "name": "FLAG_DARK_KNIGHT_CHALLENGE_SEEN",
+        "address": "0x4B3E6",
+        "mask": "0x01"
+      },
+      "evidence": [
+        "src/field/stages/north_sector/wstag740.c:63",
+        "src/field/stages/north_sector/wstag740.c:399"
+      ],
+      "skipNote": "Free order: the dungeons and the Battle Gate only test the Digi-Egg of Knowledge or progress 0x1E, so these four can come in any order; the Chamber Officer only tests the Genbu Badge."
+    },
+    {
+      "number": 101,
+      "description": "Defeat the Dark Knight in the Dark Dungeon",
+      "locationTarget": "Dark Knight",
+      "location": "026C",
+      "coordinates": {
+        "x": 23.2,
+        "y": 27.0
+      },
+      "coordinateSource": "trigger layer of slot 2, box (273,224)-(320,260) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x42"
+        ],
+        "name": "FLAG_GENBU_LEADER_CHALLENGE_SEEN",
+        "address": "0x4B3E6",
+        "mask": "0x04"
+      },
+      "evidence": [
+        "src/field/stages/north_sector/wstag745.c:107",
+        "src/field/stages/north_sector/wstag745.c:391"
+      ],
+      "skipNote": "Free order: the dungeons and the Battle Gate only test the Digi-Egg of Knowledge or progress 0x1E, so these four can come in any order; the Chamber Officer only tests the Genbu Badge."
+    },
+    {
+      "number": 102,
+      "description": "Ask the Chamber Officer in the Chamber Room to send you to the Military Base Magasta in the Real World",
+      "locationTarget": "Chamber Officer",
+      "location": "026D",
+      "coordinates": {
+        "x": 20.2,
+        "y": 43.9
+      },
+      "coordinateSource": "actor/script point (129,281) px",
+      "condition": {
+        "progressAtLeast": 32,
+        "name": "STORY_REAL_WORLD",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/north_sector/wstag750.c:157",
+        "src/field/stages/north_sector/wstag750.c:522"
+      ]
+    },
+    {
+      "number": 103,
+      "description": "In the Real World, press the button on the control panel of Magasta B1F before the 180 seconds run out",
+      "locationTarget": "Control panel",
+      "location": "02DA",
+      "coordinates": {
+        "x": 28.1,
+        "y": 77.6
+      },
+      "coordinateSource": "trigger layer of slot 5, box (388,872)-(474,915) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x63"
+        ],
+        "name": "FLAG(0x40,0x63)",
+        "address": "0x4B3EA",
+        "mask": "0x08"
+      },
+      "evidence": [
+        "src/field/stages/undersea_base/wstag795.c:201",
+        "src/field/stages/undersea_base/wstag795.c:556"
+      ],
+      "skipNote": "Can be skipped: if the 180 seconds run out, event 860 (wstag750) sends the player back and the story joins again at the next step's mark."
+    },
+    {
+      "number": 104,
+      "description": "Press the second button in Magasta B2F, which opens the way to the launch site",
+      "locationTarget": "Control panel",
+      "location": "02DB",
+      "coordinates": {
+        "x": 57.5,
+        "y": 71.1
+      },
+      "coordinateSource": "trigger layer of slot 5, box (920,800)-(992,838) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x61"
+        ],
+        "name": "FLAG_MECH_SOLDIER_ALERT_SEEN",
+        "address": "0x4B3EA",
+        "mask": "0x02"
+      },
+      "evidence": [
+        "src/field/stages/undersea_base/wstag800.c:303",
+        "src/field/stages/undersea_base/wstag800.c:737",
+        "src/field/stages/undersea_base/wstag795.c:555"
+      ],
+      "skipNote": "Can be skipped: if the 180 seconds run out, event 860 (wstag750) sends the player back and the story joins again at the next step's mark."
+    },
+    {
+      "number": 105,
+      "description": "Defeat the Mech Soldier in Magasta B2F",
+      "locationTarget": "Mech Soldier",
+      "location": "02DB",
+      "coordinates": {
+        "x": 84.6,
+        "y": 38.2
+      },
+      "coordinateSource": "trigger layer of slot 4, box (1368,420)-(1446,459) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x45"
+        ],
+        "name": "FLAG_ROYAL_GUARD_CHALLENGE_SEEN",
+        "address": "0x4B3E6",
+        "mask": "0x20"
+      },
+      "evidence": [
+        "src/field/stages/undersea_base/wstag800.c:320",
+        "src/field/stages/undersea_base/wstag800.c:736"
+      ],
+      "skipNote": "Can be skipped: if the 180 seconds run out, event 860 (wstag750) sends the player back and the story joins again at the next step's mark.",
+      "inferred": "Order against the second button is free; I used the event numbers (850 before 870). No slot requires this fight: it only fires if the player walks over its trigger."
+    },
+    {
+      "number": 106,
+      "description": "Try to stop the launch of the Juggernaut before the time runs out",
+      "locationTarget": "Royal Guard",
+      "location": "02DC",
+      "coordinates": {
+        "x": 46.9,
+        "y": 38.5
+      },
+      "coordinateSource": "actor/script point (360,197) px",
+      "condition": {
+        "progressAtLeast": 33,
+        "name": "STORY_NETWORK_OFFLINE",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/north_sector/wstag750.c:177",
+        "src/field/stages/undersea_base/wstag805.c:356",
+        "src/field/stages/north_sector/wstag750.c:135"
+      ],
+      "skipNote": "The mark holds on both paths: after the fight with the Royal Guards (events 880, 881, 883) or after running out of time (860, 882, 884). The player does nothing after this; events 885 and 886 play by themselves."
+    },
+    {
+      "number": 107,
+      "description": "Go to the Master Room and tell Lisa that the A.o.A took the Juggernaut",
+      "locationTarget": "Lisa",
+      "location": "0218",
+      "coordinates": {
+        "x": 52.3,
+        "y": 53.3
+      },
+      "coordinateSource": "actor/script point (335,273) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x59"
+        ],
+        "name": "FLAG(0x40,0x59)",
+        "address": "0x4B3E9",
+        "mask": "0x02"
+      },
+      "evidence": [
+        "src/field/stages/asuka_city/wstag295.c:52",
+        "src/field/stages/asuka_city/wstag305.c:53",
+        "src/field/stages/asuka_city/wstag305.c:108"
+      ],
+      "skipNote": "Includes the talk with the Game Master in the Prison Tower (events 891 and 892), which plays by itself."
+    },
+    {
+      "number": 108,
+      "description": "Find the Resistance's hideout in the Mirage Tower on the Amaterasu Server",
+      "locationTarget": "Kenny",
+      "location": "02C3",
+      "coordinates": {
+        "x": 64.3,
+        "y": 41.1
+      },
+      "coordinateSource": "trigger layer of slot 2, box (550,300)-(602,332) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x49"
+        ],
+        "name": "FLAG(0x40,0x49)",
+        "address": "0x4B3E7",
+        "mask": "0x02"
+      },
+      "evidence": [
+        "src/field/stages/west_sector/wstag646.c:14",
+        "src/field/stages/west_sector/wstag646.c:366"
+      ],
+      "skipNote": "Can already be done: its flag can be set any time from STORY_JUNGLE_SOUND, so it may show as done before the steps above it. If it was, event 893 moves the story on straight away; if not, event 894 sends the player here."
+    },
+    {
+      "number": 109,
+      "description": "Talk to Leader Chuck of the Resistance in the Mirage Room",
+      "locationTarget": "Leader Chuck",
+      "location": "02C5",
+      "coordinates": {
+        "x": 65.6,
+        "y": 20.1
+      },
+      "coordinateSource": "actor/script point (420,103) px",
+      "condition": {
+        "flag": [
+          "0x1A",
+          "0x34"
+        ],
+        "name": "FLAG_RESISTANCE_CHUCK_MET",
+        "address": "0x4B3B2",
+        "mask": "0x10"
+      },
+      "evidence": [
+        "src/field/stages/west_sector/wstag656.c:160",
+        "include/engine/story.h:1133"
+      ],
+      "skipNote": "Can already be done: its flag can be set any time from STORY_JUNGLE_SOUND, so it may show as done before the steps above it. If it was, event 893 moves the story on straight away; if not, event 894 sends the player here."
+    },
+    {
+      "number": 110,
+      "description": "Tell Lisa in the Master Room about the Resistance and the four Code Passes",
+      "locationTarget": "Lisa",
+      "location": "0218",
+      "coordinates": {
+        "x": 52.3,
+        "y": 53.3
+      },
+      "coordinateSource": "actor/script point (335,273) px",
+      "condition": {
+        "progressAtLeast": 34,
+        "name": "STORY_WAY_TO_AMATERASU",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/asuka_city/wstag305.c:113",
+        "src/field/stages/asuka_city/wstag305.c:123",
+        "src/field/stages/asuka_city/wstag305.c:1276"
+      ],
+      "skipNote": "Two paths reach the same mark: event 893 (Chuck already met) needs no talk; event 895 needs talking to Lisa after meeting Chuck."
+    },
+    {
+      "number": 111,
+      "description": "Defeat the Bai Hu Chief in the Bai Hu Dome and take the White ID Pass",
+      "locationTarget": "Bai Hu Chief",
+      "location": "02C7",
+      "coordinates": {
+        "x": 45.6,
+        "y": 30.7
+      },
+      "coordinateSource": "trigger layer of slot 9, box (384,184)-(434,209) px",
+      "condition": {
+        "progressAtLeast": 35,
+        "name": "STORY_WHITE_ID_PASS",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/bai_hu_city/wstag676.c:43",
+        "src/field/stages/bai_hu_city/wstag676.c:356"
+      ]
+    },
+    {
+      "number": 112,
+      "description": "Defeat the Xuen Wu Chief at the Battle Gate and take the Black ID Pass",
+      "locationTarget": "Xuen Wu Chief",
+      "location": "02D5",
+      "coordinates": {
+        "x": 81.3,
+        "y": 16.4
+      },
+      "coordinateSource": "trigger layer of slot 8, box (992,144)-(1089,192) px",
+      "condition": {
+        "progressAtLeast": 36,
+        "name": "STORY_BLACK_ID_PASS",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/north_sector/wstag756.c:46",
+        "src/field/stages/north_sector/wstag756.c:377"
+      ]
+    },
+    {
+      "number": 113,
+      "description": "Meet Teddy in Central Park and cross the Amaterasu Bridge with the four Code Passes",
+      "locationTarget": "Teddy",
+      "location": "028C",
+      "coordinates": {
+        "x": 77.0,
+        "y": 31.2
+      },
+      "coordinateSource": "trigger layer of slot 22, box (1248,384)-(1313,416) px",
+      "condition": {
+        "progressAtLeast": 37,
+        "name": "STORY_AMATERASU_BRIDGE",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/central_sector/wstag206.c:51",
+        "src/field/stages/central_sector/wstag331.c:1119"
+      ],
+      "skipNote": "Events 921 and 922 on the bridge play by themselves after this."
+    },
+    {
+      "number": 114,
+      "description": "Defeat the Attackers in the Main Lobby of Amaterasu City",
+      "locationTarget": "Attacker",
+      "location": "0273",
+      "coordinates": {
+        "x": 32.2,
+        "y": 35.0
+      },
+      "coordinateSource": "trigger layer of slot 6, box (240,200)-(337,248) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0xA4"
+        ],
+        "name": "FLAG(0x40,0xA4)",
+        "address": "0x4B3F2",
+        "mask": "0x10"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag211.c:19",
+        "src/field/stages/amaterasu_city/wstag211.c:582"
+      ],
+      "inferred": "Flag set when the event before the battle ends, so it turns on as the battle starts; a loss goes to the title screen (src/battle/normal_battle/menu.c:558) and the RAM is replaced on reload."
+    },
+    {
+      "number": 115,
+      "description": "Defeat the Attackers blocking Admin Center 1F",
+      "locationTarget": "Attacker",
+      "location": "0283",
+      "coordinates": {
+        "x": 35.2,
+        "y": 64.7
+      },
+      "coordinateSource": "actor/script point (360,580) px (midpoint of the two Attackers, actors 6 and 7)",
+      "condition": {
+        "flag": [
+          "0x0C",
+          "0x27"
+        ],
+        "name": "FLAG_AMATERASU_ADMIN_1F_ATTACKER_A_FOUGHT",
+        "address": "0x4B396",
+        "mask": "0x80"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag286.c:129",
+        "src/field/stages/amaterasu_city/wstag286.c:211"
+      ],
+      "inferred": "Which guards block the way is inferred, not stated by the game: flood fill of the stage's floor layer from the door the player arrives at to the next door, with each guard as a 14 px disc. The same test on Asuka's 2F finds the three troopers of steps 75 to 77. The walk radius is my assumption. Flag set with the battle's start."
+    },
+    {
+      "number": 116,
+      "description": "Defeat the Soldier to walk through Admin Center 2F",
+      "locationTarget": "Soldier",
+      "location": "0286",
+      "coordinates": {
+        "x": 66.5,
+        "y": 74.5
+      },
+      "coordinateSource": "actor/script point (936,477) px",
+      "condition": {
+        "flag": [
+          "0x0C",
+          "0x2C"
+        ],
+        "name": "FLAG_AMATERASU_ADMIN_2F_SOLDIER_B_FOUGHT",
+        "address": "0x4B397",
+        "mask": "0x10"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag301.c:138",
+        "src/field/stages/amaterasu_city/wstag301.c:238"
+      ],
+      "inferred": "Which guards block the way is inferred, not stated by the game: flood fill of the stage's floor layer from the door the player arrives at to the next door, with each guard as a 14 px disc. The same test on Asuka's 2F finds the three troopers of steps 75 to 77. The walk radius is my assumption. Flag set with the battle's start."
+    },
+    {
+      "number": 117,
+      "description": "Defeat the Soldier after going up the stairs of Admin Center 2F",
+      "locationTarget": "Soldier",
+      "location": "0286",
+      "coordinates": {
+        "x": 79.5,
+        "y": 43.9
+      },
+      "coordinateSource": "actor/script point (1120,281) px",
+      "condition": {
+        "flag": [
+          "0x0C",
+          "0x2B"
+        ],
+        "name": "FLAG_AMATERASU_ADMIN_2F_SOLDIER_A_FOUGHT",
+        "address": "0x4B397",
+        "mask": "0x08"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag301.c:123",
+        "src/field/stages/amaterasu_city/wstag301.c:235"
+      ],
+      "inferred": "Which guards block the way is inferred, not stated by the game: flood fill of the stage's floor layer from the door the player arrives at to the next door, with each guard as a 14 px disc. The same test on Asuka's 2F finds the three troopers of steps 75 to 77. The walk radius is my assumption. Flag set with the battle's start."
+    },
+    {
+      "number": 118,
+      "description": "Defeat the Attacker in the hallway leading to the Master Room",
+      "locationTarget": "Attacker",
+      "location": "0286",
+      "coordinates": {
+        "x": 70.5,
+        "y": 44.1
+      },
+      "coordinateSource": "actor/script point (992,282) px",
+      "condition": {
+        "flag": [
+          "0x0C",
+          "0x30"
+        ],
+        "name": "FLAG_AMATERASU_ADMIN_2F_ATTACKER_A_FOUGHT",
+        "address": "0x4B398",
+        "mask": "0x01"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag301.c:128",
+        "src/field/stages/amaterasu_city/wstag301.c:236"
+      ],
+      "inferred": "Which guards block the way is inferred, not stated by the game: flood fill of the stage's floor layer from the door the player arrives at to the next door, with each guard as a 14 px disc. The same test on Asuka's 2F finds the three troopers of steps 75 to 77. The walk radius is my assumption. Flag set with the battle's start."
+    },
+    {
+      "number": 119,
+      "description": "Go through the door that opens by itself in the Master Room and defeat the Royal Guards in the Headquarters",
+      "locationTarget": "Royal Guards",
+      "location": "0288",
+      "coordinates": {
+        "x": 27.1,
+        "y": 72.5
+      },
+      "coordinateSource": "actor/script point (208,464) px (script931 stops the player here)",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x67"
+        ],
+        "name": "FLAG_CHIEF_OFFICER_ARREST_SEEN",
+        "address": "0x4B3EA",
+        "mask": "0x80"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag311.c:475",
+        "src/field/stages/amaterasu_city/wstag306.c:38",
+        "src/field/stages/amaterasu_city/wstag311.c:466"
+      ],
+      "innerLocation": [
+        {
+          "location": "0287",
+          "note": "Event 930 plays on entering the Master Room and carries the player to the Headquarters."
+        }
+      ]
+    },
+    {
+      "number": 120,
+      "description": "Defeat the Chief Officer, the President of MAGAMI",
+      "locationTarget": "Chief Officer",
+      "location": "0288",
+      "coordinates": {
+        "x": 60.4,
+        "y": 45.0
+      },
+      "coordinateSource": "actor/script point (464,288) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x5F"
+        ],
+        "name": "FLAG(0x40,0x5F)",
+        "address": "0x4B3E9",
+        "mask": "0x80"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag311.c:481",
+        "src/field/stages/amaterasu_city/wstag311.c:475"
+      ],
+      "skipNote": "Events 934 and 935 play by themselves after this and set STORY_PRESIDENT_ARRESTED (wstag226.c:149)."
+    },
+    {
+      "number": 121,
+      "description": "Go back to Asuka's Master Room to look for a clue about Vemmon",
+      "locationTarget": "Oinkmon",
+      "location": "0218",
+      "coordinates": {
+        "x": 12.3,
+        "y": 78.3
+      },
+      "coordinateSource": "actor/script point (79,401) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x69"
+        ],
+        "name": "FLAG(0x40,0x69)",
+        "address": "0x4B3EB",
+        "mask": "0x02"
+      },
+      "evidence": [
+        "src/field/stages/asuka_city/wstag305.c:128",
+        "src/field/stages/asuka_city/wstag305.c:67"
+      ]
+    },
+    {
+      "number": 122,
+      "description": "Go further into Asuka's Headquarters and follow Vemmon",
+      "locationTarget": "Vemmon",
+      "location": "0219",
+      "coordinates": {
+        "x": 11.5,
+        "y": 81.9
+      },
+      "coordinateSource": "actor/script point (88,524) px (where the Master Room door leads, wstag305 script965)",
+      "condition": {
+        "progressAtLeast": 39,
+        "name": "STORY_ASUKA_HEADQUARTERS",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/asuka_city/wstag310.c:719",
+        "src/field/stages/asuka_city/wstag310.c:441"
+      ]
+    },
+    {
+      "number": 123,
+      "description": "Find Kail hiding in Central Park on the Amaterasu Server",
+      "locationTarget": "Kail",
+      "location": "028C",
+      "coordinates": {
+        "x": 79.8,
+        "y": 29.4
+      },
+      "coordinateSource": "trigger layer of slot 23, box (1296,360)-(1360,392) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x6A"
+        ],
+        "name": "FLAG(0x40,0x6A)",
+        "address": "0x4B3EB",
+        "mask": "0x04"
+      },
+      "evidence": [
+        "src/field/stages/central_sector/wstag331.c:19",
+        "src/field/stages/central_sector/wstag331.c:1120"
+      ],
+      "skipNote": "Only fires if the player walks over its trigger in Central Park; nothing later tests the flag, and the Seabed may offer another way across (not checked)."
+    },
+    {
+      "number": 124,
+      "description": "Enter the Master Room of Amaterasu and hear Lord Megadeath's plan in the Headquarters",
+      "locationTarget": "Lord Megadeath",
+      "location": "0287",
+      "coordinates": {
+        "x": 12.3,
+        "y": 78.1
+      },
+      "coordinateSource": "actor/script point (79,400) px",
+      "condition": {
+        "progressAtLeast": 40,
+        "name": "STORY_OPERATION_SIGMA",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag311.c:496",
+        "src/field/stages/amaterasu_city/wstag306.c:41"
+      ],
+      "skipNote": "Events 980, 981 and 982 play by themselves on entering."
+    },
+    {
+      "number": 125,
+      "description": "Go through the Warp Gate of the Headquarters and turn on the first panel of Gunslinger 1F",
+      "locationTarget": "Panel",
+      "location": "02DD",
+      "coordinates": {
+        "x": 94.7,
+        "y": 27.5
+      },
+      "coordinateSource": "trigger layer of slot 27, box (1312,304)-(1355,329) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x6D"
+        ],
+        "name": "FLAG(0x40,0x6D)",
+        "address": "0x4B3EB",
+        "mask": "0x20"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag810.c:215",
+        "src/field/stages/spy_satellite/wstag810.c:707",
+        "src/field/stages/amaterasu_city/wstag311.c:1204"
+      ],
+      "inferred": "Each panel removes one block (actors 0x180-0x182 test flags 0x1C,0x3A-0x3C, wstag810.c). I did not prove that all three are needed to reach the Warp Gate, because the map also has launch pads; the order is free."
+    },
+    {
+      "number": 126,
+      "description": "Turn on the second panel of Gunslinger 1F",
+      "locationTarget": "Panel",
+      "location": "02DD",
+      "coordinates": {
+        "x": 65.1,
+        "y": 12.2
+      },
+      "coordinateSource": "trigger layer of slot 28, box (896,128)-(938,153) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x6E"
+        ],
+        "name": "FLAG(0x40,0x6E)",
+        "address": "0x4B3EB",
+        "mask": "0x40"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag810.c:224",
+        "src/field/stages/spy_satellite/wstag810.c:708"
+      ],
+      "inferred": "Each panel removes one block (actors 0x180-0x182 test flags 0x1C,0x3A-0x3C, wstag810.c). I did not prove that all three are needed to reach the Warp Gate, because the map also has launch pads; the order is free."
+    },
+    {
+      "number": 127,
+      "description": "Turn on the third panel of Gunslinger 1F",
+      "locationTarget": "Panel",
+      "location": "02DD",
+      "coordinates": {
+        "x": 92.4,
+        "y": 12.2
+      },
+      "coordinateSource": "trigger layer of slot 29, box (1280,128)-(1322,153) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x6F"
+        ],
+        "name": "FLAG_GUNSLINGER_1F_SOLDIER_SEEN",
+        "address": "0x4B3EB",
+        "mask": "0x80"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag810.c:233",
+        "src/field/stages/spy_satellite/wstag810.c:709"
+      ],
+      "inferred": "Each panel removes one block (actors 0x180-0x182 test flags 0x1C,0x3A-0x3C, wstag810.c). I did not prove that all three are needed to reach the Warp Gate, because the map also has launch pads; the order is free."
+    },
+    {
+      "number": 128,
+      "description": "Defeat the Metal Soldier that sounds the alarm in Gunslinger 2F",
+      "locationTarget": "Metal Soldier",
+      "location": "02DE",
+      "coordinates": null,
+      "coordinateSource": "trigger layer of slot 5, box (337,707)-(386,732) px; centre (361,719)",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x70"
+        ],
+        "name": "FLAG_GUNSLINGER_2F_SOLDIER_SEEN",
+        "address": "0x4B3EC",
+        "mask": "0x01"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag815.c:116",
+        "src/field/stages/spy_satellite/wstag815.c:443"
+      ],
+      "skipNote": "Trigger box in the floor; may be possible to walk around it (not checked). Flag set with the battle's start.",
+      "inferred": "Coordinates null: no picture of Gunslinger 2F (S815PACK) in Frontend/src/assets/maps, so no percentage can be given. Pixel point is in coordinateSource."
+    },
+    {
+      "number": 129,
+      "description": "Defeat the second Metal Soldier in Gunslinger 2F",
+      "locationTarget": "Metal Soldier",
+      "location": "02DE",
+      "coordinates": null,
+      "coordinateSource": "trigger layer of slot 6, box (960,251)-(1010,276) px; centre (985,263)",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x71"
+        ],
+        "name": "FLAG_MEGADEATH_TAUNT_SEEN",
+        "address": "0x4B3EC",
+        "mask": "0x02"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag815.c:125",
+        "src/field/stages/spy_satellite/wstag815.c:444"
+      ],
+      "skipNote": "Trigger box in the floor; may be possible to walk around it (not checked). Flag set with the battle's start.",
+      "inferred": "Coordinates null: no picture of Gunslinger 2F (S815PACK) in Frontend/src/assets/maps, so no percentage can be given. Pixel point is in coordinateSource."
+    },
+    {
+      "number": 130,
+      "description": "Reach the end of Gunslinger 1F and hear Lord Megadeath's challenge",
+      "locationTarget": "Lord Megadeath",
+      "location": "02DD",
+      "coordinates": {
+        "x": 13.1,
+        "y": 62.2
+      },
+      "coordinateSource": "trigger layer of slot 30, box (160,704)-(208,728) px",
+      "condition": {
+        "progressAtLeast": 41,
+        "name": "STORY_GUNSLINGER",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag810.c:239",
+        "src/field/stages/spy_satellite/wstag810.c:710"
+      ],
+      "inferred": "The order of this and the two Metal Soldiers is taken from the event numbers (1020, 1030, 1035); no condition enforces it."
+    },
+    {
+      "number": 131,
+      "description": "Keep going through Gunslinger 2F until the ship shakes and defeat the enemy that attacks you",
+      "locationTarget": "Enemy",
+      "location": "02DE",
+      "coordinates": null,
+      "coordinateSource": "trigger layer of slot 8, box (389,285)-(438,310) px; centre (413,297)",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x73"
+        ],
+        "name": "FLAG_MEGADEATH_MEETING_SEEN",
+        "address": "0x4B3EC",
+        "mask": "0x08"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag815.c:144",
+        "src/field/stages/spy_satellite/wstag815.c:446",
+        "src/field/stages/spy_satellite/wstag815.c:136"
+      ],
+      "inferred": "The text of event 1050 does not name the opponent (battle 1 of stage 815, encounter 144). Coordinates null: Coordinates null: no picture of Gunslinger 2F (S815PACK) in Frontend/src/assets/maps, so no percentage can be given. Pixel point is in coordinateSource."
+    },
+    {
+      "number": 132,
+      "description": "Defeat Lord Megadeath in the Control Room of the Gunslinger",
+      "locationTarget": "Lord Megadeath",
+      "location": "02DF",
+      "coordinates": {
+        "x": 64.5,
+        "y": 62.7
+      },
+      "coordinateSource": "actor/script point (578,401) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x75"
+        ],
+        "name": "FLAG_SNATCHMON_APPEARS_SEEN",
+        "address": "0x4B3EC",
+        "mask": "0x20"
+      },
+      "evidence": [
+        "src/field/stages/spy_satellite/wstag820.c:127",
+        "src/field/stages/spy_satellite/wstag820.c:77"
+      ]
+    },
+    {
+      "number": 133,
+      "description": "Defeat Galacticmon in the last battle",
+      "locationTarget": "Galacticmon",
+      "location": "02DF",
+      "coordinates": {
+        "x": 42.9,
+        "y": 40.1
+      },
+      "coordinateSource": "trigger layer of slot 2, box (346,235)-(423,278) px",
+      "condition": {
+        "progressAtLeast": 45,
+        "name": "STORY_EXTRA",
+        "address": "0x4B370"
+      },
+      "evidence": [
+        "src/field/stages/kusanagi_city/wstag780.c:626",
+        "src/field/stages/kusanagi_city/wstag780.c:599",
+        "src/battle/normal_battle/menu.c:552",
+        "src/menus/title/data/stdwtitl.c:38",
+        "include/engine/game_state.h:429",
+        "src/field/stages/spy_satellite/wstag820.c:135"
+      ],
+      "inferred": "STORY_MOVIE_BATTLES (0x2B) is set as the last fight starts (wstag820.c:135), so it marks the start, not the win. 0x2D comes after the ending movie: a win goes to MODE_ENDING, then to mode 0x2D7 (MODE_NEW_GAME), where wstag780 sees progress 0x2B and plays event 1500, which sets 0x2D. So the mark turns on some minutes after the win."
+    },
+    {
+      "number": 134,
+      "description": "Listen to the Tour Leader in the Login Room of Digimon Online",
+      "locationTarget": "Tour Leader",
+      "location": "0276",
+      "coordinates": {
+        "x": 52.9,
+        "y": 78.3
+      },
+      "coordinateSource": "actor/script point (271,401) px",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0xCD"
+        ],
+        "name": "FLAG(0x40,0xCD)",
+        "address": "0x4B3F7",
+        "mask": "0x20"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag925.c:40",
+        "src/field/stages/amaterasu_city/wstag925.c:20",
+        "src/menus/title/movie.c:242"
+      ]
+    },
+    {
+      "number": 135,
+      "description": "If you did not get it from Pharaohmon, find the Old Wand in a chest of the Circuit Board",
+      "locationTarget": "Chest",
+      "location": "02EC",
+      "coordinates": {
+        "x": 53.5,
+        "y": 42.5
+      },
+      "coordinateSource": "actor/script point (616,272) px (only at PLACE 1, PLACE_ARG 8: wstag972 is shared by several tunnels)",
+      "condition": {
+        "flag": [
+          "0x02",
+          "0x7C"
+        ],
+        "name": "FLAG_CIRCUIT_BOARD_OLD_WAND_FOUND",
+        "address": "0x4B387",
+        "mask": "0x10"
+      },
+      "evidence": [
+        "src/field/stages/underground/wstag972.c:182",
+        "include/engine/story.h:527",
+        "src/field/stages/underground/wstag972.c:1072"
+      ],
+      "skipNote": "Optional: the chest only appears if the player holds neither this weapon nor any later form of it (wstag972 actor conditions). A player who beat Pharaohmon in the main story never sees it."
+    },
+    {
+      "number": 136,
+      "description": "If you did not get it from Zanbamon, find the Rusty Katana in a chest of the Circuit Board",
+      "locationTarget": "Chest",
+      "location": "02EC",
+      "coordinates": {
+        "x": 61.1,
+        "y": 55.0
+      },
+      "coordinateSource": "actor/script point (704,352) px (only at PLACE 1, PLACE_ARG 8: wstag972 is shared by several tunnels)",
+      "condition": {
+        "flag": [
+          "0x02",
+          "0x7B"
+        ],
+        "name": "FLAG_CIRCUIT_BOARD_RUSTY_KATANA_FOUND",
+        "address": "0x4B387",
+        "mask": "0x08"
+      },
+      "evidence": [
+        "src/field/stages/underground/wstag972.c:178",
+        "include/engine/story.h:524",
+        "src/field/stages/underground/wstag972.c:1062"
+      ],
+      "skipNote": "Optional: the chest only appears if the player holds neither this weapon nor any later form of it (wstag972 actor conditions). A player who beat Zanbamon in the main story never sees it."
+    },
+    {
+      "number": 137,
+      "description": "Gather the five strongest Epic Items: Muramasa, Super Nova, Punishment, Eternally and Invincible",
+      "locationTarget": "Epic Items",
+      "location": null,
+      "coordinates": null,
+      "coordinateSource": null,
+      "condition": {
+        "allItems": [
+          {
+            "item": "0x69",
+            "name": "Muramasa",
+            "address": "0x48E19",
+            "equippedAddress": "0x48FAC"
+          },
+          {
+            "item": "0x77",
+            "name": "Super Nova",
+            "address": "0x48E27",
+            "equippedAddress": "0x48FBA"
+          },
+          {
+            "item": "0x83",
+            "name": "Punishment",
+            "address": "0x48E33",
+            "equippedAddress": "0x48FC6"
+          },
+          {
+            "item": "0x90",
+            "name": "Eternally",
+            "address": "0x48E40",
+            "equippedAddress": "0x48FD3"
+          },
+          {
+            "item": "0x9C",
+            "name": "Invincible",
+            "address": "0x48E4C",
+            "equippedAddress": "0x48FDF"
+          }
+        ],
+        "name": "SPECIAL_HAS_FIVE_EPIC_ITEMS",
+        "rule": "each item counts if the bag count or the equipped count is non-zero"
+      },
+      "evidence": [
+        "src/engine/game/events.c:48",
+        "include/engine/story.h:1678",
+        "src/field/stages/east_sector/wstag949.c:138"
+      ],
+      "inferred": "No flag or progress value marks this. The condition needs a new reader: StepReader reads one address, and the game tests bag or equipped for five items. Location null: the weapons are forged by several Digimon across the Circuit Board and Seabed (wstag964, 970, 974), which the app's Legendary Weapons quests only cover up to the first material; forging also needs all partners unlocked at level 45."
+    },
+    {
+      "number": 138,
+      "description": "Defeat the Chinron Leader in Qing Long City",
+      "locationTarget": "Chinron Leader",
+      "location": "029C",
+      "coordinates": {
+        "x": 27.5,
+        "y": 30.5
+      },
+      "coordinateSource": "actor/script point (352,234) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x0D"
+        ],
+        "name": "FLAG_CHINRON_LEADER_FOUGHT",
+        "address": "0x4B3A7",
+        "mask": "0x20"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag956.c:77",
+        "src/field/stages/east_sector/wstag956.c:149"
+      ],
+      "skipNote": "Free order among the four Leaders; they only test the five Epic Items. Flag set with the battle's start; there is no event after the win."
+    },
+    {
+      "number": 139,
+      "description": "Defeat the Zhu Que Leader in the Protocol Ruins",
+      "locationTarget": "Zhu Que Leader",
+      "location": "0295",
+      "coordinates": {
+        "x": 76.2,
+        "y": 11.3
+      },
+      "coordinateSource": "actor/script point (1073,145) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x0E"
+        ],
+        "name": "FLAG_ZHU_QUE_LEADER_FOUGHT",
+        "address": "0x4B3A7",
+        "mask": "0x40"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag949.c:142",
+        "src/field/stages/east_sector/wstag949.c:192"
+      ],
+      "skipNote": "Free order among the four Leaders; they only test the five Epic Items. Flag set with the battle's start; there is no event after the win."
+    },
+    {
+      "number": 140,
+      "description": "Defeat the Bai Hu Leader in the Protocol Ruins",
+      "locationTarget": "Bai Hu Leader",
+      "location": "0295",
+      "coordinates": {
+        "x": 36.9,
+        "y": 17.2
+      },
+      "coordinateSource": "actor/script point (520,220) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x0F"
+        ],
+        "name": "FLAG_BAI_HU_LEADER_FOUGHT",
+        "address": "0x4B3A7",
+        "mask": "0x80"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag949.c:154",
+        "src/field/stages/east_sector/wstag949.c:193"
+      ],
+      "skipNote": "Free order among the four Leaders; they only test the five Epic Items. Flag set with the battle's start; there is no event after the win."
+    },
+    {
+      "number": 141,
+      "description": "Defeat the Xuan Wu Leader in Tyranno Valley",
+      "locationTarget": "Xuan Wu Leader",
+      "location": "029A",
+      "coordinates": {
+        "x": 72.2,
+        "y": 22.9
+      },
+      "coordinateSource": "actor/script point (924,323) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x10"
+        ],
+        "name": "FLAG_XUAN_WU_LEADER_FOUGHT",
+        "address": "0x4B3A8",
+        "mask": "0x01"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag954.c:107",
+        "src/field/stages/east_sector/wstag954.c:139"
+      ],
+      "skipNote": "Free order among the four Leaders; they only test the five Epic Items. Flag set with the battle's start; there is no event after the win."
+    },
+    {
+      "number": 142,
+      "description": "Talk to the Arena Reception at the Arena Front Desk and defeat Kurt in the Digimon Arena",
+      "locationTarget": "Kurt",
+      "location": "0277",
+      "coordinates": {
+        "x": 53.1,
+        "y": 67.2
+      },
+      "coordinateSource": "actor/script point (272,344) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x0C"
+        ],
+        "name": "FLAG_KURT_ARENA_WIN_SEEN",
+        "address": "0x4B3A7",
+        "mask": "0x10"
+      },
+      "evidence": [
+        "src/field/stages/amaterasu_city/wstag927.c:45",
+        "src/field/stages/amaterasu_city/wstag926.c:105",
+        "include/engine/story.h:1976"
+      ],
+      "innerLocation": [
+        {
+          "location": "0278",
+          "coordinates": {
+            "x": 60.0,
+            "y": 48.4
+          },
+          "note": "Kurt in the Digimon Arena (script1608)."
+        }
+      ],
+      "inferred": "Flag set with the battle's start. Event 1610, after the win, sets nothing, so the win itself has no separate mark."
+    },
+    {
+      "number": 143,
+      "description": "Beat Tamer Haruka at cards on Duel Island",
+      "locationTarget": "Tamer Haruka",
+      "location": "0297",
+      "coordinates": {
+        "x": 37.5,
+        "y": 45.2
+      },
+      "coordinateSource": "actor/script point (480,521) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x16"
+        ],
+        "name": "FLAG_DUEL_ISLAND_HARUKA_BEATEN",
+        "address": "0x4B3A8",
+        "mask": "0x40"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag951.c:288",
+        "src/field/stages/east_sector/wstag951.c:400"
+      ],
+      "skipNote": "Optional: nothing later needs it. The five Tamers and Keith are on Duel Island only in the extra chapter (mode 663 starts wstag951 instead of wstag386)."
+    },
+    {
+      "number": 144,
+      "description": "Beat Tamer Poemy at cards on Duel Island",
+      "locationTarget": "Tamer Poemy",
+      "location": "0297",
+      "coordinates": {
+        "x": 29.3,
+        "y": 42.8
+      },
+      "coordinateSource": "actor/script point (375,493) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x15"
+        ],
+        "name": "FLAG_DUEL_ISLAND_POEMY_BEATEN",
+        "address": "0x4B3A8",
+        "mask": "0x20"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag951.c:252",
+        "src/field/stages/east_sector/wstag951.c:399"
+      ],
+      "skipNote": "Optional: nothing later needs it. The five Tamers and Keith are on Duel Island only in the extra chapter (mode 663 starts wstag951 instead of wstag386)."
+    },
+    {
+      "number": 145,
+      "description": "Beat Tamer Pierre at cards on Duel Island",
+      "locationTarget": "Tamer Pierre",
+      "location": "0297",
+      "coordinates": {
+        "x": 21.2,
+        "y": 43.1
+      },
+      "coordinateSource": "actor/script point (272,497) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x14"
+        ],
+        "name": "FLAG_DUEL_ISLAND_PIERRE_BEATEN",
+        "address": "0x4B3A8",
+        "mask": "0x10"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag951.c:216",
+        "src/field/stages/east_sector/wstag951.c:398"
+      ],
+      "skipNote": "Optional: nothing later needs it. The five Tamers and Keith are on Duel Island only in the extra chapter (mode 663 starts wstag951 instead of wstag386)."
+    },
+    {
+      "number": 146,
+      "description": "Beat Tamer Bomujii at cards on Duel Island",
+      "locationTarget": "Tamer Bomujii",
+      "location": "0297",
+      "coordinates": {
+        "x": 23.2,
+        "y": 32.4
+      },
+      "coordinateSource": "actor/script point (297,373) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x13"
+        ],
+        "name": "FLAG_DUEL_ISLAND_BOMUJII_BEATEN",
+        "address": "0x4B3A8",
+        "mask": "0x08"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag951.c:180",
+        "src/field/stages/east_sector/wstag951.c:397"
+      ],
+      "skipNote": "Optional: nothing later needs it. The five Tamers and Keith are on Duel Island only in the extra chapter (mode 663 starts wstag951 instead of wstag386)."
+    },
+    {
+      "number": 147,
+      "description": "Beat Tamer Alice at cards on Duel Island",
+      "locationTarget": "Tamer Alice",
+      "location": "0297",
+      "coordinates": {
+        "x": 16.9,
+        "y": 23.4
+      },
+      "coordinateSource": "actor/script point (216,269) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x12"
+        ],
+        "name": "FLAG_DUEL_ISLAND_ALICE_BEATEN",
+        "address": "0x4B3A8",
+        "mask": "0x04"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag951.c:144",
+        "src/field/stages/east_sector/wstag951.c:396"
+      ],
+      "skipNote": "Optional: nothing later needs it. The five Tamers and Keith are on Duel Island only in the extra chapter (mode 663 starts wstag951 instead of wstag386)."
+    },
+    {
+      "number": 148,
+      "description": "Beat Keith, the Card King, at cards on Duel Island and take the KoC Trophy",
+      "locationTarget": "Keith",
+      "location": "0297",
+      "coordinates": {
+        "x": 12.4,
+        "y": 15.4
+      },
+      "coordinateSource": "actor/script point (159,177) px",
+      "condition": {
+        "flag": [
+          "0x10",
+          "0x11"
+        ],
+        "name": "FLAG_CARD_KING_KEITH_BEATEN",
+        "address": "0x4B3A8",
+        "mask": "0x02"
+      },
+      "evidence": [
+        "src/field/stages/east_sector/wstag951.c:107",
+        "src/field/stages/east_sector/wstag951.c:393"
+      ],
+      "skipNote": "Optional: nothing later needs it. The five Tamers and Keith are on Duel Island only in the extra chapter (mode 663 starts wstag951 instead of wstag386)."
+    }
+  ],
+  "corrections": [
+    {
+      "target": "mainQuest step 6",
+      "currently": "0x4B370 BitMasks [0x02]: true at progress 2, 3, 6, 7, 0xA, 0xB..., false at 8, 9, 0xC",
+      "condition": {
+        "progressAtLeast": 6,
+        "name": "STORY_FAKE_BLUE_CARD",
+        "address": "0x4B370"
+      },
+      "verdict": "verified",
+      "reason": "Event 90 at the East Station sets progress 6 when the player reaches the gondola's slot (only at progress 5). No flag is set by it. Bit 1 of progress also reads true at 2 and 3, long before this step, and false again at 8 and 9.",
+      "evidence": [
+        "src/field/stages/east_sector/wstag410.c:13",
+        "src/field/stages/east_sector/wstag410.c:546"
+      ],
+      "coordinates": {
+        "location": "022C",
+        "x": 47.3,
+        "y": 56.6,
+        "source": "trigger of slot 1, box (436,266)-(532,314) px; the current 45.5, 62.5 is close, change is optional"
+      }
+    },
+    {
+      "target": "mainQuest step 7",
+      "currently": "FLAG(0x40,0x16) = 0x4B3E0 mask 0x40; text 'Mystery Player'",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x16"
+        ],
+        "name": "FLAG_ETEMON_MASK_QUESTION_SEEN",
+        "address": "0x4B3E0",
+        "mask": "0x40"
+      },
+      "description": "Defeat Keith, the Mystery Player stopping you on the Asuka Bridge",
+      "locationTarget": "Keith",
+      "verdict": "verified: the flag is right, keep it. Only the name changes.",
+      "reason": "The earlier audit went by story.h, whose comments say event 101 is about Etemon. They are wrong: wstag205's event 101 is the talk with Keith after the win (actor 0x66, text file DMG200 entry 22, where only the player and Keith speak), and wstag205.c's own comment says so. FLAG(0x40,6), FLAG_KEITH_BRIDGE_WIN_SEEN, is set when event 100 ends, before the battle runs, so it would turn on as the fight starts. FLAG(0x40,0x16) needs the win, so it is the better mark. The game labels him Mystery Player for the first lines, then Keith once he gives his name.",
+      "evidence": [
+        "src/field/stages/central_sector/wstag205.c:115",
+        "src/field/stages/central_sector/wstag205.c:109",
+        "src/field/stages/central_sector/wstag205.c:113",
+        "include/engine/story.h:1339",
+        "include/engine/story.h:1306"
+      ]
+    },
+    {
+      "target": "mainQuest step 14",
+      "currently": "FLAG(0x20,0x2D) = 0x4B3C5 mask 0x20: no script reads or writes group 0x20",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x18"
+        ],
+        "name": "FLAG(0x40,0x18)",
+        "address": "0x4B3E1",
+        "mask": "0x01"
+      },
+      "verdict": "verified",
+      "reason": "Talking to the gondola's operator with the real Blue Card (item 0x18E) plays event 142, whose end function is NULL and which leaves straight for mode 0x22D (wstag415). There event 150 starts by itself and sets FLAG(0x40,0x18). That is the first mark after the action. It turns on as the Deeper Crevice battle starts. progressAtLeast 7 (STORY_SOUTH_STATION_GHOST, wstag440.c:30) is the later alternative.",
+      "evidence": [
+        "src/field/stages/east_sector/wstag415.c:472",
+        "src/field/stages/east_sector/wstag410.c:363",
+        "src/field/stages/east_sector/wstag410.c:147"
+      ],
+      "coordinates": {
+        "location": "022C",
+        "x": 37.5,
+        "y": 81.6,
+        "source": "operator, wstag410 actor5 at (384,418) px; the current 45.5, 62.5 is not where he stands"
+      }
+    },
+    {
+      "target": "mainQuest step 28",
+      "currently": "FLAG(0x40,4) with text 'Return to Suzaku Inn' at 023E (22,33)",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x04"
+        ],
+        "name": "FLAG_DO_GUARD_BLOCK_SEEN",
+        "address": "0x4B3DE",
+        "mask": "0x10"
+      },
+      "description": "Meet Kail in Suzaku City and go back with him to the Main Lobby in Asuka City",
+      "locationTarget": "Kail",
+      "location": "023E",
+      "coordinates": {
+        "x": 27.2,
+        "y": 32.8,
+        "source": "trigger of wstag500 slot 6 (event 270), box (350,320)-(417,353) px"
+      },
+      "verdict": "verified",
+      "reason": "The flag is right. It is set at the end of event 271 in mode 0x204, the story copy of the Main Lobby (S212PACK), but the player has no control there: walking onto the trigger in Suzaku City plays event 270, which carries them over (SCRIPT_LEAVE(0x204...)). So the place to send the player is the street in Suzaku City, not the inn (023F) and not 0204. If you want the point where the flag is set instead: location 0204, x 46.9, y 58.2 (where script271 walks the player, (0x12C,0x12A)).",
+      "evidence": [
+        "src/field/stages/asuka_city/wstag212.c:173",
+        "src/field/stages/south_sector/wstag500.c:900",
+        "src/field/stages/south_sector/wstag500.c:170",
+        "src/field/stages/asuka_city/wstag212.c:140"
+      ]
+    },
+    {
+      "target": "mainQuest step 60",
+      "currently": "FLAG(0x40,0x38) with text 'Ask HiAndromon...' at 0252 (73,23)",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x38"
+        ],
+        "name": "FLAG_NICK_KEITH_FACTORY_SEEN",
+        "address": "0x4B3E5",
+        "mask": "0x01"
+      },
+      "description": "Defeat HiAndromon in the Operation Room and go back out to the Dum Dum Factory",
+      "locationTarget": "HiAndromon",
+      "location": "0252",
+      "coordinates": {
+        "x": 73.3,
+        "y": 24.1,
+        "source": "HiAndromon, wstag605 actor0 at (657,185) px"
+      },
+      "alternative": {
+        "condition": {
+          "progressAtLeast": 18,
+          "name": "STORY_LISA_SAVED",
+          "address": "0x4B370"
+        },
+        "description": "Ask HiAndromon about Numemon inside the Operation Room",
+        "note": "Keeps the current text. Event 511 sets progress 0x12 at the moment he gives way; this is the more exact mark if the factory part is not wanted."
+      },
+      "verdict": "verified",
+      "reason": "FLAG(0x40,0x38) is set by event 520 in wstag580, which starts on entering the factory only at progress 0x12, so after HiAndromon is beaten. The flag is one room late for the current text. The game's name is Operation Room, not Operations Room. I kept 0252 because that is where the player has to go; event 520 itself needs no action, and it ends with the player at (297,154) in 024D (x 21.1, y 13.4).",
+      "evidence": [
+        "src/field/stages/west_sector/wstag580.c:88",
+        "src/field/stages/west_sector/wstag580.c:18",
+        "src/field/stages/west_sector/wstag605.c:34",
+        "src/field/stages/west_sector/wstag605.c:246"
+      ]
+    },
+    {
+      "target": "mainQuest step 61",
+      "currently": "FLAG(0x20,0x55) = 0x4B3CA mask 0x20: no script reads or writes group 0x20",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x39"
+        ],
+        "name": "FLAG(0x40,0x39)",
+        "address": "0x4B3E5",
+        "mask": "0x02"
+      },
+      "verdict": "verified",
+      "reason": "Event 530 in the Sewers fires on the trigger at the existing point (box centre 49.0, 41.3; current data 48.5, 41.5) and sets this flag at its end. It turns on as the WaruMonzaemon battle starts. progressAtLeast 0x13 (STORY_LUCKY_MOUSE, wstag615.c:39) is the mark after the win.",
+      "evidence": [
+        "src/field/stages/west_sector/wstag615.c:33",
+        "src/field/stages/west_sector/wstag615.c:536"
+      ]
+    },
+    {
+      "target": "mainQuest step 65",
+      "currently": "FLAG(0x20,0x56) = 0x4B3CA mask 0x40: no script reads or writes group 0x20",
+      "condition": {
+        "flag": [
+          "0x40",
+          "0x3D"
+        ],
+        "name": "FLAG(0x40,0x3D)",
+        "address": "0x4B3E5",
+        "mask": "0x20"
+      },
+      "verdict": "verified",
+      "reason": "After Nick and Keith return (step 64), entering the Secret Room plays event 551 (progress 0x15), which carries the player to the second copy, where event 552 hands over the Staff Pass (item 0x191) and sets this flag. Lisa stands at (432,260) in both, which matches the current 56.5, 50.5. Event 552 is in mode 0x256; 0255 stays right as the place to go.",
+      "evidence": [
+        "src/field/stages/west_sector/wstag625.c:154",
+        "src/field/stages/west_sector/wstag620.c:188",
+        "src/field/stages/west_sector/wstag625.c:136"
+      ]
+    },
+    {
+      "target": "asukaRematch step 6",
+      "currently": "0x4B3B3 mask 0x08, the same as step 5 (the fifth Divermon)",
+      "condition": {
+        "flag": [
+          "0x1C",
+          "0x55"
+        ],
+        "name": "FLAG_KING_DIVERMON_REMATCH_BEATEN",
+        "address": "0x4B3BF",
+        "mask": "0x20"
+      },
+      "verdict": "verified",
+      "reason": "KingDivermon's rematch win sets FLAG_KING_DIVERMON_REMATCH_BEATEN. Address and mask as expected: 0x4B3BF, 0x20.",
+      "evidence": [
+        "src/field/stages/east_sector/wstag385.c:383",
+        "include/engine/story.h:1284"
+      ]
+    },
+    {
+      "target": "driAgentVeemon step 1",
+      "currently": "FLAG(6,7) = 0x4B38C mask 0x80",
+      "condition": {
+        "anyOf": [
+          {
+            "flag": [
+              "0x1A",
+              "0x29"
+            ],
+            "name": "FLAG_DRI_BOB_TALKED",
+            "address": "0x4B3B1",
+            "mask": "0x02"
+          },
+          {
+            "flag": [
+              "0x0A",
+              "0x16"
+            ],
+            "name": "FLAG_PILEDRIMON_FOUGHT",
+            "address": "0x4B390",
+            "mask": "0x40"
+          }
+        ]
+      },
+      "simplestIfSingleAddress": {
+        "flag": [
+          "0x1A",
+          "0x29"
+        ],
+        "name": "FLAG_DRI_BOB_TALKED",
+        "address": "0x4B3B1",
+        "mask": "0x02"
+      },
+      "verdict": "verified for the flags; the two-flag form needs a new reader",
+      "reason": "FLAG(6,7) is set only on Bob's later talk with a party total under 30 (it is what makes Paildramon appear, wstag450 actor6). FLAG_DRI_BOB_TALKED is set on the very first talk at any party level, which is what the step says. There is a second way to Veemon that never meets Bob: in the extra chapter Piledrimon (wstag970) gives the DDNA and unlocks Veemon, with FLAG_PILEDRIMON_FOUGHT set as the battle starts. On that way, step 1 stays false with any Bob flag while step 3 reads true, and QuestProgressHelper.isStarterOwnedPattern reports the quest as unavailable, as if Veemon came in the starter pack. Veemon is in no starter pack (party.c STARTER_PARTIES), so that reading is always wrong for this quest. Hence anyOf; or keep the single Bob flag and stop applying the pattern to Veemon.",
+      "evidence": [
+        "src/field/stages/east_sector/wstag375.c:343",
+        "src/field/stages/east_sector/wstag375.c:335",
+        "src/field/stages/east_sector/wstag375.c:354",
+        "src/field/stages/south_sector/wstag450.c:524",
+        "src/field/stages/underground/wstag970.c:154",
+        "src/field/stages/underground/wstag970.c:356",
+        "src/engine/game/party.c:87",
+        "Frontend/src/presenters/helper/quest-progress.helper.ts:4",
+        "Frontend/src/presenters/converter/quest.converter.ts:28"
+      ]
+    },
+    {
+      "target": "asukaTrophy steps 1-5 (not in your list)",
+      "currently": "Flags 0x1A,0x37-0x3B, which winning the trophy clears",
+      "condition": {
+        "note": "each step: its flag OR item 0x12 (Asuka Trophy, 0x48DC2) non-zero"
+      },
+      "verdict": "verified from the code, not seen in the running app",
+      "reason": "KingDivermon's win clears the five flags in the same action list that gives the trophy. From then until the rematch, step 1 reads false and step 6 reads true, which is exactly isStarterOwnedPattern, so the finished quest shows as unavailable and not done.",
+      "evidence": [
+        "src/field/stages/east_sector/wstag385.c:415",
+        "src/field/stages/east_sector/wstag385.c:419",
+        "Frontend/src/presenters/converter/quest.converter.ts:28"
+      ]
+    },
+    {
+      "target": "mainQuest step 87 (note, no change proposed)",
+      "currently": "FLAG_OPERATION_SIGMA_SEEN with text 'Defeat the Guards'",
+      "verdict": "verified",
+      "reason": "This flag is set at the end of event 680, as the Guards battle starts. The win over the Guards is first visible at step 88's flag. Step 88 reads 'Confront', so it is fine, and new step 89 now marks the win over the Game Master.",
+      "evidence": [
+        "src/field/stages/asuka_city/wstag310.c:697",
+        "src/field/stages/asuka_city/wstag310.c:705"
+      ]
+    }
+  ],
+  "amaterasuDuelIsland": {
+    "trophy": {
+      "id": "amaterasuTrophy",
+      "title": "Amaterasu (Trophy)",
+      "description": "Defeat all Etemons on Duel Island and win the Sun Trophy",
+      "requisites": [],
+      "steps": [
+        {
+          "number": 1,
+          "description": "Defeat the first Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 37.5,
+            "y": 45.2
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3C"
+            ],
+            "name": "FLAG(0x1A,0x3C)",
+            "address": "0x4B3B3",
+            "mask": "0x10",
+            "orItem": {
+              "item": "0x14",
+              "name": "Sun Trophy",
+              "address": "0x48DC4"
+            }
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:529",
+            "src/field/stages/east_sector/wstag386.c:723"
+          ]
+        },
+        {
+          "number": 2,
+          "description": "Defeat the second Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 29.3,
+            "y": 42.8
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3D"
+            ],
+            "name": "FLAG(0x1A,0x3D)",
+            "address": "0x4B3B3",
+            "mask": "0x20",
+            "orItem": {
+              "item": "0x14",
+              "name": "Sun Trophy",
+              "address": "0x48DC4"
+            }
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:483",
+            "src/field/stages/east_sector/wstag386.c:721"
+          ]
+        },
+        {
+          "number": 3,
+          "description": "Defeat the third Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 21.2,
+            "y": 43.1
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3E"
+            ],
+            "name": "FLAG(0x1A,0x3E)",
+            "address": "0x4B3B3",
+            "mask": "0x40",
+            "orItem": {
+              "item": "0x14",
+              "name": "Sun Trophy",
+              "address": "0x48DC4"
+            }
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:437",
+            "src/field/stages/east_sector/wstag386.c:719"
+          ]
+        },
+        {
+          "number": 4,
+          "description": "Defeat the fourth Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 23.2,
+            "y": 32.4
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3F"
+            ],
+            "name": "FLAG(0x1A,0x3F)",
+            "address": "0x4B3B3",
+            "mask": "0x80",
+            "orItem": {
+              "item": "0x14",
+              "name": "Sun Trophy",
+              "address": "0x48DC4"
+            }
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:328",
+            "src/field/stages/east_sector/wstag386.c:715"
+          ],
+          "requisites": [
+            {
+              "id": "etemonMike",
+              "item": "0x18D",
+              "name": "Etemon's Mike",
+              "address": "0x48F3D",
+              "text": "Etemon's Mike",
+              "source": "Etemon says BK Agumon's gang took it; the BKZ Leader in the Circuit Board gives it back after a card battle",
+              "evidence": [
+                "src/field/stages/east_sector/wstag386.c:286",
+                "src/field/stages/east_sector/wstag386.c:287",
+                "src/field/stages/underground/wstag875.c:1046"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "description": "Defeat MetalEtemon",
+          "locationTarget": "MetalEtemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 16.9,
+            "y": 23.4
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x40"
+            ],
+            "name": "FLAG_DUEL_ISLAND_METALETEMON_BEATEN",
+            "address": "0x4B3B4",
+            "mask": "0x01",
+            "orItem": {
+              "item": "0x14",
+              "name": "Sun Trophy",
+              "address": "0x48DC4"
+            }
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:357",
+            "src/field/stages/east_sector/wstag386.c:717"
+          ]
+        },
+        {
+          "description": "Defeat KingEtemon and win the Sun Trophy",
+          "condition": {
+            "item": "0x14",
+            "name": "Sun Trophy",
+            "address": "0x48DC4",
+            "mask": null,
+            "alsoSet": {
+              "flag": [
+                "0x1C",
+                "0x54"
+              ],
+              "name": "FLAG_KING_ETEMON_BEATEN",
+              "address": "0x4B3BF",
+              "mask": "0x10"
+            }
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:236",
+            "src/field/stages/east_sector/wstag386.c:239",
+            "src/field/stages/east_sector/wstag386.c:712"
+          ],
+          "number": 6,
+          "locationTarget": "KingEtemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 12.4,
+            "y": 15.4
+          }
+        }
+      ]
+    },
+    "rematch": {
+      "id": "amaterasuRematch",
+      "title": "Amaterasu (Rematch)",
+      "description": "Defeat all Etemons again on Duel Island",
+      "requisites": [
+        {
+          "id": "amaterasuTrophy",
+          "text": "Sun Trophy",
+          "item": "0x14",
+          "address": "0x48DC4"
+        }
+      ],
+      "steps": [
+        {
+          "number": 1,
+          "description": "Defeat the first Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 37.5,
+            "y": 45.2
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3C"
+            ],
+            "name": "FLAG(0x1A,0x3C)",
+            "address": "0x4B3B3",
+            "mask": "0x10"
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:529",
+            "src/field/stages/east_sector/wstag386.c:723"
+          ]
+        },
+        {
+          "number": 2,
+          "description": "Defeat the second Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 29.3,
+            "y": 42.8
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3D"
+            ],
+            "name": "FLAG(0x1A,0x3D)",
+            "address": "0x4B3B3",
+            "mask": "0x20"
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:483",
+            "src/field/stages/east_sector/wstag386.c:721"
+          ]
+        },
+        {
+          "number": 3,
+          "description": "Defeat the third Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 21.2,
+            "y": 43.1
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3E"
+            ],
+            "name": "FLAG(0x1A,0x3E)",
+            "address": "0x4B3B3",
+            "mask": "0x40"
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:437",
+            "src/field/stages/east_sector/wstag386.c:719"
+          ]
+        },
+        {
+          "number": 4,
+          "description": "Defeat the fourth Etemon",
+          "locationTarget": "Etemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 23.2,
+            "y": 32.4
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x3F"
+            ],
+            "name": "FLAG(0x1A,0x3F)",
+            "address": "0x4B3B3",
+            "mask": "0x80"
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:328",
+            "src/field/stages/east_sector/wstag386.c:715"
+          ]
+        },
+        {
+          "number": 5,
+          "description": "Defeat MetalEtemon",
+          "locationTarget": "MetalEtemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 16.9,
+            "y": 23.4
+          },
+          "condition": {
+            "flag": [
+              "0x1A",
+              "0x40"
+            ],
+            "name": "FLAG_DUEL_ISLAND_METALETEMON_BEATEN",
+            "address": "0x4B3B4",
+            "mask": "0x01"
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:357",
+            "src/field/stages/east_sector/wstag386.c:717"
+          ]
+        },
+        {
+          "description": "Defeat KingEtemon",
+          "condition": {
+            "flag": [
+              "0x1C",
+              "0x56"
+            ],
+            "name": "FLAG_KING_ETEMON_REMATCH_BEATEN",
+            "address": "0x4B3BF",
+            "mask": "0x40"
+          },
+          "evidence": [
+            "src/field/stages/east_sector/wstag386.c:276",
+            "src/field/stages/east_sector/wstag386.c:713"
+          ],
+          "number": 6,
+          "locationTarget": "KingEtemon",
+          "location": "0297",
+          "coordinates": {
+            "x": 12.4,
+            "y": 15.4
+          }
+        }
+      ]
+    },
+    "resetByWstag385": {
+      "affects": false,
+      "verdict": "verified",
+      "reason": "wstag385 clears only 0x1A,0x37-0x3B (and sets item 0x12). The Etemon flags 0x1A,0x3C-0x40 and FLAG_KING_ETEMON_* are separate bits. wstag386 has its own reset: KingEtemon's first win clears 0x1A,0x3C-0x40, the same way.",
+      "evidence": [
+        "src/field/stages/east_sector/wstag385.c:415",
+        "src/field/stages/east_sector/wstag385.c:419",
+        "src/field/stages/east_sector/wstag386.c:241",
+        "src/field/stages/east_sector/wstag386.c:245"
+      ]
+    },
+    "notes": [
+      "Trophy steps 1-5 carry orItem because of wstag386's reset: without it the finished quest would read as unavailable, the same fault as asukaTrophy.",
+      "The rematch reads the same five flags as the trophy, which is why it needs the trophy as requisite, as the Asuka pair does.",
+      "Folder Bag (item 0x192) is needed to get past: two Etemon (wstag386 actors 21, 22) stand in the way until the player has it.",
+      "The fourth Etemon only needs the Mike in the first run: with the trophy held, actor 12 replaces actor 11 and asks for nothing.",
+      "Texts follow the Asuka quests. The game calls all four Etemon by the same name, so first to fourth is the app's wording; the order is the walking order from the arrival point, not a rule of the game."
+    ]
+  },
+  "mapIdsMissingFromMapJson": {
+    "0244": {
+      "picture": "S537PACK",
+      "name": "Catacomb",
+      "source": "src/field/stages/south_sector/wstag537.c:2"
+    },
+    "0246": {
+      "picture": "S545PACK",
+      "name": "Bug Maze Pit",
+      "source": "src/field/stages/network_break/wstag545.c:2"
+    },
+    "026A": {
+      "picture": "S735PACK",
+      "name": "Ice Dungeon",
+      "source": "src/field/stages/north_sector/wstag735.c:2"
+    },
+    "026B": {
+      "picture": "S740PACK",
+      "name": "Fire Dungeon",
+      "source": "src/field/stages/north_sector/wstag740.c:2"
+    },
+    "026C": {
+      "picture": "S745PACK",
+      "name": "Dark Dungeon",
+      "source": "src/field/stages/north_sector/wstag745.c:2"
+    },
+    "026D": {
+      "picture": "S750PACK",
+      "name": "Chamber Room",
+      "source": "src/field/stages/north_sector/wstag750.c:2"
+    },
+    "026E": {
+      "picture": "S755PACK",
+      "name": "Battle Gate",
+      "source": "src/field/stages/north_sector/wstag755.c:2"
+    },
+    "02DA": {
+      "picture": "S795PACK",
+      "name": "Magasta B1F",
+      "source": "src/field/stages/undersea_base/wstag795.c:2"
+    },
+    "02DB": {
+      "picture": "S800PACK",
+      "name": "Magasta B2F",
+      "source": "src/field/stages/undersea_base/wstag800.c:2"
+    },
+    "02DC": {
+      "picture": "S805PACK",
+      "name": "Magasta 1F",
+      "source": "src/field/stages/undersea_base/wstag805.c:2"
+    },
+    "02DD": {
+      "picture": "S810PACK",
+      "name": "Gunslinger 1F",
+      "source": "src/field/stages/spy_satellite/wstag810.c:2"
+    },
+    "02DE": {
+      "picture": null,
+      "name": "Gunslinger 2F",
+      "source": "src/field/stages/spy_satellite/wstag815.c:2"
+    },
+    "02DF": {
+      "picture": "S820PACK",
+      "name": "Control Room",
+      "source": "src/field/stages/spy_satellite/wstag820.c:2"
+    },
+    "02EC": {
+      "picture": "S885PACK",
+      "name": "Circuit Board",
+      "source": "src/field/stages/underground/wstag885.c:2"
+    }
+  },
+  "conditionForms": {
+    "flag": "read address & mask, non-zero = done",
+    "progressAtLeast": "byte at 0x4B370 >= n; StepReader already has this as AtLeast",
+    "item": "key items are counts (address = 0x48DB0 + id); BitMasks [] returns the count",
+    "orItem/anyOf/allItems": "new forms this data asks for; StepReader reads one address"
+  }
+}

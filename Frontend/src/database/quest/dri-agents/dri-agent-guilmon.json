@@ -5,7 +5,7 @@
       "id": "partyLevel",
       "type": "partyLevelRange",
       "min": 30,
-      "max": 45
+      "max": 59
     },
     {
       "id": "seiryuLeader"

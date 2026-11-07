@@ -44,29 +44,32 @@ export class WikiDropsPanelPresenter {
 
   private static getDroppedByRaw(dropId: string, dropType: DropType): DroppedByRaw[] {
     const dropNumericId = Number(dropId);
-    const enemiesWhoDrop: DroppedByRaw[] = EnemyRepository.getEnemiesWhoDropByDrop(dropType, dropNumericId).map(
-      (enemyWhoDrops) => {
-        return {
-          kind: "enemy",
-          id: enemyWhoDrops.enemyId,
-          locationOnly: enemyWhoDrops.locationOnly,
-        };
-      },
-    );
+    const enemiesWhoDrop: DroppedByRaw[] = EnemyRepository.getEnemiesWhoDropByDrop(
+      dropType,
+      dropNumericId,
+    ).map((enemyWhoDrops) => {
+      return {
+        kind: "enemy",
+        id: enemyWhoDrops.enemyId,
+        locationOnly: enemyWhoDrops.locationOnly,
+      };
+    });
 
     if (dropType !== "booster") {
       return enemiesWhoDrop;
     }
 
-    const tamersWhoDrop: DroppedByRaw[] = TamerRepository.getTamersWhoDropByBooster(dropNumericId).map((tamerId) => {
+    const tamersWhoDrop: DroppedByRaw[] = TamerRepository.getTamersWhoDropByBooster(
+      dropNumericId,
+    ).map((tamerId) => {
       return { kind: "tamer", id: tamerId };
     });
 
-    const duelIslandsWhoDrop: DroppedByRaw[] = DuelIslandRepository.getDuelIslandsWhoDropByBooster(dropNumericId).map(
-      (duelIslandId) => {
-        return { kind: "duelIsland", id: duelIslandId };
-      },
-    );
+    const duelIslandsWhoDrop: DroppedByRaw[] = DuelIslandRepository.getDuelIslandsWhoDropByBooster(
+      dropNumericId,
+    ).map((duelIslandId) => {
+      return { kind: "duelIsland", id: duelIslandId };
+    });
 
     return [...enemiesWhoDrop, ...tamersWhoDrop, ...duelIslandsWhoDrop];
   }
@@ -80,7 +83,7 @@ export class WikiDropsPanelPresenter {
       return {
         kind: "enemy",
         sourceId: droppedBy.id,
-        label: enemyRaw.name,
+        label: EnemyRepository.getName(enemyRaw),
         locationId: droppedBy.locationOnly,
         ownerNameKey: ownerNameKey ?? undefined,
       };

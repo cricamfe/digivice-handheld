@@ -1,0 +1,13 @@
+{
+  "npc": {
+    "battle": {
+      "card": "Cartas",
+      "digimon": "Digimon",
+      "requirement": {
+        "missingCharisma": "Carisma insuficiente o fuera de rango",
+        "available": "Batalla disponible",
+        "alreadyWon": "Ya ganaste esta batalla"
+      }
+    }
+  }
+}

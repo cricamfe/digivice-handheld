@@ -2,7 +2,7 @@
   "seiryuLeader": {
     "type": "leader",
     "locationId": "022E",
-    "imageName": "Seiryu Leader",
+    "fieldActor": "60-1",
     "mainQuestAvailabilityWindow": {
       "starts": 3
     },
@@ -27,7 +27,7 @@
   "keith": {
     "type": "npc",
     "locationId": "0202",
-    "imageName": "Keith",
+    "fieldActor": "102-1",
     "mainQuestAvailabilityWindow": {
       "starts": 6,
       "ends": 7
@@ -53,7 +53,7 @@
   "suzakuLeader": {
     "type": "leader",
     "locationId": "0240",
-    "imageName": "Suzaku Leader",
+    "fieldActor": "141-1",
     "party": [
       {
         "enemyId": 222,
@@ -75,7 +75,7 @@
   "fakeByakkoLeader": {
     "type": "npc",
     "locationId": "025E",
-    "imageName": "Fake Byakko Leader",
+    "fieldActor": "152-1",
     "mainQuestAvailabilityWindow": {
       "starts": 45,
       "ends": 46
@@ -97,7 +97,7 @@
   "byakkoLeader": {
     "type": "leader",
     "locationId": "025C",
-    "imageName": "Byakko Leader",
+    "fieldActor": "122-1",
     "party": [
       {
         "enemyId": 400,
@@ -119,7 +119,7 @@
   "aoaAttacker": {
     "type": "npc",
     "locationId": "0255",
-    "imageName": "A.o.A Attacker",
+    "fieldActor": "194-1",
     "mainQuestAvailabilityWindow": {
       "starts": 60,
       "ends": 61
@@ -141,7 +141,7 @@
   "trooper1AdminCenterB1F": {
     "type": "npc",
     "locationId": "021A",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 66,
       "ends": 67
@@ -163,7 +163,7 @@
   "trooper2AdminCenterB1F": {
     "type": "npc",
     "locationId": "021A",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 66,
       "ends": 68
@@ -185,7 +185,7 @@
   "trooper3AdminCenterB1F": {
     "type": "npc",
     "locationId": "021A",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 66,
       "ends": 69
@@ -207,7 +207,7 @@
   "optionalTrooper1AdminCenterB1F": {
     "type": "npc",
     "locationId": "021A",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 66,
       "ends": 86
@@ -229,7 +229,7 @@
   "optionalTrooper2AdminCenterB1F": {
     "type": "npc",
     "locationId": "021A",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 66,
       "ends": 86
@@ -251,7 +251,7 @@
   "trooper1BasementStairs": {
     "type": "npc",
     "locationId": "0215",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 69,
       "ends": 70
@@ -273,7 +273,7 @@
   "trooper2BasementStairs": {
     "type": "npc",
     "locationId": "0215",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 69,
       "ends": 71
@@ -295,7 +295,7 @@
   "trooper3BasementStairs": {
     "type": "npc",
     "locationId": "0215",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 69,
       "ends": 72
@@ -317,7 +317,7 @@
   "trooper1AdminFloor1": {
     "type": "npc",
     "locationId": "0214",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 72,
       "ends": 73
@@ -339,7 +339,7 @@
   "trooper2AdminFloor1": {
     "type": "npc",
     "locationId": "0214",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 72,
       "ends": 74
@@ -361,7 +361,7 @@
   "optionalTrooperAdminFloor1": {
     "type": "npc",
     "locationId": "0214",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 72,
       "ends": 86
@@ -383,7 +383,7 @@
   "trooper1AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 75
@@ -405,7 +405,7 @@
   "trooper2AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 76
@@ -427,7 +427,7 @@
   "soldierAdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Soldier",
+    "fieldActor": "115-1",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 77
@@ -453,7 +453,7 @@
   "generalAdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Soldier",
+    "fieldActor": "115-1",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 78
@@ -479,7 +479,7 @@
   "optionalTrooper1AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 86
@@ -501,7 +501,7 @@
   "optionalSoldier1AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Soldier",
+    "fieldActor": "115-1",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 86
@@ -527,7 +527,7 @@
   "optionalTrooper2AdminFloor2": {
     "type": "npc",
     "locationId": "0217",
-    "imageName": "Trooper",
+    "fieldActor": "164-1",
     "mainQuestAvailabilityWindow": {
       "starts": 74,
       "ends": 86
@@ -549,7 +549,7 @@
   "guardsHeadquarters": {
     "type": "npc",
     "locationId": "0219",
-    "imageName": "Guard",
+    "fieldActor": "109-1",
     "mainQuestAvailabilityWindow": {
       "starts": 86,
       "ends": 87
@@ -567,7 +567,7 @@
   "gameMasterHeadquarters": {
     "type": "npc",
     "locationId": "0219",
-    "imageName": "Game Master",
+    "fieldActor": "108-1",
     "mainQuestAvailabilityWindow": {
       "starts": 87,
       "ends": 88

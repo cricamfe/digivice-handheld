@@ -34,7 +34,7 @@ export class WikiLocationsPanelPresenter {
   ): WikiLocationsPanelViewModel {
     const locationRaw = MapRepository.getMapById(locationId);
     const worldLocation = WikiLocationsPanelPresenter.toCoordinates(locationRaw.worldLocation);
-    const localImageUrl = ImageCatalog.getLocationImageUrl(locationRaw.imageName);
+    const localImageUrl = ImageCatalog.getLocationImageUrl(locationId);
 
     return {
       asukaSlides: WikiLocationsPanelPresenter.getSlides(
@@ -142,8 +142,8 @@ export class WikiLocationsPanelPresenter {
     return {
       id: entry.id,
       kind: "boss",
-      name: enemyRaw.name,
-      imageUrl: ImageCatalog.getBossImageUrl(enemyRaw.name),
+      name: EnemyRepository.getName(enemyRaw),
+      imageUrl: ImageCatalog.getFieldActorImageUrl(enemyRaw.fieldActor),
       coordinates: WikiLocationsPanelPresenter.toCoordinates(entry.coordinates)!,
       labelPlacement: WikiLocationsPanelPresenter.toLabelPlacement(entry.labelPlacement),
     };
@@ -163,15 +163,13 @@ export class WikiLocationsPanelPresenter {
       id: entry.id,
       kind: "cardShop",
       nameKey: `cardShop.${entry.id}.name`,
-      imageUrl: ImageCatalog.getCardShopImageUrl(cardShopRaw.imageName),
+      imageUrl: ImageCatalog.getFieldActorImageUrl(cardShopRaw.keeper?.fieldActor),
       coordinates: WikiLocationsPanelPresenter.toCoordinates(entry.coordinates)!,
       labelPlacement: WikiLocationsPanelPresenter.toLabelPlacement(entry.labelPlacement),
     };
   }
 
-  private static toLabelPlacement(
-    labelPlacement: LabelPlacement | undefined,
-  ): LabelPlacement {
+  private static toLabelPlacement(labelPlacement: LabelPlacement | undefined): LabelPlacement {
     if (labelPlacement === undefined) {
       return "below";
     }
@@ -185,15 +183,8 @@ export class WikiLocationsPanelPresenter {
     sideQuests: Quest[],
     previousMapId: string,
   ): WikiLocationEncounterLineViewModel[] {
-    const encounterSources: Exclude<EnemySource, "boss">[] = [
-      "walking",
-      "fishing",
-      "kickingTree",
-    ];
-    const enemyIdsBySource: Record<
-      Exclude<EnemySource, "boss">,
-      string[]
-    > = {
+    const encounterSources: Exclude<EnemySource, "boss">[] = ["walking", "fishing", "kickingTree"];
+    const enemyIdsBySource: Record<Exclude<EnemySource, "boss">, string[]> = {
       walking: LocationEncounterHelper.resolveWalkingIds(locationId, mainQuest, previousMapId),
       fishing: LocationEncounterHelper.resolveFishingIds(locationId, sideQuests),
       kickingTree: LocationEncounterHelper.resolveKickingTreeIds(locationId, sideQuests),
@@ -223,7 +214,7 @@ export class WikiLocationsPanelPresenter {
 
     return {
       id: enemyId,
-      name: enemyRaw.name,
+      name: EnemyRepository.getName(enemyRaw),
     };
   }
 

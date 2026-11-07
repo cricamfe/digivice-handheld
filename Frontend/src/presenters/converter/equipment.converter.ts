@@ -2,7 +2,11 @@ import type { EquipmentRaw } from "@/repositories/tables/raws/equipment/equipmen
 import type { EquipmentViewModel } from "@/viewmodels/digimon/equipment.viewmodel";
 
 export class EquipmentConverter {
-  public static convert(equipmentId: number, equipableDigimonNames: string[], equipmentRaw: EquipmentRaw): EquipmentViewModel {
+  public static convert(
+    equipmentId: number,
+    equipableDigimonNames: string[],
+    equipmentRaw: EquipmentRaw,
+  ): EquipmentViewModel {
     if (equipmentRaw === undefined) {
       return {
         id: equipmentId,

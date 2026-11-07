@@ -73,7 +73,7 @@ export class DigimonSyncer {
           return;
         }
 
-        // Backend sends the full entry when a digievolution is stored for the first time.
+        // The core sends the full entry when a digievolution is stored for the first time.
         previousDigimon.storedDigievolutions.push(
           StoredDigievolutionConverter.convert(
             newStoredDigievolutionDto as DeepRequired<StoredDigievolutionDTO>,

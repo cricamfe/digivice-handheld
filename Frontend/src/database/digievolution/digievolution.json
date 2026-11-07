@@ -1,6 +1,6 @@
 {
   "5": {
-    "name": "Greymon",
+    "nameId": 12,
     "tier": 1,
     "attributes": {
       "strength": 20,
@@ -55,7 +55,7 @@
     ]
   },
   "6": {
-    "name": "Devimon",
+    "nameId": 17,
     "tier": 2,
     "attributes": {
       "strength": 50,
@@ -110,7 +110,7 @@
     ]
   },
   "12": {
-    "name": "MetalGreymon",
+    "nameId": 23,
     "tier": 2,
     "attributes": {
       "strength": 30,
@@ -170,7 +170,7 @@
     ]
   },
   "19": {
-    "name": "Kabuterimon",
+    "nameId": 31,
     "tier": 2,
     "attributes": {
       "strength": 30,
@@ -225,7 +225,7 @@
     ]
   },
   "20": {
-    "name": "Angemon",
+    "nameId": 16,
     "tier": 1,
     "attributes": {
       "strength": 0,
@@ -280,7 +280,7 @@
     ]
   },
   "26": {
-    "name": "SkullGreymon",
+    "nameId": 24,
     "tier": 2,
     "attributes": {
       "strength": 50,
@@ -335,7 +335,7 @@
     ]
   },
   "27": {
-    "name": "MetalMamemon",
+    "nameId": 30,
     "tier": 2,
     "attributes": {
       "strength": 20,
@@ -395,7 +395,7 @@
     ]
   },
   "56": {
-    "name": "Digitamamon",
+    "nameId": 32,
     "tier": 3,
     "attributes": {
       "strength": 30,
@@ -445,7 +445,7 @@
     ]
   },
   "59": {
-    "name": "Phoenixmon",
+    "nameId": 48,
     "tier": 4,
     "attributes": {
       "strength": 20,
@@ -500,7 +500,7 @@
     ]
   },
   "66": {
-    "name": "Myotismon",
+    "nameId": 29,
     "tier": 3,
     "attributes": {
       "strength": 60,
@@ -560,7 +560,7 @@
     ]
   },
   "144": {
-    "name": "Rosemon",
+    "nameId": 42,
     "tier": 3,
     "attributes": {
       "strength": 10,
@@ -620,7 +620,7 @@
     ]
   },
   "148": {
-    "name": "Imperialdramon",
+    "nameId": 37,
     "tier": 3,
     "attributes": {
       "strength": 40,
@@ -675,7 +675,7 @@
     ]
   },
   "150": {
-    "name": "Omnimon",
+    "nameId": 49,
     "tier": 5,
     "attributes": {
       "strength": 65,
@@ -730,7 +730,7 @@
     ]
   },
   "151": {
-    "name": "Diaboromon",
+    "nameId": 52,
     "tier": 5,
     "attributes": {
       "strength": 50,
@@ -785,7 +785,7 @@
     ]
   },
   "196": {
-    "name": "MetalGarurumon",
+    "nameId": 41,
     "tier": 3,
     "attributes": {
       "strength": 30,
@@ -840,7 +840,7 @@
     ]
   },
   "211": {
-    "name": "MagnaAngemon",
+    "nameId": 28,
     "tier": 2,
     "attributes": {
       "strength": 10,
@@ -900,7 +900,7 @@
     ]
   },
   "213": {
-    "name": "WarGreymon",
+    "nameId": 36,
     "tier": 3,
     "attributes": {
       "strength": 40,
@@ -960,7 +960,7 @@
     ]
   },
   "214": {
-    "name": "Seraphimon",
+    "nameId": 40,
     "tier": 3,
     "attributes": {
       "strength": 20,
@@ -1020,7 +1020,7 @@
     ]
   },
   "230": {
-    "name": "GranKuwagamon",
+    "nameId": 47,
     "tier": 4,
     "attributes": {
       "strength": 45,
@@ -1075,7 +1075,7 @@
     ]
   },
   "234": {
-    "name": "Angewomon",
+    "nameId": 19,
     "tier": 2,
     "attributes": {
       "strength": 0,
@@ -1125,7 +1125,7 @@
     ]
   },
   "254": {
-    "name": "Paildramon",
+    "nameId": 25,
     "tier": 2,
     "attributes": {
       "strength": 30,
@@ -1185,7 +1185,7 @@
     ]
   },
   "259": {
-    "name": "ExVeemon",
+    "nameId": 13,
     "tier": 1,
     "attributes": {
       "strength": 20,
@@ -1240,7 +1240,7 @@
     ]
   },
   "260": {
-    "name": "Stingmon",
+    "nameId": 18,
     "tier": 1,
     "attributes": {
       "strength": 20,
@@ -1295,7 +1295,7 @@
     ]
   },
   "267": {
-    "name": "BK WarGreymon",
+    "nameId": 43,
     "tier": 3,
     "attributes": {
       "strength": 60,
@@ -1355,7 +1355,7 @@
     ]
   },
   "359": {
-    "name": "Imperialdramon-F",
+    "nameId": 44,
     "tier": 4,
     "attributes": {
       "strength": 55,
@@ -1415,7 +1415,7 @@
     ]
   },
   "367": {
-    "name": "Growlmon",
+    "nameId": 14,
     "tier": 1,
     "attributes": {
       "strength": 30,
@@ -1470,7 +1470,7 @@
     ]
   },
   "368": {
-    "name": "WarGrowlmon",
+    "nameId": 26,
     "tier": 2,
     "attributes": {
       "strength": 40,
@@ -1530,7 +1530,7 @@
     ]
   },
   "369": {
-    "name": "Gallantmon",
+    "nameId": 38,
     "tier": 3,
     "attributes": {
       "strength": 50,
@@ -1585,7 +1585,7 @@
     ]
   },
   "372": {
-    "name": "MegaGargomon",
+    "nameId": 46,
     "tier": 4,
     "attributes": {
       "strength": 50,
@@ -1640,7 +1640,7 @@
     ]
   },
   "374": {
-    "name": "Kyubimon",
+    "nameId": 15,
     "tier": 1,
     "attributes": {
       "strength": 10,
@@ -1695,7 +1695,7 @@
     ]
   },
   "375": {
-    "name": "Taomon",
+    "nameId": 27,
     "tier": 2,
     "attributes": {
       "strength": 20,
@@ -1755,7 +1755,7 @@
     ]
   },
   "376": {
-    "name": "Sakuyamon",
+    "nameId": 39,
     "tier": 3,
     "attributes": {
       "strength": 30,
@@ -1815,7 +1815,7 @@
     ]
   },
   "377": {
-    "name": "Beelzemon",
+    "nameId": 51,
     "tier": 5,
     "attributes": {
       "strength": 60,
@@ -1875,7 +1875,7 @@
     ]
   },
   "378": {
-    "name": "MaloMyotismon",
+    "nameId": 45,
     "tier": 4,
     "attributes": {
       "strength": 65,
@@ -1935,7 +1935,7 @@
     ]
   },
   "381": {
-    "name": "Imperialdramon-P",
+    "nameId": 50,
     "tier": 5,
     "attributes": {
       "strength": 50,
@@ -1995,7 +1995,7 @@
     ]
   },
   "386": {
-    "name": "Dinohumon",
+    "nameId": 9,
     "tier": 1,
     "attributes": {
       "strength": 30,
@@ -2050,7 +2050,7 @@
     ]
   },
   "387": {
-    "name": "Hookmon",
+    "nameId": 10,
     "tier": 1,
     "attributes": {
       "strength": 10,
@@ -2105,7 +2105,7 @@
     ]
   },
   "388": {
-    "name": "Grizzmon",
+    "nameId": 11,
     "tier": 1,
     "attributes": {
       "strength": 40,
@@ -2160,7 +2160,7 @@
     ]
   },
   "389": {
-    "name": "Kyukimon",
+    "nameId": 20,
     "tier": 2,
     "attributes": {
       "strength": 40,
@@ -2220,7 +2220,7 @@
     ]
   },
   "390": {
-    "name": "Armormon",
+    "nameId": 21,
     "tier": 2,
     "attributes": {
       "strength": 20,
@@ -2280,7 +2280,7 @@
     ]
   },
   "391": {
-    "name": "GrapLeomon",
+    "nameId": 22,
     "tier": 2,
     "attributes": {
       "strength": 50,
@@ -2335,7 +2335,7 @@
     ]
   },
   "392": {
-    "name": "Guardiangemon",
+    "nameId": 33,
     "tier": 3,
     "attributes": {
       "strength": 50,
@@ -2395,7 +2395,7 @@
     ]
   },
   "393": {
-    "name": "Cannondramon",
+    "nameId": 34,
     "tier": 3,
     "attributes": {
       "strength": 30,
@@ -2455,7 +2455,7 @@
     ]
   },
   "394": {
-    "name": "Marsmon",
+    "nameId": 35,
     "tier": 3,
     "attributes": {
       "strength": 60,

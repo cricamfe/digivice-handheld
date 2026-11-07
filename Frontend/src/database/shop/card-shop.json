@@ -1,7 +1,7 @@
 {
   "asYellowCruiser": {
     "locationId": "0211",
-    "imageName": "Divermon",
+    "keeper": { "nameId": 88, "fieldActor": "206-0" },
     "phases": [
       {
         "mainQuestAvailabilityWindow": {
@@ -70,7 +70,7 @@
   },
   "seiryuCardShop": {
     "locationId": "022F",
-    "imageName": "Divermon",
+    "keeper": { "nameId": 88, "fieldActor": "206-0" },
     "phases": [
       {
         "mainQuestAvailabilityWindow": {
@@ -107,7 +107,7 @@
   },
   "suzakuCardShop": {
     "locationId": "023E",
-    "imageName": "Divermon",
+    "keeper": { "nameId": 88, "fieldActor": "206-0" },
     "phases": [
       {
         "mainQuestAvailabilityWindow": {

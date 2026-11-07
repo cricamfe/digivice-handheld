@@ -16,12 +16,9 @@ const MissingAsukaTrophyTooltipKey = "npc.battle.requirement.missingAsukaTrophy"
 const MissingSunTrophyTooltipKey = "npc.battle.requirement.missingSunTrophy";
 const MissingCharismaAndAsukaTrophyTooltipKey =
   "npc.battle.requirement.missingCharismaAndAsukaTrophy";
-const MissingCharismaAndSunTrophyTooltipKey =
-  "npc.battle.requirement.missingCharismaAndSunTrophy";
-const UnavailableAfterAsukaTrophyTooltipKey =
-  "npc.battle.requirement.unavailableAfterAsukaTrophy";
-const UnavailableAfterSunTrophyTooltipKey =
-  "npc.battle.requirement.unavailableAfterSunTrophy";
+const MissingCharismaAndSunTrophyTooltipKey = "npc.battle.requirement.missingCharismaAndSunTrophy";
+const UnavailableAfterAsukaTrophyTooltipKey = "npc.battle.requirement.unavailableAfterAsukaTrophy";
+const UnavailableAfterSunTrophyTooltipKey = "npc.battle.requirement.unavailableAfterSunTrophy";
 const AvailableBattleTooltipKey = "npc.battle.requirement.available";
 const AlreadyWonBattleTooltipKey = "npc.battle.requirement.alreadyWon";
 

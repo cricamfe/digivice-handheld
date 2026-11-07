@@ -26,10 +26,9 @@ export class StepConverter {
         return stepEntry.number.toString() === stepNumber && stepEntry.isDone;
       }),
       location: stepRaw.location,
-      coordinates: {
-        x: stepRaw.coordinates.x,
-        y: stepRaw.coordinates.y,
-      },
+      coordinates: stepRaw.coordinates
+        ? { x: stepRaw.coordinates.x, y: stepRaw.coordinates.y }
+        : null,
       innerLocation: StepConverter.resolveInnerLocation(stepRaw).map((innerLocationRaw) => {
         return StepConverter.convertInnerLocation(innerLocationRaw);
       }),

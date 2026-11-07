@@ -1,4 +1,11 @@
-export const DigimonAttributes = ["strength", "defense", "spirit", "wisdom", "speed", "charisma"] as const;
+export const DigimonAttributes = [
+  "strength",
+  "defense",
+  "spirit",
+  "wisdom",
+  "speed",
+  "charisma",
+] as const;
 
 export type DigimonAttribute = (typeof DigimonAttributes)[number];
 

@@ -7,12 +7,14 @@ import type { QuestViewModel } from "@/viewmodels/quest/quest.viewmodel";
 export class JournalPresenter {
   public static getJournalViewModel(journal: Journal, party: Party): JournalViewModel {
     const mainQuestRaw = QuestRepository.getMainQuestRaw();
-    const mainQuestViewModel = QuestModalPresenter.getQuestViewModel(journal, mainQuestRaw.id, party);
+    const mainQuestViewModel = QuestModalPresenter.getQuestViewModel(
+      journal,
+      mainQuestRaw.id,
+      party,
+    );
 
     const sideQuestsViewModels = QuestRepository.getSideQuestsRaw()
-      .map((sideQuestRaw) =>
-        QuestModalPresenter.getQuestViewModel(journal, sideQuestRaw.id, party),
-      )
+      .map((sideQuestRaw) => QuestModalPresenter.getQuestViewModel(journal, sideQuestRaw.id, party))
       .filter((questViewModel): questViewModel is QuestViewModel => questViewModel !== null);
 
     const legendaryWeaponsViewModels = QuestRepository.getLegendaryWeaponsRaw()
@@ -22,9 +24,7 @@ export class JournalPresenter {
       .filter((questViewModel): questViewModel is QuestViewModel => questViewModel !== null);
 
     const driAgentsViewModels = QuestRepository.getDriAgentsRaw()
-      .map((driAgentRaw) =>
-        QuestModalPresenter.getQuestViewModel(journal, driAgentRaw.id, party),
-      )
+      .map((driAgentRaw) => QuestModalPresenter.getQuestViewModel(journal, driAgentRaw.id, party))
       .filter((questViewModel): questViewModel is QuestViewModel => questViewModel !== null);
 
     const duelIslandViewModels = QuestRepository.getDuelIslandRaw()

@@ -2,7 +2,6 @@ import { ImageCatalog } from "@/catalogs/image.catalog";
 import type { Journal, Party } from "@/models";
 import { QuestConverter } from "@/presenters/converter/quest.converter";
 import { MapFrameSlideConverter } from "@/presenters/converter/map-frame-slide.converter";
-import { MapRepository } from "@/repositories/map.repository";
 import { QuestRepository } from "@/repositories/quest.repository";
 import { MapService } from "@/services/map.service";
 import { PartyService } from "@/services/party.service";
@@ -82,9 +81,7 @@ export class QuestModalPresenter {
     return null;
   }
 
-  public static getWorldMapLocations(
-    selectedStep: StepViewModel | null,
-  ): MapFrameSlideViewModel[] {
+  public static getWorldMapLocations(selectedStep: StepViewModel | null): MapFrameSlideViewModel[] {
     if (!selectedStep?.location) {
       return [];
     }
@@ -100,11 +97,7 @@ export class QuestModalPresenter {
     }
 
     return [
-      MapFrameSlideConverter.convert(
-        asukaMapUrl,
-        worldLocation,
-        `map.${selectedStep.location}`,
-      ),
+      MapFrameSlideConverter.convert(asukaMapUrl, worldLocation, `map.${selectedStep.location}`),
     ];
   }
 
@@ -144,7 +137,6 @@ export class QuestModalPresenter {
       return null;
     }
 
-    const locationRaw = MapRepository.getMapById(locationId);
-    return ImageCatalog.getLocationImageUrl(locationRaw.imageName);
+    return ImageCatalog.getLocationImageUrl(locationId);
   }
 }

@@ -1,9 +1,5 @@
 import { ImageCatalog } from "@/catalogs/image.catalog";
-import {
-  DigimonElementIcon,
-  DigimonSpeciesIcon,
-  EnemySourceIcon,
-} from "@/constants/icon.constant";
+import { DigimonElementIcon, DigimonSpeciesIcon, EnemySourceIcon } from "@/constants/icon.constant";
 import type { Vital } from "@/models";
 import { EnemyConditionConverter } from "@/presenters/converter/enemy-condition.converter";
 import { EnemyStatConverter } from "@/presenters/converter/enemy-stat.converter";
@@ -81,7 +77,7 @@ export class DigimonBattleConverter {
         effectiveIcons: affinities.effective.map((element) => DigimonElementIcon[element]),
         notEffectiveIcons: affinities.notEffective.map((element) => DigimonElementIcon[element]),
       },
-      enemyImageUrl: ImageCatalog.getEnemyImageUrl(enemyRaw.name),
+      enemyImageUrl: ImageCatalog.getEnemyImageUrl(enemyId),
     };
   }
 

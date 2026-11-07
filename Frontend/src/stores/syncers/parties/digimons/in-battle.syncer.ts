@@ -4,6 +4,9 @@ import { VitalSyncer } from "./vital.syncer";
 
 export class InBattleSyncer {
   public static sync(previousInBattle: InBattle, newInBattleDto: InBattleDTO): void {
+    if (newInBattleDto.formId !== undefined) {
+      previousInBattle.formId = newInBattleDto.formId;
+    }
     if (newInBattleDto.condition !== undefined) {
       previousInBattle.condition = newInBattleDto.condition;
     }

@@ -19,8 +19,10 @@ export class DigimonSlotSyncer {
     if (newId !== undefined && newDigimon !== undefined) {
       if (!previousDigimonSlot.digimon || newId !== previousDigimonSlot.digimonId) {
         previousDigimonSlot.digimonId = newId;
-        // Backend sends the full Digimon when the slot was empty or the Digimon changed.
-        previousDigimonSlot.digimon = DigimonConverter.convert(newDigimon as DeepRequired<DigimonDTO>);
+        // The core sends the full Digimon when the slot was empty or the Digimon changed.
+        previousDigimonSlot.digimon = DigimonConverter.convert(
+          newDigimon as DeepRequired<DigimonDTO>,
+        );
         return;
       }
 

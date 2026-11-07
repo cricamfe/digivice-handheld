@@ -8,6 +8,7 @@ import type { DigievolutionRaw } from "./tables/raws/digievolution/digievolution
 import type { DigievolutionTechniqueRaw } from "./tables/raws/digievolution/digievolution-technique.raw";
 import type { TechniqueRaw } from "./tables/raws/digievolution/technique.raw";
 import type { DigievolutionTier } from "@/types/digievolution-tier.type";
+import { digimonName } from "@/handheld/digimon-names";
 
 export class DigievolutionRepository {
   private static readonly digievolutionTable = DigievolutionJson as DigievolutionTable;
@@ -15,28 +16,22 @@ export class DigievolutionRepository {
   private static readonly techniqueTable = TechniqueJson as TechniqueTable;
 
   public static getNameById(id: number): string {
-    return this.digievolutionTable[String(id)]!.name;
+    return digimonName(this.digievolutionTable[String(id)]!.nameId);
   }
   public static getTierById(id: number): DigievolutionTier {
     return this.digievolutionTable[String(id)]!.tier;
-  }
-  public static getAllDigievolutionsNames(): string[] {
-    return Object.values(this.digievolutionTable).map((digievolution) => digievolution.name);
   }
   public static getAllDigievolutions(): { id: number; name: string }[] {
     return Object.entries(this.digievolutionTable).map(([id, digievolution]) => {
       return {
         id: Number(id),
-        name: digievolution.name,
+        name: digimonName(digievolution.nameId),
       };
     });
   }
-  public static getIdByName(name: string): number {
-    const entry = Object.entries(this.digievolutionTable).find(
-      ([, digievolution]) => digievolution.name === name,
-    );
-
-    return Number(entry![0]);
+  /** The data of a digievolution, or undefined when the id is not one (a partner's own id, for example). */
+  public static findRawDigievolutionById(id: number): DigievolutionRaw | undefined {
+    return this.digievolutionTable[id];
   }
   public static getRawDigievolutionById(id: number): DigievolutionRaw {
     return this.digievolutionTable[id]!;

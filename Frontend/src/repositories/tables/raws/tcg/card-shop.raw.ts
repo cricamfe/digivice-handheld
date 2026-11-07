@@ -12,7 +12,8 @@ export interface CardShopPhaseRaw {
 
 export interface CardShopCatalogRaw {
   locationId: string;
-  imageName?: string;
+  /** Who keeps the shop: a Digimon, by its line of the game's names, drawn as the field character it stands as. */
+  keeper?: { nameId: number; fieldActor: string };
   phases: CardShopPhaseRaw[];
 }
 

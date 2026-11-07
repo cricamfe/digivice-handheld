@@ -3,9 +3,7 @@ import type { ImportantItems, Npc, Party } from "@/models";
 import { NpcBattleOpponentHelper } from "@/presenters/helper/npc-battle-opponent.helper";
 import type { TamerCharismaRequiredRaw } from "@/repositories/tables/raws/tamer/tamer-charisma-required.raw";
 import type { TamerTrophyRequiredRaw } from "@/repositories/tables/raws/tamer/tamer-trophy-required.raw";
-import {
-  NpcService,
-} from "@/services/npc.service";
+import { NpcService } from "@/services/npc.service";
 import { PartyService } from "@/services/party.service";
 import type { NpcBattleKind } from "@/types/npc-battle-kind.type";
 import type { WikiNpcBattleOptionViewModel } from "@/viewmodels/wiki-modal/wiki-npc-battle-option.viewmodel";
@@ -96,8 +94,7 @@ export class WikiNpcPanelPresenter {
     const hasRematchTrophy =
       importantItems?.asukaTrophy === true || importantItems?.sunTrophy === true;
     const isSuperseded =
-      !isActive &&
-      (option.requirementsMet || (hasRematchTrophy && isLowerTierThanActive));
+      !isActive && (option.requirementsMet || (hasRematchTrophy && isLowerTierThanActive));
 
     option.isActive = isActive;
     option.isSuperseded = isSuperseded;
@@ -163,20 +160,22 @@ export class WikiNpcPanelPresenter {
         ? opponentRaw.cardBattles?.[activeBattleId]?.trophyRequired
         : undefined;
 
-    const cardOptions = Object.entries(opponentRaw.cardBattles ?? {}).map(([battleId, cardBattle]) => {
-      const option = this.buildBattleOptionBase(
-        "card",
-        battleId,
-        cardBattle.charismaRequired,
-        cardBattle.trophyRequired,
-        false,
-        partyCharisma,
-        importantItems,
-      );
-      this.applyCardActivation(option, activeCardBattleIds, importantItems, activeTrophyRequired);
+    const cardOptions = Object.entries(opponentRaw.cardBattles ?? {}).map(
+      ([battleId, cardBattle]) => {
+        const option = this.buildBattleOptionBase(
+          "card",
+          battleId,
+          cardBattle.charismaRequired,
+          cardBattle.trophyRequired,
+          false,
+          partyCharisma,
+          importantItems,
+        );
+        this.applyCardActivation(option, activeCardBattleIds, importantItems, activeTrophyRequired);
 
-      return option;
-    });
+        return option;
+      },
+    );
 
     const digimonOptions = Object.entries(opponentRaw.digimonBattles ?? {}).map(
       ([battleId, digimonBattle]) => {

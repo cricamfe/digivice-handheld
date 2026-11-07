@@ -1,6 +1,6 @@
 {
   "1": {
-    "name": "Pharaohmon",
+    "nameId": 212,
     "level": 12,
     "hp": 816,
     "species": "rare",
@@ -54,10 +54,11 @@
           "boss"
         ]
       }
-    ]
+    ],
+    "fieldActor": "59-0"
   },
   "2": {
-    "name": "MasterTyrannomon",
+    "nameId": 213,
     "level": 14,
     "hp": 912,
     "species": "dino",
@@ -114,10 +115,11 @@
           "starts": 2
         }
       }
-    ]
+    ],
+    "fieldActor": "90-0"
   },
   "14": {
-    "name": "HiAndromon",
+    "nameId": 215,
     "level": 32,
     "hp": 1776,
     "species": "machine",
@@ -174,10 +176,11 @@
           "starts": 59
         }
       }
-    ]
+    ],
+    "fieldActor": "150-0"
   },
   "15": {
-    "name": "WaruMonzaemon",
+    "nameId": 216,
     "level": 32,
     "hp": 1776,
     "species": "rare",
@@ -228,10 +231,11 @@
           "starts": 60
         }
       }
-    ]
+    ],
+    "fieldActor": "151-0"
   },
   "16": {
-    "name": "Datamon",
+    "nameId": 217,
     "level": 34,
     "hp": 1872,
     "species": "machine",
@@ -288,10 +292,11 @@
           "starts": 43
         }
       }
-    ]
+    ],
+    "fieldActor": "165-0"
   },
   "20": {
-    "name": "Zanbamon",
+    "nameId": 214,
     "level": 40,
     "hp": 2160,
     "species": "rare",
@@ -348,10 +353,11 @@
           "starts": 25
         }
       }
-    ]
+    ],
+    "fieldActor": "133-0"
   },
   "21": {
-    "name": "Bulbmon",
+    "nameId": 219,
     "level": 15,
     "hp": 960,
     "species": "machine",
@@ -405,7 +411,7 @@
     ]
   },
   "71": {
-    "name": "Kunemon",
+    "nameId": 58,
     "level": 1,
     "hp": 120,
     "species": "insect",
@@ -485,7 +491,7 @@
     ]
   },
   "72": {
-    "name": "Tapirmon",
+    "nameId": 59,
     "level": 1,
     "hp": 120,
     "species": "beast",
@@ -545,7 +551,7 @@
     ]
   },
   "73": {
-    "name": "Crabmon",
+    "nameId": 60,
     "level": 3,
     "hp": 168,
     "species": "fish",
@@ -595,7 +601,7 @@
     ]
   },
   "74": {
-    "name": "Gizamon",
+    "nameId": 61,
     "level": 4,
     "hp": 192,
     "species": "fish",
@@ -655,7 +661,7 @@
     ]
   },
   "75": {
-    "name": "DemiDevimon",
+    "nameId": 62,
     "level": 8,
     "hp": 312,
     "species": "evil",
@@ -714,7 +720,7 @@
     ]
   },
   "76": {
-    "name": "Betamon",
+    "nameId": 63,
     "level": 2,
     "hp": 144,
     "species": "beast",
@@ -802,7 +808,7 @@
     ]
   },
   "77": {
-    "name": "Vegiemon",
+    "nameId": 64,
     "level": 4,
     "hp": 192,
     "species": "plant",
@@ -868,7 +874,7 @@
     ]
   },
   "78": {
-    "name": "Kuwagamon",
+    "nameId": 65,
     "level": 2,
     "hp": 144,
     "species": "insect",
@@ -924,7 +930,7 @@
     ]
   },
   "79": {
-    "name": "Yanmamon",
+    "nameId": 66,
     "level": 3,
     "hp": 168,
     "species": "insect",
@@ -974,7 +980,7 @@
     ]
   },
   "80": {
-    "name": "Kiwimon",
+    "nameId": 67,
     "level": 3,
     "hp": 168,
     "species": "bird",
@@ -1024,7 +1030,7 @@
     ]
   },
   "81": {
-    "name": "Dokugumon",
+    "nameId": 68,
     "level": 4,
     "hp": 192,
     "species": "insect",
@@ -1080,7 +1086,7 @@
     ]
   },
   "82": {
-    "name": "Goburimon",
+    "nameId": 69,
     "level": 4,
     "hp": 192,
     "species": "beast",
@@ -1149,7 +1155,7 @@
     ]
   },
   "83": {
-    "name": "Baronmon",
+    "nameId": 70,
     "level": 16,
     "hp": 504,
     "species": "rare",
@@ -1202,7 +1208,7 @@
     ]
   },
   "84": {
-    "name": "Minotarumon",
+    "nameId": 71,
     "level": 5,
     "hp": 240,
     "species": "beast",
@@ -1252,7 +1258,7 @@
     ]
   },
   "85": {
-    "name": "Flymon",
+    "nameId": 72,
     "level": 13,
     "hp": 432,
     "species": "insect",
@@ -1332,7 +1338,7 @@
     ]
   },
   "86": {
-    "name": "Woodmon",
+    "nameId": 73,
     "level": 5,
     "hp": 240,
     "species": "plant",
@@ -1443,7 +1449,7 @@
     ]
   },
   "87": {
-    "name": "Tyrannomon",
+    "nameId": 74,
     "level": 6,
     "hp": 264,
     "species": "dino",
@@ -1499,7 +1505,7 @@
     ]
   },
   "88": {
-    "name": "Triceramon",
+    "nameId": 75,
     "level": 6,
     "hp": 396,
     "species": "dino",
@@ -1565,7 +1571,7 @@
     ]
   },
   "89": {
-    "name": "Airdramon",
+    "nameId": 76,
     "level": 6,
     "hp": 264,
     "species": "dragon",
@@ -1621,7 +1627,7 @@
     ]
   },
   "90": {
-    "name": "Gekomon",
+    "nameId": 77,
     "level": 8,
     "hp": 312,
     "species": "fish",
@@ -1707,7 +1713,7 @@
     ]
   },
   "91": {
-    "name": "Coelamon",
+    "nameId": 78,
     "level": 8,
     "hp": 312,
     "species": "fish",
@@ -1846,7 +1852,7 @@
     ]
   },
   "92": {
-    "name": "Bakemon",
+    "nameId": 79,
     "level": 9,
     "hp": 336,
     "species": "ghoul",
@@ -1899,7 +1905,7 @@
     ]
   },
   "93": {
-    "name": "Phantomon",
+    "nameId": 80,
     "level": 31,
     "hp": 864,
     "species": "ghoul",
@@ -1937,7 +1943,7 @@
     "bits": 310,
     "regularAttackId": "darkElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 223,
     "groupId": null,
     "drops": [
       {
@@ -1947,7 +1953,7 @@
     ]
   },
   "94": {
-    "name": "Kokatorimon",
+    "nameId": 81,
     "level": 13,
     "hp": 432,
     "species": "bird",
@@ -2009,7 +2015,7 @@
     ]
   },
   "95": {
-    "name": "Apemon",
+    "nameId": 82,
     "level": 10,
     "hp": 360,
     "species": "beast",
@@ -2077,7 +2083,7 @@
     ]
   },
   "96": {
-    "name": "Shellmon",
+    "nameId": 83,
     "level": 18,
     "hp": 552,
     "species": "fish",
@@ -2164,7 +2170,7 @@
     ]
   },
   "97": {
-    "name": "Tortomon",
+    "nameId": 84,
     "level": 29,
     "hp": 816,
     "species": "fish",
@@ -2206,7 +2212,7 @@
     "groupId": 60
   },
   "98": {
-    "name": "Dolphmon",
+    "nameId": 85,
     "level": 20,
     "hp": 600,
     "species": "fish",
@@ -2277,7 +2283,7 @@
     ]
   },
   "99": {
-    "name": "Gesomon",
+    "nameId": 86,
     "level": 27,
     "hp": 768,
     "species": "fish",
@@ -2325,7 +2331,7 @@
     ]
   },
   "100": {
-    "name": "Octomon",
+    "nameId": 87,
     "level": 40,
     "hp": 1080,
     "species": "fish",
@@ -2363,11 +2369,11 @@
     "bits": 400,
     "regularAttackId": "waterElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 221,
     "groupId": null
   },
   "101": {
-    "name": "Divermon",
+    "nameId": 88,
     "level": 24,
     "hp": 696,
     "species": "fish",
@@ -2417,7 +2423,7 @@
     ]
   },
   "102": {
-    "name": "ShogunGekomon",
+    "nameId": 89,
     "level": 20,
     "hp": 600,
     "species": "fish",
@@ -2476,7 +2482,7 @@
     ]
   },
   "103": {
-    "name": "Seadramon",
+    "nameId": 90,
     "level": 12,
     "hp": 408,
     "species": "dragon",
@@ -2587,7 +2593,7 @@
     ]
   },
   "104": {
-    "name": "Mammothmon",
+    "nameId": 91,
     "level": 23,
     "hp": 672,
     "species": "beast",
@@ -2655,7 +2661,7 @@
     ]
   },
   "105": {
-    "name": "Etemon",
+    "nameId": 92,
     "level": 20,
     "hp": 600,
     "species": "beast",
@@ -2723,7 +2729,7 @@
     ]
   },
   "106": {
-    "name": "Ogremon",
+    "nameId": 93,
     "level": 20,
     "hp": 600,
     "species": "rare",
@@ -2791,7 +2797,7 @@
     ]
   },
   "107": {
-    "name": "Tuskmon",
+    "nameId": 94,
     "level": 22,
     "hp": 972,
     "species": "dino",
@@ -2868,7 +2874,7 @@
     ]
   },
   "108": {
-    "name": "Rockmon",
+    "nameId": 95,
     "level": 44,
     "hp": 1176,
     "species": "rare",
@@ -2906,11 +2912,11 @@
     "bits": 400,
     "regularAttackId": "noElement",
     "techniqueId": "doubleGuard",
-    "memoryId": 0,
+    "memoryId": 108,
     "groupId": null
   },
   "109": {
-    "name": "Quetzalmon",
+    "nameId": 96,
     "level": 45,
     "hp": 1200,
     "species": "rare",
@@ -2948,11 +2954,11 @@
     "bits": 440,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 273,
     "groupId": null
   },
   "110": {
-    "name": "Vademon",
+    "nameId": 97,
     "level": 22,
     "hp": 648,
     "species": "rare",
@@ -3029,7 +3035,7 @@
     ]
   },
   "111": {
-    "name": "Maildramon",
+    "nameId": 98,
     "level": 22,
     "hp": 648,
     "species": "machine",
@@ -3097,7 +3103,7 @@
     ]
   },
   "112": {
-    "name": "Mamemon",
+    "nameId": 99,
     "level": 25,
     "hp": 480,
     "species": "machine",
@@ -3201,7 +3207,8 @@
     ]
   },
   "113": {
-    "name": "Guardromon(Blue)",
+    "nameId": 100,
+    "variant": "blue",
     "level": 29,
     "hp": 816,
     "species": "machine",
@@ -3243,7 +3250,7 @@
     "groupId": null
   },
   "114": {
-    "name": "Thundermon",
+    "nameId": 101,
     "level": 23,
     "hp": 672,
     "species": "machine",
@@ -3302,7 +3309,7 @@
     ]
   },
   "115": {
-    "name": "Hagurumon",
+    "nameId": 102,
     "level": 23,
     "hp": 672,
     "species": "machine",
@@ -3361,7 +3368,7 @@
     ]
   },
   "116": {
-    "name": "Clockmon",
+    "nameId": 103,
     "level": 24,
     "hp": 696,
     "species": "machine",
@@ -3420,7 +3427,7 @@
     ]
   },
   "117": {
-    "name": "Andromon",
+    "nameId": 104,
     "level": 24,
     "hp": 696,
     "species": "machine",
@@ -3497,7 +3504,7 @@
     ]
   },
   "118": {
-    "name": "Numemon",
+    "nameId": 105,
     "level": 25,
     "hp": 720,
     "species": "rare",
@@ -3556,7 +3563,7 @@
     ]
   },
   "119": {
-    "name": "Sukamon",
+    "nameId": 106,
     "level": 26,
     "hp": 744,
     "species": "rare",
@@ -3615,7 +3622,7 @@
     ]
   },
   "120": {
-    "name": "Garbagemon",
+    "nameId": 107,
     "level": 47,
     "hp": 1248,
     "species": "rare",
@@ -3653,7 +3660,7 @@
     "bits": 470,
     "regularAttackId": "darkElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 227,
     "groupId": null,
     "drops": [
       {
@@ -3663,7 +3670,7 @@
     ]
   },
   "121": {
-    "name": "Roachmon",
+    "nameId": 108,
     "level": 47,
     "hp": 1248,
     "species": "insect",
@@ -3701,11 +3708,11 @@
     "bits": 100,
     "regularAttackId": "darkElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 171,
     "groupId": null
   },
   "122": {
-    "name": "Raremon",
+    "nameId": 109,
     "level": 27,
     "hp": 768,
     "species": "ghoul",
@@ -3764,7 +3771,7 @@
     ]
   },
   "123": {
-    "name": "Cyclonemon",
+    "nameId": 110,
     "level": 27,
     "hp": 768,
     "species": "rare",
@@ -3823,7 +3830,7 @@
     ]
   },
   "124": {
-    "name": "Megadramon",
+    "nameId": 111,
     "level": 46,
     "hp": 1224,
     "species": "dragon",
@@ -3861,11 +3868,11 @@
     "bits": 450,
     "regularAttackId": "machineElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 54,
     "groupId": null
   },
   "125": {
-    "name": "Monzaemon",
+    "nameId": 112,
     "level": 29,
     "hp": 816,
     "species": "rare",
@@ -3907,7 +3914,7 @@
     "groupId": 88
   },
   "126": {
-    "name": "Tankmon",
+    "nameId": 113,
     "level": 30,
     "hp": 840,
     "species": "machine",
@@ -3949,7 +3956,7 @@
     "groupId": null
   },
   "127": {
-    "name": "Nanimon",
+    "nameId": 114,
     "level": 29,
     "hp": 816,
     "species": "rare",
@@ -3991,7 +3998,7 @@
     "groupId": null
   },
   "128": {
-    "name": "Musyamon",
+    "nameId": 115,
     "level": 31,
     "hp": 864,
     "species": "rare",
@@ -4060,7 +4067,7 @@
     ]
   },
   "129": {
-    "name": "Kurisarimon",
+    "nameId": 116,
     "level": 36,
     "hp": 984,
     "species": "insect",
@@ -4098,7 +4105,7 @@
     "bits": 770,
     "regularAttackId": "noElement",
     "techniqueId": "confuseNebula",
-    "memoryId": 0,
+    "memoryId": 175,
     "groupId": null,
     "drops": [
       {
@@ -4108,7 +4115,7 @@
     ]
   },
   "130": {
-    "name": "Snimon",
+    "nameId": 117,
     "level": 43,
     "hp": 1152,
     "species": "insect",
@@ -4146,11 +4153,11 @@
     "bits": 420,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 238,
     "groupId": null
   },
   "131": {
-    "name": "Blossomon",
+    "nameId": 118,
     "level": 34,
     "hp": 936,
     "species": "plant",
@@ -4188,11 +4195,11 @@
     "bits": 340,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 200,
     "groupId": null
   },
   "132": {
-    "name": "Cherrymon",
+    "nameId": 119,
     "level": 38,
     "hp": 1032,
     "species": "plant",
@@ -4230,7 +4237,7 @@
     "bits": 380,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 121,
     "groupId": null,
     "drops": [
       {
@@ -4240,7 +4247,7 @@
     ]
   },
   "133": {
-    "name": "Gargoylemon",
+    "nameId": 120,
     "level": 35,
     "hp": 960,
     "species": "evil",
@@ -4278,7 +4285,7 @@
     "bits": 350,
     "regularAttackId": "noElement",
     "techniqueId": "darkMatter",
-    "memoryId": 0,
+    "memoryId": 302,
     "groupId": null,
     "drops": [
       {
@@ -4288,7 +4295,7 @@
     ]
   },
   "134": {
-    "name": "Mummymon",
+    "nameId": 121,
     "level": 35,
     "hp": 960,
     "species": "ghoul",
@@ -4326,7 +4333,7 @@
     "bits": 400,
     "regularAttackId": "noElement",
     "techniqueId": "darkFear",
-    "memoryId": 0,
+    "memoryId": 364,
     "groupId": null,
     "drops": [
       {
@@ -4336,7 +4343,7 @@
     ]
   },
   "135": {
-    "name": "Arukenimon",
+    "nameId": 122,
     "level": 45,
     "hp": 1200,
     "species": "insect",
@@ -4374,7 +4381,7 @@
     "bits": 450,
     "regularAttackId": "noElementChanceOfPoison",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 365,
     "groupId": null,
     "drops": [
       {
@@ -4384,7 +4391,7 @@
     ]
   },
   "136": {
-    "name": "Okuwamon",
+    "nameId": 123,
     "level": 34,
     "hp": 936,
     "species": "insect",
@@ -4422,11 +4429,11 @@
     "bits": 320,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 226,
     "groupId": null
   },
   "137": {
-    "name": "MetalTyrannomon",
+    "nameId": 124,
     "level": 36,
     "hp": 984,
     "species": "machine",
@@ -4464,7 +4471,7 @@
     "bits": 400,
     "regularAttackId": "machineElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 140,
     "groupId": null,
     "drops": [
       {
@@ -4474,7 +4481,7 @@
     ]
   },
   "138": {
-    "name": "Deltamon",
+    "nameId": 125,
     "level": 36,
     "hp": 984,
     "species": "dino",
@@ -4512,7 +4519,7 @@
     "bits": 360,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 138,
     "groupId": null,
     "drops": [
       {
@@ -4522,7 +4529,7 @@
     ]
   },
   "139": {
-    "name": "Whamon",
+    "nameId": 126,
     "level": 45,
     "hp": 1800,
     "species": "fish",
@@ -4560,7 +4567,7 @@
     "bits": 420,
     "regularAttackId": "noElement",
     "techniqueId": "hardRain",
-    "memoryId": 0,
+    "memoryId": 24,
     "groupId": null,
     "drops": [
       {
@@ -4570,7 +4577,7 @@
     ]
   },
   "140": {
-    "name": "MarineDevimon",
+    "nameId": 127,
     "level": 37,
     "hp": 1008,
     "species": "fish",
@@ -4608,11 +4615,11 @@
     "bits": 370,
     "regularAttackId": "waterElementHitsTwice",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 224,
     "groupId": null
   },
   "141": {
-    "name": "Dragomon",
+    "nameId": 128,
     "level": 44,
     "hp": 1176,
     "species": "fish",
@@ -4650,11 +4657,11 @@
     "bits": 440,
     "regularAttackId": "waterElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 225,
     "groupId": null
   },
   "142": {
-    "name": "MegaSeadramon",
+    "nameId": 129,
     "level": 35,
     "hp": 960,
     "species": "dragon",
@@ -4692,7 +4699,7 @@
     "bits": 350,
     "regularAttackId": "thunderElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 61,
     "groupId": null,
     "drops": [
       {
@@ -4702,7 +4709,7 @@
     ]
   },
   "143": {
-    "name": "Ebidramon",
+    "nameId": 130,
     "level": 34,
     "hp": 936,
     "species": "fish",
@@ -4740,7 +4747,7 @@
     "bits": 340,
     "regularAttackId": "waterElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 165,
     "groupId": null,
     "drops": [
       {
@@ -4750,7 +4757,7 @@
     ]
   },
   "144": {
-    "name": "Vilemon",
+    "nameId": 131,
     "level": 36,
     "hp": 984,
     "species": "evil",
@@ -4788,7 +4795,7 @@
     "bits": 360,
     "regularAttackId": "fireElement",
     "techniqueId": "darkFear",
-    "memoryId": 0,
+    "memoryId": 170,
     "groupId": null,
     "drops": [
       {
@@ -4798,7 +4805,7 @@
     ]
   },
   "145": {
-    "name": "SkullSatamon",
+    "nameId": 132,
     "level": 39,
     "hp": 1056,
     "species": "ghoul",
@@ -4836,7 +4843,7 @@
     "bits": 390,
     "regularAttackId": "darkElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 244,
     "groupId": null,
     "drops": [
       {
@@ -4846,7 +4853,7 @@
     ]
   },
   "146": {
-    "name": "Brachiomon",
+    "nameId": 133,
     "level": 36,
     "hp": 984,
     "species": "dino",
@@ -4884,7 +4891,7 @@
     "bits": 360,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 126,
     "groupId": null,
     "drops": [
       {
@@ -4894,7 +4901,7 @@
     ]
   },
   "147": {
-    "name": "Drimogemon",
+    "nameId": 134,
     "level": 41,
     "hp": 1104,
     "species": "machine",
@@ -4932,7 +4939,7 @@
     "bits": 450,
     "regularAttackId": "machineElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 38,
     "groupId": null,
     "drops": [
       {
@@ -4942,7 +4949,7 @@
     ]
   },
   "148": {
-    "name": "Flarerizamon",
+    "nameId": 135,
     "level": 41,
     "hp": 1104,
     "species": "rare",
@@ -4980,7 +4987,7 @@
     "bits": 400,
     "regularAttackId": "fireElement",
     "techniqueId": "flameBall",
-    "memoryId": 0,
+    "memoryId": 69,
     "groupId": null,
     "drops": [
       {
@@ -4990,7 +4997,7 @@
     ]
   },
   "149": {
-    "name": "Meramon",
+    "nameId": 136,
     "level": 41,
     "hp": 1104,
     "species": "rare",
@@ -5028,11 +5035,11 @@
     "bits": 410,
     "regularAttackId": "fireElement",
     "techniqueId": "flameLance",
-    "memoryId": 0,
+    "memoryId": 9,
     "groupId": null
   },
   "150": {
-    "name": "Mojyamon",
+    "nameId": 137,
     "level": 41,
     "hp": 1104,
     "species": "beast",
@@ -5070,11 +5077,11 @@
     "bits": 420,
     "regularAttackId": "noElement",
     "techniqueId": "iceBlow",
-    "memoryId": 0,
+    "memoryId": 52,
     "groupId": null
   },
   "151": {
-    "name": "Frigimon",
+    "nameId": 138,
     "level": 41,
     "hp": 1104,
     "species": "rare",
@@ -5112,7 +5119,7 @@
     "bits": 420,
     "regularAttackId": "iceElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 23,
     "groupId": null,
     "drops": [
       {
@@ -5122,7 +5129,7 @@
     ]
   },
   "152": {
-    "name": "Icemon",
+    "nameId": 139,
     "level": 43,
     "hp": 1152,
     "species": "rare",
@@ -5160,7 +5167,7 @@
     "bits": 420,
     "regularAttackId": "iceElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 94,
     "groupId": null,
     "drops": [
       {
@@ -5170,7 +5177,7 @@
     ]
   },
   "153": {
-    "name": "Giromon",
+    "nameId": 140,
     "level": 46,
     "hp": 1224,
     "species": "machine",
@@ -5208,11 +5215,11 @@
     "bits": 460,
     "regularAttackId": "machineElementCounterPhysical",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 41,
     "groupId": null
   },
   "154": {
-    "name": "Vikemon",
+    "nameId": 141,
     "level": 43,
     "hp": 1152,
     "species": "beast",
@@ -5250,11 +5257,11 @@
     "bits": 430,
     "regularAttackId": "iceElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 270,
     "groupId": null
   },
   "155": {
-    "name": "Lynxmon",
+    "nameId": 142,
     "level": 49,
     "hp": 1296,
     "species": "beast",
@@ -5292,7 +5299,7 @@
     "bits": 490,
     "regularAttackId": "fireElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 327,
     "groupId": null,
     "drops": [
       {
@@ -5302,7 +5309,7 @@
     ]
   },
   "156": {
-    "name": "SkullMeramon",
+    "nameId": 143,
     "level": 43,
     "hp": 1152,
     "species": "rare",
@@ -5340,11 +5347,11 @@
     "bits": 430,
     "regularAttackId": "noElement",
     "techniqueId": "flameBreath",
-    "memoryId": 0,
+    "memoryId": 189,
     "groupId": null
   },
   "157": {
-    "name": "Devidramon",
+    "nameId": 144,
     "level": 43,
     "hp": 1152,
     "species": "evil",
@@ -5382,11 +5389,11 @@
     "bits": 390,
     "regularAttackId": "noElement",
     "techniqueId": "darkElemental",
-    "memoryId": 0,
+    "memoryId": 135,
     "groupId": null
   },
   "158": {
-    "name": "Chimeramon",
+    "nameId": 145,
     "level": 44,
     "hp": 1176,
     "species": "rare",
@@ -5424,7 +5431,7 @@
     "bits": 420,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 237,
     "groupId": null,
     "drops": [
       {
@@ -5434,7 +5441,7 @@
     ]
   },
   "159": {
-    "name": "Pukumon",
+    "nameId": 146,
     "level": 44,
     "hp": 1176,
     "species": "machine",
@@ -5472,7 +5479,7 @@
     "bits": 470,
     "regularAttackId": "machineElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 229,
     "groupId": null,
     "drops": [
       {
@@ -5482,7 +5489,7 @@
     ]
   },
   "160": {
-    "name": "MetalSeadramon",
+    "nameId": 147,
     "level": 44,
     "hp": 1176,
     "species": "dragon",
@@ -5520,7 +5527,7 @@
     "bits": 460,
     "regularAttackId": "noElement",
     "techniqueId": "godBombard",
-    "memoryId": 0,
+    "memoryId": 204,
     "groupId": null,
     "drops": [
       {
@@ -5530,7 +5537,7 @@
     ]
   },
   "161": {
-    "name": "Tylomon",
+    "nameId": 148,
     "level": 43,
     "hp": 1152,
     "species": "fish",
@@ -5568,7 +5575,7 @@
     "bits": 430,
     "regularAttackId": "waterElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 281,
     "groupId": null,
     "drops": [
       {
@@ -5578,7 +5585,7 @@
     ]
   },
   "162": {
-    "name": "Scorpiomon",
+    "nameId": 149,
     "level": 43,
     "hp": 1152,
     "species": "fish",
@@ -5616,7 +5623,7 @@
     "bits": 480,
     "regularAttackId": "noElement",
     "techniqueId": "grandWave",
-    "memoryId": 0,
+    "memoryId": 202,
     "groupId": null,
     "drops": [
       {
@@ -5626,7 +5633,7 @@
     ]
   },
   "163": {
-    "name": "Antylamon",
+    "nameId": 150,
     "level": 44,
     "hp": 1176,
     "species": "beast",
@@ -5664,7 +5671,7 @@
     "bits": 450,
     "regularAttackId": "noElement",
     "techniqueId": "darkElemental",
-    "memoryId": 0,
+    "memoryId": 360,
     "groupId": null,
     "drops": [
       {
@@ -5674,7 +5681,7 @@
     ]
   },
   "164": {
-    "name": "H-Kabuterimon",
+    "nameId": 151,
     "level": 44,
     "hp": 1176,
     "species": "insect",
@@ -5712,11 +5719,11 @@
     "bits": 610,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 60,
     "groupId": null
   },
   "165": {
-    "name": "Puppetmon",
+    "nameId": 152,
     "level": 54,
     "hp": 1416,
     "species": "machine",
@@ -5754,11 +5761,11 @@
     "bits": 520,
     "regularAttackId": "machineElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 231,
     "groupId": null
   },
   "166": {
-    "name": "SkullMammothmon",
+    "nameId": 153,
     "level": 49,
     "hp": 1296,
     "species": "ghoul",
@@ -5796,11 +5803,11 @@
     "bits": 490,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 215,
     "groupId": null
   },
   "167": {
-    "name": "Valkyriemon",
+    "nameId": 154,
     "level": 45,
     "hp": 1200,
     "species": "rare",
@@ -5838,7 +5845,7 @@
     "bits": 460,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 269,
     "groupId": null,
     "drops": [
       {
@@ -5848,7 +5855,7 @@
     ]
   },
   "168": {
-    "name": "LadyDevimon",
+    "nameId": 155,
     "level": 45,
     "hp": 1200,
     "species": "evil",
@@ -5886,7 +5893,7 @@
     "bits": 440,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 177,
     "groupId": null,
     "drops": [
       {
@@ -5896,7 +5903,7 @@
     ]
   },
   "169": {
-    "name": "MetalEtemon",
+    "nameId": 156,
     "level": 44,
     "hp": 1176,
     "species": "machine",
@@ -5934,7 +5941,7 @@
     "bits": 460,
     "regularAttackId": "noElement",
     "techniqueId": "megaHeal",
-    "memoryId": 0,
+    "memoryId": 65,
     "groupId": null,
     "drops": [
       {
@@ -5944,7 +5951,7 @@
     ]
   },
   "170": {
-    "name": "KingEtemon",
+    "nameId": 157,
     "level": 45,
     "hp": 1200,
     "species": "beast",
@@ -5982,7 +5989,7 @@
     "bits": 500,
     "regularAttackId": "noElement",
     "techniqueId": "fullHeal",
-    "memoryId": 0,
+    "memoryId": 250,
     "groupId": null,
     "drops": [
       {
@@ -5992,7 +5999,7 @@
     ]
   },
   "171": {
-    "name": "Gryphonmon",
+    "nameId": 158,
     "level": 45,
     "hp": 1200,
     "species": "bird",
@@ -6030,7 +6037,7 @@
     "bits": 440,
     "regularAttackId": "noElement",
     "techniqueId": "slyphStorm",
-    "memoryId": 0,
+    "memoryId": 193,
     "groupId": null,
     "drops": [
       {
@@ -6040,7 +6047,7 @@
     ]
   },
   "172": {
-    "name": "Infermon",
+    "nameId": 159,
     "level": 55,
     "hp": 1440,
     "species": "insect",
@@ -6078,11 +6085,11 @@
     "bits": 530,
     "regularAttackId": "noElement",
     "techniqueId": "darknessChaos",
-    "memoryId": 0,
+    "memoryId": 245,
     "groupId": null
   },
   "173": {
-    "name": "Shadramon",
+    "nameId": 160,
     "level": 47,
     "hp": 1248,
     "species": "insect",
@@ -6120,11 +6127,11 @@
     "bits": 440,
     "regularAttackId": "fireElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 272,
     "groupId": null
   },
   "174": {
-    "name": "Boltmon",
+    "nameId": 161,
     "level": 48,
     "hp": 1272,
     "species": "machine",
@@ -6162,7 +6169,7 @@
     "bits": 500,
     "regularAttackId": "thunderElementCounterPhysical",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 190,
     "groupId": null,
     "drops": [
       {
@@ -6172,7 +6179,7 @@
     ]
   },
   "175": {
-    "name": "Piedmon",
+    "nameId": 162,
     "level": 56,
     "hp": 1464,
     "species": "rare",
@@ -6210,11 +6217,11 @@
     "bits": 560,
     "regularAttackId": "darkElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 228,
     "groupId": null
   },
   "176": {
-    "name": "Machinedramon",
+    "nameId": 163,
     "level": 47,
     "hp": 1248,
     "species": "machine",
@@ -6252,7 +6259,7 @@
     "bits": 500,
     "regularAttackId": "machineElementHitsTwice",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 115,
     "groupId": null,
     "drops": [
       {
@@ -6262,7 +6269,7 @@
     ]
   },
   "177": {
-    "name": "VenomMyotismon",
+    "nameId": 164,
     "level": 55,
     "hp": 1440,
     "species": "evil",
@@ -6300,11 +6307,11 @@
     "bits": 530,
     "regularAttackId": "noElement",
     "techniqueId": "darknessChaos",
-    "memoryId": 0,
+    "memoryId": 236,
     "groupId": null
   },
   "178": {
-    "name": "Apokarimon",
+    "nameId": 165,
     "level": 56,
     "hp": 1464,
     "species": "evil",
@@ -6342,11 +6349,11 @@
     "bits": 550,
     "regularAttackId": "noElement",
     "techniqueId": "darknessChaos",
-    "memoryId": 0,
+    "memoryId": 251,
     "groupId": null
   },
   "179": {
-    "name": "Ghoulmon",
+    "nameId": 166,
     "level": 49,
     "hp": 1037,
     "species": "evil",
@@ -6384,7 +6391,7 @@
     "bits": 490,
     "regularAttackId": "noElement",
     "techniqueId": "darknessChaos",
-    "memoryId": 0,
+    "memoryId": 312,
     "groupId": null,
     "drops": [
       {
@@ -6394,7 +6401,7 @@
     ]
   },
   "180": {
-    "name": "Creepymon",
+    "nameId": 167,
     "level": 55,
     "hp": 1440,
     "species": "evil",
@@ -6432,11 +6439,11 @@
     "bits": 540,
     "regularAttackId": "fireElement",
     "techniqueId": "darknessChaos",
-    "memoryId": 0,
+    "memoryId": 247,
     "groupId": null
   },
   "181": {
-    "name": "Armageddemon",
+    "nameId": 168,
     "level": 56,
     "hp": 2196,
     "species": "evil",
@@ -6474,11 +6481,11 @@
     "bits": 600,
     "regularAttackId": "darkElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 382,
     "groupId": null
   },
   "182": {
-    "name": "RedVegiemon",
+    "nameId": 169,
     "level": 9,
     "hp": 336,
     "species": "plant",
@@ -6550,7 +6557,8 @@
     ]
   },
   "183": {
-    "name": "Kuwagamon(Green)",
+    "nameId": 170,
+    "variant": "green",
     "level": 30,
     "hp": 840,
     "species": "insect",
@@ -6598,7 +6606,8 @@
     ]
   },
   "184": {
-    "name": "Yanmamon(Green)",
+    "nameId": 171,
+    "variant": "green",
     "level": 8,
     "hp": 312,
     "species": "insect",
@@ -6705,7 +6714,8 @@
     ]
   },
   "185": {
-    "name": "Dokugumon(Brown)",
+    "nameId": 172,
+    "variant": "brown",
     "level": 21,
     "hp": 624,
     "species": "insect",
@@ -6773,7 +6783,8 @@
     ]
   },
   "186": {
-    "name": "Goburimon(Red)",
+    "nameId": 173,
+    "variant": "red",
     "level": 22,
     "hp": 648,
     "species": "beast",
@@ -6841,7 +6852,8 @@
     ]
   },
   "187": {
-    "name": "Minotarumon(Blue)",
+    "nameId": 174,
+    "variant": "blue",
     "level": 33,
     "hp": 608,
     "species": "beast",
@@ -6879,7 +6891,7 @@
     "bits": 350,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 399,
     "groupId": null,
     "drops": [
       {
@@ -6889,7 +6901,8 @@
     ]
   },
   "188": {
-    "name": "Flymon(Pink)",
+    "nameId": 175,
+    "variant": "pink",
     "level": 33,
     "hp": 912,
     "species": "insect",
@@ -6937,7 +6950,8 @@
     ]
   },
   "189": {
-    "name": "Woodmon(Green)",
+    "nameId": 176,
+    "variant": "green",
     "level": 19,
     "hp": 576,
     "species": "plant",
@@ -6975,7 +6989,7 @@
     "bits": 190,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 401,
     "groupId": 152,
     "locations": [
       {
@@ -6991,7 +7005,8 @@
     ]
   },
   "190": {
-    "name": "Triceramon(Red)",
+    "nameId": 177,
+    "variant": "red",
     "level": 41,
     "hp": 1656,
     "species": "dino",
@@ -7029,11 +7044,12 @@
     "bits": 400,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 402,
     "groupId": null
   },
   "191": {
-    "name": "Airdramon(Gold)",
+    "nameId": 178,
+    "variant": "gold",
     "level": 21,
     "hp": 624,
     "species": "dragon",
@@ -7101,7 +7117,8 @@
     ]
   },
   "192": {
-    "name": "Phantomon(Blue)",
+    "nameId": 179,
+    "variant": "blue",
     "level": 37,
     "hp": 1008,
     "species": "ghoul",
@@ -7139,7 +7156,7 @@
     "bits": 370,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 404,
     "groupId": null,
     "drops": [
       {
@@ -7149,7 +7166,8 @@
     ]
   },
   "193": {
-    "name": "Kokatorimon(Brown)",
+    "nameId": 180,
+    "variant": "brown",
     "level": 22,
     "hp": 648,
     "species": "bird",
@@ -7253,7 +7271,8 @@
     ]
   },
   "194": {
-    "name": "Tortomon(Blue)",
+    "nameId": 181,
+    "variant": "blue",
     "level": 36,
     "hp": 984,
     "species": "fish",
@@ -7291,11 +7310,12 @@
     "bits": 360,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 406,
     "groupId": null
   },
   "195": {
-    "name": "ShogunGekomon(Blue)",
+    "nameId": 182,
+    "variant": "blue",
     "level": 37,
     "hp": 1008,
     "species": "fish",
@@ -7333,7 +7353,7 @@
     "bits": 370,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 407,
     "groupId": null,
     "drops": [
       {
@@ -7343,7 +7363,8 @@
     ]
   },
   "196": {
-    "name": "Seadramon(Brown)",
+    "nameId": 183,
+    "variant": "brown",
     "level": 35,
     "hp": 960,
     "species": "dragon",
@@ -7381,11 +7402,12 @@
     "bits": 350,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 408,
     "groupId": null
   },
   "197": {
-    "name": "Mammothmon(Silver)",
+    "nameId": 184,
+    "variant": "silver",
     "level": 47,
     "hp": 1248,
     "species": "beast",
@@ -7423,11 +7445,11 @@
     "bits": 460,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 409,
     "groupId": null
   },
   "198": {
-    "name": "Fugamon",
+    "nameId": 185,
     "level": 42,
     "hp": 1128,
     "species": "rare",
@@ -7465,11 +7487,12 @@
     "bits": 430,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 89,
     "groupId": null
   },
   "199": {
-    "name": "Vademon(Red)",
+    "nameId": 186,
+    "variant": "red",
     "level": 46,
     "hp": 1224,
     "species": "rare",
@@ -7507,7 +7530,7 @@
     "bits": 460,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 410,
     "groupId": null,
     "drops": [
       {
@@ -7517,7 +7540,8 @@
     ]
   },
   "200": {
-    "name": "Maildramon(Black)",
+    "nameId": 187,
+    "variant": "black",
     "level": 48,
     "hp": 1272,
     "species": "machine",
@@ -7555,7 +7579,7 @@
     "bits": 480,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 411,
     "groupId": null,
     "drops": [
       {
@@ -7565,7 +7589,8 @@
     ]
   },
   "201": {
-    "name": "Guardromon(White)",
+    "nameId": 188,
+    "variant": "white",
     "level": 46,
     "hp": 1224,
     "species": "machine",
@@ -7603,11 +7628,12 @@
     "bits": 460,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 412,
     "groupId": null
   },
   "202": {
-    "name": "Numemon(Blue)",
+    "nameId": 189,
+    "variant": "blue",
     "level": 31,
     "hp": 864,
     "species": "rare",
@@ -7666,7 +7692,8 @@
     ]
   },
   "203": {
-    "name": "Numemon(Brown)",
+    "nameId": 190,
+    "variant": "brown",
     "level": 39,
     "hp": 1056,
     "species": "rare",
@@ -7704,7 +7731,7 @@
     "bits": 770,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 414,
     "groupId": null,
     "drops": [
       {
@@ -7714,7 +7741,8 @@
     ]
   },
   "204": {
-    "name": "Numemon(Aqua)",
+    "nameId": 191,
+    "variant": "aqua",
     "level": 43,
     "hp": 1152,
     "species": "rare",
@@ -7752,11 +7780,12 @@
     "bits": 880,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 415,
     "groupId": null
   },
   "205": {
-    "name": "Numemon(Red)",
+    "nameId": 192,
+    "variant": "red",
     "level": 43,
     "hp": 1152,
     "species": "rare",
@@ -7794,7 +7823,7 @@
     "bits": 990,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 416,
     "groupId": null,
     "drops": [
       {
@@ -7804,7 +7833,8 @@
     ]
   },
   "206": {
-    "name": "Numemon(White)",
+    "nameId": 193,
+    "variant": "white",
     "level": 44,
     "hp": 1176,
     "species": "rare",
@@ -7842,7 +7872,7 @@
     "bits": 1110,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 417,
     "groupId": null,
     "drops": [
       {
@@ -7852,7 +7882,8 @@
     ]
   },
   "207": {
-    "name": "Raremon(Pink)",
+    "nameId": 194,
+    "variant": "pink",
     "level": 40,
     "hp": 1080,
     "species": "ghoul",
@@ -7890,7 +7921,7 @@
     "bits": 400,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 418,
     "groupId": null,
     "drops": [
       {
@@ -7900,7 +7931,8 @@
     ]
   },
   "208": {
-    "name": "Cyclonemon(Pink)",
+    "nameId": 195,
+    "variant": "pink",
     "level": 43,
     "hp": 1152,
     "species": "rare",
@@ -7938,11 +7970,12 @@
     "bits": 430,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 419,
     "groupId": null
   },
   "209": {
-    "name": "Tankmon(Blue)",
+    "nameId": 196,
+    "variant": "blue",
     "level": 45,
     "hp": 1200,
     "species": "machine",
@@ -7980,7 +8013,7 @@
     "bits": 470,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 420,
     "groupId": null,
     "drops": [
       {
@@ -7990,7 +8023,8 @@
     ]
   },
   "210": {
-    "name": "Musyamon(Green)",
+    "nameId": 197,
+    "variant": "green",
     "level": 32,
     "hp": 888,
     "species": "rare",
@@ -8028,7 +8062,7 @@
     "bits": 330,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 421,
     "groupId": null,
     "drops": [
       {
@@ -8038,7 +8072,8 @@
     ]
   },
   "211": {
-    "name": "Kurisarimon(Pink)",
+    "nameId": 198,
+    "variant": "pink",
     "level": 40,
     "hp": 1080,
     "species": "insect",
@@ -8076,11 +8111,12 @@
     "bits": 800,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 422,
     "groupId": null
   },
   "212": {
-    "name": "Snimon(Brown)",
+    "nameId": 199,
+    "variant": "brown",
     "level": 48,
     "hp": 1272,
     "species": "insect",
@@ -8118,7 +8154,7 @@
     "bits": 480,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 423,
     "groupId": null,
     "drops": [
       {
@@ -8128,7 +8164,8 @@
     ]
   },
   "213": {
-    "name": "Blossomon(Pink)",
+    "nameId": 200,
+    "variant": "pink",
     "level": 36,
     "hp": 984,
     "species": "plant",
@@ -8166,11 +8203,12 @@
     "bits": 360,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 424,
     "groupId": null
   },
   "214": {
-    "name": "Cherrymon(Red)",
+    "nameId": 201,
+    "variant": "red",
     "level": 41,
     "hp": 1104,
     "species": "plant",
@@ -8208,7 +8246,7 @@
     "bits": 410,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 425,
     "groupId": null,
     "drops": [
       {
@@ -8218,7 +8256,8 @@
     ]
   },
   "215": {
-    "name": "Whamon(Blue)",
+    "nameId": 202,
+    "variant": "blue",
     "level": 47,
     "hp": 1872,
     "species": "fish",
@@ -8256,7 +8295,7 @@
     "bits": 420,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 426,
     "groupId": null,
     "drops": [
       {
@@ -8266,7 +8305,8 @@
     ]
   },
   "216": {
-    "name": "MegaSeadramon(Gold)",
+    "nameId": 203,
+    "variant": "gold",
     "level": 44,
     "hp": 1176,
     "species": "dragon",
@@ -8304,7 +8344,7 @@
     "bits": 450,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 427,
     "groupId": null,
     "drops": [
       {
@@ -8314,7 +8354,8 @@
     ]
   },
   "217": {
-    "name": "Ebidramon(Pink)",
+    "nameId": 204,
+    "variant": "pink",
     "level": 48,
     "hp": 1272,
     "species": "fish",
@@ -8352,7 +8393,7 @@
     "bits": 480,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 428,
     "groupId": null,
     "drops": [
       {
@@ -8362,7 +8403,8 @@
     ]
   },
   "218": {
-    "name": "Vilemon(Purple)",
+    "nameId": 205,
+    "variant": "purple",
     "level": 48,
     "hp": 1272,
     "species": "evil",
@@ -8400,7 +8442,7 @@
     "bits": 480,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 429,
     "groupId": null,
     "drops": [
       {
@@ -8410,7 +8452,8 @@
     ]
   },
   "219": {
-    "name": "Drimogemon(Brown)",
+    "nameId": 206,
+    "variant": "brown",
     "level": 44,
     "hp": 1176,
     "species": "machine",
@@ -8448,11 +8491,11 @@
     "bits": 500,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 430,
     "groupId": null
   },
   "220": {
-    "name": "BlueMeramon",
+    "nameId": 207,
     "level": 48,
     "hp": 1272,
     "species": "rare",
@@ -8490,7 +8533,7 @@
     "bits": 480,
     "regularAttackId": "fireElement",
     "techniqueId": "flameSphere",
-    "memoryId": 0,
+    "memoryId": 104,
     "groupId": null,
     "drops": [
       {
@@ -8500,7 +8543,8 @@
     ]
   },
   "221": {
-    "name": "Vikemon(Blue)",
+    "nameId": 208,
+    "variant": "blue",
     "level": 47,
     "hp": 1872,
     "species": "beast",
@@ -8538,11 +8582,12 @@
     "bits": 460,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 431,
     "groupId": null
   },
   "222": {
-    "name": "MetalSeadramon(Black)",
+    "nameId": 209,
+    "variant": "black",
     "level": 54,
     "hp": 1416,
     "species": "dragon",
@@ -8580,11 +8625,12 @@
     "bits": 550,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 432,
     "groupId": null
   },
   "223": {
-    "name": "Scorpiomon(Black)",
+    "nameId": 210,
+    "variant": "black",
     "level": 54,
     "hp": 1416,
     "species": "fish",
@@ -8622,7 +8668,7 @@
     "bits": 510,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 433,
     "groupId": null,
     "drops": [
       {
@@ -8632,7 +8678,8 @@
     ]
   },
   "224": {
-    "name": "Antylamon(White)",
+    "nameId": 211,
+    "variant": "white",
     "level": 49,
     "hp": 1296,
     "species": "beast",
@@ -8670,7 +8717,7 @@
     "bits": 490,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 434,
     "groupId": null,
     "drops": [
       {
@@ -8680,7 +8727,7 @@
     ]
   },
   "247": {
-    "name": "Knightmon",
+    "nameId": 218,
     "level": 53,
     "hp": 2784,
     "species": "rare",
@@ -8718,11 +8765,12 @@
     "bits": 1060,
     "regularAttackId": "noElement",
     "techniqueId": "berserkSword",
-    "memoryId": 0,
+    "memoryId": 178,
     "groupId": null
   },
   "515": {
-    "name": "Cardmon(A)",
+    "nameId": 240,
+    "variant": "A",
     "level": 7,
     "hp": 288,
     "species": "rare",
@@ -8835,7 +8883,8 @@
     ]
   },
   "516": {
-    "name": "Cardmon(B)",
+    "nameId": 241,
+    "variant": "B",
     "level": 12,
     "hp": 408,
     "species": "fish",
@@ -9000,7 +9049,8 @@
     ]
   },
   "517": {
-    "name": "Cardmon(C)",
+    "nameId": 242,
+    "variant": "C",
     "level": 17,
     "hp": 528,
     "species": "rare",
@@ -9102,7 +9152,8 @@
     ]
   },
   "518": {
-    "name": "Cardmon(D)",
+    "nameId": 243,
+    "variant": "D",
     "level": 27,
     "hp": 768,
     "species": "fish",
@@ -9171,7 +9222,8 @@
     ]
   },
   "519": {
-    "name": "Cardmon(E)",
+    "nameId": 244,
+    "variant": "E",
     "level": 37,
     "hp": 1008,
     "species": "rare",
@@ -9209,11 +9261,12 @@
     "bits": 370,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 461,
     "groupId": null
   },
   "520": {
-    "name": "Cardmon(F)",
+    "nameId": 245,
+    "variant": "F",
     "level": 42,
     "hp": 1128,
     "species": "fish",
@@ -9251,11 +9304,12 @@
     "bits": 420,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 462,
     "groupId": null
   },
   "521": {
-    "name": "Cardmon(G)",
+    "nameId": 246,
+    "variant": "G",
     "level": 47,
     "hp": 1248,
     "species": "rare",
@@ -9293,11 +9347,12 @@
     "bits": 470,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 463,
     "groupId": null
   },
   "522": {
-    "name": "Cardmon(H)",
+    "nameId": 247,
+    "variant": "H",
     "level": 47,
     "hp": 1248,
     "species": "fish",
@@ -9335,11 +9390,11 @@
     "bits": 470,
     "regularAttackId": "noElement",
     "techniqueId": "none",
-    "memoryId": 0,
+    "memoryId": 464,
     "groupId": null
   },
   "523": {
-    "name": "Kuwagamon",
+    "nameId": 65,
     "level": 1,
     "hp": 100,
     "species": "insect",
@@ -9378,7 +9433,7 @@
     "groupId": 200
   },
   "524": {
-    "name": "Kuwagamon",
+    "nameId": 65,
     "level": 5,
     "hp": 240,
     "species": "insect",
@@ -9417,7 +9472,8 @@
     "groupId": 272
   },
   "525": {
-    "name": "Kuwagamon(Green)",
+    "nameId": 170,
+    "variant": "green",
     "level": 7,
     "hp": 288,
     "species": "insect",
@@ -9462,7 +9518,7 @@
     ]
   },
   "526": {
-    "name": "Betamon",
+    "nameId": 63,
     "level": 4,
     "hp": 192,
     "species": "beast",
@@ -9507,7 +9563,7 @@
     ]
   },
   "527": {
-    "name": "Vegiemon",
+    "nameId": 64,
     "level": 4,
     "hp": 192,
     "species": "plant",
@@ -9546,7 +9602,7 @@
     "groupId": 201
   },
   "528": {
-    "name": "Kiwimon",
+    "nameId": 67,
     "level": 5,
     "hp": 240,
     "species": "bird",
@@ -9585,7 +9641,7 @@
     "groupId": 201
   },
   "529": {
-    "name": "Minotarumon",
+    "nameId": 71,
     "level": 9,
     "hp": 504,
     "species": "beast",
@@ -9624,7 +9680,7 @@
     "groupId": 3
   },
   "530": {
-    "name": "Tyrannomon",
+    "nameId": 74,
     "level": 11,
     "hp": 576,
     "species": "dino",
@@ -9669,7 +9725,7 @@
     "groupId": 3
   },
   "531": {
-    "name": "Apemon",
+    "nameId": 82,
     "level": 14,
     "hp": 684,
     "species": "beast",
@@ -9714,7 +9770,7 @@
     "groupId": 3
   },
   "532": {
-    "name": "Woodmon",
+    "nameId": 73,
     "level": 12,
     "hp": 612,
     "species": "plant",
@@ -9753,7 +9809,7 @@
     "groupId": 4
   },
   "533": {
-    "name": "RedVegiemon",
+    "nameId": 169,
     "level": 14,
     "hp": 684,
     "species": "plant",
@@ -9792,7 +9848,7 @@
     "groupId": 4
   },
   "534": {
-    "name": "ShogunGekomon",
+    "nameId": 89,
     "level": 20,
     "hp": 792,
     "species": "fish",
@@ -9837,7 +9893,7 @@
     "groupId": 4
   },
   "535": {
-    "name": "Numemon",
+    "nameId": 105,
     "level": 27,
     "hp": 768,
     "species": "rare",
@@ -9882,7 +9938,7 @@
     "groupId": 5
   },
   "536": {
-    "name": "Numemon",
+    "nameId": 105,
     "level": 27,
     "hp": 768,
     "species": "rare",
@@ -9927,7 +9983,7 @@
     "groupId": 5
   },
   "537": {
-    "name": "Mamemon",
+    "nameId": 99,
     "level": 25,
     "hp": 1088,
     "species": "machine",
@@ -9972,7 +10028,7 @@
     "groupId": 6
   },
   "538": {
-    "name": "Tortomon",
+    "nameId": 84,
     "level": 29,
     "hp": 1224,
     "species": "fish",
@@ -10011,7 +10067,8 @@
     "groupId": 6
   },
   "539": {
-    "name": "Flymon(Pink)",
+    "nameId": 175,
+    "variant": "pink",
     "level": 29,
     "hp": 1224,
     "species": "insect",
@@ -10056,7 +10113,7 @@
     "groupId": 6
   },
   "540": {
-    "name": "Yanmamon",
+    "nameId": 66,
     "level": 40,
     "hp": 1080,
     "species": "insect",
@@ -10095,7 +10152,7 @@
     "groupId": 202
   },
   "541": {
-    "name": "Kuwagamon",
+    "nameId": 65,
     "level": 40,
     "hp": 1080,
     "species": "insect",
@@ -10134,7 +10191,7 @@
     "groupId": 202
   },
   "542": {
-    "name": "Flymon",
+    "nameId": 72,
     "level": 45,
     "hp": 1200,
     "species": "insect",
@@ -10173,7 +10230,7 @@
     "groupId": 202
   },
   "543": {
-    "name": "Kunemon",
+    "nameId": 58,
     "level": 6,
     "hp": 264,
     "species": "insect",
@@ -10212,7 +10269,7 @@
     "groupId": 203
   },
   "544": {
-    "name": "Kunemon",
+    "nameId": 58,
     "level": 7,
     "hp": 288,
     "species": "insect",
@@ -10251,7 +10308,7 @@
     "groupId": 203
   },
   "545": {
-    "name": "Dokugumon",
+    "nameId": 68,
     "level": 9,
     "hp": 336,
     "species": "insect",
@@ -10296,7 +10353,7 @@
     ]
   },
   "546": {
-    "name": "Goburimon",
+    "nameId": 69,
     "level": 7,
     "hp": 288,
     "species": "beast",
@@ -10335,7 +10392,7 @@
     "groupId": 204
   },
   "547": {
-    "name": "Ogremon",
+    "nameId": 93,
     "level": 8,
     "hp": 312,
     "species": "rare",
@@ -10380,7 +10437,7 @@
     ]
   },
   "548": {
-    "name": "Crabmon",
+    "nameId": 60,
     "level": 6,
     "hp": 264,
     "species": "fish",
@@ -10419,7 +10476,7 @@
     "groupId": 205
   },
   "549": {
-    "name": "Gizamon",
+    "nameId": 61,
     "level": 7,
     "hp": 288,
     "species": "fish",
@@ -10458,7 +10515,7 @@
     "groupId": 205
   },
   "550": {
-    "name": "Gekomon",
+    "nameId": 77,
     "level": 7,
     "hp": 288,
     "species": "fish",
@@ -10503,7 +10560,7 @@
     ]
   },
   "551": {
-    "name": "Tapirmon",
+    "nameId": 59,
     "level": 9,
     "hp": 336,
     "species": "beast",
@@ -10542,7 +10599,7 @@
     "groupId": 206
   },
   "552": {
-    "name": "Kuwagamon",
+    "nameId": 65,
     "level": 7,
     "hp": 288,
     "species": "insect",
@@ -10581,7 +10638,7 @@
     "groupId": 209
   },
   "553": {
-    "name": "Flymon",
+    "nameId": 72,
     "level": 7,
     "hp": 288,
     "species": "insect",
@@ -10620,7 +10677,8 @@
     "groupId": 209
   },
   "554": {
-    "name": "Yanmamon(Green)",
+    "nameId": 171,
+    "variant": "green",
     "level": 7,
     "hp": 288,
     "species": "insect",
@@ -10659,7 +10717,7 @@
     "groupId": 209
   },
   "555": {
-    "name": "Coelamon",
+    "nameId": 78,
     "level": 40,
     "hp": 1080,
     "species": "fish",
@@ -10704,7 +10762,7 @@
     ]
   },
   "556": {
-    "name": "Kokatorimon",
+    "nameId": 81,
     "level": 40,
     "hp": 1080,
     "species": "bird",
@@ -10743,7 +10801,7 @@
     "groupId": 207
   },
   "557": {
-    "name": "Airdramon",
+    "nameId": 76,
     "level": 50,
     "hp": 1320,
     "species": "dragon",
@@ -10788,7 +10846,7 @@
     ]
   },
   "558": {
-    "name": "Betamon",
+    "nameId": 63,
     "level": 6,
     "hp": 264,
     "species": "beast",
@@ -10833,7 +10891,7 @@
     ]
   },
   "559": {
-    "name": "Kiwimon",
+    "nameId": 67,
     "level": 7,
     "hp": 288,
     "species": "bird",
@@ -10872,7 +10930,7 @@
     "groupId": 208
   },
   "560": {
-    "name": "RedVegiemon",
+    "nameId": 169,
     "level": 7,
     "hp": 288,
     "species": "plant",
@@ -10911,7 +10969,7 @@
     "groupId": 208
   },
   "561": {
-    "name": "Triceramon",
+    "nameId": 75,
     "level": 10,
     "hp": 540,
     "species": "dino",
@@ -10956,7 +11014,7 @@
     ]
   },
   "562": {
-    "name": "Tuskmon",
+    "nameId": 94,
     "level": 10,
     "hp": 540,
     "species": "dino",
@@ -11001,7 +11059,7 @@
     ]
   },
   "563": {
-    "name": "Vademon",
+    "nameId": 97,
     "level": 10,
     "hp": 360,
     "species": "rare",
@@ -11046,7 +11104,7 @@
     ]
   },
   "564": {
-    "name": "Thundermon",
+    "nameId": 101,
     "level": 11,
     "hp": 384,
     "species": "machine",
@@ -11091,7 +11149,7 @@
     ]
   },
   "565": {
-    "name": "DemiDevimon",
+    "nameId": 62,
     "level": 10,
     "hp": 360,
     "species": "evil",
@@ -11136,7 +11194,7 @@
     ]
   },
   "566": {
-    "name": "Bakemon",
+    "nameId": 79,
     "level": 10,
     "hp": 360,
     "species": "ghoul",
@@ -11175,7 +11233,7 @@
     "groupId": 212
   },
   "567": {
-    "name": "Kunemon",
+    "nameId": 58,
     "level": 9,
     "hp": 336,
     "species": "insect",
@@ -11214,7 +11272,7 @@
     "groupId": 215
   },
   "568": {
-    "name": "Dokugumon",
+    "nameId": 68,
     "level": 10,
     "hp": 360,
     "species": "insect",
@@ -11259,7 +11317,7 @@
     ]
   },
   "569": {
-    "name": "Dokugumon",
+    "nameId": 68,
     "level": 10,
     "hp": 360,
     "species": "insect",
@@ -11304,7 +11362,7 @@
     ]
   },
   "570": {
-    "name": "Crabmon",
+    "nameId": 60,
     "level": 17,
     "hp": 568,
     "species": "fish",
@@ -11343,7 +11401,7 @@
     "groupId": 214
   },
   "571": {
-    "name": "Gizamon",
+    "nameId": 61,
     "level": 17,
     "hp": 528,
     "species": "fish",
@@ -11382,7 +11440,7 @@
     "groupId": 214
   },
   "572": {
-    "name": "Gekomon",
+    "nameId": 77,
     "level": 18,
     "hp": 552,
     "species": "fish",
@@ -11427,7 +11485,7 @@
     ]
   },
   "573": {
-    "name": "Seadramon",
+    "nameId": 90,
     "level": 40,
     "hp": 1080,
     "species": "dragon",
@@ -11472,7 +11530,7 @@
     ]
   },
   "574": {
-    "name": "Kokatorimon",
+    "nameId": 81,
     "level": 42,
     "hp": 1128,
     "species": "bird",
@@ -11511,7 +11569,7 @@
     "groupId": 213
   },
   "575": {
-    "name": "Shellmon",
+    "nameId": 83,
     "level": 39,
     "hp": 1056,
     "species": "fish",
@@ -11556,7 +11614,7 @@
     ]
   },
   "576": {
-    "name": "Tapirmon",
+    "nameId": 59,
     "level": 41,
     "hp": 1104,
     "species": "beast",
@@ -11595,7 +11653,7 @@
     "groupId": 216
   },
   "577": {
-    "name": "Triceramon",
+    "nameId": 75,
     "level": 14,
     "hp": 684,
     "species": "dino",
@@ -11640,7 +11698,7 @@
     ]
   },
   "578": {
-    "name": "Kuwagamon",
+    "nameId": 65,
     "level": 10,
     "hp": 360,
     "species": "insect",
@@ -11679,7 +11737,7 @@
     "groupId": 263
   },
   "579": {
-    "name": "Kunemon",
+    "nameId": 58,
     "level": 6,
     "hp": 264,
     "species": "insect",
@@ -11718,7 +11776,7 @@
     "groupId": 263
   },
   "580": {
-    "name": "Monzaemon",
+    "nameId": 112,
     "level": 29,
     "hp": 816,
     "species": "rare",
@@ -11757,7 +11815,7 @@
     "groupId": 188
   },
   "581": {
-    "name": "Nanimon",
+    "nameId": 114,
     "level": 29,
     "hp": 816,
     "species": "rare",
@@ -11796,7 +11854,8 @@
     "groupId": 188
   },
   "582": {
-    "name": "Minotarumon(Blue)",
+    "nameId": 174,
+    "variant": "blue",
     "level": 33,
     "hp": 912,
     "species": "beast",
@@ -11841,7 +11900,7 @@
     ]
   },
   "583": {
-    "name": "Gargoylemon",
+    "nameId": 120,
     "level": 34,
     "hp": 1404,
     "species": "evil",
@@ -11886,7 +11945,7 @@
     ]
   },
   "584": {
-    "name": "Persiamon",
+    "nameId": 220,
     "level": 38,
     "hp": 3096,
     "species": "beast",
@@ -11931,7 +11990,7 @@
     ]
   },
   "585": {
-    "name": "Vemmon",
+    "nameId": 248,
     "level": 28,
     "hp": 792,
     "species": "rare",
@@ -11973,7 +12032,7 @@
     "groupId": 322
   },
   "586": {
-    "name": "Raremon",
+    "nameId": 109,
     "level": 29,
     "hp": 816,
     "species": "ghoul",
@@ -12018,7 +12077,7 @@
     ]
   },
   "587": {
-    "name": "Cyclonemon",
+    "nameId": 110,
     "level": 29,
     "hp": 816,
     "species": "rare",
@@ -12063,7 +12122,7 @@
     ]
   },
   "588": {
-    "name": "Maildramon",
+    "nameId": 98,
     "level": 32,
     "hp": 888,
     "species": "machine",
@@ -12108,7 +12167,8 @@
     ]
   },
   "589": {
-    "name": "Guardromon(Blue)",
+    "nameId": 100,
+    "variant": "blue",
     "level": 29,
     "hp": 816,
     "species": "machine",
@@ -12147,7 +12207,7 @@
     "groupId": 189
   },
   "590": {
-    "name": "Tankmon",
+    "nameId": 113,
     "level": 30,
     "hp": 840,
     "species": "machine",
@@ -12186,7 +12246,8 @@
     "groupId": 189
   },
   "591": {
-    "name": "Guardromon(Blue)",
+    "nameId": 100,
+    "variant": "blue",
     "level": 29,
     "hp": 816,
     "species": "machine",
@@ -12225,7 +12286,7 @@
     "groupId": 190
   },
   "592": {
-    "name": "Tankmon",
+    "nameId": 113,
     "level": 30,
     "hp": 840,
     "species": "machine",
@@ -12262,5 +12323,45 @@
     "techniqueId": "none",
     "memoryId": 76,
     "groupId": 190
+  },
+  "593": {
+    "nameId": 229,
+    "level": 46,
+    "hp": 2448,
+    "species": "dragon",
+    "rate": 0,
+    "strength": 510,
+    "defense": 510,
+    "spirit": 490,
+    "wisdom": 765,
+    "speed": 408,
+    "fire": 112,
+    "water": 112,
+    "ice": 112,
+    "wind": 112,
+    "thunder": 385,
+    "machine": 112,
+    "dark": 385,
+    "canPoison": false,
+    "poison": 50,
+    "canParalyze": false,
+    "paralyze": 50,
+    "canConfuse": false,
+    "confuse": 50,
+    "canSleep": false,
+    "sleep": 50,
+    "canKO": false,
+    "ko": 0,
+    "canDrain": false,
+    "canSteal": false,
+    "strDown": "No",
+    "defDown": "No",
+    "spdDown": "No",
+    "canEscape": true,
+    "regularAttackId": "noElement",
+    "techniqueId": "megaCrusher",
+    "boss": true,
+    "memoryId": 444,
+    "groupId": 15
   }
 }

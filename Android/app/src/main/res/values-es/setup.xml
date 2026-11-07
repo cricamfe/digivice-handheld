@@ -1,0 +1,17 @@
+<resources>
+    <string name="setup_title">Preparar Digivice</string>
+    <string name="setup_cancel">Pausar preparación</string>
+    <string name="setup_checking">Comprobando el archivo del juego…</string>
+    <string name="setup_game_running">Cierra el juego en RetroArch para reanudar la preparación.</string>
+    <string name="setup_cancelling">Pausando la preparación…</string>
+    <string name="setup_progress">%1$d/%2$d · %3$s (%4$d/%5$d)</string>
+    <string name="setup_data">Datos del juego</string>
+    <string name="setup_cards">Cartas</string>
+    <string name="setup_sprites">Personajes</string>
+    <string name="setup_icons">Objetos</string>
+    <string name="setup_world">Mapa del mundo</string>
+    <string name="setup_maps">Mapas</string>
+    <string name="setup_models">Modelos de combate y evolución</string>
+    <string name="setup_unavailable">Digivice necesita Android System WebView para mostrar esta pantalla. Actualízalo y vuelve a abrir Digivice.</string>
+    <string name="setup_overlay_missing">Abre Digivice para preparar los recursos del juego.</string>
+</resources>

@@ -14,6 +14,10 @@ import DriAgentRenamonJson from "@/database/quest/dri-agents/dri-agent-renamon.j
 import DriAgentPatamonJson from "@/database/quest/dri-agents/dri-agent-patamon.json";
 import AsukaTrophyJson from "@/database/quest/duel-island/asuka-trophy.json";
 import AsukaRematchJson from "@/database/quest/duel-island/asuka-rematch.json";
+import AmaterasuTrophyJson from "@/database/quest/duel-island/amaterasu-trophy.json";
+import AmaterasuRematchJson from "@/database/quest/duel-island/amaterasu-rematch.json";
+import CardKingJson from "@/database/quest/duel-island/card-king.json";
+import DigimonOnlineJson from "@/database/quest/side-quest/digimon-online.json";
 import TreeBootsJson from "@/database/quest/side-quest/tree-boots.json";
 import FishingPoleJson from "@/database/quest/side-quest/fishing-pole.json";
 import FolderBagJson from "@/database/quest/side-quest/folder-bag.json";
@@ -55,6 +59,10 @@ export class QuestRepository {
   private static readonly driAgentPatamonTable = DriAgentPatamonJson as DriAgentPatamonTable;
   private static readonly asukaTrophyTable = AsukaTrophyJson as AsukaTrophyTable;
   private static readonly asukaRematchTable = AsukaRematchJson as AsukaRematchTable;
+  private static readonly amaterasuTrophyTable = AmaterasuTrophyJson as QuestRaw;
+  private static readonly amaterasuRematchTable = AmaterasuRematchJson as QuestRaw;
+  private static readonly cardKingTable = CardKingJson as QuestRaw;
+  private static readonly digimonOnlineTable = DigimonOnlineJson as QuestRaw;
   private static readonly treeBootsTable = TreeBootsJson as TreeBootsTable;
   private static readonly fishingPoleTable = FishingPoleJson as FishingPoleTable;
   private static readonly folderBagTable = FolderBagJson as FolderBagTable;
@@ -63,7 +71,12 @@ export class QuestRepository {
     return this.mainQuestTable;
   }
   public static getSideQuestsRaw(): QuestRaw[] {
-    return [this.folderBagTable, this.fishingPoleTable, this.treeBootsTable];
+    return [
+      this.folderBagTable,
+      this.fishingPoleTable,
+      this.treeBootsTable,
+      this.digimonOnlineTable,
+    ];
   }
   public static getLegendaryWeaponsRaw(): QuestRaw[] {
     return [
@@ -87,6 +100,12 @@ export class QuestRepository {
     ];
   }
   public static getDuelIslandRaw(): QuestRaw[] {
-    return [this.asukaTrophyTable, this.asukaRematchTable];
+    return [
+      this.asukaTrophyTable,
+      this.asukaRematchTable,
+      this.amaterasuTrophyTable,
+      this.amaterasuRematchTable,
+      this.cardKingTable,
+    ];
   }
 }

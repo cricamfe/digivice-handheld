@@ -63,5 +63,5 @@ class Logger {
 export const createLogger = (context: string, color?: string) => new Logger(context, color);
 
 // Default loggers
-export const signalRLogger = createLogger("SignalR", "#3498db"); // Blue
+export const eventsLogger = createLogger("Events", "#3498db"); // Blue
 export const storeLogger = createLogger("Store", "#42b883"); // Green

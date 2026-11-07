@@ -6,11 +6,7 @@ export class MapRepository {
   private static readonly mapTable = MapJson as MapTable;
 
   public static getMapById(id: string): MapRaw {
-    return (
-      this.mapTable[id] ?? {
-        imageName: "",
-      }
-    );
+    return this.mapTable[id] ?? {};
   }
 
   public static getMapIdsWithWorldLocation(): string[] {

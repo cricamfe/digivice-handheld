@@ -1,0 +1,10 @@
+{
+  "journal": {
+    "sideQuests": "Extra",
+    "legendaryWeapons": "Armas",
+    "driAgents": "DRI",
+    "questCompleted": "Misión completada",
+    "chapter": "Capítulo {number}",
+    "noSteps": "Sin pasos registrados."
+  }
+}

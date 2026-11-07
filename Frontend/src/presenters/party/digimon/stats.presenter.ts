@@ -12,17 +12,22 @@ import { DigimonBattleSelector } from "@/stores/selectors/digimon-battle.selecto
 import { DigievolutionRepository } from "@/repositories/digievolution.repository";
 import { EquipmentRepository } from "@/repositories/equipment.repository";
 import type { EquipmentRaw } from "@/repositories/tables/raws/equipment/equipment.raw";
+import type { DigievolutionRaw } from "@/repositories/tables/raws/digievolution/digievolution.raw";
 import type { AttributesViewModel } from "@/viewmodels/digimon/attributes.viewmodel";
 import type { DigimonStatsViewModel } from "@/viewmodels/digimon/digimon-stats.viewmodel";
 import type { DigievolutionViewModel } from "@/viewmodels/digievolution/digievolution.viewmodel";
+import { digimonName } from "@/handheld/digimon-names";
 
 export class StatsPresenter {
   public static getStatsViewModel(digimon: Digimon, location: string): DigimonStatsViewModel {
     const isInBattle = DigimonBattleSelector.isInBattle(location, digimon.inBattle);
-    const activeDigievolution =
-      digimon.activeDigievolutionId !== null
-        ? this.getDigievolutionById(digimon.activeDigievolutionId)
-        : null;
+    // The game adds a form's stats and resistances only in a battle, for the form the fighter is in (FIGHTSTG_computeStats):
+    // its status screen (computeStats) shows the partner's own stats with its equipment. `activeDigievolutionId` is only
+    // the form a battle starts in (Partner.battleDigivolve), so it adds nothing by itself.
+    const form = isInBattle
+      ? DigievolutionRepository.findRawDigievolutionById(digimon.inBattle.formId)
+      : undefined;
+    const activeDigievolution = form === undefined ? null : this.toViewModel(form);
     const equipmentIds = EquipmentService.getEquipmentIds(digimon.equipments);
     const rawEquipments = EquipmentRepository.getEquipmentsByIds(equipmentIds);
     const attributes = AttributesConverter.convert(
@@ -81,11 +86,9 @@ export class StatsPresenter {
     };
   }
 
-  private static getDigievolutionById(digievolutionId: number): DigievolutionViewModel {
-    const digievolutionRaw = DigievolutionRepository.getRawDigievolutionById(digievolutionId);
-
+  private static toViewModel(digievolutionRaw: DigievolutionRaw): DigievolutionViewModel {
     return {
-      name: digievolutionRaw.name,
+      name: digimonName(digievolutionRaw.nameId),
       attributes: digievolutionRaw.attributes,
       elements: digievolutionRaw.elements,
       resistances: digievolutionRaw.resistances,

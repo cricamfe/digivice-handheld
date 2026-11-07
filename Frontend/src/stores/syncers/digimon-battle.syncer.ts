@@ -6,15 +6,27 @@ import { EnemyConverter } from "@/events/converters/battles/enemy.converter";
 import { EnemySyncer } from "./battles/enemy.syncer";
 
 export class DigimonBattleSyncer {
-  public static sync(previousDigimonBattle: DigimonBattle, newDigimonBattleDto: DigimonBattleDTO): void {
+  public static sync(
+    previousDigimonBattle: DigimonBattle,
+    newDigimonBattleDto: DigimonBattleDTO,
+  ): void {
     if (newDigimonBattleDto.field !== undefined) {
       previousDigimonBattle.field = newDigimonBattleDto.field;
+    }
+    if (newDigimonBattleDto.fieldAmount !== undefined) {
+      previousDigimonBattle.fieldAmount = newDigimonBattleDto.fieldAmount;
+    }
+    if (newDigimonBattleDto.activeFighter !== undefined) {
+      previousDigimonBattle.activeFighter = newDigimonBattleDto.activeFighter;
+    }
+    if (newDigimonBattleDto.stage !== undefined) {
+      previousDigimonBattle.stage = newDigimonBattleDto.stage;
     }
     if (newDigimonBattleDto.enemy === null) {
       previousDigimonBattle.enemy = null;
     } else if (newDigimonBattleDto.enemy !== undefined) {
       if (previousDigimonBattle.enemy === null) {
-        // Backend sends the full enemy when it appears.
+        // The core sends the full enemy when it appears.
         previousDigimonBattle.enemy = EnemyConverter.convert(
           newDigimonBattleDto.enemy as DeepRequired<EnemyDTO>,
         );

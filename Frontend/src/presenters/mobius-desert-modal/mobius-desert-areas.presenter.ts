@@ -1,11 +1,12 @@
 import { MobiusDesertAreasRepository } from "@/repositories/mobius-desert-areas.repository";
 import { MobiusDesertService } from "@/services/mobius-desert.service";
+import type { GameServer } from "@/types/game-server.type";
 import type { DesertAreaViewModel } from "@/viewmodels/desert/desert-area.viewmodel";
 import type { DesertAreasViewModel } from "@/viewmodels/desert/desert-areas.viewmodel";
 
 export class MobiusDesertAreasPresenter {
-  public static getAreas(): DesertAreasViewModel {
-    return MobiusDesertAreasRepository.getAll() as DesertAreasViewModel;
+  public static getAreas(server: GameServer = "asuka"): DesertAreasViewModel {
+    return MobiusDesertAreasRepository.getAll(server) as DesertAreasViewModel;
   }
 
   public static getCurrentAreaLabel(locationId: string, mapVariant: number | null): string | null {

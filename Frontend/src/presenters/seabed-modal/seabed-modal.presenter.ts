@@ -33,7 +33,7 @@ export class SeabedModalPresenter {
       return null;
     }
 
-    const imageUrl = ImageCatalog.getLocationImageUrl(locationRaw.imageName);
+    const imageUrl = ImageCatalog.getLocationImageUrl(locationId);
 
     return SeabedModalConverter.convert(seabedDockRaw, imageUrl);
   }

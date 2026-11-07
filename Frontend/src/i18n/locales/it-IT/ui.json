@@ -1,0 +1,979 @@
+{
+  "auction": {
+    "cardIdleTitle": "Nessuna asta ora",
+    "cardIdleSubtitle": "Forse più tardi...",
+    "cardActiveTitle": "Asta disponibile!",
+    "cardActiveSubtitle": "Tocca per più dettagli!",
+    "modalTitle": "Aste",
+    "historySubtitle": "Cronologia"
+  },
+  "digievolution": {
+    "title": "Digievoluzioni di {name}",
+    "selectNode": "SELEZIONA UN NODO DI DIGIEVOLUZIONE PER I DETTAGLI.",
+    "requirementDigievolutions": "Digievoluzioni richieste",
+    "nextDigievolutions": "Digievol. successive",
+    "noTechData": "Nessun dato sulle tecniche.",
+    "neutral": "Neutro",
+    "noEvolutionData": "Nessun dato di digievoluzione",
+    "pinFamily": "Fissa in alto",
+    "unpinFamily": "Rimuovi",
+    "unknownParam": "Parametro ignoto",
+    "lv": "Liv",
+    "techniques": "Tecniche",
+    "searchDigimon": "Scrivi il nome di una digievoluzione...",
+    "searchNoResults": "Nessuna digievoluzione trovata",
+    "mpCost": "Costo PM",
+    "levelToLearn": "Liv. apprendim.",
+    "levelToLoad": "Liv. di carica",
+    "signatureTechnique": "Tecnica firma"
+  },
+  "techniqueTypes": {
+    "physical": "Fisica",
+    "magical": "Magica",
+    "heal": "Cura",
+    "support": "Supporto",
+    "field": "Campo"
+  },
+  "digimon": {
+    "digievolutions": "Digievoluzioni",
+    "equipments": "Equipaggiamenti",
+    "lv": "Liv",
+    "experience": "Esperienza",
+    "hp": "PF",
+    "status": {
+      "healthy": "In forma",
+      "injured": "Ferito",
+      "ko": "Messo KO",
+      "debuffed": "Indebolito"
+    },
+    "debuff": {
+      "poison": {
+        "affected": "Avvelenato"
+      },
+      "paralyze": {
+        "affected": "Paralizzato"
+      },
+      "confuse": {
+        "affected": "Confuso"
+      },
+      "sleep": {
+        "affected": "Addormentato"
+      }
+    },
+    "mp": "PM",
+    "blast": "Blast",
+    "tp": "Punti addestramento",
+    "states": {
+      "empty": "Vuoto"
+    }
+  },
+  "conditions": {
+    "poison": {
+      "name": "Veleno",
+      "canSuffer": "Può essere avvelenato",
+      "vunerable": "Resistenza al veleno"
+    },
+    "paralyze": {
+      "name": "Paralisi",
+      "canSuffer": "Può essere paralizzato",
+      "vunerable": "Resistenza alla paralisi"
+    },
+    "confuse": {
+      "name": "Confusione",
+      "canSuffer": "Può essere confuso",
+      "vunerable": "Resistenza alla confusione"
+    },
+    "sleep": {
+      "name": "Sonno",
+      "canSuffer": "Può addormentarsi",
+      "vunerable": "Resistenza al sonno"
+    },
+    "ko": {
+      "name": "KO",
+      "canSuffer": "Può andare KO",
+      "vunerable": "Resistenza al KO"
+    },
+    "drain": {
+      "name": "Drenaggio",
+      "canSuffer": "Può essere drenato"
+    },
+    "steal": {
+      "name": "Furto",
+      "canSuffer": "Può essere derubato"
+    },
+    "escape": {
+      "name": "Fuga",
+      "canSuffer": "Il giocatore può fuggire"
+    },
+    "yes": "Sì",
+    "no": "No"
+  },
+  "drops": {
+    "none": "Nessuno"
+  },
+  "regularAttacks": {
+    "noElement": "Fisico, senza elemento",
+    "machineElement": "Elemento macchina",
+    "waterElement": "Elemento acqua",
+    "noElementChanceOfPoison": "Senza elemento (prob. veleno)",
+    "fireElement": "Elemento fuoco",
+    "darkElement": "Elemento tenebre",
+    "thunderElementChanceOfSleep": "Elemento tuono (prob. sonno)",
+    "machineElementChanceOfFreeze": "Elemento macchina (prob. gelo)",
+    "thunderElement": "Elemento tuono",
+    "thunderElementChanceOfFreeze": "Elemento tuono (prob. gelo)",
+    "waterElementHitsTwice": "Elemento acqua (colpisce 2 volte)",
+    "iceElement": "Elemento ghiaccio",
+    "machineElementCounterPhysical": "Elemento macchina; contrattacco (fisico)",
+    "thunderElementCounterPhysical": "Elemento tuono; contrattacco (fisico)",
+    "machineElementHitsTwice": "Elemento macchina (colpisce 2 volte)"
+  },
+  "enemyTechniques": {
+    "necromist": "{tech} (Fisico, prob. veleno)",
+    "madPump": "{tech} (Fisico, Acqua)",
+    "masterFire": "{tech} (Fuoco)",
+    "atomicRay": "{tech} (Magia-Macchina, prob. KO)",
+    "energySuck": "{tech} (Magia)",
+    "airBlast": "{tech} (Magia, Vento)",
+    "confuseGas": "{tech} (Magia, prob. confusione)",
+    "divineRain": "{tech} (Magia, Acqua)",
+    "smallHeal": "{tech} (Cura una piccola parte dei PF)",
+    "doubleGuard": "{tech} (Aumenta la difesa)",
+    "thunderbolt": "{tech} (Magia, Tuono)",
+    "thunderGemini": "{tech} (Magia, Tuono)",
+    "speedUp": "{tech} (Aumenta la velocità)",
+    "magicMissile": "{tech} (Magia-Macchina), {tech2} (Riduce la velocità nemica)",
+    "paralyzeShock": "{tech} (Magia, prob. gelo)",
+    "twinMissile": "{tech} (Magia-Macchina)",
+    "lovelyCharm": "{tech} (Riduce la forza nemica)",
+    "confuseNebula": "{tech} (prob. confusione)",
+    "darkMatter": "{tech} (Magia-Tenebre)",
+    "darkFear": "{tech} (Magia-Tenebre)",
+    "hardRain": "{tech} (Magia-Acqua)",
+    "flameBall": "{tech} (Magia-Fuoco)",
+    "flameLance": "{tech} (Magia-Fuoco)",
+    "iceBlow": "{tech} (Magia-Ghiaccio)",
+    "flameBreath": "{tech} (Magia-Fuoco)",
+    "darkElemental": "{tech} (Magia-Tenebre)",
+    "godBombard": "{tech} (Magia-Macchina), {tech2} (Il nemico non può fuggire)",
+    "grandWave": "{tech} (Magia-Acqua)",
+    "megaHeal": "{tech} (Cura gran parte dei PF)",
+    "fullHeal": "{tech} (Cura tutti i PF)",
+    "slyphStorm": "{tech} (Magia-Vento)",
+    "darknessChaos": "{tech} (Magia-Tenebre)",
+    "flameSphere": "{tech} (Magia-Fuoco)",
+    "berserkSword": "{tech} (Fisico, colpisce 2 volte), {tech2} (Potenzia il colpo successivo)",
+    "heartBreakAttack": "{tech} (Magia, riduce la forza nemica)",
+    "autoRecover": "{tech} (Cura una piccola parte dei PF a ogni turno)",
+    "helterSkelter": "{tech} (Costringe il Digimon a tornare alla forma base)"
+  },
+  "enemy": {
+    "wiki": "Wiki",
+    "searchPlaceholder": "Scrivi il nome di un nemico, bottino, carta, luogo o PNG...",
+    "searchNoResults": "Nessun risultato",
+    "searchKind": {
+      "enemy": "Digimon",
+      "equipment": "Equip.",
+      "consumableItem": "Consumabile",
+      "booster": "Pacco",
+      "card": "Carta",
+      "location": "Luogo",
+      "cardShop": "Negozio",
+      "tamer": "Domatore",
+      "leader": "Capo",
+      "npc": "PNG"
+    },
+    "droppedBy": "Lasciato da",
+    "droppedByNone": "Nessun nemico noto",
+    "level": "Livello",
+    "specie": "Specie",
+    "drop": "Bottino",
+    "drops": "Bottini",
+    "locationOnly": "Solo {location}",
+    "tamerOnly": "Digimon di {name}",
+    "resaleValueLabel": "Valore di rivendita",
+    "soldInStore": "Venduto da PNG",
+    "soldInStoreYes": "Sì",
+    "soldInStoreNo": "No",
+    "type": "Tipo",
+    "boosterCardsLabel": "Carte ottenibili da questo pacco",
+    "storeCardsLabel": "Carte acquistabili in questo negozio",
+    "locatedIn": "Si trova in",
+    "obtainedFromNone": "Nessun pacco noto",
+    "dropSourcesNone": "Nessuna fonte nota",
+    "purchasableAt": "Acquistabile presso",
+    "purchasableAtNone": "Non in vendita nei negozi noti",
+    "baseExp": "ESP",
+    "baseDvexp": "DVEXP",
+    "technique": "Tecnica",
+    "attributes": "Attributi",
+    "elements": "Elementi",
+    "status": "Condizioni",
+    "whereToFind": "Dove trovarlo",
+    "searchContext": {
+      "wild": "(Digimon selvatico Liv {level})",
+      "boss": "(Boss Liv {level})",
+      "tamer": "(Digimon del domatore {name} Liv {level})",
+      "npc": "(Digimon di {name} Liv {level})"
+    },
+    "unavailableAtMoment": "Non disponibile o non sfidabile a questo punto della storia",
+    "locationSource": {
+      "walking": "A piedi",
+      "boss": "Boss",
+      "fishing": "Pesca",
+      "kickingTree": "Calcio all'albero"
+    },
+    "noEnemiesOnMap": "Zona sicura",
+    "techniques": "Tecniche"
+  },
+  "species": {
+    "insect": "Insetto",
+    "dino": "Dinosauro",
+    "machine": "Macchina",
+    "beast": "Bestia",
+    "fish": "Pesce",
+    "evil": "Malvagio",
+    "plant": "Pianta",
+    "bird": "Uccello",
+    "dragon": "Drago",
+    "ghoul": "Ghoul",
+    "rare": "Raro"
+  },
+  "equipments": {
+    "292": {
+      "note": "Aumenta la potenza d'attacco."
+    }
+  },
+  "field": {
+    "neutral": "Campo neutro",
+    "strengthen": "{element} +50%",
+    "weaken": "{element} -25%"
+  },
+  "journal": {
+    "sideQuests": "Missioni secondarie",
+    "legendaryWeapons": "Armi leggendarie",
+    "driAgents": "Agenti DRI",
+    "questCompleted": "Missione completata",
+    "chapter": "Capitolo {number}",
+    "noSteps": "Nessun passo specifico tracciato."
+  },
+  "map": {
+    "0500": "Scegli il tuo kit iniziale",
+    "1000": "Nel menu",
+    "1300": "Negozio di carte",
+    "1400": "Schermata ricompense",
+    "0A00": "In allenamento",
+    "0E03": "Filmato",
+    "0F00": "In negozio",
+    "0600": "In battaglia",
+    "0700": "In battaglia di carte"
+  },
+  "npc": {
+    "battle": {
+      "card": "Carte",
+      "digimon": "Digimon",
+      "requirement": {
+        "missingCharisma": "Carisma insufficiente o fuori portata",
+        "available": "Battaglia disponibile",
+        "alreadyWon": "Hai già vinto questa battaglia"
+      }
+    }
+  },
+  "npcs": {
+    "guardsHeadquarters": {
+      "name": "Guardie"
+    }
+  },
+  "party": {
+    "groupCharisma": "Carisma di gruppo",
+    "groupCharismaWarning": "La somma delle statistiche Carisma di tutti i Digimon del gruppo. Questo valore influisce su eventi di gioco, battaglie contro i domatori, ecc.",
+    "groupLevel": "Livello di gruppo",
+    "groupLevelExplanation": "Somma dei livelli di tutti i Digimon del gruppo"
+  },
+  "seabed": {
+    "dock": "Molo"
+  },
+  "stat": {
+    "strength": "Forza",
+    "strength-explanation": "Aumenta il danno inflitto dagli attacchi e dalle tecniche fisiche.",
+    "defense": "Difesa",
+    "defense-explanation": "Riduce il danno subito dagli attacchi e dalle tecniche fisiche.",
+    "spirit": "Spirito",
+    "spirit-explanation": "Aumenta il danno inflitto dalle tecniche magiche e riduce quello subito dalle tecniche magiche.",
+    "wisdom": "Saggezza",
+    "wisdom-explanation": "Aumenta la precisione delle tecniche magiche e la probabilità di schivarle.",
+    "speed": "Velocità",
+    "speed-explanation": "Determina l'ordine dei turni in battaglia e aumenta la probabilità di schivare attacchi e tecniche fisiche.",
+    "charisma": "Carisma",
+    "charisma-explanation": "Determina quando possono verificarsi certi eventi di gioco, come le battaglie contro altri domatori.",
+    "fire": "Fuoco",
+    "fire-explanation": "Aumenta la resistenza alle tecniche di elemento fuoco e la probabilità di colpo critico per le tecniche di quell'elemento. Allenare la resistenza al fuoco aumenta anche i PM massimi.",
+    "water": "Acqua",
+    "water-explanation": "Aumenta la resistenza alle tecniche di elemento acqua e la probabilità di colpo critico per le tecniche di quell'elemento. Allenare la resistenza all'acqua può ridurre la Difesa.",
+    "ice": "Ghiaccio",
+    "ice-explanation": "Aumenta la resistenza alle tecniche di elemento ghiaccio e la probabilità di colpo critico per le tecniche di quell'elemento. Allenare la resistenza al ghiaccio può ridurre la Velocità.",
+    "wind": "Vento",
+    "wind-explanation": "Aumenta la resistenza alle tecniche di elemento vento e la probabilità di colpo critico per le tecniche di quell'elemento. Allenare la resistenza al vento può ridurre la Forza.",
+    "thunder": "Tuono",
+    "thunder-explanation": "Aumenta la resistenza alle tecniche di elemento tuono e la probabilità di colpo critico per le tecniche di quell'elemento. Allenare la resistenza al tuono può ridurre la Saggezza.",
+    "machine": "Macchina",
+    "machine-explanation": "Aumenta la resistenza alle tecniche di elemento macchina e la probabilità di colpo critico per le tecniche di quell'elemento. Allenare la resistenza alle macchine aumenta anche i PF massimi.",
+    "dark": "Tenebre",
+    "dark-explanation": "Aumenta la resistenza alle tecniche di elemento tenebre e la probabilità di colpo critico per le tecniche di quell'elemento. Allenare la resistenza alle tenebre può ridurre lo Spirito.",
+    "none": "Nessuno"
+  },
+  "cardType": {
+    "white": "Bianco",
+    "blue": "Blu",
+    "green": "Verde",
+    "red": "Rosso",
+    "black": "Nero",
+    "brown": "Marrone",
+    "action": "Azione"
+  },
+  "card": {
+    "1002": {
+      "note": "+10 AP e PF a tutti i Digimon"
+    },
+    "1003": {
+      "note": "+30 PF a un Digimon"
+    },
+    "1004": {
+      "note": "Ottieni 1 Energia S bianca"
+    },
+    "1006": {
+      "note": "Scarta tutti i Digimon non blu"
+    },
+    "1007": {
+      "note": "Controlla 1 Digimon avversario"
+    },
+    "1008": {
+      "note": "Scarta una carta PG pescata"
+    },
+    "1010": {
+      "note": "Ottieni 1 Energia S blu"
+    },
+    "1012": {
+      "note": "+50 AP e PF a tutti i Digimon verdi"
+    },
+    "1014": {
+      "note": "Ottieni 2 Energie S verdi"
+    },
+    "1015": {
+      "note": "+20 AP e PF a un Digimon"
+    },
+    "1016": {
+      "note": "Ottieni 1 Energia S verde"
+    },
+    "1020": {
+      "note": "15 danni a tutti i Digimon"
+    },
+    "1021": {
+      "note": "30 danni a un Digimon avversario"
+    },
+    "1022": {
+      "note": "Ottieni 1 Energia S rossa"
+    },
+    "1024": {
+      "note": "Scarta tutte le carte avversarie non nere"
+    },
+    "1025": {
+      "note": "Prendi 1 carta dal mazzo"
+    },
+    "1026": {
+      "note": "Scarta 1 carta non nera"
+    },
+    "1027": {
+      "note": "Scarta 1 carta dalla mano avversaria"
+    },
+    "1028": {
+      "note": "Ottieni 1 Energia S nera"
+    },
+    "1031": {
+      "note": "Scambia AP e PF con l'avversario"
+    },
+    "1033": {
+      "note": "Scarta la mano, pesca 6 carte"
+    },
+    "1035": {
+      "note": "Rimetti nel mazzo le carte scartate"
+    },
+    "1037": {
+      "note": "Scarta 5 carte dal mazzo avversario"
+    },
+    "1039": {
+      "note": "Porta in campo un Digimon dalla mano"
+    },
+    "1040": {
+      "note": "+30 AP e PF a un Digimon marrone"
+    },
+    "1041": {
+      "note": "Pesca 2 carte dal mazzo"
+    },
+    "1042": {
+      "note": "Prendi un DG dal mazzo in mano"
+    },
+    "1043": {
+      "note": "Prendi un PG dal mazzo in mano"
+    },
+    "1044": {
+      "note": "Pesca una carta, scartane una"
+    },
+    "1045": {
+      "note": "Scarta 2 carte dal mazzo avversario"
+    },
+    "1046": {
+      "note": "30 danni a un Digimon marrone"
+    },
+    "1047": {
+      "note": "Scarta una carta PG marrone pescata"
+    },
+    "1048": {
+      "note": "Scarta 1 DG marrone dalla mano avversaria"
+    },
+    "1050": {
+      "note": "Sottrai 2 Energie S bianche"
+    },
+    "1051": {
+      "note": "Sottrai 2 Energie S blu"
+    },
+    "1052": {
+      "note": "Sottrai 2 Energie S verdi"
+    },
+    "1053": {
+      "note": "Sottrai 2 Energie S rosse"
+    },
+    "1054": {
+      "note": "Sottrai 2 Energie S nere"
+    },
+    "1056": {
+      "note": "+10 AP e -10 PF a un Digimon"
+    },
+    "1057": {
+      "note": "Scarta un DG marrone dal campo"
+    },
+    "1058": {
+      "note": "+10 PF a un Digimon"
+    },
+    "1059": {
+      "note": "+10 AP a un Digimon"
+    }
+  },
+  "handheld": {
+    "nav": {
+      "equipo": "Squadra",
+      "diario": "Diario",
+      "mapa": "Mappa",
+      "battle": "Lotta",
+      "evoluciones": "Evol.",
+      "wiki": "Wiki"
+    },
+    "status": {
+      "charisma": "CARISMA",
+      "level": "LIV"
+    },
+    "bar": {
+      "exp": "ESP",
+      "hp": "PF",
+      "mp": "PM",
+      "blast": "BLAST"
+    },
+    "party": {
+      "slotLevel": "Liv {level}",
+      "view": "Vedi {name}",
+      "viewState": "{name}: vedi stato",
+      "none": "Nessun Digimon in squadra",
+      "equipment": "Equipaggiamento",
+      "startsBattle": "Inizia battaglia"
+    },
+    "panel": {
+      "title": "Digivice",
+      "hide": "Nascondi",
+      "exit": "Esci",
+      "cancel": "Annulla",
+      "about": "Licenze"
+    },
+    "about": {
+      "title": "Licenze",
+      "free": "Software libero con licenza GNU GPL, versione 3 o successiva. Fornito senza alcuna garanzia.",
+      "based": "Basato su Digivice di Jean Carlos Heck, con il suo permesso.",
+      "source": "Codice sorgente",
+      "texts": "Testi delle licenze",
+      "back": "Indietro",
+      "failed": "Impossibile aprire questo testo."
+    },
+    "figure": {
+      "base": "Base",
+      "total": "Totale",
+      "fromEquipment": "Equip.",
+      "fromBattle": "Scontro",
+      "fromDigievolution": "Digievoluzione",
+      "digievolutionNote": "Il bonus della digievoluzione attiva si somma a parte al totale."
+    },
+    "condition": {
+      "chance": "Probabilità",
+      "cannot": {
+        "poison": "Non può avvelenarsi",
+        "paralyze": "Non può paralizzarsi",
+        "confuse": "Non può confondersi",
+        "sleep": "Non può addormentarsi",
+        "ko": "Non può andare KO",
+        "drain": "Non può essere drenato",
+        "steal": "Non si può derubare",
+        "escape": "Non si può fuggire"
+      }
+    },
+    "equipment": {
+      "noAttributes": "Non cambia attributi",
+      "equippedBy": "Equipaggiabile da",
+      "everyone": "Tutti",
+      "nobody": "Nessuno",
+      "empty": "Vuoto",
+      "wiki": "Vedi nella Wiki"
+    },
+    "partner": {
+      "state": "Stato"
+    },
+    "back": "Indietro",
+    "map": {
+      "unknown": "Mappa ignota",
+      "objective": "{name}, obiettivo attuale",
+      "seabed": "{place}",
+      "here": "Sei qui",
+      "whole": "Vedi tutta la mappa",
+      "follow": "Torna al giocatore",
+      "saving": "Salvataggio: {place}"
+    },
+    "battle": {
+      "species": "Specie: {name}",
+      "unknownEnemy": "Nemico ignoto",
+      "noEnemy": "Nessun dato sul nemico",
+      "affinities": "Elementi",
+      "noAffinity": "Nessun punto debole",
+      "details": "DETTAGLI",
+      "close": "CHIUDI",
+      "attacksOf": "Attacchi di",
+      "forms": "Forme",
+      "liveForm": "In battaglia",
+      "formStats": "Statistiche di {name}",
+      "pick": "Vedi attacchi di {name}",
+      "picked": "{name}: attacchi a schermo",
+      "grade": {
+        "veryEffective": "Molto efficace",
+        "effective": "Efficace",
+        "normal": "Normale",
+        "weak": "Poco efficace",
+        "veryWeak": "Molto debole"
+      },
+      "pop": {
+        "noElement": "Senza elemento",
+        "power": "Potenza",
+        "damage": "Danno",
+        "estimate": "stimato",
+        "damageNote": "Non conta critici né bonus.",
+        "noMp": "Ora non hai abbastanza PM.",
+        "weakPoint": "Punto debole del nemico.",
+        "resisted": "Il nemico resiste a questo elemento.",
+        "elementNote": "Fa ×{multiplier} di danno rispetto a un nemico neutro.",
+        "against": "Contro {name}"
+      },
+      "noAttacks": "Nessun attacco da mostrare",
+      "field": "Campo"
+    },
+    "cardBattle": {
+      "versus": "Battaglia contro {name}",
+      "unknownRival": "Battaglia di carte",
+      "level": "Livello {level}",
+      "charisma": "Carisma {range}",
+      "sheet": "Scheda di {name}",
+      "deck": "Mazzo rivale",
+      "noDeck": "Mazzo ignoto",
+      "prize": "Premio",
+      "noPrize": "Nessun premio",
+      "rival": "Rivale",
+      "noRival": "Rivale ignoto"
+    },
+    "seabed": {
+      "asuka": "SERVER ASUKA",
+      "amaterasu": "SERVER AMATERASU",
+      "routesOn": "ROTTE · {server}",
+      "note": {
+        "chest": "Forziere: {item}",
+        "forge": "{smith} forgia {to} con {from} e {with} per {partner}, nel gruppo e a livello {level}",
+        "deadEnd": "Ha un tunnel senza uscita"
+      },
+      "route": "ROTTA {number}",
+      "emerge": "EMERGE",
+      "walking": "Incontri a piedi",
+      "noPoints": "Questa rotta non ha punti sulla mappa"
+    },
+    "mobius": {
+      "zone": "Zona {zone}",
+      "noiseDesertS": "DRS",
+      "mirageTower": "TM",
+      "sand": "Sabbia",
+      "wrap": "Fa il giro",
+      "here": "Sei qui",
+      "north": "Nord: {area}",
+      "south": "Sud: {area}",
+      "west": "Ovest: {area}",
+      "east": "Est: {area}",
+      "map": "Mappa: {place}",
+      "hint": "Usa la mappa a sinistra per vedere le direzioni da seguire in base al tuo obiettivo."
+    },
+    "mapFilters": {
+      "title": "Filtri",
+      "exits": "Uscite",
+      "objectives": "Missione",
+      "characters": "Personaggi",
+      "role": {
+        "shop": "Negozi",
+        "service": "Servizi",
+        "battle": "Battaglie",
+        "story": "Storia",
+        "chest": "Forzieri",
+        "talk": "Dialoghi"
+      }
+    },
+    "journal": {
+      "quests": "Missioni",
+      "underWay": "In corso",
+      "available": "Disponibili",
+      "done": "Fatte",
+      "talkTo": "Parla con {name}: {place}",
+      "talkTwice": "Parla due volte con {name}: {place}",
+      "goTo": "Vai a {place}",
+      "none": {
+        "underWay": "Nessuna missione in corso",
+        "available": "Al momento nessuno ti offre una missione",
+        "done": "Non hai ancora finito nessuna missione"
+      }
+    },
+    "mission": {
+      "unknown": "Missione ignota",
+      "previousChapter": "Capitolo precedente",
+      "nextChapter": "Capitolo successivo",
+      "stepDone": "Passo fatto",
+      "stepCurrent": "Passo attuale",
+      "stepPending": "Passo in sospeso",
+      "target": "Obiettivo",
+      "nextMap": "Mappa successiva",
+      "world": "Asuka",
+      "noMap": "Nessuna mappa per questo passo",
+      "noPin": "Posizione esatta non disponibile su questa mappa.",
+      "chapterShort": "Cap."
+    },
+    "auction": {
+      "have": "Hai {bits}",
+      "bid": "OFFERTA",
+      "resale": "RIVENDITA",
+      "bidShort": "Offerta",
+      "resaleShort": "Rivendita",
+      "now": "Ora",
+      "nowAt": "Ora! Asta: {place}!",
+      "participated": "Partecipato",
+      "missed": "Persa",
+      "upcoming": "In arrivo",
+      "warning": "Avviso",
+      "notEnoughBits": "Senza {bid} all'arrivo, l'asta non inizia.",
+      "enoughBits": "Hai abbastanza {money} per offrire.",
+      "equipment": "Equipaggiamento in asta",
+      "closesWhen": {
+        "divineBarrier": "Si chiude quando interagisci con la gondola per la prima volta (passo 6) o partecipi.",
+        "hazardShield": "Si chiude quando recuperi la {item} (passo 23) o partecipi.",
+        "sniperShield": "Si chiude quando parli con {person} ({place}, passo 34) o partecipi.",
+        "dramonShield": "Si chiude quando torni con il {item} ({place}, passo 42) o partecipi.",
+        "yinYangWand": "Si chiude quando sfidi il vero {person} (passo 48) o partecipi.",
+        "hazardFang": "Si chiude quando tocchi il quadro con la lettera R ({place}, passo 86) o partecipi."
+      }
+    },
+    "evolutions": {
+      "families": "Famiglie di digievoluzione",
+      "unlocked": "Sbloccata",
+      "locked": "Bloccata",
+      "noDigimon": "Nessun Digimon in squadra",
+      "noArt": "Nessuna immagine",
+      "panel": {
+        "obtained": "Ottenuta",
+        "notObtained": "Non ottenuta",
+        "level": "Liv {level}",
+        "requirements": "Requisiti",
+        "noRequirements": "Nessun requisito",
+        "current": "Hai",
+        "met": "Soddisfatto",
+        "notMet": "Non soddisfatto",
+        "ready": "Soddisfi tutto: la ottieni a fine battaglia.",
+        "gives": "Dà in battaglia",
+        "noBonus": "Non dà attributi né elementi",
+        "follows": "Porta a"
+      }
+    },
+    "techniques": {
+      "backToTree": "Torna all'albero",
+      "level": "Liv {level} · {name}",
+      "notObtained": "Non ottenuta · {name}",
+      "next": "Segue: {names}",
+      "last": "È l'ultima della sua linea",
+      "learn": "Si impara al livello",
+      "load": "Si carica al livello",
+      "signature": "Firma",
+      "signatureAlt": "Tecnica firma",
+      "noElement": "Senza elemento",
+      "unknown": "Digievoluzione ignota"
+    },
+    "wiki": {
+      "search": "Cerca nella Wiki...",
+      "searchButton": "Cerca",
+      "categories": "Categorie",
+      "category": {
+        "enemies": "Nemici",
+        "cards": "Carte",
+        "equipment": "Equip.",
+        "items": "Oggetti",
+        "places": "Luoghi",
+        "npcs": "PNG"
+      },
+      "onThisMap": "SU QUESTA MAPPA · {name}",
+      "total": "{count} in tutto",
+      "level": "Liv {level}",
+      "boss": "Boss",
+      "resale": "Rivendita {value}",
+      "noData": "Nessun dato",
+      "noPicture": "Nessuna immagine",
+      "noResults": "Nessun risultato",
+      "typeToSearch": "Scrivi per cercare",
+      "unknown": "Nessun dato su questa scheda",
+      "guide": {
+        "seabed": "{place}"
+      },
+      "kind": {
+        "guide": "Guida",
+        "enemy": "Nemico",
+        "card": "Carta",
+        "equipment": "Equip.",
+        "item": "Oggetto",
+        "booster": "Pacco",
+        "location": "Luogo",
+        "cardShop": "Negozio",
+        "tamer": "Domatore",
+        "leader": "Capo",
+        "npc": "PNG"
+      },
+      "kindEnemy": {
+        "wild": "Nemico · Liv {level}",
+        "boss": "Boss · Liv {level}",
+        "owned": "Di {name} · Liv {level}"
+      },
+      "keyboard": {
+        "label": "Tastiera",
+        "space": "Spazio",
+        "erase": "Cancella"
+      },
+      "enemy": {
+        "dvexpGain": "GUADAGNA DVEXP",
+        "noReward": "Nessun dato sulla ricompensa",
+        "owner": "Padrone",
+        "unknownPlace": "Luogo ignoto",
+        "place": "Luogo"
+      },
+      "card": {
+        "number": "Carta {id}",
+        "color": "Colore",
+        "inBoosters": "SI TROVA NEI PACCHI",
+        "noNote": "Nessuna nota",
+        "type": "Tipo"
+      },
+      "booster": {
+        "count": "{count} carte",
+        "droppedBy": "LO DANNO SCONFIGGENDO",
+        "cards": "Carte del pacco"
+      },
+      "shop": {
+        "count": "{count} carte",
+        "keeper": "{name} gestisce il negozio",
+        "stock": "Assortimento",
+        "fromStart": "Assortimento disponibile dall'inizio",
+        "fromStep": "Assortimento disponibile dal passo {step}",
+        "untilStep": "Questo assortimento dura fino al passo {step}"
+      },
+      "equipment": {
+        "equip": "LO POSSONO EQUIPAGGIARE",
+        "equipAll": "LO POSSONO EQUIPAGGIARE · TUTTI",
+        "nobody": "Nessuno può equipaggiarlo",
+        "noAttributes": "Nessun attributo",
+        "noNote": "Nessuna descrizione"
+      },
+      "item": {
+        "inShops": "Nei negozi",
+        "sold": "In vendita",
+        "notSold": "Non in vendita",
+        "droppedBy": "LO LASCIANO",
+        "noSources": "Nessun nemico noto"
+      },
+      "npc": {
+        "need": "Serve",
+        "closed": "Non si può più sfidare",
+        "team": "La sua squadra",
+        "prize": "Premio",
+        "noPrize": "Nessun premio",
+        "folderBag": "Ti serve la {item} per sfidare i domatori.",
+        "charisma": "Carisma {range}",
+        "and": "{first} e {second}",
+        "noBattles": "Nessuna battaglia",
+        "nextMember": "Prossimo Digimon"
+      }
+    },
+    "wait": {
+      "credits": {
+        "author": "Digivice, di jeanheck",
+        "port": "Port di cricamfe"
+      },
+      "inicio": {
+        "kicker": "Primo avvio",
+        "title": "Digivice ha bisogno di un permesso",
+        "text": "Per disegnarsi sullo schermo inferiore senza togliere i comandi al gioco, Android chiede la tua autorizzazione.",
+        "step1": "Premi Apri impostazioni",
+        "step2": "Attiva Mostra sopra altre app",
+        "step3": "Torna a Digivice",
+        "note": "Per nasconderlo o uscire, tieni premuta la barra inferiore per un secondo, o lo schermo se non c'è la barra.",
+        "action": "Apri impostazioni"
+      },
+      "loading": {
+        "kicker": "Un momento",
+        "title": "Lettura del gioco",
+        "text": "Digivice sta raccogliendo i dati della tua partita. Ci vorranno solo pochi secondi."
+      },
+      "retroarchUnreachable": {
+        "kicker": "Nessuna connessione",
+        "title": "RetroArch non risponde",
+        "text": "Digivice legge il gioco tramite i comandi di rete di RetroArch.",
+        "step1": "Apri RetroArch",
+        "step2": "Impostazioni > Rete > Comandi di rete",
+        "step3": "Riavvia RetroArch"
+      },
+      "noContent": {
+        "kicker": "Nessun gioco",
+        "title": "Nessun gioco caricato",
+        "text": "RetroArch è aperto, ma senza nessun gioco. Appena carichi Digimon World 2003, Digivice si avvierà."
+      },
+      "memoryUnavailable": {
+        "kicker": "RetroArch vecchio",
+        "title": "Questa versione non legge la RAM",
+        "text": "SwanStation richiede una nightly di RetroArch del 25-10-2026 o successiva.",
+        "step1": "Installa una nightly compatibile",
+        "step2": "Ricarica il gioco"
+      },
+      "wrongGame": {
+        "kicker": "Altro gioco",
+        "title": "Non è Digimon World 2003",
+        "text": "Digivice funziona solo con la versione europea del gioco: SLES-03936.",
+        "step1": "Carica il gioco con SwanStation"
+      },
+      "waitingForSave": {
+        "kicker": "Pronto",
+        "title": "In attesa del tuo salvataggio",
+        "text": "Il gioco è aperto. Appena carichi una partita, Digivice si avvierà."
+      },
+      "memoryReadFailed": {
+        "kicker": "Lettura fallita",
+        "title": "Lettura persa",
+        "text": "RetroArch risponde, ma non fornisce la memoria del gioco. Digivice riprova da solo.",
+        "step1": "Se non cambia, riavvia RetroArch",
+        "step2": "Ricarica il gioco"
+      },
+      "stateComposeFailed": {
+        "kicker": "Dati illeggibili",
+        "title": "Impossibile leggere la tua partita",
+        "text": "Digivice ha letto la memoria, ma non è riuscito a ricostruire i dati. Riprova da solo.",
+        "step1": "Se non cambia, ricarica la partita"
+      },
+      "unknown": {
+        "kicker": "Nessun dato",
+        "title": "Digivice non riceve dati",
+        "text": "Qualcosa è andato storto nella lettura del gioco. Digivice riprova da solo."
+      }
+    },
+    "setup": {
+      "title": "Prepara Digivice",
+      "readyTitle": "Digivice pronto",
+      "intro": "Digivice crea le sue immagini dalla tua copia del gioco. Nulla esce dalla console.",
+      "checking": "Controllo del file…",
+      "waiting": "In attesa: chiudi il gioco in RetroArch",
+      "pausing": "Messa in pausa…",
+      "paused": "Preparazione in pausa",
+      "done": "Tutto pronto",
+      "pieces": {
+        "Text": "Testi del gioco",
+        "Cards": "Carte",
+        "Sprites": "Personaggi",
+        "Icons": "Oggetti",
+        "World": "Mappa del mondo",
+        "Maps": "Mappe delle zone",
+        "Models": "Modelli di scontro ed evoluzione",
+        "other": "Dati del gioco"
+      },
+      "actions": {
+        "choose": "Scegli file",
+        "chooseOther": "Scegli un altro file",
+        "pause": "Metti in pausa",
+        "resume": "Riprendi",
+        "retry": "Riprova",
+        "continue": "Continua"
+      },
+      "problems": {
+        "WrongGame": "Non è Digimon World 2003 europeo (SLES-03936). Scegli l'originale, senza patch.",
+        "NotADisc": "Questo file non si legge come immagine ISO, BIN o CHD. Scegline un altro.",
+        "InvalidChd": "Questo CHD è danneggiato o non supportato. Scegli un CHD v5 con una sola traccia dati.",
+        "Truncated": "L'immagine del gioco è incompleta. Scegli una copia completa.",
+        "FileGone": "Il file non si apre più. Sceglilo di nuovo.",
+        "LocalFile": "Il file non si legge dove si trova. Copialo nella memoria della console e scegli la copia.",
+        "NoSpace": "Spazio esaurito nella console. Libera spazio e riprova.",
+        "Interrupted": "La preparazione si è interrotta. Riprova per continuare da dove era arrivata.",
+        "Failed": "Digivice non è riuscito a finire la preparazione. Scegli di nuovo il file."
+      }
+    },
+    "place": {
+      "seabed": "Sottomarino",
+      "mobiusDesert": "Deserto",
+      "cargoTower": "la torre",
+      "undergroundPath": "il sotterraneo",
+      "biosSwamp": "la palude",
+      "masterRoom": "la sala"
+    },
+    "digimon": {
+      "unknown": "Digimon #{id}",
+      "variant": {
+        "gold": "Oro",
+        "white": "Bianco",
+        "pink": "Rosa",
+        "green": "Verde",
+        "brown": "Marrone",
+        "red": "Rosso",
+        "black": "Nero",
+        "blue": "Blu",
+        "silver": "Argento",
+        "aqua": "Acquamarina",
+        "purple": "Viola"
+      }
+    },
+    "duelIsland": {
+      "nth": "{n}º {name}"
+    },
+    "card": {
+      "summon": "Porta {name} in campo",
+      "summonMany": "Porta {count} {name} in campo"
+    },
+    "word": {
+      "place": "Luogo",
+      "digimon": "Digimon",
+      "person": "Qualcuno",
+      "item": "Oggetto",
+      "tech": "Tecnica",
+      "card": "Carta"
+    },
+    "money": {
+      "unit": "bit",
+      "amount": "{n} {unit}"
+    }
+  }
+}

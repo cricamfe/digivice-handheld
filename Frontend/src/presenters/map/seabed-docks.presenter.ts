@@ -8,6 +8,14 @@ export class SeabedDocksPresenter {
     return ImageCatalog.getLocationImageUrl("Asuka");
   }
 
+  /**
+   * The second server's world map: the game's own picture of it (`STWMP1`), laid out like the Asuka one, so the points
+   * measured on `Asuka.webp` fall on the same places.
+   */
+  public static getAmaterasuImageUrl(): string | null {
+    return ImageCatalog.getLocationImageUrl("Amaterasu");
+  }
+
   public static getRoutes(): SeabedDirectionViewModel[] {
     const seabedDirectionsTable = SeabedDirectionsRepository.getAll();
 

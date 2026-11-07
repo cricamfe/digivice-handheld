@@ -1,0 +1,10 @@
+{
+  "auction": {
+    "cardIdleTitle": "Sin subasta ahora",
+    "cardIdleSubtitle": "Quizá más tarde...",
+    "cardActiveTitle": "Hay subasta",
+    "cardActiveSubtitle": "Pulsa para ver los detalles",
+    "modalTitle": "Subastas",
+    "historySubtitle": "Historial"
+  }
+}

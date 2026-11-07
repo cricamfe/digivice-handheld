@@ -5,7 +5,7 @@
       "id": "partyLevel",
       "type": "partyLevelRange",
       "min": 60,
-      "max": 90
+      "max": 89
     },
     {
       "id": "submarimon"

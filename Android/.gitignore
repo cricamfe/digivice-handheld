@@ -1,0 +1,14 @@
+.gradle/
+build/
+*/build/
+local.properties
+.idea/
+*.iml
+.kotlin/
+captures/
+.cxx/
+
+# Release signing: the key and its passwords stay on the machine that signs.
+keystore.properties
+*.jks
+*.keystore

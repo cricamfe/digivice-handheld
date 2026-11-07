@@ -1,0 +1,3 @@
+# Game tables: Tools/FieldData and Tools/Scripts rewrite them with JSON.stringify(value, null, 2) / json.dumps(indent=2),
+# a format Prettier would undo on every run.
+src/database/

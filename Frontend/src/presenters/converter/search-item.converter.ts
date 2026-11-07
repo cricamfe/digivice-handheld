@@ -2,6 +2,7 @@ import { NpcBattleOpponentHelper } from "@/presenters/helper/npc-battle-opponent
 import { EnemyOwnerRepository } from "@/repositories/enemy-owner.repository";
 import type { EnemyRaw } from "@/repositories/tables/raws/enemy/enemy.raw";
 import type { SearchItemViewModel } from "@/viewmodels/search/search-item.viewmodel";
+import { EnemyRepository } from "@/repositories/enemy.repository";
 
 export class SearchItemConverter {
   public static convertEnemy(
@@ -11,7 +12,7 @@ export class SearchItemConverter {
   ): SearchItemViewModel {
     const searchItem: SearchItemViewModel = {
       id,
-      name: enemyRaw.name,
+      name: EnemyRepository.getName(enemyRaw),
       kind: "enemy",
     };
     const levelLabel = String(enemyRaw.level);

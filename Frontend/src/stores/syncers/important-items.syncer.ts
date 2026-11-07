@@ -2,7 +2,10 @@ import type { ImportantItems } from "@/models";
 import type { ImportantItemsDTO } from "@/events/dto/important-items.dto";
 
 export class ImportantItemsSyncer {
-  public static sync(previousImportantItems: ImportantItems, newImportantItemsDto: ImportantItemsDTO): void {
+  public static sync(
+    previousImportantItems: ImportantItems,
+    newImportantItemsDto: ImportantItemsDTO,
+  ): void {
     if (newImportantItemsDto.treeBoots !== undefined) {
       previousImportantItems.treeBoots = newImportantItemsDto.treeBoots;
     }

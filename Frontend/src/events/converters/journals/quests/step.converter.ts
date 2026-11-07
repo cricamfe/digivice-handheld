@@ -8,7 +8,9 @@ export class StepConverter {
     return {
       number: stepDto.number,
       isDone: stepDto.isDone,
-      requisites: stepDto.requisites.map((requisiteDto) => RequisiteConverter.convert(requisiteDto)),
+      requisites: stepDto.requisites.map((requisiteDto) =>
+        RequisiteConverter.convert(requisiteDto),
+      ),
     };
   }
 }

@@ -82,15 +82,8 @@ export class NpcBattleOpponentHelper {
       return null;
     }
 
-    if (opponent.source === "npc") {
-      return ImageCatalog.getNpcImageUrl(opponent.raw.imageName ?? null);
-    }
-
-    if (opponent.source === "duelIsland") {
-      return ImageCatalog.getDuelIslandImageUrl(opponent.raw.imageName ?? null);
-    }
-
-    return ImageCatalog.getTamerImageUrl(opponent.raw.imageName ?? null);
+    // Tamers, NPCs and the Duel Island rivals are drawn as their character of the field (`fieldActor`).
+    return ImageCatalog.getFieldActorImageUrl(opponent.raw.fieldActor);
   }
 
   public static getNpcIdByCardBattleId(cardBattleId: number | null): string | null {

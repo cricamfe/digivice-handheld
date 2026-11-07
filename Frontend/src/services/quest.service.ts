@@ -41,10 +41,7 @@ export class QuestService {
     return true;
   }
 
-  public static isQuestCompleted(
-    quest: Quest | null | undefined,
-    questRaw: QuestRaw,
-  ): boolean {
+  public static isQuestCompleted(quest: Quest | null | undefined, questRaw: QuestRaw): boolean {
     if (quest === null || quest === undefined) {
       return false;
     }

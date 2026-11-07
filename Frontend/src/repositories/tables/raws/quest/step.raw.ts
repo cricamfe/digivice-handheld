@@ -5,6 +5,7 @@ import type { RequisiteRaw } from "./requisite.raw";
 export interface StepRaw {
   requisites: RequisiteRaw[];
   location: string;
-  coordinates: CoordinatesRaw;
+  /** Missing when the game files have no picture of the place. */
+  coordinates?: CoordinatesRaw;
   innerLocation?: InnerLocationRaw[];
 }

@@ -1,4 +1,7 @@
-import type { SearchItemKind, SearchItemViewModel } from "@/viewmodels/search/search-item.viewmodel";
+import type {
+  SearchItemKind,
+  SearchItemViewModel,
+} from "@/viewmodels/search/search-item.viewmodel";
 
 const WildEnemyContextKey = "enemy.searchContext.wild";
 

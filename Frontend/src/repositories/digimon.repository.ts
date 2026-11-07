@@ -2,6 +2,7 @@ import DigimonJson from "@/database/digimon.json";
 import type { DigimonTable } from "@/repositories/tables/digimon/digimon.table";
 import type { DigimonDigievolutionRaw } from "./tables/raws/digimon/digimon-digievolution.raw";
 import type { DigimonDigievolutionRequirementRaw } from "./tables/raws/digimon/digimon-digievolution-requirement.raw";
+import { digimonName } from "@/handheld/digimon-names";
 
 export class DigimonRepository {
   private static readonly digimonTable = DigimonJson as DigimonTable;
@@ -9,8 +10,11 @@ export class DigimonRepository {
   public static getRequiredExperienceForLevel(id: number, level: number): number {
     return this.digimonTable[id]!.experience[String(level)]!;
   }
+  public static getIds(): string[] {
+    return Object.keys(this.digimonTable);
+  }
   public static getNameById(id: number): string {
-    return this.digimonTable[id]!.name;
+    return digimonName(this.digimonTable[id]!.nameId);
   }
   public static getDigievolutionsById(id: number): DigimonDigievolutionRaw {
     return this.digimonTable[id]!.digievolutions;

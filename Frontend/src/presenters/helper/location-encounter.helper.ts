@@ -9,10 +9,7 @@ export class LocationEncounterHelper {
   private static readonly TreeBootsQuestId = "treeBoots";
 
   public static isAsukaSewersSafeZone(locationId: string, previousMapId: string): boolean {
-    return (
-      locationId === MapId.asukaSewers &&
-      previousMapId === MapId.undergroundPath
-    );
+    return locationId === MapId.asukaSewers && previousMapId === MapId.undergroundPath;
   }
 
   public static resolveWalkingIds(

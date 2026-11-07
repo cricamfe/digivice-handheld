@@ -1,0 +1,1938 @@
+[
+  {
+    "type": "InitialState",
+    "payload": {
+      "player": {
+        "bits": 45846,
+        "mapId": "021A",
+        "previousMapId": "1000",
+        "seabedRoute": null,
+        "mapVariant": null,
+        "positionX": 519,
+        "positionY": 629
+      },
+      "importantItems": {
+        "treeBoots": true,
+        "fishingPole": true,
+        "asukaTrophy": false,
+        "sunTrophy": false
+      },
+      "party": {
+        "slots": [
+          {
+            "index": 1,
+            "digimonId": 0,
+            "digimon": {
+              "level": 25,
+              "tp": 10,
+              "blast": 358,
+              "experience": 14035,
+              "hp": {
+                "current": 1862,
+                "max": 2079
+              },
+              "mp": {
+                "current": 1230,
+                "max": 1272
+              },
+              "inBattle": {
+                "formId": 389,
+                "condition": 0,
+                "strength": 0,
+                "defense": 0,
+                "speed": 0,
+                "hp": {
+                  "current": 1862,
+                  "max": 2079
+                },
+                "mp": {
+                  "current": 1230,
+                  "max": 1272
+                }
+              },
+              "attributes": {
+                "strength": 367,
+                "defense": 385,
+                "spirit": 201,
+                "wisdom": 254,
+                "speed": 504,
+                "charisma": 172
+              },
+              "elements": {
+                "fire": 104,
+                "water": 156,
+                "ice": 98,
+                "wind": 101,
+                "thunder": 149,
+                "machine": 131,
+                "dark": 129
+              },
+              "equipments": {
+                "head": 219,
+                "body": 253,
+                "right": 178,
+                "left": 178,
+                "accessory1": 314,
+                "accessory2": 314
+              },
+              "digievolutions": [
+                {
+                  "index": 1,
+                  "digievolutionId": 386,
+                  "digievolution": {
+                    "level": 99,
+                    "dvexp": 985
+                  }
+                },
+                {
+                  "index": 2,
+                  "digievolutionId": 5,
+                  "digievolution": {
+                    "level": 1,
+                    "dvexp": 0
+                  }
+                },
+                {
+                  "index": 3,
+                  "digievolutionId": 389,
+                  "digievolution": {
+                    "level": 18,
+                    "dvexp": 176
+                  }
+                }
+              ],
+              "activeDigievolutionId": 389,
+              "storedDigievolutions": [
+                {
+                  "digievolutionId": 386,
+                  "level": 99
+                },
+                {
+                  "digievolutionId": 5,
+                  "level": 1
+                },
+                {
+                  "digievolutionId": 389,
+                  "level": 18
+                }
+              ]
+            }
+          },
+          {
+            "index": 2,
+            "digimonId": 7,
+            "digimon": {
+              "level": 20,
+              "tp": 10,
+              "blast": 0,
+              "experience": 8562,
+              "hp": {
+                "current": 1206,
+                "max": 1206
+              },
+              "mp": {
+                "current": 1508,
+                "max": 1508
+              },
+              "inBattle": {
+                "formId": 31,
+                "condition": 0,
+                "strength": 0,
+                "defense": 0,
+                "speed": 0,
+                "hp": {
+                  "current": 1206,
+                  "max": 1206
+                },
+                "mp": {
+                  "current": 1508,
+                  "max": 1508
+                }
+              },
+              "attributes": {
+                "strength": 209,
+                "defense": 245,
+                "spirit": 417,
+                "wisdom": 264,
+                "speed": 277,
+                "charisma": 143
+              },
+              "elements": {
+                "fire": 94,
+                "water": 146,
+                "ice": 121,
+                "wind": 142,
+                "thunder": 73,
+                "machine": 95,
+                "dark": 150
+              },
+              "equipments": {
+                "head": 219,
+                "body": 253,
+                "right": 134,
+                "left": 134,
+                "accessory1": null,
+                "accessory2": null
+              },
+              "digievolutions": [
+                {
+                  "index": 1,
+                  "digievolutionId": 20,
+                  "digievolution": {
+                    "level": 47,
+                    "dvexp": 464
+                  }
+                },
+                {
+                  "index": 2,
+                  "digievolutionId": 56,
+                  "digievolution": {
+                    "level": 58,
+                    "dvexp": 574
+                  }
+                },
+                {
+                  "index": 3,
+                  "digievolutionId": 234,
+                  "digievolution": {
+                    "level": 1,
+                    "dvexp": 0
+                  }
+                }
+              ],
+              "activeDigievolutionId": 56,
+              "storedDigievolutions": [
+                {
+                  "digievolutionId": 20,
+                  "level": 47
+                },
+                {
+                  "digievolutionId": 56,
+                  "level": 58
+                },
+                {
+                  "digievolutionId": 234,
+                  "level": 1
+                },
+                {
+                  "digievolutionId": 211,
+                  "level": 1
+                }
+              ]
+            }
+          },
+          {
+            "index": 3,
+            "digimonId": 6,
+            "digimon": {
+              "level": 20,
+              "tp": 5,
+              "blast": 0,
+              "experience": 6466,
+              "hp": {
+                "current": 1390,
+                "max": 1390
+              },
+              "mp": {
+                "current": 1443,
+                "max": 1443
+              },
+              "inBattle": {
+                "formId": 373,
+                "condition": 0,
+                "strength": 0,
+                "defense": 0,
+                "speed": 0,
+                "hp": {
+                  "current": 1390,
+                  "max": 1390
+                },
+                "mp": {
+                  "current": 1443,
+                  "max": 1443
+                }
+              },
+              "attributes": {
+                "strength": 195,
+                "defense": 306,
+                "spirit": 339,
+                "wisdom": 228,
+                "speed": 368,
+                "charisma": 174
+              },
+              "elements": {
+                "fire": 119,
+                "water": 127,
+                "ice": 143,
+                "wind": 92,
+                "thunder": 155,
+                "machine": 72,
+                "dark": 122
+              },
+              "equipments": {
+                "head": 219,
+                "body": 253,
+                "right": 185,
+                "left": 185,
+                "accessory1": null,
+                "accessory2": null
+              },
+              "digievolutions": [
+                {
+                  "index": 1,
+                  "digievolutionId": 260,
+                  "digievolution": {
+                    "level": 61,
+                    "dvexp": 607
+                  }
+                },
+                {
+                  "index": 2,
+                  "digievolutionId": 19,
+                  "digievolution": {
+                    "level": 1,
+                    "dvexp": 0
+                  }
+                },
+                {
+                  "index": 3,
+                  "digievolutionId": 375,
+                  "digievolution": {
+                    "level": 1,
+                    "dvexp": 0
+                  }
+                }
+              ],
+              "activeDigievolutionId": 19,
+              "storedDigievolutions": [
+                {
+                  "digievolutionId": 374,
+                  "level": 20
+                },
+                {
+                  "digievolutionId": 260,
+                  "level": 61
+                },
+                {
+                  "digievolutionId": 367,
+                  "level": 1
+                },
+                {
+                  "digievolutionId": 19,
+                  "level": 1
+                },
+                {
+                  "digievolutionId": 375,
+                  "level": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "digimonBattle": {
+        "field": 0,
+        "fieldAmount": 0,
+        "activeFighter": 0,
+        "stage": 12,
+        "enemy": {
+          "id": 134,
+          "groupId": 192,
+          "condition": 0,
+          "strength": 0,
+          "defense": 0,
+          "speed": 0,
+          "hp": {
+            "current": 0,
+            "max": 816
+          }
+        }
+      },
+      "cardBattle": {
+        "id": null
+      },
+      "auctions": {
+        "divineBarrier": true,
+        "hazardShield": true,
+        "sniperShield": false,
+        "dramonShield": true,
+        "yinYangWand": false,
+        "hazardFang": false
+      },
+      "npcs": {
+        "genji": {
+          "battles": [
+            {
+              "id": "first",
+              "won": true
+            },
+            {
+              "id": "second",
+              "won": false
+            }
+          ]
+        },
+        "natsumi": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "catherine": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "lucia": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "robert": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "akiba": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "chris": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "tomomi": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "mitch": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "bob": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "andy": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "george": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "meiLin": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "jessica": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "gordon": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "alice": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "nakano": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "seiryuLeader": {
+          "battles": [
+            {
+              "id": "first",
+              "won": true
+            }
+          ]
+        },
+        "keith": {
+          "battles": [
+            {
+              "id": "first",
+              "won": true
+            }
+          ]
+        },
+        "suzakuLeader": {
+          "battles": [
+            {
+              "id": "first",
+              "won": true
+            }
+          ]
+        },
+        "fakeByakkoLeader": {
+          "battles": [
+            {
+              "id": "first",
+              "won": true
+            }
+          ]
+        },
+        "byakkoLeader": {
+          "battles": [
+            {
+              "id": "first",
+              "won": true
+            }
+          ]
+        },
+        "aoaAttacker": {
+          "battles": [
+            {
+              "id": "first",
+              "won": true
+            }
+          ]
+        },
+        "optionalTrooper1AdminCenterB1F": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "optionalTrooper2AdminCenterB1F": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "optionalTrooperAdminFloor1": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "optionalTrooper1AdminFloor2": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "optionalSoldier1AdminFloor2": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        },
+        "optionalTrooper2AdminFloor2": {
+          "battles": [
+            {
+              "id": "first",
+              "won": false
+            }
+          ]
+        }
+      },
+      "journal": {
+        "mainQuest": {
+          "id": "mainQuest",
+          "requisites": [],
+          "steps": [
+            {
+              "number": 1,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 2,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 3,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 4,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 5,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 6,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 7,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 8,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 9,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 10,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 11,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 12,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 13,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 14,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 15,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 16,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 17,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 18,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 19,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 20,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 21,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 22,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 23,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 24,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 25,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 26,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 27,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 28,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 29,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 30,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 31,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 32,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 33,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 34,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 35,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 36,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 37,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 38,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 39,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 40,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 41,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 42,
+              "isDone": true,
+              "requisites": [
+                {
+                  "id": "tntBall",
+                  "isDone": true
+                }
+              ]
+            },
+            {
+              "number": 43,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 44,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 45,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 46,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 47,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 48,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 49,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 50,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 51,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 52,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 53,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 54,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 55,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 56,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 57,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 58,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 59,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 60,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 61,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 62,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 63,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 64,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 65,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 66,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 67,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 68,
+              "isDone": true,
+              "requisites": []
+            },
+            {
+              "number": 69,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 70,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 71,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 72,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 73,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 74,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 75,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 76,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 77,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 78,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 79,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 80,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 81,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 82,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 83,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 84,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 85,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 86,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 87,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 88,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 89,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 90,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 91,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 92,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 93,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 94,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 95,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 96,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 97,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 98,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 99,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 100,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 101,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 102,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 103,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 104,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 105,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 106,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 107,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 108,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 109,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 110,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 111,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 112,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 113,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 114,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 115,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 116,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 117,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 118,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 119,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 120,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 121,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 122,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 123,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 124,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 125,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 126,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 127,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 128,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 129,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 130,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 131,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 132,
+              "isDone": false,
+              "requisites": []
+            },
+            {
+              "number": 133,
+              "isDone": false,
+              "requisites": []
+            }
+          ]
+        },
+        "sideQuests": [
+          {
+            "id": "digimonOnline",
+            "requisites": [],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 4,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 5,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 6,
+                "isDone": false,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "fishingPole",
+            "requisites": [
+              {
+                "id": "folderBag",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "bambooSpear",
+                    "isDone": false
+                  },
+                  {
+                    "id": "spiderWeb",
+                    "isDone": true
+                  },
+                  {
+                    "id": "redSnapper",
+                    "isDone": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "folderBag",
+            "requisites": [],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "treeBoots",
+            "requisites": [
+              {
+                "id": "folderBag",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 4,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 5,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 6,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 7,
+                "isDone": true,
+                "requisites": []
+              }
+            ]
+          }
+        ],
+        "legendaryWeapons": [
+          {
+            "id": "eternally",
+            "requisites": [],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "invincible",
+            "requisites": [
+              {
+                "id": "seiryuLeader",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "muramasa",
+            "requisites": [
+              {
+                "id": "smellHerb",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "punishment",
+            "requisites": [
+              {
+                "id": "numemon",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "superNova",
+            "requisites": [
+              {
+                "id": "submarimon",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              }
+            ]
+          }
+        ],
+        "driAgents": [
+          {
+            "id": "driAgentAgumon",
+            "requisites": [
+              {
+                "id": "seiryuLeader",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "agumonDDNA",
+                    "isDone": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "driAgentGuilmon",
+            "requisites": [
+              {
+                "id": "seiryuLeader",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "guilmonDDNA",
+                    "isDone": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "driAgentKotemon",
+            "requisites": [
+              {
+                "id": "submarimon",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "kotemonDDNA",
+                    "isDone": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "driAgentKumamon",
+            "requisites": [
+              {
+                "id": "submarimon",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "kumamonDDNA",
+                    "isDone": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "driAgentMonmon",
+            "requisites": [
+              {
+                "id": "submarimon",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": true,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "monmonDDNA",
+                    "isDone": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "driAgentPatamon",
+            "requisites": [
+              {
+                "id": "submarimon",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "patamonDDNA",
+                    "isDone": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "driAgentRenamon",
+            "requisites": [
+              {
+                "id": "submarimon",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": true,
+                "requisites": [
+                  {
+                    "id": "renamonDDNA",
+                    "isDone": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "driAgentVeemon",
+            "requisites": [
+              {
+                "id": "byakkoLeader",
+                "isDone": true
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": false,
+                "requisites": [
+                  {
+                    "id": "veemonDDNA",
+                    "isDone": false
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "duelIsland": [
+          {
+            "id": "amaterasuRematch",
+            "requisites": [
+              {
+                "id": "amaterasuTrophy",
+                "isDone": false
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 4,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 5,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 6,
+                "isDone": false,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "amaterasuTrophy",
+            "requisites": [],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 4,
+                "isDone": false,
+                "requisites": [
+                  {
+                    "id": "etemonMike",
+                    "isDone": false
+                  }
+                ]
+              },
+              {
+                "number": 5,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 6,
+                "isDone": false,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "asukaRematch",
+            "requisites": [
+              {
+                "id": "asukaTrophy",
+                "isDone": false
+              }
+            ],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 4,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 5,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 6,
+                "isDone": false,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "asukaTrophy",
+            "requisites": [],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 4,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 5,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 6,
+                "isDone": false,
+                "requisites": []
+              }
+            ]
+          },
+          {
+            "id": "cardKing",
+            "requisites": [],
+            "steps": [
+              {
+                "number": 1,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 2,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 3,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 4,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 5,
+                "isDone": false,
+                "requisites": []
+              },
+              {
+                "number": 6,
+                "isDone": false,
+                "requisites": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,3 +1,6 @@
 {
-    "Field": "0x000A4530"
+    "Field": "0x000A4530",
+    "FieldAmount": "0x000A4532",
+    "ActiveFighter": "0x000A4468",
+    "Stage": "0x00042B28"
 }

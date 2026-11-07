@@ -1,0 +1,367 @@
+{
+  "folderBag": {
+    "availableFromMainStep": 0,
+    "until": null,
+    "otherConditions": "Needs GAME.progress >= STORY_GENJI_BEATEN (0x04), which the tutorial sets before main step 1 can be done. Not offered at progress 0x27-0x28 (steps 122 to 124, the Divermon are Oinkmon) and unreachable on the Gunslinger; offered again after step 133 by a Divermon in the Cargo Tower (0x27F).",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "Divermon", "map": "0211" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/asuka_city/wstag270.c:1106",
+      "src/field/stages/asuka_city/wstag270.c:1150",
+      "src/field/stages/asuka_city/wstag270.c:863",
+      "src/field/stages/asuka_city/wstag270.c:1223",
+      "src/field/stages/asuka_city/wstag270.c:257",
+      "src/field/stages/asuka_city/wstag270.c:1112",
+      "src/field/stages/amaterasu_city/wstag934.c:113",
+      "src/field/stages/central_sector/wstag200.c:1000",
+      "src/field/stages/asuka_city/wstag235.c:347",
+      "src/field/stages/asuka_city/wstag237.c:107",
+      "src/field/stages/central_sector/wstag202.c:1027"
+    ]
+  },
+  "fishingPole": {
+    "availableFromMainStep": 0,
+    "until": 122,
+    "otherConditions": "Own the Folder Bag; not yet hold all three of Bamboo Spear, Spider Web and Red Snapper (with all three the talk gives the pole and this step's flag is never set). Takes two talks: the first only introduces him. After step 133 the Shell Beach copy (WSTAG942) gives the pole without setting this flag.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "Tai Kong Wang", "map": "021F" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/central_sector/wstag340.c:286",
+      "src/field/stages/central_sector/wstag340.c:291",
+      "src/field/stages/central_sector/wstag340.c:203",
+      "src/field/stages/central_sector/wstag340.c:205",
+      "src/field/stages/central_sector/wstag340.c:211",
+      "src/field/stages/central_sector/wstag205.c:792",
+      "src/field/stages/central_sector/wstag330.c:938",
+      "src/field/stages/central_sector/wstag942.c:74"
+    ]
+  },
+  "treeBoots": {
+    "availableFromMainStep": 0,
+    "until": 125,
+    "otherConditions": "Own the Folder Bag. Not started by talking: a walk-in trigger beside Soccer Kid Hide in Plug Cape (0220) plays the event once the bag is held; talking to him without it only gives a hint about the Asuka Inn. After step 133 the Plug Cape copy (WSTAG943) gives the boots without setting this flag.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": null,
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/central_sector/wstag345.c:458",
+      "src/field/stages/central_sector/wstag345.c:14",
+      "src/field/stages/central_sector/wstag345.c:63",
+      "src/field/stages/central_sector/wstag345.c:465",
+      "src/field/stages/central_sector/wstag345.c:265",
+      "src/field/stages/central_sector/wstag330.c:939",
+      "src/field/stages/central_sector/wstag943.c:72",
+      "src/field/stages/amaterasu_city/wstag311.c:1204",
+      "src/field/stages/spy_satellite/wstag810.c:698"
+    ]
+  },
+  "digimonOnline": {
+    "availableFromMainStep": 133,
+    "until": null,
+    "otherConditions": "Not started by talking: entering the Login Room (0276) in the extra chapter plays event 1600 with the Tour Leader by itself.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": null,
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/amaterasu_city/wstag925.c:20",
+      "src/field/stages/amaterasu_city/wstag925.c:40",
+      "src/field/stages/amaterasu_city/wstag925.c:212",
+      "src/field/stages/amaterasu_city/wstag923.c:248",
+      "src/field/stages/kusanagi_city/wstag780.c:626",
+      "src/field/field_mode/state.c:26",
+      "src/field/field_mode/data/fieldstg.c:2977"
+    ]
+  },
+  "eternally": {
+    "availableFromMainStep": 0,
+    "until": null,
+    "otherConditions": "A strong fight, no story gate. Pharaohmon is on the map at progress 0x04, 0x05-0x0A, 0x0C, 0x0E-0x12, 0x14-0x16, 0x18-0x28 (absent at 0x0B, 0x0D, 0x13, 0x17, and once on the Gunslinger). After step 133 only the Circuit Board chest (0x2EC, the Alternatives mark) remains, and it needs neither the Old Wand nor a later form held.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "Pharaohmon", "map": "0226" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag375.c:589",
+      "src/field/stages/east_sector/wstag375.c:588",
+      "src/field/stages/east_sector/wstag375.c:400",
+      "src/field/stages/east_sector/wstag375.c:525",
+      "src/field/stages/underground/wstag972.c:182",
+      "src/field/stages/underground/wstag972.c:1070"
+    ]
+  },
+  "invincible": {
+    "availableFromMainStep": 2,
+    "until": null,
+    "otherConditions": "The same talk marks main step 3, so it cannot be missed. Before step 2 MasterTyranno only says he is too hungry to fight.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "MasterTyranno", "map": "022B" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag405.c:376",
+      "src/field/stages/east_sector/wstag405.c:278",
+      "src/field/stages/east_sector/wstag405.c:279",
+      "src/field/stages/east_sector/wstag405.c:282",
+      "src/field/stages/east_sector/wstag375.c:404"
+    ]
+  },
+  "muramasa": {
+    "availableFromMainStep": 25,
+    "until": null,
+    "otherConditions": "No other condition. Zanbamon is absent at progress 0x0B, 0x0D, 0x13, 0x17, and once on the Gunslinger. From progress 0x1A the Jungle Shrine door leads to map 0244 instead of 0243, and he stands there. After step 133 only the Circuit Board chest (0x2EC, the Alternatives mark) remains, and it needs neither the Rusty Katana nor a later form held.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "Zanbamon", "map": "0243" },
+    "verdict": "inferred",
+    "evidence": [
+      "src/field/stages/south_sector/wstag535.c:286",
+      "src/field/stages/south_sector/wstag535.c:287",
+      "src/field/stages/south_sector/wstag535.c:211",
+      "src/field/stages/south_sector/wstag480.c:439",
+      "src/field/stages/south_sector/wstag480.c:431",
+      "src/field/stages/south_sector/wstag480.c:440",
+      "src/field/stages/south_sector/wstag480.c:687",
+      "src/field/stages/south_sector/wstag530.c:177",
+      "src/field/stages/south_sector/wstag530.c:45",
+      "src/field/stages/south_sector/wstag537.c:602",
+      "src/field/stages/underground/wstag972.c:1060"
+    ]
+  },
+  "punishment": {
+    "availableFromMainStep": 59,
+    "until": null,
+    "otherConditions": "He fights only at progress 0x11, but the story cannot pass 0x11 without this fight (its event sets main step 60), so it cannot be missed.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "HiAndromon", "map": "0252" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/west_sector/wstag605.c:244",
+      "src/field/stages/west_sector/wstag605.c:191",
+      "src/field/stages/west_sector/wstag605.c:192",
+      "src/field/stages/west_sector/wstag580.c:82",
+      "src/field/stages/west_sector/wstag580.c:83"
+    ]
+  },
+  "superNova": {
+    "availableFromMainStep": 43,
+    "until": 125,
+    "otherConditions": "The script itself has no story gate on Datamon. The Control Room door is in a part of the Asuka Sewers the Underground Path door does not connect to; the way in is the Seabed warp, open from STORY_DE_SINCERITY. Requisite submarimon is step 43.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "Datamon", "map": "021C" },
+    "verdict": "inferred",
+    "evidence": [
+      "src/field/stages/asuka_city/wstag325.c:347",
+      "src/field/stages/asuka_city/wstag325.c:288",
+      "src/field/stages/asuka_city/wstag320.c:477",
+      "src/field/stages/asuka_city/wstag320.c:478",
+      "src/field/stages/asuka_city/wstag320.c:476",
+      "src/field/stages/asuka_city/wstag315.c:278",
+      "src/field/stages/asuka_city/wstag237.c:108",
+      "src/field/stages/underground/wstag825.c:48",
+      "src/field/stages/central_sector/wstag205.c:793",
+      "src/field/stages/south_sector/wstag460.c:437"
+    ]
+  },
+  "driAgentAgumon": {
+    "availableFromMainStep": 4,
+    "until": 122,
+    "otherConditions": "Party level total 30 to 59, on the second talk (the first only introduces him). The app's range 30-45 is narrower than the game's. Requisite seiryuLeader is the right story point.",
+    "coveredByRequisites": false,
+    "startsByTalkingTo": { "name": "DRI Johann", "map": "022B" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag405.c:362",
+      "src/field/stages/east_sector/wstag405.c:224",
+      "src/field/stages/east_sector/wstag405.c:239",
+      "src/field/stages/east_sector/wstag405.c:290",
+      "src/field/stages/east_sector/wstag420.c:30",
+      "src/field/stages/east_sector/wstag420.c:41",
+      "include/engine/story.h:1941"
+    ]
+  },
+  "driAgentGuilmon": {
+    "availableFromMainStep": 4,
+    "until": 122,
+    "otherConditions": "Party level total 30 to 59, on the second talk (the first only introduces him). The app's range 30-45 is narrower than the game's. Requisite seiryuLeader is the right story point.",
+    "coveredByRequisites": false,
+    "startsByTalkingTo": { "name": "DRI Jimmy", "map": "022E" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag420.c:780",
+      "src/field/stages/east_sector/wstag420.c:219",
+      "src/field/stages/east_sector/wstag420.c:234",
+      "src/field/stages/east_sector/wstag420.c:30",
+      "src/field/stages/east_sector/wstag420.c:41"
+    ]
+  },
+  "driAgentPatamon": {
+    "availableFromMainStep": 36,
+    "until": 122,
+    "otherConditions": "Party level total 45 to 74, on the second talk (the first only introduces him). The app is off on both: requisite submarimon (step 43) is later than the game's point, and its range 45-60 is narrower.",
+    "coveredByRequisites": false,
+    "startsByTalkingTo": { "name": "DRI Kazuki", "map": "021D" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/central_sector/wstag330.c:629",
+      "src/field/stages/central_sector/wstag330.c:155",
+      "src/field/stages/asuka_city/wstag305.c:88",
+      "src/field/stages/asuka_city/wstag305.c:36",
+      "src/field/stages/asuka_city/wstag212.c:143",
+      "src/field/stages/asuka_city/wstag212.c:187"
+    ]
+  },
+  "driAgentRenamon": {
+    "availableFromMainStep": 36,
+    "until": 122,
+    "otherConditions": "Party level total 45 to 74, on the second talk (the first only introduces him). The app is off on both: requisite submarimon (step 43) is later than the game's point, and its range 45-60 is narrower.",
+    "coveredByRequisites": false,
+    "startsByTalkingTo": { "name": "DRI Michael", "map": "021D" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/central_sector/wstag330.c:641",
+      "src/field/stages/central_sector/wstag330.c:209",
+      "src/field/stages/asuka_city/wstag305.c:88",
+      "src/field/stages/asuka_city/wstag212.c:143",
+      "src/field/stages/asuka_city/wstag212.c:187"
+    ]
+  },
+  "driAgentKotemon": {
+    "availableFromMainStep": 43,
+    "until": 122,
+    "otherConditions": "Party level total 60 to 89, on the second talk (the first only introduces him); the app's 60-90 is right but for exactly 90. He appears only on the first screen of Mobius Desert (PLACE 1, PLACE_ARG 1).",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "DRI Ken", "map": "0258" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/west_sector/wstag635.c:318",
+      "src/field/stages/west_sector/wstag635.c:202",
+      "src/field/stages/west_sector/wstag630.c:326",
+      "src/field/stages/south_sector/wstag460.c:437"
+    ]
+  },
+  "driAgentKumamon": {
+    "availableFromMainStep": 43,
+    "until": 122,
+    "otherConditions": "Party level total 60 to 89, on the second talk (the first only introduces him); the app's 60-90 is right but for exactly 90. He appears only at one spot of the Mobius Desert loop (PLACE 1, PLACE_ARG 4).",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "DRI Yuji", "map": "0258" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/west_sector/wstag635.c:334",
+      "src/field/stages/west_sector/wstag635.c:229",
+      "src/field/stages/west_sector/wstag630.c:326",
+      "src/field/stages/south_sector/wstag460.c:437"
+    ]
+  },
+  "driAgentMonmon": {
+    "availableFromMainStep": 43,
+    "until": 122,
+    "otherConditions": "Party level total 60 to 89, on the second talk (the first only introduces him); the app's 60-90 is right but for exactly 90. He appears only at one spot of the Mobius Desert loop (PLACE 1, PLACE_ARG 7).",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "DRI Yang", "map": "0258" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/west_sector/wstag635.c:368",
+      "src/field/stages/west_sector/wstag635.c:256",
+      "src/field/stages/west_sector/wstag630.c:326",
+      "src/field/stages/south_sector/wstag460.c:437"
+    ]
+  },
+  "driAgentVeemon": {
+    "availableFromMainStep": 48,
+    "until": 122,
+    "otherConditions": "The first talk sets the step at any party level. Reopens after step 133 only through the Alternatives mark, Piledrimon in the Circuit Board (0x2EA, PLACE 5, PLACE_ARG 1), which needs every unlocked partner at level 45. The next talk asks for Paildramon only under party level total 30, which the app's range 1-30 reflects.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "DRI Bob", "map": "0226" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag375.c:574",
+      "src/field/stages/east_sector/wstag375.c:354",
+      "src/field/stages/east_sector/wstag375.c:468",
+      "src/field/stages/east_sector/wstag375.c:343",
+      "src/field/stages/west_sector/wstag655.c:33",
+      "src/field/stages/west_sector/wstag655.c:42",
+      "src/field/stages/underground/wstag970.c:360",
+      "src/field/stages/underground/wstag970.c:147"
+    ]
+  },
+  "asukaTrophy": {
+    "availableFromMainStep": 43,
+    "until": 125,
+    "otherConditions": "Own the Folder Bag: without it two Divermon stand in the way and refuse to let the player pass. The app has no requisite for it. Winning the first card battle sets the flag, so a lost battle leaves the step open.",
+    "coveredByRequisites": false,
+    "startsByTalkingTo": { "name": "Divermon", "map": "0228" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag385.c:805",
+      "src/field/stages/east_sector/wstag385.c:807",
+      "src/field/stages/east_sector/wstag385.c:612",
+      "src/field/stages/east_sector/wstag385.c:630",
+      "src/field/stages/underground/wstag825.c:54",
+      "src/field/stages/underground/wstag835.c:57",
+      "src/field/stages/east_sector/wstag380.c:465",
+      "src/field/stages/south_sector/wstag460.c:437"
+    ]
+  },
+  "asukaRematch": {
+    "availableFromMainStep": 43,
+    "until": 125,
+    "otherConditions": "After asukaTrophy: needs the Asuka Trophy, which implies the Folder Bag. Requisite asukaTrophy covers it.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "Divermon", "map": "0228" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag385.c:806",
+      "src/field/stages/east_sector/wstag385.c:653",
+      "src/field/stages/east_sector/wstag385.c:419"
+    ]
+  },
+  "amaterasuTrophy": {
+    "availableFromMainStep": 94,
+    "until": 125,
+    "otherConditions": "Own the Folder Bag: without it two Etemon stand in the way and refuse to let the player pass. The app has no requisite for it. Etemon's Mike is needed only by the fourth Etemon, not by this step. After step 133 mode 0297 loads the Tamers' Duel Island (WSTAG951), so these flags can no longer be set.",
+    "coveredByRequisites": false,
+    "startsByTalkingTo": { "name": "Etemon", "map": "0297" },
+    "verdict": "inferred",
+    "evidence": [
+      "src/field/stages/east_sector/wstag386.c:700",
+      "src/field/stages/east_sector/wstag386.c:702",
+      "src/field/stages/east_sector/wstag386.c:511",
+      "src/field/stages/east_sector/wstag381.c:186",
+      "src/field/stages/underground/wstag825.c:66",
+      "src/field/stages/network_break/wstag545.c:596",
+      "src/field/stages/network_break/wstag545.c:322",
+      "src/field/stages/network_break/wstag540.c:207",
+      "src/field/stages/east_sector/wstag366.c:189",
+      "src/field/stages/east_sector/wstag366.c:17",
+      "src/field/field_mode/data/fieldstg.c:3010"
+    ]
+  },
+  "amaterasuRematch": {
+    "availableFromMainStep": 94,
+    "until": 125,
+    "otherConditions": "After amaterasuTrophy: needs the Sun Trophy, which implies the Folder Bag. Requisite amaterasuTrophy covers it.",
+    "coveredByRequisites": true,
+    "startsByTalkingTo": { "name": "Etemon", "map": "0297" },
+    "verdict": "inferred",
+    "evidence": [
+      "src/field/stages/east_sector/wstag386.c:701",
+      "src/field/stages/east_sector/wstag386.c:534"
+    ]
+  },
+  "cardKing": {
+    "availableFromMainStep": 133,
+    "until": null,
+    "otherConditions": "Own the Folder Bag: without it two characters stand in the way, as on the main chapter's island. The app has no requisite for it; a player without one can get it in the Cargo Tower (0x27F) of the extra chapter.",
+    "coveredByRequisites": false,
+    "startsByTalkingTo": { "name": "Tamer Haruka", "map": "0297" },
+    "verdict": "verified",
+    "evidence": [
+      "src/field/stages/east_sector/wstag951.c:385",
+      "src/field/stages/east_sector/wstag951.c:386",
+      "src/field/stages/east_sector/wstag951.c:400",
+      "src/field/stages/east_sector/wstag951.c:288",
+      "src/field/field_mode/data/fieldstg.c:3010",
+      "src/field/stages/amaterasu_city/wstag934.c:113"
+    ]
+  }
+}

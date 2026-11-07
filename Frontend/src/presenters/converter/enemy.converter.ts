@@ -1,10 +1,11 @@
 import type { EnemyRaw } from "@/repositories/tables/raws/enemy/enemy.raw";
 import type { EnemyViewModel } from "@/viewmodels/enemy/enemy.viewmodel";
+import { EnemyRepository } from "@/repositories/enemy.repository";
 
 export class EnemyConverter {
   public static convert(enemyRaw: EnemyRaw): EnemyViewModel {
     const enemyViewModel: EnemyViewModel = {
-      name: enemyRaw.name,
+      name: EnemyRepository.getName(enemyRaw),
       level: enemyRaw.level,
       hp: enemyRaw.hp,
       species: enemyRaw.species,

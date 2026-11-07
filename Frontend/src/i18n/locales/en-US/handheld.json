@@ -1,0 +1,519 @@
+{
+  "handheld": {
+    "nav": {
+      "equipo": "Party",
+      "diario": "Journal",
+      "mapa": "Map",
+      "battle": "Battle",
+      "evoluciones": "Evol.",
+      "wiki": "Wiki"
+    },
+    "status": {
+      "charisma": "CHARISMA",
+      "level": "LEVEL"
+    },
+    "bar": {
+      "exp": "EXP",
+      "hp": "HP",
+      "mp": "MP",
+      "blast": "BLAST"
+    },
+    "party": {
+      "slotLevel": "Lv {level}",
+      "view": "View {name}",
+      "viewState": "{name}: view status",
+      "none": "No Digimon in the party",
+      "equipment": "Equipment",
+      "startsBattle": "Starts a battle"
+    },
+    "panel": {
+      "title": "Digivice",
+      "hide": "Hide",
+      "exit": "Exit",
+      "cancel": "Cancel",
+      "about": "Licences"
+    },
+    "about": {
+      "title": "Licences",
+      "free": "Free software under the GNU GPL, version 3 or later. It comes with no warranty.",
+      "based": "Based on Digivice by Jean Carlos Heck, with his permission.",
+      "source": "Source code",
+      "texts": "Licence texts",
+      "back": "Back",
+      "failed": "This text could not be opened."
+    },
+    "figure": {
+      "base": "Base",
+      "total": "Total",
+      "fromEquipment": "Equipment",
+      "fromBattle": "Battle",
+      "fromDigievolution": "Digievolution",
+      "digievolutionNote": "The active Digievolution's bonus is added apart from the total."
+    },
+    "condition": {
+      "chance": "Chance",
+      "cannot": {
+        "poison": "Can't be poisoned",
+        "paralyze": "Can't be paralyzed",
+        "confuse": "Can't be confused",
+        "sleep": "Can't be put to sleep",
+        "ko": "Can't be KO'd",
+        "drain": "Can't be drained",
+        "steal": "Can't be stolen from",
+        "escape": "Can't flee"
+      }
+    },
+    "equipment": {
+      "noAttributes": "Changes no attributes",
+      "equippedBy": "Can be equipped by",
+      "everyone": "Everyone",
+      "nobody": "Nobody",
+      "empty": "Not equipped",
+      "wiki": "See in the Wiki"
+    },
+    "partner": {
+      "state": "Status"
+    },
+    "back": "Back",
+    "map": {
+      "unknown": "Unknown map",
+      "objective": "{name}, current objective",
+      "seabed": "{place} Routes",
+      "here": "You are here",
+      "whole": "View the whole map",
+      "follow": "Back to player",
+      "saving": "Saving at {place}"
+    },
+    "battle": {
+      "species": "Species: {name}",
+      "unknownEnemy": "Unknown enemy",
+      "noEnemy": "No enemy data",
+      "affinities": "Elements",
+      "noAffinity": "No weak points",
+      "details": "DETAILS",
+      "close": "CLOSE",
+      "attacksOf": "Attacks of",
+      "forms": "Forms",
+      "liveForm": "In battle",
+      "formStats": "{name} stats",
+      "pick": "View {name}'s attacks",
+      "picked": "{name}: attacks on screen",
+      "grade": {
+        "veryEffective": "Very effective",
+        "effective": "Effective",
+        "normal": "Normal",
+        "weak": "Weak",
+        "veryWeak": "Very weak"
+      },
+      "pop": {
+        "noElement": "No element",
+        "power": "Power",
+        "damage": "Damage",
+        "estimate": "estimate",
+        "damageNote": "Doesn't count crits or bonuses.",
+        "noMp": "You don't have enough MP right now.",
+        "weakPoint": "Enemy's weak point.",
+        "resisted": "The enemy resists this element.",
+        "elementNote": "Deals ×{multiplier} damage vs. a neutral enemy.",
+        "against": "Against {name}"
+      },
+      "noAttacks": "No attacks to show",
+      "field": "Field"
+    },
+    "cardBattle": {
+      "versus": "Battle vs. {name}",
+      "unknownRival": "Card battle",
+      "level": "Level {level}",
+      "charisma": "Charisma {range}",
+      "sheet": "{name}'s sheet",
+      "deck": "Rival deck",
+      "noDeck": "Unknown deck",
+      "prize": "Prize",
+      "noPrize": "No prize",
+      "rival": "Rival",
+      "noRival": "Unknown rival"
+    },
+    "seabed": {
+      "asuka": "ASUKA SERVER",
+      "amaterasu": "AMATERASU SERVER",
+      "routesOn": "ROUTES · {server}",
+      "note": {
+        "chest": "Chest: {item}",
+        "forge": "{smith} forges {to} from {from} and {with} for {partner}, in the party and at level {level}",
+        "deadEnd": "Has a dead-end tunnel"
+      },
+      "route": "ROUTE {number}",
+      "emerge": "EMERGE",
+      "walking": "Walking encounters",
+      "noPoints": "This route has no points on the map"
+    },
+    "mobius": {
+      "zone": "Zone {zone}",
+      "noiseDesertS": "NDS",
+      "mirageTower": "MT",
+      "sand": "Sand",
+      "wrap": "Wraps around",
+      "here": "You are here",
+      "north": "North: {area}",
+      "south": "South: {area}",
+      "west": "West: {area}",
+      "east": "East: {area}",
+      "map": "{place} map",
+      "hint": "Use the map on the left to see which directions to follow for your objective."
+    },
+    "mapFilters": {
+      "title": "Filters",
+      "exits": "Exits",
+      "objectives": "Quest",
+      "characters": "Characters",
+      "role": {
+        "shop": "Shops",
+        "service": "Services",
+        "battle": "Battles",
+        "story": "Story",
+        "chest": "Chests",
+        "talk": "Chat"
+      }
+    },
+    "journal": {
+      "quests": "Quests",
+      "underWay": "Active",
+      "available": "Available",
+      "done": "Done",
+      "talkTo": "Talk to {name} in {place}",
+      "talkTwice": "Talk twice to {name} in {place}",
+      "goTo": "Go to {place}",
+      "none": {
+        "underWay": "No quests in progress",
+        "available": "Nobody is offering you a quest right now",
+        "done": "You haven't finished any quest yet"
+      }
+    },
+    "mission": {
+      "unknown": "Unknown quest",
+      "previousChapter": "Previous chapter",
+      "nextChapter": "Next chapter",
+      "stepDone": "Step done",
+      "stepCurrent": "Current step",
+      "stepPending": "Step pending",
+      "target": "Target",
+      "nextMap": "Next map",
+      "world": "Asuka",
+      "noMap": "No map for this step",
+      "noPin": "No exact position on this map.",
+      "chapterShort": "Ch."
+    },
+    "auction": {
+      "have": "You have {bits}",
+      "bid": "BID",
+      "resale": "RESALE",
+      "bidShort": "Bid",
+      "resaleShort": "Resale",
+      "now": "Now",
+      "nowAt": "Now! Auction at {place}!",
+      "participated": "You took part",
+      "missed": "You missed it",
+      "upcoming": "Upcoming",
+      "warning": "Warning",
+      "notEnoughBits": "Without {bid} on arrival, the auction won't start.",
+      "enoughBits": "You have enough {money} to bid.",
+      "equipment": "Auction equipment",
+      "closesWhen": {
+        "divineBarrier": "Closes on first taking the gondola (step 6) or on taking part.",
+        "hazardShield": "Closes on recovering the {item} (step 23) or on taking part.",
+        "sniperShield": "Closes on talking to {person} in {place} (step 34) or on taking part.",
+        "dramonShield": "Closes on returning to {place} with the {item} (step 42) or on taking part.",
+        "yinYangWand": "Closes on challenging the real {person} (step 48) or on taking part.",
+        "hazardFang": "Closes on touching the painting with the letter R in {place} (step 86) or on taking part."
+      }
+    },
+    "evolutions": {
+      "families": "Digievolution families",
+      "unlocked": "Unlocked",
+      "locked": "Locked",
+      "noDigimon": "No Digimon in the party",
+      "noArt": "No image",
+      "panel": {
+        "obtained": "Obtained",
+        "notObtained": "Not obtained",
+        "level": "Lv {level}",
+        "requirements": "Requirements",
+        "noRequirements": "No requirements",
+        "current": "You have",
+        "met": "Met",
+        "notMet": "Not met",
+        "ready": "You meet everything: you get it after finishing a battle.",
+        "gives": "Gives in battle",
+        "noBonus": "Gives no attributes or elements",
+        "follows": "Leads to"
+      }
+    },
+    "techniques": {
+      "backToTree": "Back to the tree",
+      "level": "Lv {level} · {name}",
+      "notObtained": "Not obtained · {name}",
+      "next": "Next: {names}",
+      "last": "It's the last in its line",
+      "learn": "Learned at level",
+      "load": "Loaded at level",
+      "signature": "Signature",
+      "signatureAlt": "Signature technique",
+      "noElement": "No element",
+      "unknown": "Unknown Digievolution"
+    },
+    "wiki": {
+      "search": "Search the Wiki...",
+      "searchButton": "Search",
+      "categories": "Categories",
+      "category": {
+        "enemies": "Enemies",
+        "cards": "Cards",
+        "equipment": "Equipment",
+        "items": "Items",
+        "places": "Places",
+        "npcs": "NPCs"
+      },
+      "onThisMap": "ON THIS MAP · {name}",
+      "total": "{count} in total",
+      "level": "Lv {level}",
+      "boss": "Boss",
+      "resale": "Resale {value}",
+      "noData": "No data",
+      "noPicture": "No image",
+      "noResults": "No results",
+      "typeToSearch": "Type to search",
+      "unknown": "No data for this entry",
+      "guide": {
+        "seabed": "{place} Routes"
+      },
+      "kind": {
+        "guide": "Guide",
+        "enemy": "Enemy",
+        "card": "Card",
+        "equipment": "Equipment",
+        "item": "Item",
+        "booster": "Booster",
+        "location": "Place",
+        "cardShop": "Shop",
+        "tamer": "Tamer",
+        "leader": "Leader",
+        "npc": "NPC"
+      },
+      "kindEnemy": {
+        "wild": "Enemy · Lv {level}",
+        "boss": "Boss · Lv {level}",
+        "owned": "{name}'s · Lv {level}"
+      },
+      "keyboard": {
+        "label": "Keyboard",
+        "space": "Space",
+        "erase": "Delete"
+      },
+      "enemy": {
+        "dvexpGain": "GAINS DVEXP",
+        "noReward": "No reward data",
+        "owner": "Owner",
+        "unknownPlace": "Unknown place",
+        "place": "Place"
+      },
+      "card": {
+        "number": "Card {id}",
+        "color": "Color",
+        "inBoosters": "FOUND IN BOOSTERS",
+        "noNote": "No note",
+        "type": "Type"
+      },
+      "booster": {
+        "count": "{count} cards",
+        "droppedBy": "DROPPED BY",
+        "cards": "Booster cards"
+      },
+      "shop": {
+        "count": "{count} cards",
+        "keeper": "{name} runs the shop",
+        "stock": "Stock",
+        "fromStart": "Stock available from the start",
+        "fromStep": "Stock available from step {step}",
+        "untilStep": "This stock lasts until step {step}"
+      },
+      "equipment": {
+        "equip": "CAN BE EQUIPPED BY",
+        "equipAll": "CAN BE EQUIPPED BY · EVERYONE",
+        "nobody": "Nobody can equip it",
+        "noAttributes": "No attributes",
+        "noNote": "No description"
+      },
+      "item": {
+        "inShops": "In shops",
+        "sold": "Can be sold",
+        "notSold": "Can't be sold",
+        "droppedBy": "DROPPED BY",
+        "noSources": "No known enemy"
+      },
+      "npc": {
+        "need": "Required",
+        "closed": "Can't be challenged anymore",
+        "team": "Their team",
+        "prize": "Prize",
+        "noPrize": "No prize",
+        "folderBag": "You need the {item} to challenge tamers.",
+        "charisma": "Charisma {range}",
+        "and": "{first} and {second}",
+        "noBattles": "No battles",
+        "nextMember": "Next Digimon"
+      }
+    },
+    "wait": {
+      "credits": {
+        "author": "Digivice, by jeanheck",
+        "port": "Port by cricamfe"
+      },
+      "inicio": {
+        "kicker": "First use",
+        "title": "Digivice needs a permission",
+        "text": "To draw on the bottom screen without taking the controller from the game, Android asks you to allow it.",
+        "step1": "Tap Open settings",
+        "step2": "Turn on Display over other apps",
+        "step3": "Go back to Digivice",
+        "note": "To hide it or exit, hold the bottom bar for one second, or the screen if there's no bar.",
+        "action": "Open settings"
+      },
+      "loading": {
+        "kicker": "One moment",
+        "title": "Reading the game",
+        "text": "Digivice is collecting your game data. It will only take a few seconds."
+      },
+      "retroarchUnreachable": {
+        "kicker": "No connection",
+        "title": "RetroArch isn't responding",
+        "text": "Digivice reads the game through RetroArch's network commands.",
+        "step1": "Open RetroArch",
+        "step2": "Settings > Network > Network Commands",
+        "step3": "Restart RetroArch"
+      },
+      "noContent": {
+        "kicker": "No game",
+        "title": "No game loaded",
+        "text": "RetroArch is open, but has no game. As soon as you load Digimon World 2003, Digivice will start."
+      },
+      "memoryUnavailable": {
+        "kicker": "Old RetroArch",
+        "title": "This version can't read RAM",
+        "text": "SwanStation needs a RetroArch nightly from 25-10-2026 or later.",
+        "step1": "Install a compatible nightly",
+        "step2": "Reload the game"
+      },
+      "wrongGame": {
+        "kicker": "Other game",
+        "title": "This isn't Digimon World 2003",
+        "text": "Digivice only works with the European version of the game: SLES-03936.",
+        "step1": "Load the game with SwanStation"
+      },
+      "waitingForSave": {
+        "kicker": "Ready",
+        "title": "Waiting for your save",
+        "text": "The game is open. As soon as you load a save, Digivice will start."
+      },
+      "memoryReadFailed": {
+        "kicker": "Read failed",
+        "title": "The read was lost",
+        "text": "RetroArch responds, but doesn't hand over the game's memory. Digivice retries on its own.",
+        "step1": "If it stays like this, restart RetroArch",
+        "step2": "Reload the game"
+      },
+      "stateComposeFailed": {
+        "kicker": "Unreadable data",
+        "title": "Couldn't read your save",
+        "text": "Digivice read the memory, but couldn't put the data together. It retries on its own.",
+        "step1": "If it stays like this, reload the save"
+      },
+      "unknown": {
+        "kicker": "No data",
+        "title": "Digivice gets no data",
+        "text": "Something went wrong reading the game. Digivice retries on its own."
+      }
+    },
+    "setup": {
+      "title": "Prepare Digivice",
+      "readyTitle": "Digivice ready",
+      "intro": "Digivice builds its images from your own copy of the game. Nothing leaves the console.",
+      "checking": "Checking the file…",
+      "waiting": "Waiting: close the game in RetroArch",
+      "pausing": "Pausing…",
+      "paused": "Preparation paused",
+      "done": "All set",
+      "pieces": {
+        "Text": "Game text",
+        "Cards": "Cards",
+        "Sprites": "Characters",
+        "Icons": "Items",
+        "World": "World map",
+        "Maps": "Area maps",
+        "Models": "Battle and evolution models",
+        "other": "Game data"
+      },
+      "actions": {
+        "choose": "Choose file",
+        "chooseOther": "Choose another file",
+        "pause": "Pause preparation",
+        "resume": "Resume",
+        "retry": "Retry",
+        "continue": "Continue"
+      },
+      "problems": {
+        "WrongGame": "This isn't the European Digimon World 2003 (SLES-03936). Choose the original, without patches.",
+        "NotADisc": "This file can't be read as an ISO, BIN or CHD image. Choose another one.",
+        "InvalidChd": "This CHD is damaged or unsupported. Choose a CHD v5 with one data track.",
+        "Truncated": "The game image is incomplete. Choose a complete copy.",
+        "FileGone": "The file can no longer be opened. Choose it again.",
+        "LocalFile": "The file can't be read where it is. Copy it to the console's storage and choose the copy.",
+        "NoSpace": "The console is out of space. Free some up, then retry.",
+        "Interrupted": "Preparation was interrupted. Retry to go on from what is already done.",
+        "Failed": "Digivice couldn't finish preparing. Choose the file again."
+      }
+    },
+    "place": {
+      "seabed": "Undersea",
+      "mobiusDesert": "Desert",
+      "cargoTower": "the tower",
+      "undergroundPath": "the underground",
+      "biosSwamp": "the swamp",
+      "masterRoom": "the room"
+    },
+    "digimon": {
+      "unknown": "Digimon #{id}",
+      "variant": {
+        "gold": "Gold",
+        "white": "White",
+        "pink": "Pink",
+        "green": "Green",
+        "brown": "Brown",
+        "red": "Red",
+        "black": "Black",
+        "blue": "Blue",
+        "silver": "Silver",
+        "aqua": "Aqua",
+        "purple": "Purple"
+      }
+    },
+    "duelIsland": {
+      "nth": "{n}º {name}"
+    },
+    "card": {
+      "summon": "Bring {name} to field",
+      "summonMany": "Bring {count} {name} to field"
+    },
+    "word": {
+      "place": "Place",
+      "digimon": "Digimon",
+      "person": "Someone",
+      "item": "Item",
+      "tech": "Technique",
+      "card": "Card"
+    },
+    "money": {
+      "unit": "bits",
+      "amount": "{n} {unit}"
+    }
+  }
+}

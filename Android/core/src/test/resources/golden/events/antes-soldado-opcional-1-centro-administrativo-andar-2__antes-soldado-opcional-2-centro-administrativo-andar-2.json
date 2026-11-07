@@ -1,0 +1,85 @@
+[
+  {
+    "type": "PlayerChanged",
+    "payload": {
+      "bits": 56566,
+      "previousMapId": "1400",
+      "positionX": 346,
+      "positionY": 218
+    }
+  },
+  {
+    "type": "PartyChanged",
+    "payload": {
+      "slots": [
+        {
+          "index": 1,
+          "digimonId": 0,
+          "digimon": {
+            "blast": 16,
+            "experience": 19090,
+            "hp": {
+              "current": 1875
+            },
+            "inBattle": {
+              "hp": {
+                "current": 1875
+              }
+            },
+            "digievolutions": [
+              {
+                "index": 3,
+                "digievolution": {
+                  "level": 34,
+                  "dvexp": 336
+                }
+              }
+            ],
+            "storedDigievolutions": [
+              {
+                "digievolutionId": 389,
+                "level": 34
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "digimonId": 7,
+          "digimon": {
+            "inBattle": {
+              "mp": {
+                "current": 1332
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "DigimonBattleChanged",
+    "payload": {
+      "enemy": {
+        "id": 76,
+        "groupId": 190,
+        "hp": {
+          "max": 840
+        }
+      }
+    }
+  },
+  {
+    "type": "NpcsChanged",
+    "payload": {
+      "optionalSoldier1AdminFloor2": {
+        "battles": [
+          {
+            "id": "first",
+            "won": true
+          }
+        ]
+      }
+    }
+  }
+]

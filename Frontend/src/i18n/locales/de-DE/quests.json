@@ -1,0 +1,907 @@
+{
+  "driAgentAgumon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentGuilmon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentKotemon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} in der {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentKumamon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} in der {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentMonmon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} in der {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentPatamon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentRenamon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "driAgentVeemon": {
+    "title": "{digimon} ({person})",
+    "description": "Nimm {digimon} in dein Digimon-Team auf",
+    "steps": {
+      "1": {
+        "description": "Such {person} in den {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {digimon} im Kampf und erhalte die DDNA von {digimon2}"
+      },
+      "3": {
+        "description": "Bring die DNA von {digimon} zu {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "amaterasuRematch": {
+    "title": "Amaterasu (Revanche)",
+    "description": "Besiege alle {digimon} auf der {place} noch einmal",
+    "steps": {
+      "1": {
+        "description": "Besiege den ersten {digimon}"
+      },
+      "2": {
+        "description": "Besiege den zweiten {digimon}"
+      },
+      "3": {
+        "description": "Besiege den dritten {digimon}"
+      },
+      "4": {
+        "description": "Besiege den vierten {digimon}"
+      },
+      "5": {
+        "description": "Besiege {digimon}"
+      },
+      "6": {
+        "description": "Besiege {digimon}"
+      }
+    }
+  },
+  "amaterasuTrophy": {
+    "title": "Amaterasu (Pokal)",
+    "description": "Besiege alle {digimon} auf der {place} und gewinne den {item}",
+    "steps": {
+      "1": {
+        "description": "Besiege den ersten {digimon}"
+      },
+      "2": {
+        "description": "Besiege den zweiten {digimon}"
+      },
+      "3": {
+        "description": "Besiege den dritten {digimon}"
+      },
+      "4": {
+        "description": "Besiege den vierten {digimon}"
+      },
+      "5": {
+        "description": "Besiege {digimon}"
+      },
+      "6": {
+        "description": "Besiege {digimon} und gewinne den {item}"
+      }
+    }
+  },
+  "asukaRematch": {
+    "title": "Asuka (Revanche)",
+    "description": "Besiege alle {digimon} auf der {place} noch einmal",
+    "steps": {
+      "1": {
+        "description": "Besiege den ersten {digimon}"
+      },
+      "2": {
+        "description": "Besiege den zweiten {digimon}"
+      },
+      "3": {
+        "description": "Besiege den dritten {digimon}"
+      },
+      "4": {
+        "description": "Besiege den vierten {digimon}"
+      },
+      "5": {
+        "description": "Besiege den fünften {digimon}"
+      },
+      "6": {
+        "description": "Besiege {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "asukaTrophy": {
+    "title": "Asuka (Pokal)",
+    "description": "Besiege alle {digimon} auf der {place} und gewinne den {item}",
+    "steps": {
+      "1": {
+        "description": "Besiege den ersten {digimon}"
+      },
+      "2": {
+        "description": "Besiege den zweiten {digimon}"
+      },
+      "3": {
+        "description": "Besiege den dritten {digimon}"
+      },
+      "4": {
+        "description": "Besiege den vierten {digimon}"
+      },
+      "5": {
+        "description": "Besiege den fünften {digimon}"
+      },
+      "6": {
+        "description": "Besiege {person}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "cardKing": {
+    "title": "Kartenkönig",
+    "description": "Besiege nach dem letzten Kampf die Tamer der {place} im Kartenspiel und hol dir den {item} von {person}",
+    "steps": {
+      "1": {
+        "description": "Besiege {person} auf der {place} im Kartenspiel",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Besiege {person} auf der {place} im Kartenspiel",
+        "locationTarget": "{person}"
+      },
+      "3": {
+        "description": "Besiege {person} auf der {place} im Kartenspiel",
+        "locationTarget": "{person}"
+      },
+      "4": {
+        "description": "Besiege {person} auf der {place} im Kartenspiel",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Besiege {person} auf der {place} im Kartenspiel",
+        "locationTarget": "{person}"
+      },
+      "6": {
+        "description": "Besiege {person}, den Kartenkönig, auf der {place} im Kartenspiel und hol dir den {item}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "eternally": {
+    "title": "{item}",
+    "description": "Erhalte die Legendäre Waffe {item}.",
+    "steps": {
+      "1": {
+        "description": "Besiege {digimon}. Belohnung: {item}"
+      }
+    }
+  },
+  "invincible": {
+    "title": "{item}",
+    "description": "Erhalte die Legendäre Waffe {item}",
+    "steps": {
+      "1": {
+        "description": "Besiege {digimon} und erhalte die {item}"
+      }
+    }
+  },
+  "muramasa": {
+    "title": "{item}",
+    "description": "Erhalte die Legendäre Waffe {item}",
+    "steps": {
+      "1": {
+        "description": "Besiege {digimon} und erhalte das {item}"
+      }
+    }
+  },
+  "punishment": {
+    "title": "{item}",
+    "description": "Erhalte die Legendäre Waffe {item}",
+    "steps": {
+      "1": {
+        "description": "Besiege {digimon} und erhalte das {item}"
+      }
+    }
+  },
+  "superNova": {
+    "title": "{item}",
+    "description": "Erhalte die Legendäre Waffe {item}",
+    "steps": {
+      "1": {
+        "description": "Besiege {digimon} und erhalte den {item}"
+      }
+    }
+  },
+  "mainQuest": {
+    "title": "Hauptquest",
+    "description": "Werde der größte Tamer der Digiwelt!",
+    "steps": {
+      "1": {
+        "description": "Such den {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Sprich mit dem {person} in den {place}",
+        "locationTarget": "{person}"
+      },
+      "3": {
+        "description": "Besiege {digimon} im {place}"
+      },
+      "4": {
+        "description": "Fordere den {person} in {place} heraus",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Verlasse {place}",
+        "locationTarget": "Ausgang"
+      },
+      "6": {
+        "description": "Geh zur {place} und benutze die Gondel, um zum nächsten Sektor zu gelangen",
+        "locationTarget": "Gondel"
+      },
+      "7": {
+        "description": "Besiege {person}, den mysteriösen Spieler, der dich auf der {place} aufhält",
+        "locationTarget": "{person}"
+      },
+      "8": {
+        "description": "Sprich mit dem {digimon} im {place} in {place2}"
+      },
+      "9": {
+        "description": "Sprich mit dem {digimon} im {place}"
+      },
+      "10": {
+        "description": "Sprich mit dem {person} im {place} in {place2}"
+      },
+      "11": {
+        "description": "Kehre zur {place} zurück und bring {item} mit",
+        "locationTarget": "Gondel"
+      },
+      "12": {
+        "description": "Stell das {digimon} in {place} wegen der falschen Karte zur Rede"
+      },
+      "13": {
+        "description": "Sprich mit dem {person} im {place} Keller",
+        "locationTarget": "{person}"
+      },
+      "14": {
+        "description": "Kehre zur {place} zurück und bring die echte Karte mit: {item}",
+        "locationTarget": "Gondel"
+      },
+      "15": {
+        "description": "Folge der Spur durch das {place}"
+      },
+      "16": {
+        "description": "Sprich mit {person} beim Training im {place}",
+        "locationTarget": "{person}"
+      },
+      "17": {
+        "description": "Finde im {place} heraus, wer das geheimnisvolle Wesen ist",
+        "locationTarget": "{person}"
+      },
+      "18": {
+        "description": "Finde {digimon}"
+      },
+      "19": {
+        "description": "Such {person} in oder um {place}",
+        "locationTarget": "{person}"
+      },
+      "20": {
+        "description": "Sprich mit {digimon} in der Nähe von {place}"
+      },
+      "21": {
+        "description": "Such {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "22": {
+        "description": "Sprich noch einmal mit {digimon} bei {item}"
+      },
+      "23": {
+        "description": "Verfolge {digimon} durch die {place}"
+      },
+      "24": {
+        "description": "Bring die Maske im {place} zu {person} zurück",
+        "locationTarget": "{person}"
+      },
+      "25": {
+        "description": "Lock {digimon} mit dem {item} aus dem {place}"
+      },
+      "26": {
+        "description": "Betritt {place} und such ein Inn zum Ausruhen",
+        "locationTarget": "{person}"
+      },
+      "27": {
+        "description": "Fordere {person} in der {place} heraus",
+        "locationTarget": "{person}"
+      },
+      "28": {
+        "description": "Triff {person} in {place} und geh mit ihm zurück zum {place2} in {place3}",
+        "locationTarget": "{person}"
+      },
+      "29": {
+        "description": "Such Infos über das {place}",
+        "locationTarget": "{person}"
+      },
+      "30": {
+        "description": "Such das Tamer-Paar in der Nähe von {place}",
+        "locationTarget": "Tamer-Paar"
+      },
+      "31": {
+        "description": "Geh dorthin, wo du {digimon} zuletzt gesehen hast"
+      },
+      "32": {
+        "description": "Berichte {person} am {place} von deinen Erkenntnissen",
+        "locationTarget": "{person}"
+      },
+      "33": {
+        "description": "Stell in der {place} {person} zur Rede",
+        "locationTarget": "{person}"
+      },
+      "34": {
+        "description": "Kehre zum {place} zurück und such {person}",
+        "locationTarget": "{person}"
+      },
+      "35": {
+        "description": "Betritt das Admin-Center als {digimon} verkleidet",
+        "locationTarget": "{place}"
+      },
+      "36": {
+        "description": "Finde {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "37": {
+        "description": "Such in der {place} nach Hinweisen, wie es weitergeht",
+        "locationTarget": "{person}"
+      },
+      "38": {
+        "description": "Such die Katze von {person} im {place}",
+        "locationTarget": "Verlorene Katze"
+      },
+      "39": {
+        "description": "Bitte {person} um Hilfe, die Wand einzureißen",
+        "locationTarget": "{person}"
+      },
+      "40": {
+        "description": "Such {digimon}, damit er dir mit Bomben hilft"
+      },
+      "41": {
+        "description": "Besorg dir einen {item} von einem {digimon} und bring ihn zu {digimon2}"
+      },
+      "42": {
+        "description": "Öffne mit dem {item} die Wand im {place}",
+        "locationTarget": "Wand"
+      },
+      "43": {
+        "description": "Finde das Digi-Ei der Verlässlichkeit",
+        "locationTarget": "{item}"
+      },
+      "44": {
+        "description": "Mach dich auf nach {place}"
+      },
+      "45": {
+        "description": "Fordere den {person} in {place} heraus",
+        "locationTarget": "{person}"
+      },
+      "46": {
+        "description": "Finde jemanden, der dir hilft, die {place} zu verlassen",
+        "locationTarget": "{person}"
+      },
+      "47": {
+        "description": "Finde einen Weg aus der {place}",
+        "locationTarget": "Ausgang"
+      },
+      "48": {
+        "description": "Fordere den echten {person} im {place} heraus",
+        "locationTarget": "{person}"
+      },
+      "49": {
+        "description": "Betritt die {place}",
+        "locationTarget": "Fabrik betreten"
+      },
+      "50": {
+        "description": "Jage {digimon}"
+      },
+      "51": {
+        "description": "Betritt {place}",
+        "locationTarget": "{place}"
+      },
+      "52": {
+        "description": "Öffne die Kiste in {place}",
+        "locationTarget": "Kiste"
+      },
+      "53": {
+        "description": "Jage {digimon} weiter"
+      },
+      "54": {
+        "description": "Öffne die Kiste in {place}",
+        "locationTarget": "Kiste"
+      },
+      "55": {
+        "description": "Gib nicht auf! Jage {digimon}!"
+      },
+      "56": {
+        "description": "Öffne die Kiste in {place}",
+        "locationTarget": "Kiste"
+      },
+      "57": {
+        "description": "Wird er nie müde? Folge {digimon}"
+      },
+      "58": {
+        "description": "Öffne die Kiste in {place}",
+        "locationTarget": "Kiste"
+      },
+      "59": {
+        "description": "Geh in die Mitte der Fabrik und such {digimon}"
+      },
+      "60": {
+        "description": "Frag {digimon} im {place} nach {digimon2}"
+      },
+      "61": {
+        "description": "Geh in die {place}, um {digimon} zu finden"
+      },
+      "62": {
+        "description": "Such einen Weg nach {place}"
+      },
+      "63": {
+        "description": "Geh zurück ({place}) und frag deine Freunde nach dem {item}",
+        "locationTarget": "{person}"
+      },
+      "64": {
+        "description": "Such {person} und {person2} im {place}",
+        "locationTarget": "{person} & {person2}"
+      },
+      "65": {
+        "description": "Such mit der Hilfe aller den {item} ({place})",
+        "locationTarget": "{person}"
+      },
+      "66": {
+        "description": "Zeig den {item} vor und bitte {digimon}, das Tor zu öffnen"
+      },
+      "67": {
+        "description": "Besiege {person}, der dir den Zutritt zu {place} versperrt",
+        "locationTarget": "{person}"
+      },
+      "68": {
+        "description": "Besiege {person}, der dir in {place} den Weg versperrt",
+        "locationTarget": "{person}"
+      },
+      "69": {
+        "description": "Besiege {person}, der dich nicht aus {place} lässt",
+        "locationTarget": "{person}"
+      },
+      "70": {
+        "description": "Besiege {person} am Eingang der {place}",
+        "locationTarget": "{person}"
+      },
+      "71": {
+        "description": "Besiege {person} am Ende der {place}",
+        "locationTarget": "{person}"
+      },
+      "72": {
+        "description": "Besiege {person}, um die {place} zu verlassen",
+        "locationTarget": "{person}"
+      },
+      "73": {
+        "description": "Besiege {person} am Eingang von {place}",
+        "locationTarget": "{person}"
+      },
+      "74": {
+        "description": "Besiege {person} vor der Treppe in {place}",
+        "locationTarget": "{person}"
+      },
+      "75": {
+        "description": "Besiege {person}, um durch {place} zu gehen",
+        "locationTarget": "{person}"
+      },
+      "76": {
+        "description": "Besiege {person} nach der Treppe in {place}",
+        "locationTarget": "{person}"
+      },
+      "77": {
+        "description": "Besiege {person} im Flur zum {place}",
+        "locationTarget": "{person}"
+      },
+      "78": {
+        "description": "Besiege {person}, der dir den Zutritt zum {place} versperrt",
+        "locationTarget": "{person}"
+      },
+      "79": {
+        "description": "\"GUBI!?\" Wehr dich gegen das seltsame Digimon, das aus dem Raum kam"
+      },
+      "80": {
+        "description": "Berühre im {place} das Feld mit dem Buchstaben \"M\"",
+        "locationTarget": "Buchstabe \"M\""
+      },
+      "81": {
+        "description": "Berühre im {place} das Feld mit dem Buchstaben \"O\"",
+        "locationTarget": "Buchstabe \"O\""
+      },
+      "82": {
+        "description": "Berühre im {place} das Feld mit dem Buchstaben \"N\"",
+        "locationTarget": "Buchstabe \"N\""
+      },
+      "83": {
+        "description": "Berühre im {place} das Feld mit dem Buchstaben \"S\"",
+        "locationTarget": "Buchstabe \"S\""
+      },
+      "84": {
+        "description": "Berühre im {place} das Feld mit dem Buchstaben \"T\"",
+        "locationTarget": "Buchstabe \"T\""
+      },
+      "85": {
+        "description": "Berühre im {place} das Feld mit dem Buchstaben \"E\"",
+        "locationTarget": "Buchstabe \"E\""
+      },
+      "86": {
+        "description": "Berühre im {place} das Feld mit dem Buchstaben \"R\"",
+        "locationTarget": "Buchstabe \"R\""
+      },
+      "87": {
+        "description": "Besiege die Guards am Eingang von {place}",
+        "locationTarget": "Guards"
+      },
+      "88": {
+        "description": "Stell {person} in {place} zur Rede",
+        "locationTarget": "{person}"
+      },
+      "89": {
+        "description": "Besiege {digimon} von {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "90": {
+        "description": "Frag {person}, der in der {place} von {place2} gefangen ist, wie die A.o.A auf diesen Server gelangt ist",
+        "locationTarget": "{person}"
+      },
+      "91": {
+        "description": "Frag {digimon} in der {place}, wohin {person} gegangen ist"
+      },
+      "92": {
+        "description": "Finde {person} an der Sicherheitslücke in den {place}, hinter dem {place2}",
+        "locationTarget": "{person}"
+      },
+      "93": {
+        "description": "Geh durch das {place} und besiege {digimon} in der {place2}"
+      },
+      "94": {
+        "description": "Sprich mit {person} im {place}, nachdem du auf dem Amaterasu Server herauskommst, und hol die {item}",
+        "locationTarget": "{person}"
+      },
+      "95": {
+        "description": "Besiege den {person} in {place} und nimm den {item} mit",
+        "locationTarget": "{person}"
+      },
+      "96": {
+        "description": "Besiege den {person} in der {place} und nimm den {item} mit",
+        "locationTarget": "{person}"
+      },
+      "97": {
+        "description": "Finde das Digi-Ei des Wissens im {place}",
+        "locationTarget": "{item}"
+      },
+      "98": {
+        "description": "Besiege {person} am {place} im {place2} und nimm das {item} mit",
+        "locationTarget": "{person}"
+      },
+      "99": {
+        "description": "Besiege die {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "100": {
+        "description": "Besiege den {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "101": {
+        "description": "Besiege diesen Gegner: {person} ({place})",
+        "locationTarget": "{person}"
+      },
+      "102": {
+        "description": "Bitte den {person} in der {place}, dich nach {place2} in der echten Welt zu schicken",
+        "locationTarget": "{person}"
+      },
+      "103": {
+        "description": "Drück in der echten Welt den Knopf am Schaltpult in {place}, bevor die 180 Sekunden ablaufen",
+        "locationTarget": "Schaltpult"
+      },
+      "104": {
+        "description": "Drück den zweiten Knopf in {place}, der den Weg zur Startrampe öffnet",
+        "locationTarget": "Schaltpult"
+      },
+      "105": {
+        "description": "Besiege {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "106": {
+        "description": "Versuch den Start des Juggernaut zu stoppen, bevor die Zeit abläuft",
+        "locationTarget": "{person}"
+      },
+      "107": {
+        "description": "Geh zum {place} und sag {person}, dass die A.o.A den Juggernaut genommen hat",
+        "locationTarget": "{person}"
+      },
+      "108": {
+        "description": "Finde das Versteck des Widerstands im {place} auf dem Amaterasu Server",
+        "locationTarget": "{person}"
+      },
+      "109": {
+        "description": "Sprich mit {person} vom Widerstand im {place}",
+        "locationTarget": "{person}"
+      },
+      "110": {
+        "description": "Erzähl {person} im {place} vom Widerstand und den vier Code-Pässen",
+        "locationTarget": "{person}"
+      },
+      "111": {
+        "description": "Besiege den {person} im {place} und nimm den {item} mit",
+        "locationTarget": "{person}"
+      },
+      "112": {
+        "description": "Besiege den {person} am {place} und nimm den {item} mit",
+        "locationTarget": "{person}"
+      },
+      "113": {
+        "description": "Triff {person} im {place} und überquere mit den vier Code-Pässen die {place2}",
+        "locationTarget": "{person}"
+      },
+      "114": {
+        "description": "Besiege jeden {person} im {place} von {place2}",
+        "locationTarget": "{person}"
+      },
+      "115": {
+        "description": "Besiege jeden {person}, der {place} blockiert",
+        "locationTarget": "{person}"
+      },
+      "116": {
+        "description": "Besiege {person}, um durch {place} zu gehen",
+        "locationTarget": "{person}"
+      },
+      "117": {
+        "description": "Besiege {person} nach der Treppe in {place}",
+        "locationTarget": "{person}"
+      },
+      "118": {
+        "description": "Besiege {person} im Flur zum {place}",
+        "locationTarget": "{person}"
+      },
+      "119": {
+        "description": "Geh durch die Tür, die sich im {place} von selbst öffnet, und besiege jede {person} in {place2}",
+        "locationTarget": "{person}"
+      },
+      "120": {
+        "description": "Besiege den Chief Officer, den Präsidenten von MAGAMI",
+        "locationTarget": "Chief Officer"
+      },
+      "121": {
+        "description": "Geh zurück in Asukas {place} und such einen Hinweis zu {digimon}",
+        "locationTarget": "Oinkmon"
+      },
+      "122": {
+        "description": "Geh tiefer in {place} von Asuka und folge {digimon}"
+      },
+      "123": {
+        "description": "Finde {person}, der sich im {place} auf dem Amaterasu Server versteckt",
+        "locationTarget": "{person}"
+      },
+      "124": {
+        "description": "Betritt den {place} von Amaterasu und hör in {place2} Lord Megadeaths Plan",
+        "locationTarget": "Lord Megadeath"
+      },
+      "125": {
+        "description": "Geh durch das Warp-Tor von {place2} und schalte die erste Tafel in {place} ein",
+        "locationTarget": "Tafel"
+      },
+      "126": {
+        "description": "Schalte die zweite Tafel in {place} ein",
+        "locationTarget": "Tafel"
+      },
+      "127": {
+        "description": "Schalte die dritte Tafel in {place} ein",
+        "locationTarget": "Tafel"
+      },
+      "128": {
+        "description": "Besiege {person}, der in {place} Alarm schlägt",
+        "locationTarget": "{person}"
+      },
+      "129": {
+        "description": "Ein zweiter {person} wartet in {place}: besiege ihn",
+        "locationTarget": "{person}"
+      },
+      "130": {
+        "description": "Erreiche das Ende von {place} und hör Lord Megadeaths Herausforderung",
+        "locationTarget": "Lord Megadeath"
+      },
+      "131": {
+        "description": "Geh weiter durch {place}, bis das Schiff bebt, und besiege den Gegner, der dich angreift",
+        "locationTarget": "Gegner"
+      },
+      "132": {
+        "description": "Besiege Lord Megadeath im {place} der Gunslinger",
+        "locationTarget": "Lord Megadeath"
+      },
+      "133": {
+        "description": "Besiege {digimon} im letzten Kampf"
+      }
+    }
+  },
+  "digimonOnline": {
+    "title": "Digimon Online",
+    "description": "Fordere nach dem letzten Kampf die Leader des Amaterasu Servers und {person} in der {place} heraus",
+    "steps": {
+      "1": {
+        "description": "Hör dem Tour Leader im {place} von Digimon Online zu",
+        "locationTarget": "Tour Leader"
+      },
+      "2": {
+        "description": "Besiege den {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "3": {
+        "description": "Besiege den {person} in den {place}",
+        "locationTarget": "{person}"
+      },
+      "4": {
+        "description": "Besiege den {person} in den {place}",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Besiege den {person} im {place}",
+        "locationTarget": "{person}"
+      },
+      "6": {
+        "description": "Sprich mit dem {person} und besiege {person2} in der {place2}",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "fishingPole": {
+    "title": "Die {item}",
+    "description": "Hol dir die {item}, um {digimon} und andere Wasser-Digimon herauszufordern!",
+    "steps": {
+      "1": {
+        "description": "Sprich mit {person} am {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Hilf dem {digimon} am {place}"
+      },
+      "3": {
+        "description": "Bring {person} am {place} die Items, um die {item} zu erhalten",
+        "locationTarget": "{person}"
+      }
+    }
+  },
+  "folderBag": {
+    "title": "Die {item}",
+    "description": "Hol dir die {item}, um andere Tamer in Kartenkämpfen und Digimon-Kämpfen herauszufordern!",
+    "steps": {
+      "1": {
+        "description": "Sprich mit {digimon} ({place}, {place2})"
+      }
+    }
+  },
+  "treeBoots": {
+    "title": "Die {item}",
+    "description": "Hol dir die {item}, um {digimon} und andere Digimon herauszufordern!",
+    "steps": {
+      "1": {
+        "description": "Sprich mit {person} in {place}",
+        "locationTarget": "{person}"
+      },
+      "2": {
+        "description": "Finde die verlorene Karte von {person}",
+        "locationTarget": "{person}-Karte"
+      },
+      "3": {
+        "description": "Gib {person} die Karte von {card}",
+        "locationTarget": "{person}"
+      },
+      "4": {
+        "description": "Sprich mit {person} im {place} in {place2}",
+        "locationTarget": "{person}"
+      },
+      "5": {
+        "description": "Finde {digimon} ({place})"
+      },
+      "6": {
+        "description": "Spiel Verstecken und finde {digimon} im {place}"
+      },
+      "7": {
+        "description": "Erhalte die {item} von {digimon}, nachdem du ihn gefunden hast"
+      }
+    }
+  }
+}
