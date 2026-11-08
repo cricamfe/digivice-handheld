@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/banner.png" width="100%" alt="Digivice for AYN Thor: a dual-screen handheld with a game on the top screen and the Digivice map on the bottom screen">
+<img src="docs/media/banner.png" width="100%" alt="Digivice for AYN Thor: a dual-screen handheld with a game on the top screen and the Digivice map on the bottom screen">
 
 # Digivice for AYN Thor
 
@@ -15,7 +15,7 @@ The game on top; your party, the map and your next objective below. Live, in pix
 [![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-support-ff5e5b?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/cricamfe)
 
-<img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/thor-map.webp" width="420" alt="An AYN Thor with the game on the top screen and Digivice on the bottom screen, whose live map follows the player across Asuka Bridge and switches to Central Park when they cross into it">
+<img src="docs/media/thor-map.webp" width="420" alt="An AYN Thor with the game on the top screen and Digivice on the bottom screen, whose live map follows the player across Asuka Bridge and switches to Central Park when they cross into it">
 
 [What you get](#what-you-get) · [Requirements](#requirements) · [Install](#install) · [Build](#build) · [Credits](#credits)
 
@@ -31,11 +31,11 @@ Based on **[Digivice by Jean Carlos Heck](https://github.com/jeanheck/digivice)*
 <table>
   <tr>
     <td width="50%" valign="top" align="center">
-      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/dual-journal.png" width="100%" alt="Top screen: the game in a city. Bottom screen: Digivice's journal with the chapter objective and the quests on offer"><br>
+      <img src="docs/media/dual-journal.png" width="100%" alt="Top screen: the game in a city. Bottom screen: Digivice's journal with the chapter objective and the quests on offer"><br>
       <b>Journal</b> · the next objective and the quests on offer, without pausing the game.
     </td>
     <td width="50%" valign="top" align="center">
-      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/thor-battle.webp" width="100%" alt="Top screen: a battle against Triceramon. Bottom screen: switching partners shows which attack is very effective"><br>
+      <img src="docs/media/thor-battle.webp" width="100%" alt="Top screen: a battle against Triceramon. Bottom screen: switching partners shows which attack is very effective"><br>
       <b>Battle</b> · the enemy's weak points and how well each attack lands.
     </td>
   </tr>
@@ -44,19 +44,19 @@ Based on **[Digivice by Jean Carlos Heck](https://github.com/jeanheck/digivice)*
 <table>
   <tr>
     <td width="25%" valign="top" align="center">
-      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-party.png" width="100%" alt="Party screen"><br>
+      <img src="docs/media/screen-party.png" width="100%" alt="Party screen"><br>
       <b>Party</b><br><sub>Stats, resistances, equipment.</sub>
     </td>
     <td width="25%" valign="top" align="center">
-      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-map.png" width="100%" alt="Map screen"><br>
+      <img src="docs/media/screen-map.png" width="100%" alt="Map screen"><br>
       <b>Map</b><br><sub>You, the characters and exits.</sub>
     </td>
     <td width="25%" valign="top" align="center">
-      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-evol.png" width="100%" alt="Digivolution tree screen"><br>
+      <img src="docs/media/screen-evol.png" width="100%" alt="Digivolution tree screen"><br>
       <b>Digivolutions</b><br><sub>Every form and its requirements.</sub>
     </td>
     <td width="25%" valign="top" align="center">
-      <img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/screen-wiki.png" width="100%" alt="Wiki screen"><br>
+      <img src="docs/media/screen-wiki.png" width="100%" alt="Wiki screen"><br>
       <b>Wiki</b><br><sub>Enemies, cards, items, places.</sub>
     </td>
   </tr>
