@@ -11,7 +11,6 @@ import re
 import stat
 import struct
 import subprocess
-import subprocess
 import sys
 import unicodedata
 import zipfile
@@ -330,7 +329,11 @@ class Auditor:
                     or at + 22 + comment != len(tail)):
                 raise AuditError('unsupported or excessive ZIP directory (including ZIP64)')
             stream.seek(0)
-            resources = apk_resource_names(path)
+            with zipfile.ZipFile(stream) as archive:
+                has_resource_table = 'resources.arsc' in archive.namelist()
+            stream.seek(0)
+            # Without a resource table no file has a resource name, so there is nothing for aapt2 to read.
+            resources = apk_resource_names(path) if has_resource_table else {}
             if resources is None:
                 self.issue('LIMIT', str(path), 'aapt2 not found; resource images judged by their shortened paths')
             with zipfile.ZipFile(stream) as archive:

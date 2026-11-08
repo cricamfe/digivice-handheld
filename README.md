@@ -15,7 +15,7 @@ The game on top; your party, the map and your next objective below. Live, in pix
 [![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-support-ff5e5b?style=flat-square&logo=ko-fi&logoColor=white)](https://ko-fi.com/cricamfe)
 
-<img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/thor-map.webp" width="420" alt="An AYN Thor with the game on the top screen and Digivice on the bottom screen, whose live map follows the player through Asuka City">
+<img src="https://github.com/cricamfe/digivice-handheld/releases/download/v0.1.0/thor-map.webp" width="420" alt="An AYN Thor with the game on the top screen and Digivice on the bottom screen, whose live map follows the player across Asuka Bridge and switches to Central Park when they cross into it">
 
 [What you get](#what-you-get) · [Requirements](#requirements) · [Install](#install) · [Build](#build) · [Credits](#credits)
 
